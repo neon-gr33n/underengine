@@ -1,0 +1,1 @@
+TweenFire(self,EaseLinear,0,0,0,30,"image_xscale",image_xscale,0.9);

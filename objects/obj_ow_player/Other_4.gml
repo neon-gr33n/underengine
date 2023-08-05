@@ -1,0 +1,1 @@
+CAM.cam1.follow = obj_ow_player;
