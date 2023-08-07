@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "Data Types",
-    "path": "folders/Scripts/Third Party Libraries/FAST/Core/Constructors/Data Types.yy",
+    "path": "folders/Libraries/FAST/Core/Constructors/Data Types.yy",
   },
 }

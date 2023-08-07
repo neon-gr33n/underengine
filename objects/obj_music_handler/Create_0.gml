@@ -1,10 +1,10 @@
-areasong = ""
+areasong = undefined
 areasong_loopable = true; // disable if you don't want a song to loop 
 areasong_pos = 0;
 areasong_pitch = 1;
 sprite_index=noone;
 
-cutscenesong = "";
+cutscenesong = undefined
 cutscenesong_loopable = true; // disable if you don't want a song to loop 
 cutscenesong_pos = 0;
 cutscenesong_pitch = 1;

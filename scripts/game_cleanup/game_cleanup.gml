@@ -14,4 +14,7 @@ function game_cleanup(){
         buffer_delete(global.tempsave_buffer)
         global.tempsave_buffer = -4
     }
+	
+	audio_group_unload(mus)
+	audio_group_unload(sfx)
 }

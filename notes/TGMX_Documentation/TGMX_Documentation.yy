@@ -4,6 +4,6 @@
   "name": "TGMX_Documentation",
   "parent": {
     "name": "Docs",
-    "path": "folders/Scripts/Third Party Libraries/TweenGMX/Docs.yy",
+    "path": "folders/Libraries/TweenGMX/Docs.yy",
   },
 }

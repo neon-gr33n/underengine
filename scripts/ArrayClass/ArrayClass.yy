@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "ArrayClass",
-    "path": "folders/Scripts/Third Party Libraries/ArrayClass.yy",
+    "path": "folders/Libraries/ArrayClass.yy",
   },
 }

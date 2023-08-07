@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "External Assets",
-    "path": "folders/Scripts/Third Party Libraries/Scribble/External Assets.yy",
+    "path": "folders/Libraries/Scribble/External Assets.yy",
   },
 }

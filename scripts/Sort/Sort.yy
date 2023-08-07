@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "Sort",
-    "path": "folders/Scripts/Third Party Libraries/FAST/Core/Constructors/Sort.yy",
+    "path": "folders/Libraries/FAST/Core/Constructors/Sort.yy",
   },
 }

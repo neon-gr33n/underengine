@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "inputdog",
-    "path": "folders/Scripts/Third Party Libraries/inputdog.yy",
+    "path": "folders/Libraries/inputdog.yy",
   },
 }

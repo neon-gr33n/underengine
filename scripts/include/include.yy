@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "include",
-    "path": "folders/Scripts/Third Party Libraries/FAST/Core/Functions/include.yy",
+    "path": "folders/Libraries/FAST/Core/Functions/include.yy",
   },
 }

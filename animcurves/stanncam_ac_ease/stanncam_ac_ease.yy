@@ -11,6 +11,6 @@
   "function": 2,
   "parent": {
     "name": "Animation_curves - add more if needed",
-    "path": "folders/Scripts/Third Party Libraries/STANNcam/Animation_curves - add more if needed.yy",
+    "path": "folders/Libraries/STANNcam/Animation_curves - add more if needed.yy",
   },
 }

@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "_Custom Controls",
-    "path": "folders/Scripts/Third Party Libraries/inputdog/_Custom Controls.yy",
+    "path": "folders/Libraries/inputdog/_Custom Controls.yy",
   },
 }

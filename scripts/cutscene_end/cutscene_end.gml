@@ -1,26 +1,25 @@
 function cutscene_end(){
 	if instance_exists(obj_ow_player) 
 	{
-		PLAYER.active = true; 
-		PLAYER.image_speed = 1;
-		if instance_exists(FOLLOWER){
-			var count = FOLLOWER.record
+		obj_ow_player.canMove = true; 
+		obj_ow_player.image_speed = 1;
+		if instance_exists(obj_ow_follower){
+			var count = obj_ow_follower.record
 		}
 		var reversecount = 0;
 		
-		if instance_exists(FOLLOWER){
+		if instance_exists(obj_ow_follower){
 			for (i=count;i>-1;i--)
 			{
-				PLAYER.pos_x[i] = FOLLOWER.x + (((PLAYER.x - FOLLOWER.x)/count)*reversecount)
-				PLAYER.pos_y[i] = FOLLOWER.y + (((PLAYER.y - FOLLOWER.y)/count)*reversecount)
-				PLAYER.pos_run[0] = 0;
+				obj_ow_player.pos_x[i] = obj_ow_follower.x + (((PLAYER.x - obj_ow_follower.x)/count)*reversecount)
+				obj_ow_player.pos_y[i] = obj_ow_follower.y + (((PLAYER.y - obj_ow_follower.y)/count)*reversecount)
 				reversecount += 1;
 			}
 		}
 		
 	}
 	
-	if instance_exists(FOLLOWER) {FOLLOWER.image_speed = 1;}
-	instance_destroy(ctrl_cutscene);
-	instance_destroy(ctrl_cutscene_passive);
+	if instance_exists(obj_ow_follower) {obj_ow_follower.image_speed = 1;}
+	instance_destroy(obj_cutscene_handler);
+	instance_destroy(obj_cutscene_handler_passive);
 }

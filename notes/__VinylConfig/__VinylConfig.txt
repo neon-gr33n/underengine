@@ -1,0 +1,116 @@
+// Please see https://jujuadams.github.io/Vinyl for documentation
+
+{
+    stacks: {
+        basic stack: {} 
+		
+		music: {
+			pause: false
+		}
+		
+		sfx: {
+			pause: false
+		}
+		
+		slow fade : {
+			rate: 0.05 
+		}
+		
+		shallow duck: {
+			ducked gain: 0.4 
+			rate: 1.4		
+			pause: false
+		}
+    }
+    
+    knobs: {
+        
+    }
+    
+    labels: {
+        music: {
+			gain: 1.1
+			
+			loop: true
+		}
+		
+		sfx: {
+			gain: 0.8
+		}
+		
+		ambience: {
+			tag: amb
+			
+			loop: true
+		}
+    }
+    
+    assets: { 
+        snd_sans_v: {
+			gain: 0.9 
+		}
+		
+		snd_soft_v: {
+			gain: 0.9
+		}
+		
+		snd_writer_v: {
+			gain: 0.9
+		}
+		
+		snd_menu_select: {
+			gain: 0.7
+		}
+		
+		snd_menu_switch: {
+			gain: 0.7
+		}
+		
+		snd_save: {
+			gain: 0.7
+		}
+		
+		mus_test: {
+			loop: true
+			stack: music 
+		}
+    }
+    
+    patterns: {
+    }
+    
+    effect chains: { 
+		main: [  
+		]
+		
+		radio: [
+			{
+				type: hpf
+				cutoff: 12000
+				q: 10
+			}
+			{
+				type: bitcrusher
+			}
+			{
+				type: hpf
+				cutoff: 400
+				q: 65
+			}
+		]
+		
+		blank: [
+			{
+				type: delay
+				time: 0
+				mix: 0
+			}
+			{
+				type: reverb
+				size: 0
+				mix: 0
+			}
+		]
+        
+    }
+}

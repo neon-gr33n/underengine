@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "_Replays",
-    "path": "folders/Scripts/Third Party Libraries/inputdog/_Input Manager/_Replays.yy",
+    "path": "folders/Libraries/inputdog/_Input Manager/_Replays.yy",
   },
 }

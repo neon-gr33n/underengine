@@ -10,6 +10,9 @@
 
 #macro UTE_ENABLE_INTERACT_BUBBLE false
 
+#macro __LOAD_MUS_FROM_INCLUDED_FILES false
+
+
 #macro CAM obj_camera
 #macro WRITER obj_text_writer
 

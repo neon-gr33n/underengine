@@ -8,6 +8,11 @@ if hasDialoguePortrait == false {
 } else {
 	dialogueXPosition = 180;	
 }
+if dialoguePosition == "bottom" {
+	dialogueYPosition = 340;	
+} else {
+	dialogueYPosition = 50;	
+}
 
 var scribble_object = scribble(dialogue.dialogueText)
 	.starting_format(dialogue.dialogueFont,c_white)
@@ -18,6 +23,8 @@ if(dialoguePosition=="top"){
 } else if(dialoguePosition=="bottom"){
 		scribble_object.draw(dialogueXPosition,dialogueYPosition,typist);
 }
+
+typist.sound([dialogue.dialogueVoice],true,1,1,);
 
 if canSkip == true {
 	if(inputdog_pressed("select")){

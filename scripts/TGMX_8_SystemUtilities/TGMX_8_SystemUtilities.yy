@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "User",
-    "path": "folders/Scripts/Third Party Libraries/TweenGMX/User.yy",
+    "path": "folders/Libraries/TweenGMX/User.yy",
   },
 }

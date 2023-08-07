@@ -20,6 +20,8 @@ switch state {
 			instance_create_depth(0, 0, 0, obj_text_writer);
 			with (obj_text_writer) {
 				displayText = obj_text_writer.dialogue.dialogueText;
+				obj_text_writer.dialogue.dialogueVoice = voiceSound;
+				obj_text_writer.dialogue.dialogueSpeed = displaySpeed;
 				//play = obj_text_writer.dialogueVoice;
 			}
 		} else {

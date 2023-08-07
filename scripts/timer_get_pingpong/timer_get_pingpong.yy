@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "fuwafuwa",
-    "path": "folders/Scripts/Third Party Libraries/fuwafuwa.yy",
+    "path": "folders/Libraries/fuwafuwa.yy",
   },
 }

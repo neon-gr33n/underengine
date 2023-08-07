@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "type",
-    "path": "folders/Scripts/Third Party Libraries/FAST/Core/Functions/type.yy",
+    "path": "folders/Libraries/FAST/Core/Functions/type.yy",
   },
 }

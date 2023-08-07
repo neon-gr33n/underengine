@@ -5,10 +5,11 @@ prevState = state;					// The previous state
 subState = 0;						// The sub state
 
 displayText = ""
+displaySpeed = 0.55;
 displayFace = undefined;
 displayFaceIndex = 0;
 displayFaceSpeed = 0;
-//playVoice	= WRITER.dialogue.dialogueVoice;
+voiceSound = undefined;
 displayedDialogue = false;
 //displayFont = WRITER.dialogue.dialogueFont;
 displayOnTop = undefined;

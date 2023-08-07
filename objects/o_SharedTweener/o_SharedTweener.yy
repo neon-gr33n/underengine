@@ -15,7 +15,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Admin",
-    "path": "folders/Scripts/Third Party Libraries/TweenGMX/Admin.yy",
+    "path": "folders/Libraries/TweenGMX/Admin.yy",
   },
   "parentObjectId": null,
   "persistent": true,

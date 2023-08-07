@@ -7,8 +7,12 @@ sprite_index=noone;
 
 garbageTimer=0;
 
+audio_group_load(mus)
+audio_group_load(sfx)
+
 // Execute any necessary functions - initialize data
 game_init();
+
 
 global.player_inventory = ds_list_create();
 ds_list_add(global.player_inventory, new Test());

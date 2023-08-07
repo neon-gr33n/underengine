@@ -15,9 +15,9 @@
     {"name":"inst_3E64D19E","path":"rooms/rm_overworld_testing/rm_overworld_testing.yy",},
     {"name":"inst_AE0487A","path":"rooms/rm_overworld_testing/rm_overworld_testing.yy",},
     {"name":"inst_48FBC1E5","path":"rooms/rm_overworld_testing/rm_overworld_testing.yy",},
-    {"name":"inst_3C4B65A8","path":"rooms/rm_overworld_testing/rm_overworld_testing.yy",},
     {"name":"inst_3CD2DF8B","path":"rooms/rm_overworld_testing/rm_overworld_testing.yy",},
     {"name":"inst_492B5EAF","path":"rooms/rm_overworld_testing/rm_overworld_testing.yy",},
+    {"name":"inst_3C4B65A8","path":"rooms/rm_overworld_testing/rm_overworld_testing.yy",},
   ],
   "isDnd": false,
   "layers": [

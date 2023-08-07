@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "Cubic",
-    "path": "folders/Scripts/Third Party Libraries/FAST/Numbers/Functions/ease/Cubic.yy",
+    "path": "folders/Libraries/FAST/Numbers/Functions/ease/Cubic.yy",
   },
 }

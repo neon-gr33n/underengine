@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "Sine",
-    "path": "folders/Scripts/Third Party Libraries/FAST/Numbers/Functions/ease/Sine.yy",
+    "path": "folders/Libraries/FAST/Numbers/Functions/ease/Sine.yy",
   },
 }

@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "STANNcam",
-    "path": "folders/Scripts/Third Party Libraries/STANNcam.yy",
+    "path": "folders/Libraries/STANNcam.yy",
   },
 }

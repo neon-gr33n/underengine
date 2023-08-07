@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "Colours",
-    "path": "folders/Scripts/Third Party Libraries/Scribble/Colours.yy",
+    "path": "folders/Libraries/Scribble/Colours.yy",
   },
 }

@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "Constructors",
-    "path": "folders/Scripts/Third Party Libraries/FAST/Core/Constructors/Publisher/Constructors.yy",
+    "path": "folders/Libraries/FAST/Core/Constructors/Publisher/Constructors.yy",
   },
 }

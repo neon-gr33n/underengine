@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "Linear",
-    "path": "folders/Scripts/Third Party Libraries/FAST/Numbers/Functions/ease/Linear.yy",
+    "path": "folders/Libraries/FAST/Numbers/Functions/ease/Linear.yy",
   },
 }
