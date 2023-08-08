@@ -48,8 +48,8 @@
   },
   "origin": 4,
   "parent": {
-    "name": "common",
-    "path": "folders/Sprites/User Interface/common.yy",
+    "name": "textbox",
+    "path": "folders/Sprites/User Interface/common/textbox.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

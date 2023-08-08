@@ -4,12 +4,13 @@
   "name": "obj_ow_interacttrigger",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
     "name": "cutscene",
-    "path": "folders/Objects/COMMON/Overworld/cutscene.yy",
+    "path": "folders/Objects/Common/Overworld/cutscene.yy",
   },
   "parentObjectId": {
     "name": "obj_solid",

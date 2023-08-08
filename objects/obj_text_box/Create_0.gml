@@ -13,5 +13,7 @@ voiceSound = undefined;
 displayedDialogue = false;
 //displayFont = WRITER.dialogue.dialogueFont;
 displayOnTop = undefined;
+textWritten = false;
 displayAlignWriterY = 0;
+
 //funcRunCode = WRITER.dialogue.runcode;

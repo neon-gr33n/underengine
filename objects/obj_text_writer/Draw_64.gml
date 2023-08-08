@@ -8,26 +8,33 @@ if hasDialoguePortrait == false {
 } else {
 	dialogueXPosition = 180;	
 }
-if dialoguePosition == "bottom" {
-	dialogueYPosition = 340;	
-} else {
-	dialogueYPosition = 50;	
+if __DRAW_CLASSIC_UNDERTALE_BOX == true 
+{
+	if dialoguePosition == "bottom"  {
+		dialogueYPosition = 340;	
+	} else {
+		dialogueYPosition = 50;	
+	}
+}
+
+if __DRAW_9SLICE_BOX_WITH_OPACITY == true 
+{
+		if dialoguePosition == "bottom"  {
+		dialogueYPosition = 350;	
+	} else {
+		dialogueYPosition = 50;	
+	}
 }
 
 var scribble_object = scribble(dialogue.dialogueText)
 	.starting_format(dialogue.dialogueFont,c_white)
 	.wrap(640 - dialogueXPosition + dialogueYPosition);
 	
-if(dialoguePosition=="top"){
-	draw_text_scribble(dialogueXPosition-dialogueXOffset, dialogueYPosition, dialogue.dialogueText)
-} else if(dialoguePosition=="bottom"){
-		scribble_object.draw(dialogueXPosition,dialogueYPosition,typist);
-}
+scribble_object.draw(dialogueXPosition,dialogueYPosition,typist);
 
 typist.sound([dialogue.dialogueVoice],true,1,1,);
 
-if canSkip == true {
-	if(inputdog_pressed("select")){
+if(inputdog_pressed("cancel")){
 		self.typist.skip();
-	}
+		__paused = false;
 }

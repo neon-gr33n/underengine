@@ -26,6 +26,7 @@ function dialogue_setup(_font = fnt_main_small, _portrait = undefined, _voice, _
 		}
 		runcode();
 	} else if _showBox == true {
+		if(!instance_exists(obj_text_box))
 		instance_create_depth(0,0,-999,obj_text_box)
 		if(instance_exists(obj_text_box)) with (obj_text_box) {
 			displayFace = _portrait;

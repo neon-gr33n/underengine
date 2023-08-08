@@ -11,8 +11,8 @@ function cutscene_end(){
 		if instance_exists(obj_ow_follower){
 			for (i=count;i>-1;i--)
 			{
-				obj_ow_player.pos_x[i] = obj_ow_follower.x + (((PLAYER.x - obj_ow_follower.x)/count)*reversecount)
-				obj_ow_player.pos_y[i] = obj_ow_follower.y + (((PLAYER.y - obj_ow_follower.y)/count)*reversecount)
+				obj_ow_player.pos_x[i] = obj_ow_follower.x + (((obj_ow_player.x - obj_ow_follower.x)/count)*reversecount)
+				obj_ow_player.pos_y[i] = obj_ow_follower.y + (((obj_ow_player.y - obj_ow_follower.y)/count)*reversecount)
 				reversecount += 1;
 			}
 		}

@@ -1,8 +1,19 @@
 display_set_gui_size(global._game_res_width/2, global._game_res_height/2)
+
+if(inputdog_pressed("select")) 
+{
+	obj_text_writer.dialogue.dialogueText = "";
+	instance_destroy();
+}
 switch state {
 	case -1:
 		if(!instance_exists(obj_text_writer) && instance_exists(obj_ow_player)){
-			obj_ow_player.canMove = false;
+			obj_ow_player.canMove = true;
+			if global._interacting != noone {
+				with global._interacting {
+					canInteract = false;
+				}
+			}
 		}
 	break;
 	case 0:
@@ -11,9 +22,9 @@ switch state {
 		// Reset previous state
 		prevState = 0
 		
-		if (instance_exists(obj_ow_player)){
-			obj_ow_player.canMove = false;	
-		}
+	//	if (instance_exists(obj_ow_player)){
+	//		obj_ow_player.canMove = false;	
+//		}
 		
 		if(!instance_exists(obj_text_writer)){
 			// Create the text writer
@@ -25,13 +36,14 @@ switch state {
 				//play = obj_text_writer.dialogueVoice;
 			}
 		} else {
-				if (obj_text_writer.dialogueFinished) {
+				if (obj_text_writer.textFinished) {
 					// Reset the face index
 					displayFace = undefined;	
 					displayFaceIndex = 0;
+					textWritten = true;
 				
 					with(obj_text_writer){
-						dialogueFinished = false;
+						textFinished = false;
 						dialoguePortrait  = undefined;
 					}
 				
@@ -42,7 +54,7 @@ switch state {
 					displayText = WRITER.dialogue.dialogueText;
 					displayFace = WRITER.dialogue.dialoguePortrait;
 					with(obj_text_writer){
-						dialogueFinished = true;
+						textFinished = true;
 						dialoguePortrait  = undefined;
 					}
 				}

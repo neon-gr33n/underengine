@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "snd_menu_switch",
   "audioGroupId": {
-    "name": "audiogroup_default",
-    "path": "audiogroups/audiogroup_default",
+    "name": "sfx",
+    "path": "audiogroups/sfx",
   },
   "bitDepth": 0,
   "bitRate": 48,

@@ -1,5 +1,3 @@
-display_set_gui_size(global._game_res_width/2, global._game_res_height/2)
-
 var MENU = _menu_active;
 
 if currentState == "hub" {

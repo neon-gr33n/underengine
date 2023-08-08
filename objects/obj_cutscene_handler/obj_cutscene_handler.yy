@@ -11,8 +11,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "UTILITY",
-    "path": "folders/Objects/UTILITY.yy",
+    "name": "handlers",
+    "path": "folders/Objects/Technical/handlers.yy",
   },
   "parentObjectId": null,
   "persistent": false,

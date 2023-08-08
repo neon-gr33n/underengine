@@ -10,7 +10,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "attacks",
-    "path": "folders/Objects/COMMON/User Interface/common/BATTLE/target/attacks.yy",
+    "path": "folders/Objects/Common/User Interface/common/BATTLE/target/attacks.yy",
   },
   "parentObjectId": null,
   "persistent": false,

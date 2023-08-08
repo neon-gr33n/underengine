@@ -11,7 +11,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "soul",
-    "path": "folders/Objects/COMMON/User Interface/common/BATTLE/soul.yy",
+    "path": "folders/Objects/Common/User Interface/common/BATTLE/soul.yy",
   },
   "parentObjectId": null,
   "persistent": false,

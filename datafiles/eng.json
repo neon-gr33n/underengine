@@ -12,10 +12,8 @@
         "ui.weapon":               "WEAPON",
         "ui.armor":                "ARMOR",
 
-        "npc.sans.0":              "* oh, heya, kid.#didn't expect to see you here.",
-        "npc.sans.1":              "* i'm kinda just doing the usual",
-        "npc.sans.2":              "* trying to make ends meet while#being as lazy as possible"
-
-
+        "npc.sans.0":              "* oh, heya, kid.#[delay,25]*i didn't expect to#see [delay,25]you here.",
+        "npc.sans.1":              "* i'm kinda just doing#the usual...",
+        "npc.sans.2":              "* trying to make ends#meet while being#as lazy as possible"
     }
 }

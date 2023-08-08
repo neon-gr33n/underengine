@@ -9,7 +9,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Enemies",
-    "path": "folders/Objects/COMMON/battle/Enemies.yy",
+    "path": "folders/Objects/Common/battle/Enemies.yy",
   },
   "parentObjectId": null,
   "persistent": false,

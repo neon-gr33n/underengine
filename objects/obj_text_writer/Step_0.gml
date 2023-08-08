@@ -3,5 +3,3 @@ if(dialogue.dialoguePortrait != undefined){
 } else {
 	hasDialoguePortrait = false;	
 }
-
-show_debug_message(string(dialogue.dialogueSpeed))

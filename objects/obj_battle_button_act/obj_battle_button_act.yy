@@ -9,7 +9,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "buttons",
-    "path": "folders/Objects/COMMON/User Interface/common/BATTLE/buttons.yy",
+    "path": "folders/Objects/Common/User Interface/common/BATTLE/buttons.yy",
   },
   "parentObjectId": {
     "name": "obj_parent_battle_button",

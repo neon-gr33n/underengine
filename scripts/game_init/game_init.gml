@@ -75,7 +75,7 @@ function game_init()
 	global.exp								=0
 	global.money							=0
 	
-	global.dialogueInteractedTo =-1
+	global.dialogueInteractedTo = undefined
 	
 	flags_init(true);
 	GAME.garbageTimer=28

@@ -11,7 +11,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "BATTLE",
-    "path": "folders/Objects/COMMON/User Interface/common/BATTLE.yy",
+    "path": "folders/Objects/Common/User Interface/common/BATTLE.yy",
   },
   "parentObjectId": null,
   "persistent": false,
