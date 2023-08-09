@@ -22,7 +22,16 @@ for(i = 50; i >=0; i--)
 #region DEFINE PLAYER "GENERIC" MOVEMENT STATE
 statePlayerMoveGeneric = function()
 {
+		currentState = "playerMoveGen"
 		// Actual movement code is handled in step, for now let's just activate the state
+}
+#endregion
+
+#region DEFINE "CUTSCENE STASIS" STATE
+stateCutsceneStasis = function()
+{
+	// this literally just stops movement from happening in step, very simple
+	currentState = "inCutscene"
 }
 #endregion
 

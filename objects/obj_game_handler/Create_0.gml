@@ -6,6 +6,7 @@ _game_res_precision = 1.0;
 sprite_index=noone;
 
 garbageTimer=0;
+performanceInfo = false;
 
 audio_group_load(mus)
 audio_group_load(sfx)

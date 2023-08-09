@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Cutscene System",
-    "path": "folders/Scripts/Cutscene System.yy",
+    "name": "scale modification",
+    "path": "folders/Scripts/Cutscene System/instance funcs/scale modification.yy",
   },
 }

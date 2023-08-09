@@ -3,6 +3,7 @@ function scr_debugger()
 	if keyboard_check_pressed(vk_f2){game_restart()}
 	if keyboard_check_pressed(vk_f3){room_restart()}
 	if keyboard_check_pressed(vk_f5){screen_save("underengine-capture")}
+	if keyboard_check_pressed(vk_f11){with(GAME){performanceInfo= !performanceInfo; }}
 	if keyboard_check(vk_shift)
 	{
 	if instance_exists(obj_ow_player)

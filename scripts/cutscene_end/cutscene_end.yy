@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Cutscene System",
-    "path": "folders/Scripts/Cutscene System.yy",
+    "name": "internal (DO NOT TOUCH)",
+    "path": "folders/Scripts/Cutscene System/internal (DO NOT TOUCH).yy",
   },
 }

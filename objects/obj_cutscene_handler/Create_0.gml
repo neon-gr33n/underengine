@@ -16,3 +16,5 @@ zooming = false;
 zoom_time = 0;
 zoom_spd_w = 0;
 zoom_spd_h = 0;
+
+player_freeze()

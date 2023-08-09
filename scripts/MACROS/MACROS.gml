@@ -21,6 +21,10 @@
 #macro CAM obj_camera
 #macro WRITER obj_text_writer
 
+#macro PLAYER1 obj_ow_player
+
+#macro FOLLOWER obj_ow_follower
+
 #macro FIGHT obj_battle_button_fight
 #macro ACT obj_battle_button_act
 #macro ITEM obj_battle_button_item

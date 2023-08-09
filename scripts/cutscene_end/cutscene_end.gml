@@ -1,25 +1,26 @@
 function cutscene_end(){
-	if instance_exists(obj_ow_player) 
+	global._interact = noone;
+	if instance_exists(PLAYER1) 
 	{
-		obj_ow_player.canMove = true; 
-		obj_ow_player.image_speed = 1;
-		if instance_exists(obj_ow_follower){
-			var count = obj_ow_follower.record
+		PLAYER1.state = PLAYER1.statePlayerMoveGeneric() 
+		PLAYER1.image_speed = 1;
+		if instance_exists(FOLLOWER){
+			var count = FOLLOWER.record
 		}
 		var reversecount = 0;
 		
-		if instance_exists(obj_ow_follower){
+		if instance_exists(FOLLOWER){
 			for (i=count;i>-1;i--)
 			{
-				obj_ow_player.pos_x[i] = obj_ow_follower.x + (((obj_ow_player.x - obj_ow_follower.x)/count)*reversecount)
-				obj_ow_player.pos_y[i] = obj_ow_follower.y + (((obj_ow_player.y - obj_ow_follower.y)/count)*reversecount)
+				PLAYER1.pos_x[i] = FOLLOWER.x + (((FOLLOWER.x - FOLLOWER.x)/count)*reversecount)
+				PLAYER1.pos_y[i] = FOLLOWER.y + (((FOLLOWER.y - FOLLOWER.y)/count)*reversecount)
 				reversecount += 1;
 			}
 		}
 		
 	}
 	
-	if instance_exists(obj_ow_follower) {obj_ow_follower.image_speed = 1;}
+	if instance_exists(FOLLOWER) {FOLLOWER.image_speed = 1;}
 	instance_destroy(obj_cutscene_handler);
 	instance_destroy(obj_cutscene_handler_passive);
 }

@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Cutscene System",
-    "path": "folders/Scripts/Cutscene System.yy",
+    "name": "flags",
+    "path": "folders/Scripts/Cutscene System/internal (DO NOT TOUCH)/flags.yy",
   },
 }

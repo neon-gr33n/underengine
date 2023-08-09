@@ -67,3 +67,5 @@ stateMenuCellInCall = function() {
 #endregion
 
 state = stateMenuHub();
+
+player_freeze()

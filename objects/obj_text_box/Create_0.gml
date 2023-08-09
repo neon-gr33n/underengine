@@ -6,7 +6,7 @@ subState = 0;						// The sub state
 
 displayText = ""
 displaySpeed = 0.55;
-displayFace = undefined;
+displayFace = spr_blank;
 displayFaceIndex = 0;
 displayFaceSpeed = 0;
 voiceSound = undefined;
@@ -17,3 +17,5 @@ textWritten = false;
 displayAlignWriterY = 0;
 
 //funcRunCode = WRITER.dialogue.runcode;
+
+player_freeze()

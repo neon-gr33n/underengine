@@ -53,6 +53,7 @@ function game_init()
 	global.vsync								=true;
 		
 	texture_flush("FONTS")
+	texture_flush("PORTRAITS")
 	
 	#region SAVE DATA GLOBAL VARIABLES (DO NOT REMOVE)
 		// * heya, warning number 2
@@ -84,7 +85,7 @@ function game_init()
 	instance_create_depth(0,0,0,InputForPlayer1)
 	
 	party_data_init();
-	party_add_member(0,obj_ow_player);
+	party_add_member(0,PLAYER1);
 	
 	room_goto_next()
 }

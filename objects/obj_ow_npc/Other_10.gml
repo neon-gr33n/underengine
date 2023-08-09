@@ -1,3 +1,3 @@
 ///@desc Interaction
-obj_ow_player.canMove = false;
 global._interacting = id;
+global._interacted = global._interacting; // cache the interaction

@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Cutscene System",
-    "path": "folders/Scripts/Cutscene System.yy",
+    "name": "dialogue funcs",
+    "path": "folders/Scripts/Cutscene System/dialogue funcs.yy",
   },
 }

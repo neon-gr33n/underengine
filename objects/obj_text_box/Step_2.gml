@@ -7,24 +7,13 @@ if(inputdog_pressed("select"))
 }
 switch state {
 	case -1:
-		if(!instance_exists(obj_text_writer) && instance_exists(obj_ow_player)){
-			obj_ow_player.canMove = true;
-			if global._interacting != noone {
-				with global._interacting {
-					canInteract = false;
-				}
-			}
-		}
+	
 	break;
 	case 0:
 		stateExecutedOnce = false;
 		
 		// Reset previous state
 		prevState = 0
-		
-	//	if (instance_exists(obj_ow_player)){
-	//		obj_ow_player.canMove = false;	
-//		}
 		
 		if(!instance_exists(obj_text_writer)){
 			// Create the text writer

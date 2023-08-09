@@ -30,7 +30,7 @@ drawTextBox = function(){
 	}
 	
 	// Draw the dialogue face if there's one used
-	if (displayFace != undefined)
+	if (displayFace != spr_blank)
 		with(obj_text_writer){hasDialoguePortrait = true } 
 		if __DRAW_CLASSIC_UNDERTALE_BOX == true {
 			draw_sprite_ext(displayFace, displayFaceIndex, 100, 75 + displayAlignWriterY, 2, 2, 0, c_white, 1);

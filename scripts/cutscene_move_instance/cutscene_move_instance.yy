@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Cutscene System",
-    "path": "folders/Scripts/Cutscene System.yy",
+    "name": "general",
+    "path": "folders/Scripts/Cutscene System/instance funcs/movement/general.yy",
   },
 }

@@ -65,8 +65,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "PORTRAITS",
+    "path": "texturegroups/PORTRAITS",
   },
   "type": 0,
   "VTile": false,
