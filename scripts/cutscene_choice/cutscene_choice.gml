@@ -9,4 +9,5 @@ function cutscene_choice(_choice0 = "Yes", _choice1 = "No", _preselected = 0){
 		displayChoices = [_choice0, _choice1]
 		selection = _preselected
 	}
+	cutscene_end_action()
 }

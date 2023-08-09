@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "cutscene_move_instances_2",
+  "name": "cutscene_move_instances_multi",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {

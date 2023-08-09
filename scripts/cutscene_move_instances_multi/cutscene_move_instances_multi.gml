@@ -1,5 +1,5 @@
 
-function cutscene_move_instances_2(){
+function cutscene_move_instances_multi(){
 ///@description cutscene_move_instance
 ///@arg obj
 ///@arg x

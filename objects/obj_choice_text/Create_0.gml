@@ -12,3 +12,4 @@ displayChoiceOffsetY = 332 + 35
 choiceSelection = 0;
 
 global.soulChosen = 0;
+global.realSoulChoice = false; // prevent dialogue from activating before choice is actually made 

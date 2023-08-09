@@ -10,6 +10,8 @@ draw_sprite_ext(spr_heart_sm, 0, choiceSelection == 1  ? displayChoiceOffsetX[1]
 displayChoiceOffsetY - 6, 2, 2, 0, c_red,1)
 
 if inputdog_pressed("select") {
+	global.soulChosen = choiceSelection;
+	global.realSoulChoice = true
 	sfx_playc(snd_menu_select,1,0.6)
 	instance_destroy(obj_text_box)
 	instance_destroy()

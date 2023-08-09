@@ -6,8 +6,9 @@ function cutscene_move_instance(){
 ///@arg y
 ///@arg relative?
 ///@arg spd
+///@arg facing
 
-var obj = argument0, relative = argument3, spd = argument4;
+var obj = argument0, relative = argument3, spd = argument4, facing = argument5;
 
 if(x_dest == -1){if(!relative){x_dest = argument1; y_dest = argument2;}
 else {x_dest = obj.x + argument1; y_dest = obj.y + argument2;}}
@@ -19,9 +20,9 @@ with(obj)
 { 
 	if(point_distance(x,y,xx,yy) >= spd)
 	{
-		var dir = point_direction(x,y,xx,yy);
-		var ldirx = lengthdir_x(spd,dir);
-		var ldiry = lengthdir_y(spd,dir);
+		var _dir = point_direction(x,y,xx,yy);
+		var ldirx = lengthdir_x(spd,_dir);
+		var ldiry = lengthdir_y(spd,_dir);
 		inputdirection = point_direction(x,y,xx,yy); 
 		inputmagnitude = 2;
 		x += ldirx;
@@ -34,6 +35,23 @@ with(obj)
 		y = yy;
 		inputmagnitude = 0;
 		with(other) {x_dest = -1; y_dest = -1; cutscene_end_action();}
+	}
+}
+
+if variable_instance_exists(obj,"dir")
+{
+	with(obj) 
+	{
+		dir = facing
+		
+	}
+}
+
+if variable_instance_exists(obj, "npc_moving")
+{
+	with(obj)
+	{
+		npc_moving = true	
 	}
 }
 

@@ -1,5 +1,16 @@
 dir = "down";
 persistant = true;
+
+var choice_branch = function() // has to be defined *before* scene_info to prevent errors from occuring
+{ 
+	if global.soulChosen == 0 {
+		create_cutscene(scene_info_branch_1)
+	} else if global.soulChosen == 1 {
+		create_cutscene(scene_info_branch_0)
+	}
+}
+
+#region BASE SCENE, ENDS WHEN BRANCH OCCURS
 scene_info = [
 	[cutscene_dialogue,"fnt_sans",spr_port_sans_gen,snd_sans_v,loc_gettext("npc.sans.0"),.95,true, "dynamic"],
 	[cutscene_wait_for_dialogue],
@@ -7,8 +18,26 @@ scene_info = [
 	[cutscene_wait_for_dialogue],
 	[cutscene_dialogue,"fnt_sans",spr_port_sans_wink,snd_sans_v,loc_gettext("npc.sans.2"),.95,true,"dynamic"],
 	[cutscene_wait_for_dialogue],
-	[cutscene_dialogue,"fnt_main",spr_port_sans_badtime,snd_sans_v,"d o  y o u  w a n t  t o#h a v e  a  b a d  t i m e ?",.95,true,"dynamic"],
+	[cutscene_dialogue,"fnt_sans",spr_port_sans_gen,snd_sans_v,"* hey, bud..[delay=25]",.95,true,"dynamic"],
 	[cutscene_wait_for_dialogue],
-	[cutscene_choice],
-	[cutscene_end]
+	[cutscene_move_instance,obj_ow_npc_sans, 160, 475, false, 0.8, "left"],
+	[cutscene_set_npc_dir,obj_ow_npc_sans,"down"],
+	[cutscene_set_npc_idle,obj_ow_npc_sans],
+	[cutscene_dialogue,"fnt_sans",spr_port_sans_side_l,snd_sans_v,"* do you wanna#take a break#with me?",.95,true,"dynamic"],
+	[cutscene_wait_for_dialogue],
+	[cutscene_choice],	
+	[cutscene_wait_for_dialogue],
+	[cutscene_branch,choice_branch],
 ]
+#endregion
+
+scene_info_branch_0 = [
+	[cutscene_dialogue,"fnt_sans",spr_port_sans_wink,snd_sans_v,"* follow me!#*i know a good shortcut.",.95,true, "dynamic"],
+	[cutscene_wait_for_dialogue],
+]
+
+scene_info_branch_1 = [ 
+	[cutscene_dialogue,"fnt_sans",spr_port_sans_gen,snd_sans_v,"* or owo?",.95,true, "dynamic"],
+	[cutscene_wait_for_dialogue],
+]
+

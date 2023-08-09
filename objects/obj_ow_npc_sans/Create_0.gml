@@ -1,4 +1,4 @@
-spriteIdle = sprite_index;
+spriteIdle = spr_sans_idle;
 spriteMove = spr_sans_move;
 canInteract = true;
 

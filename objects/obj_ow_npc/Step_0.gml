@@ -1,6 +1,7 @@
 event_inherited();
 
 if npc_moving == true && sprite_index != undefined {
+	image_speed = 1;
 	sprite_index = spriteMove	
 } else { sprite_index = spriteIdle };
 
