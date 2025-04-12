@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "Vec2",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Constructors",
-    "path": "folders/Libraries/FAST/Numbers/Constructors.yy",
+  "$GMScript":"",
+  "%Name":"Vec2",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Vec2",
+  "parent":{
+    "name":"Constructors",
+    "path":"folders/Libraries/FAST/Numbers/Constructors.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

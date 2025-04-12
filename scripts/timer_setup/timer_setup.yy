@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "timer_setup",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "utility",
-    "path": "folders/Scripts/utility.yy",
+  "$GMScript":"",
+  "%Name":"timer_setup",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"timer_setup",
+  "parent":{
+    "name":"utility",
+    "path":"folders/Scripts/utility.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

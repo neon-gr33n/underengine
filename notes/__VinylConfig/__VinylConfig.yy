@@ -1,9 +1,11 @@
 {
-  "resourceType": "GMNotes",
-  "resourceVersion": "1.1",
-  "name": "__VinylConfig",
-  "parent": {
-    "name": "Vinyl",
-    "path": "folders/Libraries/Vinyl.yy",
+  "$GMNotes":"",
+  "%Name":"__VinylConfig",
+  "name":"__VinylConfig",
+  "parent":{
+    "name":"Vinyl",
+    "path":"folders/Libraries/Vinyl.yy",
   },
+  "resourceType":"GMNotes",
+  "resourceVersion":"2.0",
 }

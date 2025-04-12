@@ -55,8 +55,14 @@ function __VinylClassVoiceAsset() : __VinylClassVoiceCommon() constructor
         var _gmEmitter = (__vinylEmitter == undefined)? undefined : __vinylEmitter.__GetEmitter();
         if (_gmEmitter == undefined)
         {
-            __gmInstance = audio_play_sound(__sound, 1, __loopOutput, __VinylCurveAmplitude(__gainOutput), 0, __pitchOutput);
-            if (VINYL_DEBUG_LEVEL >= 1) __VinylTrace(self, " playing ", __gmInstance, ", loop=", __loopOutput? "true" : "false", ", gain=", __gainOutput, ", pitch=", __pitchOutput, ", persistent=", __persistent);
+			if !__LOAD_MUS_FROM_INCLUDED_FILES{
+	            __gmInstance = audio_play_sound(__sound, 1, __loopOutput, __VinylCurveAmplitude(__gainOutput), 0, __pitchOutput);
+	            if (VINYL_DEBUG_LEVEL >= 1) __VinylTrace(self, " playing ", __gmInstance, ", loop=", __loopOutput? "true" : "false", ", gain=", __gainOutput, ", pitch=", __pitchOutput, ", persistent=", __persistent);
+			} else {
+				    __gmInstance = audio_play_sound(mus_load(__sound), 1, __loopOutput, __VinylCurveAmplitude(__gainOutput), 0, __pitchOutput);
+	            if (VINYL_DEBUG_LEVEL >= 1) __VinylTrace(self, " playing ", __gmInstance, ", loop=", __loopOutput? "true" : "false", ", gain=", __gainOutput, ", pitch=", __pitchOutput, ", persistent=", __persistent);
+			}
+			
         }
         else
         {

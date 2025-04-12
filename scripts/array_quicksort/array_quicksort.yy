@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "array_quicksort",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "array",
-    "path": "folders/Libraries/FAST/Core/Functions/array.yy",
+  "$GMScript":"",
+  "%Name":"array_quicksort",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"array_quicksort",
+  "parent":{
+    "name":"array",
+    "path":"folders/Libraries/FAST/Core/Functions/array.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

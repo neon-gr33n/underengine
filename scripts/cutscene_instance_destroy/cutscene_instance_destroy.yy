@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "cutscene_instance_destroy",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "instance funcs",
-    "path": "folders/Scripts/Cutscene System/instance funcs.yy",
+  "$GMScript":"",
+  "%Name":"cutscene_instance_destroy",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"cutscene_instance_destroy",
+  "parent":{
+    "name":"instance funcs",
+    "path":"folders/Scripts/Cutscene System/instance funcs.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

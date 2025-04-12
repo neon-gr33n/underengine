@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "ease_out_back",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Back",
-    "path": "folders/Libraries/FAST/Numbers/Functions/ease/Back.yy",
+  "$GMScript":"",
+  "%Name":"ease_out_back",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"ease_out_back",
+  "parent":{
+    "name":"Back",
+    "path":"folders/Libraries/FAST/Numbers/Functions/ease/Back.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

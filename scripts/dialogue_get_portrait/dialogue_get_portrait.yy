@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"dialogue_get_portrait",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"dialogue_get_portrait",
+  "parent":{
+    "name":"dialogue",
+    "path":"folders/Scripts/dialogue.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

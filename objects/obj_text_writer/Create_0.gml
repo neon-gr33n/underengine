@@ -10,7 +10,7 @@ dialogue = {
 
 dialoguePosition = "bottom";
 dialogueXOffset = 0;
-dialogueXPosition = 0;
+dialogueXPosition = 190;
 dialogueYPosition  = 260;
 hasDialoguePortrait = false;
 canSkip = false;

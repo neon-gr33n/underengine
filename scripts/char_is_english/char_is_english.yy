@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "char_is_english",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "char",
-    "path": "folders/Libraries/FAST/Core/Functions/char.yy",
+  "$GMScript":"",
+  "%Name":"char_is_english",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"char_is_english",
+  "parent":{
+    "name":"char",
+    "path":"folders/Libraries/FAST/Core/Functions/char.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

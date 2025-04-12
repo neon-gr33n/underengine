@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "file_search",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "file",
-    "path": "folders/Libraries/FAST/Core/Functions/file.yy",
+  "$GMScript":"",
+  "%Name":"file_search",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"file_search",
+  "parent":{
+    "name":"file",
+    "path":"folders/Libraries/FAST/Core/Functions/file.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

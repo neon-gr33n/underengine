@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "__Error__",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Abstract",
-    "path": "folders/Libraries/FAST/Core/Abstract.yy",
+  "$GMScript":"",
+  "%Name":"__Error__",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"__Error__",
+  "parent":{
+    "name":"Abstract",
+    "path":"folders/Libraries/FAST/Core/Abstract.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

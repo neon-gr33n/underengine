@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "joystick_process_events",
-  "isCompatibility": true,
-  "isDnD": false,
-  "parent": {
-    "name": "joystick",
-    "path": "folders/Scripts/compatibility/joystick.yy",
+  "$GMScript":"",
+  "%Name":"joystick_process_events",
+  "isCompatibility":true,
+  "isDnD":false,
+  "name":"joystick_process_events",
+  "parent":{
+    "name":"joystick",
+    "path":"folders/Scripts/utility/compatibility/joystick.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

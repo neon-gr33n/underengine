@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"dialogue_character_init",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"dialogue_character_init",
+  "parent":{
+    "name":"dialogue",
+    "path":"folders/Scripts/dialogue.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

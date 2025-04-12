@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "timer_get_halted",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "fuwafuwa",
-    "path": "folders/Libraries/fuwafuwa.yy",
+  "$GMScript":"",
+  "%Name":"timer_get_halted",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"timer_get_halted",
+  "parent":{
+    "name":"fuwafuwa",
+    "path":"folders/Libraries/fuwafuwa.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

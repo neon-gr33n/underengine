@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"execute_tween",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"execute_tween",
+  "parent":{
+    "name":"utility",
+    "path":"folders/Scripts/utility.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "Sort",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Sort",
-    "path": "folders/Libraries/FAST/Core/Constructors/Sort.yy",
+  "$GMScript":"",
+  "%Name":"Sort",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Sort",
+  "parent":{
+    "name":"Sort",
+    "path":"folders/Libraries/FAST/Core/Constructors/Sort.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

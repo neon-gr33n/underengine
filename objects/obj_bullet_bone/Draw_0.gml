@@ -1,0 +1,1 @@
+draw_sprite_ext(sprite_index,0,x,y,_bone_xscale,_bone_yscale,_bone_angle,_bone_mode,1)

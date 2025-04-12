@@ -1,10 +1,10 @@
 /// @desc Update State
 if currentState == "playerMoveGen" {
-	keyLeft = inputdog_down("left")
-	keyRight = inputdog_down("right")
-	keyUp = inputdog_down("up")
-	keyDown = inputdog_down("down")
-	keyInteract =  inputdog_down("select")
+	keyLeft = check("left")
+	keyRight = check("right")
+	keyUp = check("up")
+	keyDown = check("down")
+	keyInteract =  pressed("action")
 		
 	xAxis = keyRight - keyLeft;
 	yAxis = keyDown - keyUp;
@@ -33,7 +33,7 @@ if currentState == "playerMoveGen" {
 		}
 
 		
-	if(inputdog_pressed("menu")){
+	if(pressed("menu")){
 		instance_create_depth(0,0,-9999,obj_cmenu);
 	}
 		

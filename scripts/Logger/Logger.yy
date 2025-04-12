@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "Logger",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Constructors",
-    "path": "folders/Libraries/FAST/Logging/Constructors.yy",
+  "$GMScript":"",
+  "%Name":"Logger",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Logger",
+  "parent":{
+    "name":"Constructors",
+    "path":"folders/Libraries/FAST/Logging/Constructors.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

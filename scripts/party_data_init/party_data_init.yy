@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "party_data_init",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Scripts",
-    "path": "folders/Scripts.yy",
+  "$GMScript":"",
+  "%Name":"party_data_init",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"party_data_init",
+  "parent":{
+    "name":"party",
+    "path":"folders/Scripts/party.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

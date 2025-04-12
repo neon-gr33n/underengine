@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "approach_smooth",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Math",
-    "path": "folders/Scripts/utility/Math.yy",
+  "$GMScript":"",
+  "%Name":"approach_smooth",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"approach_smooth",
+  "parent":{
+    "name":"Math",
+    "path":"folders/Scripts/utility/Math.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

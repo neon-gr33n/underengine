@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"party_remove_member",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"party_remove_member",
+  "parent":{
+    "name":"party",
+    "path":"folders/Scripts/party.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

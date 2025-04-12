@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "XorRandomizer",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Constructors",
-    "path": "folders/Libraries/FAST/Numbers/Constructors.yy",
+  "$GMScript":"",
+  "%Name":"XorRandomizer",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"XorRandomizer",
+  "parent":{
+    "name":"Constructors",
+    "path":"folders/Libraries/FAST/Numbers/Constructors.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

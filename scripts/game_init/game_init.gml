@@ -14,6 +14,7 @@ function game_init()
 	global.musfpath						="./data/mus/";
 	global.muspriority					=20;
 	global.currentmus					=-1;
+	global.wav_song						=-1;
 	#endregion
 	#region INITIALIZE LOCALIZAITON SYSTEM
 	global.font=-7
@@ -77,13 +78,17 @@ function game_init()
 	global.money							=0
 	
 	global.dialogueInteractedTo = undefined
+	global.dial_spr						 = spr_textborder
+	global.border_clr					 = c_white
+	global.border_x1					 = 0
+	global.border_y1					= 0
+	global.border_x2					= 0
+	global.border_y2					= 0
 	
 	flags_init(true);
 	GAME.garbageTimer=28
 	
-	
-	instance_create_depth(0,0,0,InputForPlayer1)
-	
+	dialogue_character_init()
 	party_data_init();
 	party_add_member(0,PLAYER1);
 	

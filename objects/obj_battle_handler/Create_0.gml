@@ -4,7 +4,6 @@ battleButtonTweenable = false;  // Automatically updated via global.__ute_tween_
 			
 enemyChoice = 0;
 
-instance_create_depth(-999,999,-9999,obj_battle_soul);
 checkTweenable = function()
 {
 	if(UTE_TWEEN_BATTLE_BUTTON == true){

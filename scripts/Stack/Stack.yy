@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "Stack",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Data Types",
-    "path": "folders/Libraries/FAST/Core/Constructors/Data Types.yy",
+  "$GMScript":"",
+  "%Name":"Stack",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Stack",
+  "parent":{
+    "name":"Data Types",
+    "path":"folders/Libraries/FAST/Core/Constructors/Data Types.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

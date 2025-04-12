@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "__Stream__",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Abstract",
-    "path": "folders/Libraries/FAST/Core/Abstract.yy",
+  "$GMScript":"",
+  "%Name":"__Stream__",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"__Stream__",
+  "parent":{
+    "name":"Abstract",
+    "path":"folders/Libraries/FAST/Core/Abstract.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

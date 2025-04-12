@@ -12,18 +12,18 @@ var choice_branch = function() // has to be defined *before* scene_info to preve
 
 #region BASE SCENE, ENDS WHEN BRANCH OCCURS
 scene_info = [
-	[cutscene_dialogue,"fnt_sans",spr_port_sans_gen,snd_sans_v,loc_gettext("npc.sans.0"),.95,true, "dynamic"],
+	[cutscene_dialogue,"sans","generic",loc_gettext("npc.sans.0"),.95,true, "dynamic"],
 	[cutscene_wait_for_dialogue],
-	[cutscene_dialogue,"fnt_sans",spr_port_sans_side_l,snd_sans_v,loc_gettext("npc.sans.1"),.95,true,"dynamic"],
+	[cutscene_dialogue,"sans","sidel",loc_gettext("npc.sans.1"),.95,true,"dynamic"],
 	[cutscene_wait_for_dialogue],
-	[cutscene_dialogue,"fnt_sans",spr_port_sans_wink,snd_sans_v,loc_gettext("npc.sans.2"),.95,true,"dynamic"],
+	[cutscene_dialogue,"sans","wink",loc_gettext("npc.sans.2"),.95,true,"dynamic"],
 	[cutscene_wait_for_dialogue],
-	[cutscene_dialogue,"fnt_sans",spr_port_sans_gen,snd_sans_v,"* hey, bud..[delay=25]",.95,true,"dynamic"],
+	[cutscene_dialogue,"sans","generic","* hey, bud..[delay=25]",.95,true,"dynamic"],
 	[cutscene_wait_for_dialogue],
 	[cutscene_move_instance,obj_ow_npc_sans, 160, 475, false, 0.8, "left"],
 	[cutscene_set_npc_dir,obj_ow_npc_sans,"down"],
 	[cutscene_set_npc_idle,obj_ow_npc_sans],
-	[cutscene_dialogue,"fnt_sans",spr_port_sans_side_l,snd_sans_v,"* do you wanna#take a break#with me?",.95,true,"dynamic"],
+	[cutscene_dialogue,"sans","generic","* do you wanna#take a break#with me?",.95,true,"dynamic"],
 	[cutscene_wait_for_dialogue],
 	[cutscene_choice],	
 	[cutscene_wait_for_dialogue],
@@ -32,12 +32,12 @@ scene_info = [
 #endregion
 
 scene_info_branch_0 = [
-	[cutscene_dialogue,"fnt_sans",spr_port_sans_wink,snd_sans_v,"* follow me!#*i know a good shortcut.",.95,true, "dynamic"],
+	[cutscene_dialogue,"sans","wink","* follow me!#*i know a good shortcut.",.95,true, "dynamic"],
 	[cutscene_wait_for_dialogue],
 ]
 
 scene_info_branch_1 = [ 
-	[cutscene_dialogue,"fnt_sans",spr_port_sans_gen,snd_sans_v,"* or owo?",.95,true, "dynamic"],
+	[cutscene_dialogue,"sans","danger","* burn in hell.",.95,true, "dynamic"],
 	[cutscene_wait_for_dialogue],
 ]
 

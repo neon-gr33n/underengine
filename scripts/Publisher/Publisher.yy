@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "Publisher",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Constructors",
-    "path": "folders/Libraries/FAST/Core/Constructors/Publisher/Constructors.yy",
+  "$GMScript":"",
+  "%Name":"Publisher",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Publisher",
+  "parent":{
+    "name":"Constructors",
+    "path":"folders/Libraries/FAST/Core/Constructors/Publisher/Constructors.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

@@ -101,7 +101,11 @@ function stanncam(x_ = 0,y_ = 0,width_ = global.game_w,height_ = global.game_h, 
 	__offset_t = 0;
 	
 	//zoom
-	zoom_amount = 1;
+	if room != rm_battle {
+		zoom_amount = 1;
+	} else {
+		zoom_amount  = 2;
+	}
 	
 	__zooming = false;
 	zoom_x = 0;

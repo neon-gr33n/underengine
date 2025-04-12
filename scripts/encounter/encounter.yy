@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "encounter",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "battle",
-    "path": "folders/Scripts/battle.yy",
+  "$GMScript":"",
+  "%Name":"encounter",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"encounter",
+  "parent":{
+    "name":"Battle System",
+    "path":"folders/Scripts/Battle System.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

@@ -2,15 +2,17 @@
 
 #macro UTE_DEBUG_MODE true 
 
+#macro GRID_CELL_SIZE 32
+
 #macro UTE_RANDOMIZE_SLICE_ANGLE false
-#macro UTE_TWEEN_BATTLE_BUTTON false
+#macro UTE_TWEEN_BATTLE_BUTTON true
 
 #macro UTE_ENABLE_DF_CMENU_CURSOR true
 #macro UTE_ENABLE_FF_CHOICE_LINE false
 
 #macro UTE_ENABLE_INTERACT_BUBBLE false
 
-#macro __LOAD_MUS_FROM_INCLUDED_FILES false
+#macro __LOAD_MUS_FROM_INCLUDED_FILES true
 
 #macro __DRAW_CLASSIC_UNDERTALE_BOX false
 #macro __DRAW_9SLICE_BOX_WITH_OPACITY true // Draw custom sprite based dialog box with seperated middle for control over opacity
@@ -18,7 +20,7 @@
 #macro __DRAW_BOX_OPACITY 0.7
 // end if
 
-#macro CAM obj_camera
+#macro CAM obj_master_camera
 #macro WRITER obj_text_writer
 
 #macro PLAYER1 obj_ow_player

@@ -1,1 +1,0 @@
-dialogue_setup("fnt_main",undefined,undefined,"* This is a test#* [shake]Woah, shaky new line[/shake]#* [rainbow]ur mr gay[/rainbow]",false)

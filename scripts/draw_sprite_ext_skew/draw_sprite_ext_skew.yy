@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"draw_sprite_ext_skew",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"draw_sprite_ext_skew",
+  "parent":{
+    "name":"drawing",
+    "path":"folders/Scripts/utility/drawing.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

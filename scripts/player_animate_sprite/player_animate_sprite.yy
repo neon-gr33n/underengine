@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "player_animate_sprite",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "player",
-    "path": "folders/Scripts/player.yy",
+  "$GMScript":"",
+  "%Name":"player_animate_sprite",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"player_animate_sprite",
+  "parent":{
+    "name":"player",
+    "path":"folders/Scripts/player.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

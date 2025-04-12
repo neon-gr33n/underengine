@@ -1,9 +1,9 @@
 choiceSelection = clamp(choiceSelection,0,1);
-if inputdog_pressed("right")
+if pressed("right")
 {
 		choiceSelection += 1;
 }
-if inputdog_pressed("left")
+if pressed("left")
 {
 		choiceSelection -= 1;
 }

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"draw_9_slice",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"draw_9_slice",
+  "parent":{
+    "name":"drawing",
+    "path":"folders/Scripts/utility/drawing.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

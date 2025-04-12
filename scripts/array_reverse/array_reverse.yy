@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "array_reverse",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "array",
-    "path": "folders/Libraries/FAST/Core/Functions/array.yy",
+  "$GMScript":"",
+  "%Name":"array_reverse",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"array_reverse",
+  "parent":{
+    "name":"array",
+    "path":"folders/Libraries/FAST/Core/Functions/array.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

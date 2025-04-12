@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "TableRandomizer",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Constructors",
-    "path": "folders/Libraries/FAST/Numbers/Constructors.yy",
+  "$GMScript":"",
+  "%Name":"TableRandomizer",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"TableRandomizer",
+  "parent":{
+    "name":"Constructors",
+    "path":"folders/Libraries/FAST/Numbers/Constructors.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

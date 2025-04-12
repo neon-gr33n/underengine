@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"wav_load_buffer",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"wav_load_buffer",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "cutscene_choice",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "dialogue funcs",
-    "path": "folders/Scripts/Cutscene System/dialogue funcs.yy",
+  "$GMScript":"",
+  "%Name":"cutscene_choice",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"cutscene_choice",
+  "parent":{
+    "name":"dialogue funcs",
+    "path":"folders/Scripts/Cutscene System/dialogue funcs.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

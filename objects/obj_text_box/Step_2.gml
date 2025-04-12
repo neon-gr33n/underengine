@@ -1,6 +1,6 @@
 display_set_gui_size(global._game_res_width/2, global._game_res_height/2)
 
-if(inputdog_pressed("select")) 
+if(pressed("action")) 
 {
 	obj_text_writer.dialogue.dialogueText = "";
 	instance_destroy();

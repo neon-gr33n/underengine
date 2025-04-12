@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "ease_in_out_elastic",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Elastic",
-    "path": "folders/Libraries/FAST/Numbers/Functions/ease/Elastic.yy",
+  "$GMScript":"",
+  "%Name":"ease_in_out_elastic",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"ease_in_out_elastic",
+  "parent":{
+    "name":"Elastic",
+    "path":"folders/Libraries/FAST/Numbers/Functions/ease/Elastic.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

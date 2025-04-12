@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "player_unfreeze",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "player",
-    "path": "folders/Scripts/player.yy",
+  "$GMScript":"",
+  "%Name":"player_unfreeze",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"player_unfreeze",
+  "parent":{
+    "name":"player",
+    "path":"folders/Scripts/player.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

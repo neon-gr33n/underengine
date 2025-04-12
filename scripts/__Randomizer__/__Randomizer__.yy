@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "__Randomizer__",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Abstract",
-    "path": "folders/Libraries/FAST/Numbers/Abstract.yy",
+  "$GMScript":"",
+  "%Name":"__Randomizer__",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"__Randomizer__",
+  "parent":{
+    "name":"Abstract",
+    "path":"folders/Libraries/FAST/Numbers/Abstract.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "fuwa_convert_time_tointernal",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Internal",
-    "path": "folders/Libraries/fuwafuwa/Internal.yy",
+  "$GMScript":"",
+  "%Name":"fuwa_convert_time_tointernal",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"fuwa_convert_time_tointernal",
+  "parent":{
+    "name":"Internal",
+    "path":"folders/Libraries/fuwafuwa/Internal.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

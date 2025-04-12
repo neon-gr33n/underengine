@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "Camera",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Constructors",
-    "path": "folders/Libraries/FAST/Render/Constructors.yy",
+  "$GMScript":"",
+  "%Name":"Camera",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Camera",
+  "parent":{
+    "name":"Constructors",
+    "path":"folders/Libraries/FAST/Render/Constructors.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

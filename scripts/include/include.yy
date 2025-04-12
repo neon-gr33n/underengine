@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "include",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "include",
-    "path": "folders/Libraries/FAST/Core/Functions/include.yy",
+  "$GMScript":"",
+  "%Name":"include",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"include",
+  "parent":{
+    "name":"include",
+    "path":"folders/Libraries/FAST/Core/Functions/include.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

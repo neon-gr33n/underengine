@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"party_abandon",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"party_abandon",
+  "parent":{
+    "name":"party",
+    "path":"folders/Scripts/party.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

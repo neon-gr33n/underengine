@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "Vector2",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Math",
-    "path": "folders/Scripts/utility/Math.yy",
+  "$GMScript":"",
+  "%Name":"Vector2",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Vector2",
+  "parent":{
+    "name":"Math",
+    "path":"folders/Scripts/utility/Math.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

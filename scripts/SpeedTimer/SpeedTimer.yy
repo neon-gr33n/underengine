@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "SpeedTimer",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "ArrayClass",
-    "path": "folders/Libraries/ArrayClass.yy",
+  "$GMScript":"",
+  "%Name":"SpeedTimer",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"SpeedTimer",
+  "parent":{
+    "name":"ArrayClass",
+    "path":"folders/Libraries/ArrayClass.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

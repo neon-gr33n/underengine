@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "ease_in_quart",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Quart",
-    "path": "folders/Libraries/FAST/Numbers/Functions/ease/Quart.yy",
+  "$GMScript":"",
+  "%Name":"ease_in_quart",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"ease_in_quart",
+  "parent":{
+    "name":"Quart",
+    "path":"folders/Libraries/FAST/Numbers/Functions/ease/Quart.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

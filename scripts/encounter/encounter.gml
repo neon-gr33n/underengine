@@ -21,10 +21,9 @@ function encounter_setup(){
 }
 
 function encounter_set_menu_text() {
-		// @arg menuText
-		if instance_exists(obj_text_writer){
-			dialogue.dialogueText = argument0;
-		}
+		///@arg font
+		///@arg menuText
+		dialogue_setup(argument0,spr_blank,undefined,argument1,.55,false,"battle_generic")
 }
 
 function encounter_create(){

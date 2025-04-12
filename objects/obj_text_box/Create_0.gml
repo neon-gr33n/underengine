@@ -5,6 +5,7 @@ prevState = state;					// The previous state
 subState = 0;						// The sub state
 
 displayText = ""
+displayTextPos = ""
 displaySpeed = 0.55;
 displayFace = spr_blank;
 displayFaceIndex = 0;

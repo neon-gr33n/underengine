@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "fuwa_normalize",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Util",
-    "path": "folders/Libraries/fuwafuwa/Internal/Util.yy",
+  "$GMScript":"",
+  "%Name":"fuwa_normalize",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"fuwa_normalize",
+  "parent":{
+    "name":"Util",
+    "path":"folders/Libraries/fuwafuwa/Internal/Util.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }
