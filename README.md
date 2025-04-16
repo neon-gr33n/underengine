@@ -27,9 +27,7 @@ UNDERENGINE is a versatile fangame engine with an emphasis on **cutsomization,**
 - Flexible Dialog System, with text writer/typewriter, portraits, voices, dynamic positioning, and an optional argument to execute additional code when dialog is being called!
 - Simple and extendable cutscene system
 - Easily extendable player character, running off of a state machine for your convenience!
-- Easily modifiable overworld "C" Menu
-- Basic party system, with support for adding/removing members, and having "followers" in the overworld, like DELTARUNE!
-- Versatile audio system, with easy to use effect presets!
+- Basic party system, with support for adding/removing members, and having "followers" in the overworld, like DELTARUNE!!
 - **Full controller support!**
 - Easily modifiable battle system
 
