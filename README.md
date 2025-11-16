@@ -24,7 +24,7 @@ And just like that, you're good to go! You're now able to go ahead and start mak
 UNDERENGINE is a versatile fangame engine with an emphasis on **cutsomization,** accounting for as many of the users needs as possible, as such, it's packed with **plenty of features**, check out the list below!
 
 - **16:9 Aspect Ratio support**, allowing your game to display seamlessly.
-- Flexible Dialog System, with text writer/typewriter, portraits, voices, dynamic positioning, and an optional argument to execute additional code when dialog is being called!
+- Flexible Dialog System, with text writer/typewriter, portraits, voices, dynamic positioning.
 - Simple and extendable cutscene system
 - Easily extendable player character, running off of a state machine for your convenience!
 - Basic party system, with support for adding/removing members, and having "followers" in the overworld, like DELTARUNE!!
