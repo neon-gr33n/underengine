@@ -29,7 +29,7 @@ UNDERENGINE is a versatile fangame engine with an emphasis on **cutsomization,**
 - Easily extendable player character, running off of a state machine for your convenience!
 - Basic party system, with support for adding/removing members, and having "followers" in the overworld, like DELTARUNE!!
 - **Full controller support!**
-- Easily modifiable battle system
+- Modifiable battle system
 
 ### Documentation
 (to be added)
