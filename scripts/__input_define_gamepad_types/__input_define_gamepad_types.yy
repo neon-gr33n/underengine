@@ -1,12 +1,12 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"__input_define_gamepad_types",
   "isCompatibility":false,
   "isDnD":false,
   "name":"__input_define_gamepad_types",
   "parent":{
     "name":"Initialization",
-    "path":"folders/Libraries/Input/(System)/Initialization.yy",
+    "path":"folders/Libraries/Juju Adams Libararies/Input/(System)/Initialization.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

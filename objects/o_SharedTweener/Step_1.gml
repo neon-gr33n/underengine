@@ -128,7 +128,7 @@ if (isEnabled)
 					switch(_d[0]) // PROPERTY COUNT
 					{
 					case 1:
-						if (is_method(_t[TGMX_T_EASE])) 
+						if (is_handle(_t[TGMX_T_EASE])) 
 						{ 
 							_d[1](_t[TGMX_T_EASE](_time, _d[2], _d[3], _t[TGMX_T_DURATION], _t), _target, _d[4], _t); // note: _d[4] is variable string name
 						} 
@@ -139,20 +139,20 @@ if (isEnabled)
 					break;
 					
 					case 2:
-						_time = is_method(_t[TGMX_T_EASE]) ? _t[TGMX_T_EASE](_time, 0, 1, _t[TGMX_T_DURATION], _t) : animcurve_channel_evaluate(_t[TGMX_T_EASE], _time/_t[TGMX_T_DURATION]);
+						_time = is_handle(_t[TGMX_T_EASE]) ? _t[TGMX_T_EASE](_time, 0, 1, _t[TGMX_T_DURATION], _t) : animcurve_channel_evaluate(_t[TGMX_T_EASE], _time/_t[TGMX_T_DURATION]);
 						_d[1](_time*_d[3]+_d[2], _target, _d[4], _t);
 						_d[5](_time*_d[7]+_d[6], _target, _d[8], _t);
 					break;
 					
 					case 3:
-						_time = is_method(_t[TGMX_T_EASE]) ? _t[TGMX_T_EASE](_time, 0, 1, _t[TGMX_T_DURATION], _t) : animcurve_channel_evaluate(_t[TGMX_T_EASE], _time/_t[TGMX_T_DURATION]);
+						_time = is_handle(_t[TGMX_T_EASE]) ? _t[TGMX_T_EASE](_time, 0, 1, _t[TGMX_T_DURATION], _t) : animcurve_channel_evaluate(_t[TGMX_T_EASE], _time/_t[TGMX_T_DURATION]);
 					    _d[1](_time*_d[3]+_d[2], _target, _d[4], _t);
 					    _d[5](_time*_d[7]+_d[6], _target, _d[8], _t);
 					    _d[9](_time*_d[11]+_d[10], _target, _d[12], _t);
 					break;
 					
 					case 4:
-						_time = is_method(_t[TGMX_T_EASE]) ? _t[TGMX_T_EASE](_time, 0, 1, _t[TGMX_T_DURATION], _t) : animcurve_channel_evaluate(_t[TGMX_T_EASE], _time/_t[TGMX_T_DURATION]);
+						_time = is_handle(_t[TGMX_T_EASE]) ? _t[TGMX_T_EASE](_time, 0, 1, _t[TGMX_T_DURATION], _t) : animcurve_channel_evaluate(_t[TGMX_T_EASE], _time/_t[TGMX_T_DURATION]);
 					    _d[1](_time*_d[3]+_d[2], _target, _d[4], _t);
 					    _d[5](_time*_d[7]+_d[6], _target, _d[8], _t);
 					    _d[9](_time*_d[11]+_d[10], _target, _d[12], _t);
@@ -160,7 +160,7 @@ if (isEnabled)
 					break;
 					
 					case 5:
-						_time = is_method(_t[TGMX_T_EASE]) ? _t[TGMX_T_EASE](_time, 0, 1, _t[TGMX_T_DURATION], _t) : animcurve_channel_evaluate(_t[TGMX_T_EASE], _time/_t[TGMX_T_DURATION]);
+						_time = is_handle(_t[TGMX_T_EASE]) ? _t[TGMX_T_EASE](_time, 0, 1, _t[TGMX_T_DURATION], _t) : animcurve_channel_evaluate(_t[TGMX_T_EASE], _time/_t[TGMX_T_DURATION]);
 					    _d[1](_time*_d[3]+_d[2], _target, _d[4], _t);
 					    _d[5](_time*_d[7]+_d[6], _target, _d[8], _t);
 					    _d[9](_time*_d[11]+_d[10], _target, _d[12], _t);
@@ -169,7 +169,7 @@ if (isEnabled)
 					break;
 					
 					case 6:
-						_time = is_method(_t[TGMX_T_EASE]) ? _t[TGMX_T_EASE](_time, 0, 1, _t[TGMX_T_DURATION], _t) : animcurve_channel_evaluate(_t[TGMX_T_EASE], _time/_t[TGMX_T_DURATION]);
+						_time = is_handle(_t[TGMX_T_EASE]) ? _t[TGMX_T_EASE](_time, 0, 1, _t[TGMX_T_DURATION], _t) : animcurve_channel_evaluate(_t[TGMX_T_EASE], _time/_t[TGMX_T_DURATION]);
 					    _d[1](_time*_d[3]+_d[2], _target, _d[4], _t);
 					    _d[5](_time*_d[7]+_d[6], _target, _d[8], _t);
 					    _d[9](_time*_d[11]+_d[10], _target, _d[12], _t);
@@ -179,7 +179,7 @@ if (isEnabled)
 					break;
 					
 					case 7:
-					    _time = is_method(_t[TGMX_T_EASE]) ? _t[TGMX_T_EASE](_time, 0, 1, _t[TGMX_T_DURATION], _t) : animcurve_channel_evaluate(_t[TGMX_T_EASE], _time/_t[TGMX_T_DURATION]);
+					    _time = is_handle(_t[TGMX_T_EASE]) ? _t[TGMX_T_EASE](_time, 0, 1, _t[TGMX_T_DURATION], _t) : animcurve_channel_evaluate(_t[TGMX_T_EASE], _time/_t[TGMX_T_DURATION]);
 						_d[1](_time*_d[3]+_d[2], _target, _d[4], _t);
 					    _d[5](_time*_d[7]+_d[6], _target, _d[8], _t);
 					    _d[9](_time*_d[11]+_d[10], _target, _d[12], _t);
@@ -190,7 +190,7 @@ if (isEnabled)
 					break;
 					
 					case 8:
-					    _time = is_method(_t[TGMX_T_EASE]) ? _t[TGMX_T_EASE](_time, 0, 1, _t[TGMX_T_DURATION], _t) : animcurve_channel_evaluate(_t[TGMX_T_EASE], _time/_t[TGMX_T_DURATION]);
+					    _time = is_handle(_t[TGMX_T_EASE]) ? _t[TGMX_T_EASE](_time, 0, 1, _t[TGMX_T_DURATION], _t) : animcurve_channel_evaluate(_t[TGMX_T_EASE], _time/_t[TGMX_T_DURATION]);
 						_d[1](_time*_d[3]+_d[2], _target, _d[4], _t);
 					    _d[5](_time*_d[7]+_d[6], _target, _d[8], _t);
 					    _d[9](_time*_d[11]+_d[10], _target, _d[12], _t);
@@ -202,7 +202,7 @@ if (isEnabled)
 					break;
 					
 					case 9:
-						_time = is_method(_t[TGMX_T_EASE]) ? _t[TGMX_T_EASE](_time, 0, 1, _t[TGMX_T_DURATION], _t) : animcurve_channel_evaluate(_t[TGMX_T_EASE], _time/_t[TGMX_T_DURATION]);
+						_time = is_handle(_t[TGMX_T_EASE]) ? _t[TGMX_T_EASE](_time, 0, 1, _t[TGMX_T_DURATION], _t) : animcurve_channel_evaluate(_t[TGMX_T_EASE], _time/_t[TGMX_T_DURATION]);
 					    _d[1](_time*_d[3]+_d[2], _target, _d[4], _t);
 					    _d[5](_time*_d[7]+_d[6], _target, _d[8], _t);
 					    _d[9](_time*_d[11]+_d[10], _target, _d[12], _t);
@@ -215,7 +215,7 @@ if (isEnabled)
 					break;
 					
 					case 10:
-						_time = is_method(_t[TGMX_T_EASE]) ? _t[TGMX_T_EASE](_time, 0, 1, _t[TGMX_T_DURATION], _t) : animcurve_channel_evaluate(_t[TGMX_T_EASE], _time/_t[TGMX_T_DURATION]);
+						_time = is_handle(_t[TGMX_T_EASE]) ? _t[TGMX_T_EASE](_time, 0, 1, _t[TGMX_T_DURATION], _t) : animcurve_channel_evaluate(_t[TGMX_T_EASE], _time/_t[TGMX_T_DURATION]);
 					    _d[1](_time*_d[3]+_d[2], _target, _d[4], _t);
 					    _d[5](_time*_d[7]+_d[6], _target, _d[8], _t);
 					    _d[9](_time*_d[11]+_d[10], _target, _d[12], _t);
@@ -233,7 +233,7 @@ if (isEnabled)
 					break;
 					
 					default: // Handle "unlimited" property count
-						_time = is_method(_t[TGMX_T_EASE]) ? _t[TGMX_T_EASE](_time, 0, 1, _t[TGMX_T_DURATION], _t) : animcurve_channel_evaluate(_t[TGMX_T_EASE], _time/_t[TGMX_T_DURATION]);
+						_time = is_handle(_t[TGMX_T_EASE]) ? _t[TGMX_T_EASE](_time, 0, 1, _t[TGMX_T_DURATION], _t) : animcurve_channel_evaluate(_t[TGMX_T_EASE], _time/_t[TGMX_T_DURATION]);
 						_d[1](_time*_d[3]+_d[2], _target, _d[4], _t);
 					    _d[5](_time*_d[7]+_d[6], _target, _d[8], _t);
 					    _d[9](_time*_d[11]+_d[10], _target, _d[12], _t);

@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"verb_consume",
   "isCompatibility":false,
   "isDnD":false,

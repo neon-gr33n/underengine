@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"party_data_init",
   "isCompatibility":false,
   "isDnD":false,

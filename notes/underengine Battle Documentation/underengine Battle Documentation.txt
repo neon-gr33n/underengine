@@ -1,0 +1,78 @@
+/// @category Getting Started
+/// @title Battles
+
+## Setting up enemy encounter 
+To create an enemy that you can encounter/battle, there's several steps you'll need to follow, let's go through them in order
+
+First, you have to create an object, and make the parent `obj_parent_battle_enemy`, we'll get back to the object in a short while
+but for now, let's create the struct- the data that is actually used to **create** the encounter and allows the enemy to work in encounter_setup()
+
+To make an enemy struct, you'll need to go into enemy_data_init and add one, let's say for example, Froggit, from Undertale
+
+```gml
+	  FROGGIT: {
+		    NAME: loc_gettext("enemy.name.froggit"),
+		    OBJECT: obj_battle_enemy_froggit,
+		    XP_GAIN: 5,
+		    GOLD_GAIN: 4,
+		    STATS: {
+		        HP: 50,
+		        MAX_HP: 50,
+		        ATK: 4,
+		        DEF: 1,
+		    },
+    
+		    ACTS: {
+		        // Each ACT has: name, responses, and mercy requirements
+		        "Check": {
+					display_name: function() { return loc_gettext("bt.act.check"); // Check },
+		            responses: [
+		               loc_gettext("enemy.froggit.act.check.response") 
+		            ],
+		            mercy_effect: 0,
+		            repeatable: false
+		        },
+		        "Threaten": {
+					display_name: function() { return loc_gettext("bt.act.threaten"); // Threaten },
+		            responses: [
+		                loc_gettext("enemy.froggit.act.threaten.response.0"), // * Froggit didn't understand what you said# but was scared anyway.
+		            ],
+		            mercy_effect: 0,
+		            repeatable: true
+		        },
+			   "Compliment": {
+				   	display_name: function() { return loc_gettext("bt.act.compliment"); // Compliment },
+		            responses: [
+						loc_gettext("enemy.froggit.act.compliment.response.0"), // * Froggit didn't understand what you said# but was flattered anyway.
+		            ],
+		            mercy_effect: 1,
+		            repeatable: true
+		        },
+		    },
+    
+		    // MERCY SYSTEM
+		    MERCY_REQUIREMENTS: {
+		        required_acts: ["Compliment"],
+		        required_count: 1,
+		        custom_check: function(enemy_state) {
+					return array_contains(enemy_state.completed_acts, "Compliment");
+		        }
+		    },
+    
+			SPARE_WITH_ALLY: false,
+		    DESCRIPTION: "Froggit reluctantly approaches!"
+		},
+```
+
+This defines ALL of the necessary data to make Froggit both show up in the select menus in battle, and have interactions with the player
+
+Now you might be wondering about the object itself? well, the logic in there is yours to decide, just remember a few things
+- Event user 0 (Init) initializes enemy specific data and initial flavor text (the text shown when you first encounter the enemy)
+- Event user 3 (Turn Start) is where you setup your special logic for the turn starting, could be anything you feel is necessary, but always make sure to initialize a battle turn object 
+
+Make sure to review the parameters in `obj_parent_battle_enemy`'s create event carefully, and make sure you set them as needed in User event 0 of your enemy object
+Things like hurtSprite, and hurtSound are good to mess with if you have custom assets for when the enemy takes damage
+
+The draw event is where you draw your enemy, handle it as you see fit, and get creative! 
+
+We recommend reviewing all enemy related functions (such as those in enemy_act_funcs) to understand how to accomplish more complex behaviors

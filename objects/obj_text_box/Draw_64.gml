@@ -1,16 +1,9 @@
 if(live_call()) return live_result;
-if(displayOnTop == undefined && instance_exists(CAM.cam1.follow))	
-	displayAlignWriterY = CAM.y > CAM.cam1.follow.y ? 310 : 305
-else displayAlignWriterY = displayOnTop ? 305 : 310;
+//if(displayOnTop == undefined && instance_exists(CAM.following))	
+//	displayAlignWriterY = CAM.y > CAM.following.y ? 310 : 305
+//else displayAlignWriterY = displayOnTop ? 305 : 310;
 
-switch(displayOnTop){
-	case true:
-		displayAlignWriterY = 310;
-	break;
-	case false:
-		displayAlignWriterY = 305;
-	break;
-}
+displayAlignWriterY = displayOnTop ? 110 : 105;
 
 if(instance_exists(WRITER)){
 	WRITER.dialogueYPosition = displayAlignWriterY;
@@ -18,25 +11,65 @@ if(instance_exists(WRITER)){
 
 drawTextBox = function(){
 	// Draw the dialogue box
-	if __DRAW_CLASSIC_UNDERTALE_BOX == true 
-	{
-		draw_box(32, 10 + displayAlignWriterY, 608, 160 + displayAlignWriterY);
-	}
-	if __DRAW_9SLICE_BOX_WITH_OPACITY == true
+	if __DRAW_9SLICE_BOX_WITH_OPACITY
 	{
 		//draw_box(32, 10 + displayAlignWriterY, 606, 160 + displayAlignWriterY,0,spr_textborder_inner, __DRAW_BOX_OPACITY);
-		draw_sprite_ext(spr_textborder_inner,0,320,398,12,3,0,c_white, __DRAW_BOX_OPACITY)
-		draw_sprite_ext(spr_textborder_outer,0,320,398,12,3,0,c_white,1)
+		d_height = window_get_fullscreen() ? window_get_height() : global._windowed_height
+		
+		if dialogueSpeaker == "sans" || dialogueSpeaker == "asg" || dialogueSpeaker == "paps" || dialogueSpeaker == "gen3" && variable_struct_exists(speaker, "char_name") {
+			// draw nameplate
+			draw_sprite_ext(global.rounded_box ? spr_textborder_outer_rounded : spr_textborder_outer,0,136,312,4,1,0,c_white,1)
+			draw_sprite_ext(global.rounded_box ? spr_textborder_inner_rounded : spr_textborder_inner,0,136,312,4,1,0,c_white, __DRAW_BOX_OPACITY)
+			// ---------------
+		
+			draw_sprite_ext(global.rounded_box ? spr_textborder_inner_rounded : spr_textborder_inner,0,320,398,12,3,0,c_white, __DRAW_BOX_OPACITY)
+			draw_sprite_ext(global.rounded_box ? spr_textborder_outer_rounded : spr_textborder_outer,0,320,398,12,3,0,c_white,1)
+            
+			switch(dialogueSpeaker){
+				case "sans":
+					draw_ftext(loc_get_font(fnt_sans_small),c_white,80,global.LOC == "JAPANESE" ? 300 : 296,global.LOC == "JAPANESE" ? 1 : 2, global.LOC == "JAPANESE" ? 1: 2,0,speaker.char_name)
+				break;
+				case "paps":
+					draw_ftext(loc_get_font(fnt_papyrus_small),c_white,65,global.LOC == "JAPANESE" ? 300 : 296,global.LOC == "JAPANESE" ? 1: 2,global.LOC == "JAPANESE" ? 1: 2,0,string_upper(speaker.char_name))
+				break;
+				default:
+					draw_ftext(loc_get_font(fnt_main_small),c_white,80,global.LOC == "JAPANESE" ? 300 : 296,2,2,0,speaker.char_name)
+				break;
+			}
+			
+
+			// draw faceplate
+			draw_sprite_ext(global.rounded_box ? spr_textborder_outer_rounded : spr_textborder_outer,0,113,398,3,3,0,c_white,1)
+			// ---------------
+		} else {
+			draw_sprite_ext(global.rounded_box ? spr_textborder_inner_rounded : spr_textborder_inner,0,320,398,12,3,0,c_white, __DRAW_BOX_OPACITY)
+			draw_sprite_ext(global.rounded_box ? spr_textborder_outer_rounded : spr_textborder_outer,0,320,398,12,3,0,c_white,1)
+		}
+	}
+	
+	if (WRITER.typewriter_state == 1 && !instance_exists(obj_choice_text) && showCursor){
+		// Draw cursor
+		draw_sprite_ext(spr_soulcursor,0,570,440,cursor_xyscale,cursor_xyscale,0,c_white,1)
 	}
 	
 	// Draw the dialogue face if there's one used
 	if (displayFace != spr_blank)
 		with(obj_text_writer){hasDialoguePortrait = true } 
-		if __DRAW_CLASSIC_UNDERTALE_BOX == true {
-			draw_sprite_ext(displayFace, displayFaceIndex, 100, 75 + displayAlignWriterY, 2, 2, 0, c_white, 1);
-		}
-		if __DRAW_9SLICE_BOX_WITH_OPACITY == true {
-			draw_sprite_ext(displayFace, displayFaceIndex, 110, 90 + displayAlignWriterY, 2, 2, 0, c_white, 1);
+		if __DRAW_9SLICE_BOX_WITH_OPACITY {
+			switch(dialogueSpeaker){
+				case "sans":
+                case "gen3":    
+                    draw_sprite_ext(displayFace, floor(talk_frame), 64, 250 + displayAlignWriterY, 3, 3, 0, c_white, 1);	
+                break;    
+                case "paps":    
+					draw_sprite_ext(displayFace, floor(talk_frame), 80, 240 + displayAlignWriterY, 2.5, 2.5, 0, c_white, 1);	
+				break;
+				case "asg":
+					draw_sprite_ext(spr_port_asg_body, displayFaceIndex/6, 57, 337 + displayAlignWriterY, 2.3, 2.3, 0, c_white, 1);	
+					draw_sprite_ext(displayFace, floor(talk_frame), 55, 232 + displayAlignWriterY, 2.5, 2.5, 0, c_white, 1);
+					draw_sprite_ext(spr_port_asg_glasses, displayFaceIndex/6, 65, 255.5 + displayAlignWriterY, 3.1, 3.1, 0, c_white, 1);	
+				break;
+			}
 		}
 }
 			drawTextBox();

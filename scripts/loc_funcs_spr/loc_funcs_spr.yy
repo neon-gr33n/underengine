@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"loc_funcs_spr",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"loc_funcs_spr",
+  "parent":{
+    "name":"localization",
+    "path":"folders/Scripts/maingame/localization.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -40,7 +40,7 @@ function Surface( _width, _height ) constructor {
 			__Redraw	= true;
 			
 		}
-		if ( __Redraw == true ) {
+		if ( __Redraw ) {
 			__Redraw	= false;
 			
 			set();

@@ -1,0 +1,27 @@
+{
+  "$GMSound":"v2",
+  "%Name":"snd_crickets",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "ConfigValues":{},
+  "conversionMode":0,
+  "duration":3.4285488,
+  "exportDir":"",
+  "name":"snd_crickets",
+  "parent":{
+    "name":"world",
+    "path":"folders/Sounds/sfx/world.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"snd_crickets.ogg",
+  "volume":1.0,
+}

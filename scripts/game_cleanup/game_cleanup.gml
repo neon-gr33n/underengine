@@ -15,6 +15,10 @@ function game_cleanup(){
         global.tempsave_buffer = -4
     }
 	
-	audio_group_unload(mus)
 	audio_group_unload(sfx)
+    
+    save_config()
+	
+	delete global.gj_trophies;
+	ds_grid_destroy(global.dialogue_grid);
 }

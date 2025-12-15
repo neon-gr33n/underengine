@@ -1,36 +1,23 @@
-#macro GAME obj_game_handler
-
-#macro UTE_DEBUG_MODE true 
-
-#macro GRID_CELL_SIZE 32
-
-#macro UTE_RANDOMIZE_SLICE_ANGLE false
-#macro UTE_TWEEN_BATTLE_BUTTON true
-
-#macro UTE_ENABLE_DF_CMENU_CURSOR true
-#macro UTE_ENABLE_FF_CHOICE_LINE false
-
-#macro UTE_ENABLE_INTERACT_BUBBLE false
-
-#macro __LOAD_MUS_FROM_INCLUDED_FILES true
-
-#macro __DRAW_CLASSIC_UNDERTALE_BOX false
-#macro __DRAW_9SLICE_BOX_WITH_OPACITY true // Draw custom sprite based dialog box with seperated middle for control over opacity
-// If __DRAW_9SLICE_BOX_WITH_OPACITY is set to true
-#macro __DRAW_BOX_OPACITY 0.7
-// end if
-
 #macro CAM obj_master_camera
 #macro WRITER obj_text_writer
+#macro LIGHT obj_lighting_handler
+#macro PPFX obj_ppfx_handler
 
-#macro PLAYER1 obj_ow_player
+#macro PLAYER1 obj_ow_party
 
-#macro FOLLOWER obj_ow_follower
+#macro FIGHT 0
+#macro ACT 2
+#macro MAGIC 4
+#macro ITEM 6
+#macro MERCY 8
 
-#macro FIGHT obj_battle_button_fight
-#macro ACT obj_battle_button_act
-#macro ITEM obj_battle_button_item
-#macro MERCY obj_battle_button_mercy
-
-#macro BOARD obj_battle_board
+#macro BOARD obj_battle_box
 #macro HEART obj_battle_soul
+
+#macro TEST_ENC "loox_s"
+
+#macro START_ROOM rm_fallen 
+#macro instance_place place_meeting
+
+#macro camx camera_get_view_x(view_camera[0])
+#macro camy camera_get_view_y(view_camera[0])

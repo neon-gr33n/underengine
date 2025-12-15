@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"ease_out_sine",
   "isCompatibility":false,
   "isDnD":false,

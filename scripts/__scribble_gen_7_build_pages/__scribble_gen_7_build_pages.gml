@@ -1,16 +1,84 @@
-#macro __SCRIBBLE_GEN_PAGE_POP  var _page_end_line = _i - 1;\
+// Feather disable all
+
+#macro __SCRIBBLE_GEN_PAGE_POP  _model_height = max(_model_height, _line_max_y);\
+                                var _page_end_line = _i - 1;\
                                 _page_data.__line_end    = _page_end_line;\
                                 _page_data.__line_count  = 1 + _page_data.__line_end - _page_data.__line_start;\
                                 _page_data.__glyph_end   = _word_grid[# _line_grid[# _page_end_line, __SCRIBBLE_GEN_LINE.__WORD_END], __SCRIBBLE_GEN_WORD.__GLYPH_END];\
                                 _page_data.__glyph_count = 1 + _page_data.__glyph_end - _page_data.__glyph_start;\
                                 _page_data.__width       = ds_grid_get_max(_line_grid, _page_start_line, __SCRIBBLE_GEN_LINE.__WIDTH, _page_end_line, __SCRIBBLE_GEN_LINE.__WIDTH);\
-                                _page_data.__height      = _line_y;\
-                                _page_data.__min_y       = (__valign == fa_middle)? -(_line_y div 2) : ((__valign == fa_bottom)? -_line_y :       0);\
-                                _page_data.__max_y       = (__valign == fa_middle)?  (_line_y div 2) : ((__valign == fa_bottom)?        0 : _line_y);\
+                                _page_data.__height      = _line_max_y;\
+                                ;\
+                                ;\ //Correct page position for vertical alignment
+                                if (__valign == fa_middle)\
+                                {\
+                                    _page_data.__min_y = -(_line_max_y div 2);\
+                                    _page_data.__max_y =  (_line_max_y div 2);\
+                                }\
+                                else if (__valign == fa_bottom)\
+                                {\
+                                    _page_data.__min_y = -_line_max_y;\
+                                    _page_data.__max_y = 0;\
+                                }\
+                                else if (__valign == __SCRIBBLE_PIN_MIDDLE)\
+                                {\
+                                    if (SCRIBBLE_PIN_ALIGNMENT_USES_PAGE_SIZE || (_model_max_height == infinity))\
+                                    {\
+                                        _page_data.__min_y = -(_line_max_y div 2);\
+                                        _page_data.__max_y =  (_line_max_y div 2);\
+                                    }\
+                                    else\
+                                    {\
+                                        var _delta = _model_max_height - _line_max_y;\
+                                        _page_data.__min_y = 0.5*_delta;\
+                                        _page_data.__max_y = _model_max_height - 0.5*_delta;\
+                                    }\
+                                }\
+                                else if (__valign == __SCRIBBLE_PIN_BOTTOM)\
+                                {\
+                                    if (SCRIBBLE_PIN_ALIGNMENT_USES_PAGE_SIZE || (_model_max_height == infinity))\
+                                    {\
+                                        _page_data.__min_y = -_line_max_y;\
+                                        _page_data.__max_y = 0;\
+                                    }\
+                                    else\
+                                    {\
+                                        _page_data.__min_y = _model_max_height - _line_max_y;\
+                                        _page_data.__max_y = _model_max_height;\
+                                    }\
+                                }\
+                                else\ //fa_top or pin_top
+                                {\
+                                    _page_data.__min_y = 0;\
+                                    _page_data.__max_y = _line_max_y;\
+                                }\
+                                ;\
+                                ;\ //Correct line positions for vertical alignment
+                                if (_page_data.__min_y != 0) ds_grid_add_region(_line_grid, _page_data.__glyph_start, __SCRIBBLE_GEN_LINE.__Y, _page_end_line, __SCRIBBLE_GEN_LINE.__Y, _page_data.__min_y);\
+                                ;\
                                 ;\// Set up the character indexes for the page, relative to the character index of the first glyph on the page
                                 var _page_anim_start = _glyph_grid[# _page_data.__glyph_start, __SCRIBBLE_GEN_GLYPH.__ANIMATION_INDEX];\
                                 var _page_anim_end   = _glyph_grid[# _page_data.__glyph_end,   __SCRIBBLE_GEN_GLYPH.__ANIMATION_INDEX];\
                                 _page_data.__character_count = 1 + _page_anim_end - _page_anim_start;\
+                                ;\
+                                if (_line_data_getter)\
+                                {\
+                                    var _i = _page_data.__line_start;\
+                                    repeat(_page_data.__line_count)\
+                                    {\
+                                        var _glyph_start = _word_grid[# _line_grid[# _i, __SCRIBBLE_GEN_LINE.__WORD_START], __SCRIBBLE_GEN_WORD.__GLYPH_START] - _page_data.__glyph_start;\
+                                        var _glyph_end   = _word_grid[# _line_grid[# _i, __SCRIBBLE_GEN_LINE.__WORD_END  ], __SCRIBBLE_GEN_WORD.__GLYPH_END  ] - _page_data.__glyph_start;\
+                                        array_push(_line_data_array, new __scribble_class_line(_line_grid[# _i, __SCRIBBLE_GEN_LINE.__Y           ],\
+                                                                                               _line_grid[# _i, __SCRIBBLE_GEN_LINE.__HEIGHT      ],\
+                                                                                               _line_grid[# _i, __SCRIBBLE_GEN_LINE.__FORCED_BREAK],\
+                                                                                               _glyph_start, _glyph_end));\
+                                        ++_i;\
+                                    }\
+                                    ;\
+                                    _page_data.__line_data_array = _line_data_array;\
+                                    _line_data_array = [];\
+                                }\
+                                ;\
                                 if (_randomize_animation)\
                                 {\
                                     array_resize(_animation_randomize_array, _page_data.__character_count);\
@@ -38,7 +106,7 @@
 
 function __scribble_gen_7_build_pages()
 {
-    static _generator_state = __scribble_get_generator_state();
+    static _generator_state = __scribble_system().__generator_state;
     with(_generator_state)
     {
         var _glyph_grid            = __glyph_grid;
@@ -50,6 +118,8 @@ function __scribble_gen_7_build_pages()
         var _line_spacing_add      = __line_spacing_add;
         var _line_spacing_multiply = __line_spacing_multiply;
         var _randomize_animation   = __element.__randomize_animation;
+        var _line_data_getter      = __element.__allow_line_data_getter;
+        var _line_data_array       = _line_data_getter? [] : undefined;
     }
     
     static _animation_randomize_array = [];
@@ -68,6 +138,7 @@ function __scribble_gen_7_build_pages()
     
     var _page_start_line = 0;
     var _line_y = 0;
+    var _line_max_y = 0;
     var _i = 0;
     repeat(_line_count)
     {
@@ -77,7 +148,7 @@ function __scribble_gen_7_build_pages()
         if (!_starts_manual_page && ((_line_y + _line_height < _simulated_model_height) || (_page_start_line >= _i)))
         {
             _line_grid[# _i, __SCRIBBLE_GEN_LINE.__Y] = _line_y;
-            if (_line_y + _line_height > _model_height) _model_height = _line_y + _line_height;
+            _line_max_y = _line_y + _line_height;
             _line_y += _line_spacing_add + _line_height*_line_spacing_multiply;
         }
         else
@@ -91,7 +162,7 @@ function __scribble_gen_7_build_pages()
             
             _page_start_line = _i;
             _line_grid[# _i, __SCRIBBLE_GEN_LINE.__Y] = 0;
-            if (_line_y + _line_height > _model_height) _model_height = _line_y + _line_height;
+            _line_max_y = _line_height;
             _line_y = _line_spacing_add + _line_height*_line_spacing_multiply;
         }
         
@@ -100,5 +171,15 @@ function __scribble_gen_7_build_pages()
     
     __SCRIBBLE_GEN_PAGE_POP;
     
-    __height = _model_height;
+    //Juju: Don't think we need this. `__height` gets calculated in the next phase
+    //
+    //if ((_model_max_height != infinity)
+    //&&  ((__valign == __SCRIBBLE_PIN_TOP) || (__valign == __SCRIBBLE_PIN_MIDDLE) || (__valign == __SCRIBBLE_PIN_BOTTOM)))
+    //{
+    //    __height = _model_max_height;
+    //}
+    //else
+    //{
+    //    __height = _model_height;
+    //}
 }

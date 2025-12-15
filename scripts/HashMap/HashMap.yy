@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"HashMap",
   "isCompatibility":false,
   "isDnD":false,

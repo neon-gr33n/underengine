@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"fuwa_normalize",
   "isCompatibility":false,
   "isDnD":false,

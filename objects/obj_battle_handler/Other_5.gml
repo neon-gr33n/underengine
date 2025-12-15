@@ -1,0 +1,1 @@
+erase_general(global.filechoice)

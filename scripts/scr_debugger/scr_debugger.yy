@@ -1,12 +1,12 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"scr_debugger",
   "isCompatibility":false,
   "isDnD":false,
   "name":"scr_debugger",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "name":"utility",
+    "path":"folders/Scripts/utility.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"fuwa_update_sequence_duration",
   "isCompatibility":false,
   "isDnD":false,

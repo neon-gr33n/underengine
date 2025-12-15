@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"cutscene_move_instances_multi",
   "isCompatibility":false,
   "isDnD":false,

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"discord_set_location",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"discord_set_location",
+  "parent":{
+    "name":"discord_rpc",
+    "path":"folders/Scripts/maingame/discord_rpc.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

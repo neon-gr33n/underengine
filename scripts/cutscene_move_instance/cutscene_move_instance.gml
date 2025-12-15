@@ -42,8 +42,11 @@ if variable_instance_exists(obj,"dir")
 {
 	with(obj) 
 	{
-		dir = facing
-		
+		if obj == PLAYER1 {
+			remdir[0]=facing
+		} else {
+			dir=facing;	
+		}
 	}
 }
 
@@ -51,7 +54,15 @@ if variable_instance_exists(obj, "npc_moving")
 {
 	with(obj)
 	{
-		npc_moving = true	
+		npc_moving = true
+	}
+}
+
+if variable_instance_exists(obj, "party_moving")
+{
+	with(obj)
+	{
+		party_moving = true
 	}
 }
 

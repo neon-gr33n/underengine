@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"notify_npc",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"notify_npc",
+  "parent":{
+    "name":"drawing",
+    "path":"folders/Scripts/utility/drawing.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

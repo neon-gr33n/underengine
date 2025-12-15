@@ -1,20 +1,21 @@
 /// Initializes the flag system, ran in game init as flags_init(true)
 /// There's no need to run this manually
 function flags_init(argument0){
-		if argument0==true
+		if argument0
 			global.flags	=	ds_map_create();
-		ds_map_set(global.flags, "plot",-1);
-		ds_map_set(global.flags, "world",0);
+		ds_map_set(global.flags, "plot", 0); 
+		ds_map_set(global.flags, "world", 0); 
 		ds_map_set(global.flags, "enc", -1);
-		if argument0==true
+		ds_map_set(global.flags,"geno",0);
+		ds_map_set(global.flags,"section",0);
+		ds_map_set(global.flags,"section_kills",0);
+		ds_map_set(global.flags, "rm_r", -1);   // Room Return- this sets the room prior to starting an encounter, and takes us back to it after
+		// Custom flags go below this line		
+		//End custom flags
+		if argument0
 			global.pflags	=	ds_map_create();
-		ds_map_set(global.pflags, "party",-1);
-		ds_map_set(global.pflags, "names",-1);
-		ds_map_set(global.pflags, "partyhp",-1);
-		ds_map_set(global.pflags, "e_wep",-1);
-		ds_map_set(global.pflags, "e_arm",-1);
-		ds_map_set(global.pflags,"area","Hell - Missouri");
-		ds_map_set(global.pflags,"rm",global.currentroom);
+		ds_map_set(global.pflags, "resets", 0);
+		ds_map_set(global.pflags, "last_reset_slot", -1);
 }
 
 // Sets a flag

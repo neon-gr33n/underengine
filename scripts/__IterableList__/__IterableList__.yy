@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"__IterableList__",
   "isCompatibility":false,
   "isDnD":false,

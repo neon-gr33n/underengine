@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"cutscene_store_obj_coordinates",
   "isCompatibility":false,
   "isDnD":false,

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"shaker_create",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"shaker_create",
+  "parent":{
+    "name":"Math",
+    "path":"folders/Scripts/utility/Math.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

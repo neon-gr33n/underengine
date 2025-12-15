@@ -1,12 +1,12 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"input_chord_create",
   "isCompatibility":false,
   "isDnD":false,
   "name":"input_chord_create",
   "parent":{
     "name":"04  Further Verb Functions",
-    "path":"folders/Libraries/Input/04  Further Verb Functions.yy",
+    "path":"folders/Libraries/Juju Adams Libararies/Input/04  Further Verb Functions.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

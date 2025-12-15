@@ -1,1 +1,1 @@
-alarm[1]=1;
+discord_update()

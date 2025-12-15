@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"debug_find_key_specific",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"debug_find_key_specific",
+  "parent":{
+    "name":"debug",
+    "path":"folders/Scripts/maingame/localization/debug.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

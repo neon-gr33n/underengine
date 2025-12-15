@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"cutscene_end_and_change_room",
   "isCompatibility":false,
   "isDnD":false,

@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"expression_evaluate",
   "isCompatibility":false,
   "isDnD":false,

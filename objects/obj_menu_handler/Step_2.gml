@@ -1,0 +1,1 @@
+//display_set_gui_size(640,global.asp_ratio == 1 ? 360 : 480)

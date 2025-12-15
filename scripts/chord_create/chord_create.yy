@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"chord_create",
   "isCompatibility":false,
   "isDnD":false,

@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"int_overflow",
   "isCompatibility":false,
   "isDnD":false,

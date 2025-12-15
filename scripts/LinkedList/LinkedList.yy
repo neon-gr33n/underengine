@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"LinkedList",
   "isCompatibility":false,
   "isDnD":false,

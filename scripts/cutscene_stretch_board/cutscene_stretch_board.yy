@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"cutscene_stretch_board",
   "isCompatibility":false,
   "isDnD":false,

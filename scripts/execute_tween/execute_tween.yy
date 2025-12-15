@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"execute_tween",
   "isCompatibility":false,
   "isDnD":false,

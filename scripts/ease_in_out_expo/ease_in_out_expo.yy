@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"ease_in_out_expo",
   "isCompatibility":false,
   "isDnD":false,

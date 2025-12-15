@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"fuwa_timer_update_ease_interval_next",
   "isCompatibility":false,
   "isDnD":false,

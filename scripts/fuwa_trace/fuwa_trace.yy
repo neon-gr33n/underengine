@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"fuwa_trace",
   "isCompatibility":false,
   "isDnD":false,

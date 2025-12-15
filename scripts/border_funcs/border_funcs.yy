@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"border_funcs",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"border_funcs",
+  "parent":{
+    "name":"Borders",
+    "path":"folders/Scripts/Borders.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

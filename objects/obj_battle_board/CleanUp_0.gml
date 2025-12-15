@@ -1,1 +1,1 @@
-surface_free(_board_surface);
+surface_free(_surface);

@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"party_add_member",
   "isCompatibility":false,
   "isDnD":false,

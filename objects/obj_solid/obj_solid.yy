@@ -1,7 +1,10 @@
 {
   "$GMObject":"",
   "%Name":"obj_solid",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"obj_solid",
   "overriddenProperties":[],
@@ -9,7 +12,10 @@
     "name":"common",
     "path":"folders/Objects/Technical/common.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_debug_parent",
+    "path":"objects/obj_debug_parent/obj_debug_parent.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -32,5 +38,5 @@
     "path":"sprites/spr_solid/spr_solid.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }

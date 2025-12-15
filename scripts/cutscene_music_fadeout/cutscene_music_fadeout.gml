@@ -3,13 +3,13 @@ function cutscene_music_fadeout(){
 ///@arg time
 
 gain = 0
-audio_sound_gain(ctrl_music.cutscenesong,gain,argument0)
+audio_sound_gain(obj_music_handler.cutscenesong,gain,argument0)
 
-currentgain = audio_sound_get_gain(ctrl_music.cutscenesong)
+currentgain = audio_sound_get_gain(obj_music_handler.cutscenesong)
 if currentgain = gain 
 {
-	ctrl_music.cutscenesong_pos = audio_sound_get_track_position(ctrl_music.areasong);
-	audio_stop_sound(ctrl_music.cutscenesong);
+	obj_music_handler.cutscenesong_pos = audio_sound_get_track_position(obj_music_handler.cutscenesong);
+	audio_stop_sound(obj_music_handler.cutscenesong);
 	cutscene_end_action();
 }
 }

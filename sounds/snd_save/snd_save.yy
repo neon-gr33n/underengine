@@ -1,15 +1,17 @@
 {
-  "$GMSound":"",
+  "$GMSound":"v2",
   "%Name":"snd_save",
   "audioGroupId":{
     "name":"sfx",
     "path":"audiogroups/sfx",
   },
   "bitDepth":0,
-  "bitRate":56,
+  "channelFormat":0,
   "compression":0,
+  "compressionQuality":1,
   "conversionMode":0,
   "duration":0.565986,
+  "exportDir":"",
   "name":"snd_save",
   "parent":{
     "name":"ui",
@@ -20,6 +22,5 @@
   "resourceVersion":"2.0",
   "sampleRate":22050,
   "soundFile":"snd_save.wav",
-  "type":0,
   "volume":1.0,
 }

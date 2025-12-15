@@ -1,0 +1,27 @@
+{
+  "$GMSound":"v2",
+  "%Name":"snd_ysoul_blast",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":0,
+  "channelFormat":0,
+  "compression":1,
+  "compressionQuality":1,
+  "ConfigValues":{},
+  "conversionMode":0,
+  "duration":1.772018,
+  "exportDir":"",
+  "name":"snd_ysoul_blast",
+  "parent":{
+    "name":"soul",
+    "path":"folders/Sounds/sfx/battle/soul.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":22050,
+  "soundFile":"snd_ysoul_blast.wav",
+  "volume":1.0,
+}

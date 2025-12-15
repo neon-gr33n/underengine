@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"cutscene_cam_zoom",
   "isCompatibility":false,
   "isDnD":false,

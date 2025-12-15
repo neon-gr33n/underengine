@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"cutscene_music_fadeout",
   "isCompatibility":false,
   "isDnD":false,

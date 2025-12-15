@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"display_scripts",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"display_scripts",
+  "parent":{
+    "name":"config",
+    "path":"folders/Scripts/maingame/config.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

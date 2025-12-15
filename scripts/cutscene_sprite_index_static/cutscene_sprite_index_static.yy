@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"cutscene_sprite_index_static",
   "isCompatibility":false,
   "isDnD":false,

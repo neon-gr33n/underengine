@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"__InputStream__",
   "isCompatibility":false,
   "isDnD":false,

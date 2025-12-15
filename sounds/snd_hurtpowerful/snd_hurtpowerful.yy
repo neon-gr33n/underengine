@@ -1,15 +1,17 @@
 {
-  "$GMSound":"",
+  "$GMSound":"v2",
   "%Name":"snd_hurtpowerful",
   "audioGroupId":{
-    "name":"audiogroup_default",
-    "path":"audiogroups/audiogroup_default",
+    "name":"sfx",
+    "path":"audiogroups/sfx",
   },
-  "bitDepth":1,
-  "bitRate":128,
+  "bitDepth":0,
+  "channelFormat":0,
   "compression":0,
+  "compressionQuality":0,
   "conversionMode":0,
   "duration":1.038957,
+  "exportDir":"",
   "name":"snd_hurtpowerful",
   "parent":{
     "name":"battle",
@@ -18,8 +20,7 @@
   "preload":false,
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
-  "sampleRate":44100,
+  "sampleRate":22050,
   "soundFile":"snd_hurtpowerful.wav",
-  "type":0,
   "volume":1.0,
 }

@@ -76,7 +76,7 @@ function __input_class_virtual() constructor
         
         if (__active && is_struct(__global.__touch_player))
         {
-            if (__circular == true)
+            if (__circular)
             {
                 draw_circle(__x, __y, __radius,   true);
                 draw_circle(__x, __y, __radius-4, true);
@@ -94,7 +94,7 @@ function __input_class_virtual() constructor
             var _old_alpha = draw_get_alpha();
             draw_set_alpha(0.33*_old_alpha);
             
-            if (__circular == true)
+            if (__circular)
             {
                 draw_circle(__x, __y, __radius, true);
             }
@@ -725,7 +725,7 @@ function __input_class_virtual() constructor
                         var _move_x = 0;
                         var _move_y = 0;
                         
-                        if (__circular == true)
+                        if (__circular)
                         {
                             var _move_distance = max(0, _length - __radius);
                             _move_x = _move_distance*_dx / _length;

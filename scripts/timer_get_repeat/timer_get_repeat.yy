@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"timer_get_repeat",
   "isCompatibility":false,
   "isDnD":false,

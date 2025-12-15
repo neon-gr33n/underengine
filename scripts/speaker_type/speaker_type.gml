@@ -1,0 +1,4 @@
+enum SPEAKER_TYPE {
+	REGULAR,
+	SHOP
+}

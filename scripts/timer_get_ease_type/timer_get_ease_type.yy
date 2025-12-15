@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"timer_get_ease_type",
   "isCompatibility":false,
   "isDnD":false,

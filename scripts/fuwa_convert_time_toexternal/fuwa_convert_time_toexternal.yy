@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"fuwa_convert_time_toexternal",
   "isCompatibility":false,
   "isDnD":false,

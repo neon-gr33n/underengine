@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"draw_item_safe",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"draw_item_safe",
+  "parent":{
+    "name":"inv",
+    "path":"folders/Scripts/inv.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

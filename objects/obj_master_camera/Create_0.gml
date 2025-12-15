@@ -18,6 +18,8 @@ enum cameraStates {
 //Sets states for camera
 camera_state = cameraStates.SETUP;
 
+debugInfoShow = false;
+
 //Player vars
 player_id = noone;
 player_number = 0;
@@ -44,5 +46,27 @@ shake = 0;				//shake effect bool
 shake_time = 0;			//duration of screen shake
 shake_magnitude = 0;	//how far screen shakes
 shake_decay = 0;		//how fast shake decays
+
+// Border Vars
+border_alpha = 0;
+
+// In create event - SIMPLIFIED
+ppfx_enabled = true;
+ppfx_initialized = false;
+
+// Check if PPFX exists
+if (instance_exists(obj_ppfx_handler)) {
+    ppfx_initialized = true;
+    show_debug_message("PPFX handler found");
+} else {
+    ppfx_enabled = false;
+    show_debug_message("PPFX handler not found");
+}
+// Check if we're already targeting a surface
+var current_target = surface_get_target();
+if (current_target != -1) {
+    // Reset any existing surface target first
+    surface_reset_target();
+}
 
 #endregion

@@ -1,15 +1,17 @@
 {
-  "$GMSound":"",
+  "$GMSound":"v2",
   "%Name":"snd_menu_switch",
   "audioGroupId":{
     "name":"sfx",
     "path":"audiogroups/sfx",
   },
   "bitDepth":0,
-  "bitRate":48,
+  "channelFormat":0,
   "compression":0,
+  "compressionQuality":0,
   "conversionMode":0,
   "duration":0.023401,
+  "exportDir":"",
   "name":"snd_menu_switch",
   "parent":{
     "name":"ui",
@@ -20,6 +22,5 @@
   "resourceVersion":"2.0",
   "sampleRate":22050,
   "soundFile":"snd_menu_switch.wav",
-  "type":0,
   "volume":1.0,
 }

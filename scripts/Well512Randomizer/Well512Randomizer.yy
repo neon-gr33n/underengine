@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"Well512Randomizer",
   "isCompatibility":false,
   "isDnD":false,

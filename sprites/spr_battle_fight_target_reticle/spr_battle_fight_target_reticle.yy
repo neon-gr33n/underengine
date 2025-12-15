@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_battle_fight_target_reticle",
   "bboxMode":0,
   "bbox_bottom":127,
@@ -12,8 +12,8 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"5f3c3ef4-9ab5-4b8e-a3dd-43ebafd13497","name":"5f3c3ef4-9ab5-4b8e-a3dd-43ebafd13497","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"842dcaa9-c02f-4339-a3d4-a6ebdcb9cd13","name":"842dcaa9-c02f-4339-a3d4-a6ebdcb9cd13","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"5f3c3ef4-9ab5-4b8e-a3dd-43ebafd13497","name":"5f3c3ef4-9ab5-4b8e-a3dd-43ebafd13497","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"842dcaa9-c02f-4339-a3d4-a6ebdcb9cd13","name":"842dcaa9-c02f-4339-a3d4-a6ebdcb9cd13","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
@@ -24,7 +24,7 @@
   ],
   "name":"spr_battle_fight_target_reticle",
   "nineSlice":null,
-  "origin":0,
+  "origin":4,
   "parent":{
     "name":"TARGET",
     "path":"folders/Sprites/User Interface/Battle/TARGET.yy",
@@ -33,7 +33,7 @@
   "resourceType":"GMSprite",
   "resourceVersion":"2.0",
   "sequence":{
-    "$GMSequence":"",
+    "$GMSequence":"v1",
     "%Name":"spr_battle_fight_target_reticle",
     "autoRecord":true,
     "backdropHeight":768,
@@ -69,18 +69,14 @@
     "timeUnits":1,
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"5f3c3ef4-9ab5-4b8e-a3dd-43ebafd13497","path":"sprites/spr_battle_fight_target_reticle/spr_battle_fight_target_reticle.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"5f8851ab-a0c5-41f5-a6fc-6b5e67cc3d9a","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"842dcaa9-c02f-4339-a3d4-a6ebdcb9cd13","path":"sprites/spr_battle_fight_target_reticle/spr_battle_fight_target_reticle.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"be236202-d16e-4f63-8c70-cb6d93575c00","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"5f3c3ef4-9ab5-4b8e-a3dd-43ebafd13497","path":"sprites/spr_battle_fight_target_reticle/spr_battle_fight_target_reticle.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"5f8851ab-a0c5-41f5-a6fc-6b5e67cc3d9a","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"842dcaa9-c02f-4339-a3d4-a6ebdcb9cd13","path":"sprites/spr_battle_fight_target_reticle/spr_battle_fight_target_reticle.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"be236202-d16e-4f63-8c70-cb6d93575c00","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":0,
-    "yorigin":0,
+    "xorigin":7,
+    "yorigin":64,
   },
   "swatchColours":null,
   "swfPrecision":2.525,

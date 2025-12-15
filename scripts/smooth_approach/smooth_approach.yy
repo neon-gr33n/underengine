@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"smooth_approach",
   "isCompatibility":false,
   "isDnD":false,

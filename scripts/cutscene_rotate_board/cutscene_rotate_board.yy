@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"cutscene_rotate_board",
   "isCompatibility":false,
   "isDnD":false,

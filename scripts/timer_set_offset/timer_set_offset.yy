@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"timer_set_offset",
   "isCompatibility":false,
   "isDnD":false,

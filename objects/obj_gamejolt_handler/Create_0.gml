@@ -1,0 +1,1 @@
+sessionClosing = false

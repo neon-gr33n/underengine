@@ -20,7 +20,5 @@ with obj
 	sprite_index = spr_blank;
 }
 
-cutscene_end_action();
-
 return inst;
 }

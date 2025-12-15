@@ -6,148 +6,351 @@ if(live_call()) return live_result;
 #region TOP SECTION
 // draw boxes
 
-draw_sprite_ext(spr_px,0,x+50,y+75,131,6,0,c_white,1)
-draw_sprite_ext(spr_px,0,x+55,y+75,101,6,-90,c_white,1)
-draw_sprite_ext(spr_px,0,x+183,y+75,101,6,-90,c_white,1)
-draw_sprite_ext(spr_px,0,x+50,y+170,132,6,0,c_white,1)
+draw_sprite_ext(global.boxout,0,x+115,y+125,2.95,2,0,c_white,1)
+draw_sprite_ext(global.boxin,0,x+115,y+125,2.95,2,0,c_white,__DRAW_BOX_OPACITY)
 
-draw_sprite_ext(spr_px,0,x+55,y+80,122,90,0,c_black,1)
+ switch _menu_active {
+	case 1:
+		draw_sprite_ext(global.boxout,0,x+330,y+67,6,0.67,0,c_yellow,1)
+		draw_sprite_ext(global.boxin,0,x+330,y+67,6,0.67,0,c_yellow,1)
+		draw_sprite_ext(global.boxout,0,x+330,y+229,6,6.5,0,c_yellow,1)
+		draw_sprite_ext(global.boxin,0,x+330,y+229,6,6.5,0,c_yellow,__DRAW_BOX_OPACITY)
+		if currentState=="itemAction" || (currentState == "itemOpened" && use_text != "") {
+			draw_sprite_ext(global.boxout,0,x+330,y+426,6,2,0,c_yellow,1)
+			draw_sprite_ext(global.boxin,0,x+330,y+426,6,2,0,c_yellow,__DRAW_BOX_OPACITY)
+		}
+		draw_set_halign(fa_center);
+		draw_ftext(fnt_mars,c_white,330,60,1,1,0,activeSection+"   [press c]")
+		draw_set_halign(fa_left)
 
-if _menu_active == 1 {
-	draw_sprite_ext(spr_px,0,x+190,y+75,259,6,0,c_white,1)
-	draw_sprite_ext(spr_px,0,x+196,y+75,313,6,-90,c_white,1)
-	draw_sprite_ext(spr_px,0,x+449,y+75,313,6,-90,c_white,1)
-	draw_sprite_ext(spr_px,0,x+190,y+384,259,6,0,c_white,1)
+		draw_ftext(loc_get_font(fnt_main_small),currentState=="itemAction"&&!_action_selction ? c_yellow : c_white,global.rounded_box ? 250:215,330,2,2,0,loc_gettext("ui.item.use"))
+		// todo: add "info/inspect" option and functionality
+		//draw_ftext(global.fnt_main_sm,c_white,global.rounded_box ? 300:287,330,2,2,0,loc_gettext("ui.item.inspect"))
+		draw_ftext(loc_get_font(fnt_main_small),currentState=="itemAction"&&_action_selction ? c_yellow : c_white,global.rounded_box ? 350:287,330,2,2,0,loc_gettext("ui.item.drop"))
+	break;
+	
+	case 2:
+		draw_sprite_ext(global.boxout,0,x+366,y+263,7.5,8,0,c_red,1)
+		draw_sprite_ext(global.boxin,0,x+366,y+263,7.5,8,0,c_red,__DRAW_BOX_OPACITY)
+	break;
 
-	draw_sprite_ext(spr_px,0,x+195,y+80,248,304,0,c_black,1)
-
-
-	if UTE_ENABLE_FF_CHOICE_LINE == true {
-		draw_sprite_ext(spr_px,0,x+210,y+320,220,3,0,c_white,1)
-		draw_sprite_ext(spr_px,0,x+210,y+370,220,3,0,c_white,1)
-		draw_ftext(fnt_main_small,c_white,215,330,2,2,0,loc_gettext("ui.item.use"))
-		draw_ftext(fnt_main_small,c_white,255,330,2,2,0,"  |")
-		draw_ftext(fnt_main_small,c_white,287,330,2,2,0,loc_gettext("ui.item.inspect"))
-		draw_ftext(fnt_main_small,c_white,345,330,2,2,0,"  |")
-		draw_ftext(fnt_main_small,c_white,375,330,2,2,0,loc_gettext("ui.item.drop"))
-	} else {
-		draw_ftext(fnt_main_small,c_white,215,340,2,2,0,loc_gettext("ui.item.use"))
-		draw_ftext(fnt_main_small,c_white,287,340,2,2,0,loc_gettext("ui.item.inspect"))
-		draw_ftext(fnt_main_small,c_white,375,340,2,2,0,loc_gettext("ui.item.drop"))
-	}
+	case 3:
+		draw_sprite_ext(global.boxout,0,x+330,y+67,6,0.67,0,c_lime,1)
+		draw_sprite_ext(global.boxin,0,x+330,y+67,6,0.67,0,c_lime,1)
+		draw_sprite_ext(global.boxout,0,x+330,y+229,6,6.5,0,c_lime,1)
+		draw_sprite_ext(global.boxin,0,x+330,y+229,6,6.5,0,c_lime,__DRAW_BOX_OPACITY)
+	
+		draw_ftext(fnt_mars,c_white,265,60,1,1,0,"CONTACTS")
+	break;
+	
+	case 4:
+		draw_sprite_ext(global.boxout,0,x+330,y+67,6,0.67,0,c_lime,1)
+		draw_sprite_ext(global.boxin,0,x+330,y+67,6,0.67,0,c_lime,1)
+		draw_sprite_ext(global.boxout,0,x+330,y+229,6,6.5,0,c_lime,1)
+		draw_sprite_ext(global.boxin,0,x+330,y+229,6,6.5,0,c_lime,__DRAW_BOX_OPACITY)
+	
+		draw_ftext(fnt_mars,c_white,265,60,1,1,0,"CONTACTS")
+	break;
 }
 
 // draw text
-draw_ftext(fnt_main_small,c_white,63-x,81,2,2,0,"Frisk")
-draw_ftext(fnt_crypt,c_white,62,113,1,1,0,"LV" + "  9")
-draw_ftext(fnt_crypt,c_white,62,129,1,1,0,"HP" + "  20/20")
-draw_ftext(fnt_crypt,c_white,62,146,1,1,0,"G" + "   331")
+draw_ftext(loc_get_font(fnt_main_small),c_white,63-x,83,2,2,0,string(member_get_attribute(party_get_leader(), "NAME")))
+draw_ftext(fnt_crypt,c_white,62,113,1,1,0,"LV" + "  " + string(member_get_stat(party_get_leader(), "LV")))
+draw_ftext(fnt_crypt,c_white,62,129,1,1,0,"HP" + "  " + string(member_get_stat(party_get_leader(), "HP")) 
++ "/" + string(member_get_stat(party_get_leader(), "MAX_HP")))
+draw_ftext(fnt_crypt,c_white,62,146,1,1,0,"G" + "   " + string(party_get_stat("GOLD")))
 #endregion
 
 #region BOTTOM SECTION
 // draw boxes
 
-draw_sprite_ext(spr_px,0,x+55,y+180,123,138,0,c_black,1)
+//draw_sprite_ext(global.boxout,0,x+115,y+230,2.95,2,0,c_white,1)
+//draw_sprite_ext(global.boxin,0,x+115,y+230,2.95,2,0,c_white,__DRAW_BOX_OPACITY)
+draw_sprite_ext(global.boxout,0,x+115,y+inven_get_item_by_name("CELL_PHONE") != noone ? 248 : 230 ,2.95,inven_get_item_by_name("CELL_PHONE") != noone ? 3:2,0,c_white,1)
+draw_sprite_ext(global.boxin,0,x+115,y+inven_get_item_by_name("CELL_PHONE") != noone ? 248 : 230 ,2.95,inven_get_item_by_name("CELL_PHONE") != noone ? 3:2,0,c_white,__DRAW_BOX_OPACITY)
 
-draw_sprite_ext(spr_px,0,x+49,y+182,135,6,0,c_white,1)
-draw_sprite_ext(spr_px,0,x+55,y+188,130,6,-90,c_white,1)
-draw_sprite_ext(spr_px,0,x+184,y+188,130,6,-90,c_white,1)
-draw_sprite_ext(spr_px,0,x+49,y+311,132,7,0,c_white,1)
-
-if UTE_ENABLE_DF_CMENU_CURSOR == true {
-	if(_menu_active == 1){
-			draw_sprite_ext(spr_cmenu_sel,0,x+190,y+selCursorYPos-115,3.5,1.5,0,c_yellow,1)	
-			draw_sprite_ext(spr_heart_sm,0,x+230,y+selCursorYPos-112,2,2,0,c_black,1)
-			var _invSize = ds_list_size(global.player_inventory);
-	
-			for (var i = 0; i < _invSize; i++){
-				var _item = global.player_inventory[| i].longName;	
-		
-				var _y = 30 * i;
-				draw_ftext_transformed(fnt_main_small,c_white,235+30, _y+85,string(_item),0,240,2,2,0,1)
-				if _menu_item_selection == 0 {
-					draw_ftext_transformed(fnt_main_small,c_black,235+30, 30+55,string(_item),0,240,2,2,0,1)
-				}
-				if _menu_item_selection == 1 {
-					draw_ftext_transformed(fnt_main_small,c_black,235+30, 30+85,string(_item),0,240,2,2,0,1)
-				}
-				if _menu_item_selection == 2 {
-					draw_ftext_transformed(fnt_main_small,c_black,235+30, 30+115,string(_item),0,240,2,2,0,1)
-				}
-				if _menu_item_selection == 3 {
-					draw_ftext_transformed(fnt_main_small,c_black,235+30, 30+145,string(_item),0,240,2,2,0,1)
-				}
-				if _menu_item_selection == 4 {
-					draw_ftext_transformed(fnt_main_small,c_black,235+30, 30+175,string(_item),0,240,2,2,0,1)
-				}
-				if _menu_item_selection == 5 {
-					draw_ftext_transformed(fnt_main_small,c_black,235+30, 30+205,string(_item),0,240,2,2,0,1)
-				}
-				if _menu_item_selection == 6 {
-					draw_ftext_transformed(fnt_main_small,c_black,235+30, 30+235,string(_item),0,240,2,2,0,1)
-				}
-				if _menu_item_selection == 7 {
-					draw_ftext_transformed(fnt_main_small,c_black,235+30, 30+265,string(_item),0,240,2,2,0,1)
-				}
+if UTE_ENABLE_DF_CMENU_CURSOR {
+	switch _menu_active {
+		case 0:			
+			draw_sprite_ext(spr_cmenu_icons,0,67,203,1.5,1.5,0,c_white,1)
+			draw_sprite_ext(spr_cmenu_icons,3,64,233,1.5,1.5,0,c_white,1)
+			if (inven_get_item_by_name("CELL_PHONE") != noone){
+					draw_sprite_ext(spr_cmenu_icons,2,64,266,1.5,1.5,0,c_white,1)
+			}		
+			if (member_get_attribute(party_get_leader(), "RACE") == "Monster") {
+			draw_sprite_ext(spr_cmenu_icons,1,64,303,1.5,1.5,0,c_white,_menu_selection == 3 ? 0 : 1)
 			}
+			draw_sprite_ext(spr_cmenu_sel,0,x + 47,y+205+_menu_selection*32,2,1.5,0,c_red,1)
+			draw_sprite_ext(spr_heart_sm,0,x+selCursorXPos,y+208+_menu_selection*32,2,2,0,c_black,1)
 			// draw text
-			draw_ftext(fnt_main_small,c_silver ,98,200,2,2,0,loc_gettext("ui.item"))
-			draw_ftext(fnt_main_small,c_white,98,232,2,2,0,loc_gettext("ui.stat"))
-			draw_ftext(fnt_main_small,  c_white,98,264,2,2,0,loc_gettext("ui.cell"))
-	}
-	if(!_activeSel){
-	draw_sprite_ext(spr_cmenu_sel,0,x+49,y+selCursorYPos,2,1.5,0,c_red,1)
-	draw_sprite_ext(spr_heart_sm,0,x+selCursorXPos,y+selCursorYPos+3,2,2,0,c_black,1)
-	}
-	if(_menu_active == 0){
-		// draw text
-		draw_ftext(fnt_main_small,_menu_selection == 0 ? c_black : c_white ,98,200,2,2,0,loc_gettext("ui.item"))
-		draw_ftext(fnt_main_small,_menu_selection == 1 ? c_black : c_white,98,232,2,2,0,loc_gettext("ui.stat"))
-		draw_ftext(fnt_main_small, _menu_selection == 2 ? c_black : c_white,98,264,2,2,0,loc_gettext("ui.cell"))
+			draw_ftext(loc_get_font(fnt_main_small),_menu_selection == 0 ? c_black : c_white ,98,200,2,2,0,loc_gettext("ui.item"))
+			draw_ftext(loc_get_font(fnt_main_small),_menu_selection == 1 ? c_black : c_white,98,232,2,2,0,loc_gettext("ui.stat"))
+			if (inven_get_item_by_name("CELL_PHONE") != noone){
+				draw_ftext(loc_get_font(fnt_main_small), _menu_selection == 2 ? c_black : c_white,98,264,2,2,0,loc_gettext("ui.cell"))
+			}
+			if (member_get_attribute(party_get_leader(), "RACE") == "Monster") {
+				draw_ftext(loc_get_font(fnt_main_small), _menu_selection == 3 ? c_black : c_white,98,296,2,2,0,"SPELL")
+			}
+			break;
+		
+		case 1:		
+			_invmain = "";
+			_invcount = 0;
+			_item_index = 0;
+			
+			array_foreach(party_get_attribute("INVENTORY"), function(_element, _index) {
+				if (!_menu_item_section || item_get_category(_element) == index_to_category(_menu_item_section - 1)) {
+					_invmain += (_invcount == _menu_item_selection ? (currentState == "itemAction" ? "[c_dkgray]" : "[c_black]") : "[c_white]") + item_get_attribute(_element, "NAME") + "[/c]#";
+					_invcount++;
+				}
+				if (_invcount <= _menu_item_selection)
+					_item_index++;
+			});
+			if (!_menu_item_section)
+				repeat (inven_get_space_left())
+					_invmain += "[c_grey]------------[/c]#"
+
+			draw_sprite_ext(spr_cmenu_icons,0,67,203,1.5,1.5,0,c_white,1)
+			draw_sprite_ext(spr_cmenu_icons,3,64,233,1.5,1.5,0,c_white,1)
+			if (inven_get_item_by_name("CELL_PHONE") != noone){
+					draw_sprite_ext(spr_cmenu_icons,2,64,266,1.5,1.5,0,c_white,1)
+			}		
+			if (member_get_attribute(party_get_leader(), "RACE") == "Monster") {
+				draw_sprite_ext(spr_cmenu_icons,1,64,303,1.5,1.5,0,c_white,_menu_selection == 3 ? 0 : 1)
+			}
+			draw_sprite_ext(spr_cmenu_sel_longer,0,x+25,y+205+_menu_selection*32,2,1.5,0,c_yellow,1)
+			
+			if _invcount>0 {
+				draw_sprite_ext(spr_cmenu_sel,0,x+198,y+88+_menu_item_selection*29,global.rounded_box ? 3.8:3.5,2,0,c_yellow,1)	
+				draw_sprite_ext(spr_heart_sm,0,x+220,y+93+_menu_item_selection*29,2,2,0,c_black,1)
+			}
+			
+			if (!instance_exists(__invmain)) {
+				__invmain = instance_create(235+20,30+54,obj_text_writer)
+			}
+				
+			__invmain.dialogue.dialogueFont =loc_get_font("fnt_main");
+			__invmain._speed = 0.95;
+			__invmain.dialogue.dialogueText=_invmain
+			__invmain.dialoguePosition="none"
+			__invmain.typist.skip();
+			if (currentState == "itemOpened" && use_text != "") {
+				if !instance_exists(__info) { __info = instance_create(210,385,obj_text_writer) }
+				
+				__info.dialogue.dialogueFont = loc_get_font("fnt_main_small");
+				__info._speed = 0.95;
+				__info.dialogue.dialogueText= "[scale, 1.5]" + use_text;
+				__info.dialoguePosition="none";
+			} else if currentState == "itemAction" {
+				if !instance_exists(__info) { __info = instance_create(210,385,obj_text_writer) }
+				
+				__info.dialogue.dialogueFont = loc_get_font("fnt_main_small");
+				__info._speed = 0.95;
+				__info.dialogue.dialogueText="[scale, 1.5]" + item_get_attribute(inven_get_item(_item_index), "DESCRIPTION");
+				__info.dialoguePosition="none";
+				__info.typist.skip();
+			} else if currentState=="itemUsing" {
+				if !instance_exists(__info) { __info = instance_create(210,385,obj_text_writer) }
+				
+				__info.dialogue.dialogueFont =loc_get_font("fnt_main_small");
+				__info._speed = 0.95;
+				__info.dialogue.dialogueText= "[scale, 1.5]" + use_text;
+				__info.dialoguePosition="none";
+				//__info.typist.skip();
+			} else if instance_exists(__info)
+				instance_destroy(__info)
+			
+			// draw options
+			draw_ftext(loc_get_font(fnt_main_small),c_black ,98,200,2,2,0,loc_gettext("ui.item"))
+			draw_ftext(loc_get_font(fnt_main_small),c_white,98,232,2,2,0,loc_gettext("ui.stat"))
+			if (inven_get_item_by_name("CELL_PHONE") != noone){
+					draw_ftext(loc_get_font(fnt_main_small), _menu_selection == 2 ? c_black : c_white,98,264,2,2,0,loc_gettext("ui.cell"))
+			}
+			if (member_get_attribute(party_get_leader(), "RACE") == "Monster") {
+				draw_ftext(loc_get_font(fnt_main_small), _menu_selection == 3 ? c_black : c_white,98,296,2,2,0,"SPELL")
+			}
+			break;
+			
+		case 2:
+			draw_sprite_ext(spr_cmenu_icons,0,67,203,1.5,1.5,0,c_white,1)
+			draw_sprite_ext(spr_cmenu_icons,3,64,233,1.5,1.5,0,c_white,1)
+			if (inven_get_item_by_name("CELL_PHONE") != noone){
+					draw_sprite_ext(spr_cmenu_icons,2,64,266,1.5,1.5,0,c_white,1)
+			}		
+			if (member_get_attribute(party_get_leader(), "RACE") == "Monster") {
+			draw_sprite_ext(spr_cmenu_icons,1,64,303,1.5,1.5,0,c_white,_menu_selection == 3 ? 0 : 1)
+			}
+			draw_sprite_ext(spr_cmenu_sel_longer,0,x+25,y+205+_menu_selection*32,2,1.5,0,c_red,1)
+			draw_ftext(loc_get_font(fnt_main_small),c_white ,98,200,2,2,0,loc_gettext("ui.item"))
+			draw_ftext(loc_get_font(fnt_main_small),c_black,98,232,2,2,0,loc_gettext("ui.stat"))
+			if (inven_get_item_by_name("CELL_PHONE") != noone){
+					draw_ftext(loc_get_font(fnt_main_small), _menu_selection == 2 ? c_black : c_white,98,264,2,2,0,loc_gettext("ui.cell"))
+			}
+			if (member_get_attribute(party_get_leader(), "RACE") == "Monster") {
+				draw_ftext(loc_get_font(fnt_main_small), _menu_selection == 3 ? c_black : c_white,98,296,2,2,0,"SPELL")
+			}
+		
+			if !instance_exists(__stat) { __stat = instance_create(215,30+60,obj_text_writer) }
+		
+			__stat.dialoguePosition = "none"
+			__stat.dialogue.dialogueFont =loc_get_font("fnt_main")
+			__stat.dialogue.dialogueText = chr(34) + string(member_get_attribute(party_get_leader(), "NAME")) + chr(34)
+																	+ "#"
+																	+"LV" + " " + string(member_get_stat(party_get_leader(), "LV"))
+																	+ "#"
+																	+"#"
+																	+ "HP:" + " " + string(member_get_stat(party_get_leader(), "HP"))
+																	+ "/" + string(member_get_stat(party_get_leader(), "MAX_HP"))
+																	+ "#" 
+																	+  "MP:" + " " +  string(member_get_stat(party_get_leader(), "MP"))
+																	+ "/" + string(member_get_stat(party_get_leader(), "MAX_MP"))
+																	+"#"
+																	+"EXP:" + " " + string(member_get_stat(party_get_leader(), "EXP"))
+																	+"#"
+																	+"NEXT:" + " " + string(LV_get_exp_needed(member_get_stat(party_get_leader(), "LV") + 1) - member_get_stat(party_get_leader(), "EXP"))
+																	+"#"
+																	+"#"
+																	+"WEAPON: "+string(item_get_attribute(member_get_stat(party_get_leader(), "WEAPON"), "NAME"))
+																	+"#"
+																	+"ARMOR: "+string(item_get_attribute(member_get_stat(party_get_leader(), "ARMOUR"), "NAME"))
+																	+"#"
+																	+"EMOTION:" + " " + string(member_get_stat(party_get_leader(), "EMOTION")) 
+																	+"#"
+																	+"GOLD:" + " " + string(party_get_stat("GOLD"))
+														
+																
+																
+			__stat.typist.skip();
+			if !instance_exists(__stat2) { __stat2 = instance_create(365,30+60,obj_text_writer) }
+		
+			__stat2.dialoguePosition = "none"
+			__stat2.dialogue.dialogueFont = loc_get_font("fnt_main")
+			__stat2.dialogue.dialogueText = 
+																	"#"
+																	+"#"
+																	+"#"
+																	+"ATK:" + " " + string(member_get_stat(party_get_leader(), "ATK"))
+																	+" (" + string(item_get_attribute(member_get_stat(party_get_leader(), "WEAPON"), "ATK")) + ")"
+																	+"#" 
+																	+"DEF:" + " "+  string(member_get_stat(party_get_leader(), "DEF"))
+																	+" (" + string(item_get_attribute(member_get_stat(party_get_leader(), "ARMOUR"), "DEF")) + ")"
+																	+"#"
+																	+"KILLS:" + " " +string(party_get_stat("KILLS")) 
+																	+"#"
+																	+"SPARES:" + " " + string(party_get_stat("SPARES"))
+														
+																
+																
+			__stat2.typist.skip();
+		break;
+		
+		case 3:
+		    draw_sprite_ext(spr_cmenu_icons,0,67,203,1.5,1.5,0,c_white,1)
+		    draw_sprite_ext(spr_cmenu_icons,3,64,233,1.5,1.5,0,c_white,1)
+		    if (inven_get_item_by_name("CELL_PHONE") != noone){
+		        draw_sprite_ext(spr_cmenu_icons,2,64,266,1.5,1.5,0,c_white,1)
+		    }        
+		    if (member_get_attribute(party_get_leader(), "RACE") == "Monster") {
+		        draw_sprite_ext(spr_cmenu_icons,1,64,303,1.5,1.5,0,c_white,_menu_selection == 3 ? 0 : 1)
+		    }
+		    draw_sprite_ext(spr_cmenu_sel_longer,0,x+25,y+205+_menu_selection*32,2,1.5,0,c_lime,1)
+		    draw_sprite_ext(spr_cmenu_sel_longer,0,x+495,y+28+_menu_contact_selection*32+64,-3.5,1.8,0,c_lime,1)
+    
+		    draw_sprite_ext(spr_heart_sm,0,x+selCursorXPos+150,y+33+_menu_contact_selection*32+64,2,2,0,c_black,1)
+		    _contactslist = ""
+    
+		    for (var i=0;i<10;i++) {
+		        // Fixed: compare _menu_contact_selection with i, not _menu_contact_selection-1
+		        _contactslist += (_menu_contact_selection == i ? "[c_black]" : "[c_white]") + 
+		                        (10 > i ? 
+		                            (array_length(_contacts) > i ? 
+		                                global.CONTACTS[$ _contacts[i]][$ "NAME"] + "[scale,1][/c]" : 
+		                                "[c_grey]------------[/c]"
+		                            ) : 
+		                            ""
+		                        ) + "#"
+		    }
+    
+		    if !instance_exists(__contacts) { __contacts = instance_create(255+20,30+58,obj_text_writer) }
+    
+		    __contacts.dialogue.dialogueFont = loc_get_font("fnt_main")
+		    __contacts._speed = 0.95;
+		    __contacts.dialogue.dialogueText = _contactslist
+		    __contacts.dialoguePosition = "none"
+		    __contacts.typist.skip();
+    
+		    // draw options
+		    draw_ftext(loc_get_font(fnt_main_small), c_white, 98, 200, 2, 2, 0, loc_gettext("ui.item"))
+		    draw_ftext(loc_get_font(fnt_main_small), c_white, 98, 232, 2, 2, 0, loc_gettext("ui.stat"))
+		    if (inven_get_item_by_name("CELL_PHONE") != noone){
+		        draw_ftext(loc_get_font(fnt_main_small), _menu_selection == 2 ? c_black : c_white, 98, 264, 2, 2, 0, loc_gettext("ui.cell"))
+		    }
+		    if (member_get_attribute(party_get_leader(), "RACE") == "Monster") {
+		        // Fixed: using loc_get_font instead of global.fnt_main_sm
+		        draw_ftext(loc_get_font(fnt_main_small), _menu_selection == 3 ? c_black : c_white, 98, 296, 2, 2, 0, "SPELL")
+		    }
+		break;
+		case 4:
+		    draw_sprite_ext(spr_cmenu_icons,0,67,203,1.5,1.5,0,c_white,1)
+		    draw_sprite_ext(spr_cmenu_icons,3,64,233,1.5,1.5,0,c_white,1)
+		    if (inven_get_item_by_name("CELL_PHONE") != noone){
+		        draw_sprite_ext(spr_cmenu_icons,2,64,266,1.5,1.5,0,c_white,1)
+		    }        
+		    if (member_get_attribute(party_get_leader(), "RACE") == "Monster") {
+		        draw_sprite_ext(spr_cmenu_icons,1,64,303,1.5,1.5,0,c_white,_menu_selection == 3 ? 0 : 1)
+		    }
+		    draw_sprite_ext(spr_cmenu_sel_longer,0,x+25,y+205+_menu_selection*32,2,1.5,0,c_lime,1)
+		    draw_sprite_ext(spr_cmenu_sel_longer,0,x+495,y+28+_menu_contact_choice_selection*29+64,-3.5,1.8,0,c_lime,1)
+    
+		    draw_sprite_ext(spr_heart_sm,0,x+selCursorXPos+150,y+33+_menu_contact_choice_selection*29+64,2,2,0,c_black,1)
+    
+		    _contactchoices = ""
+    
+		    for (var i=0;i<4;i++) {
+		        var choice_text = global.CONTACTS[$ _contacts[_menu_contact_selection]].CHOICES[i];
+		        _contactchoices += (_menu_contact_choice_selection == i ? "[c_black]" : "[c_white]") + choice_text + "[scale,1][/c]#";
+		    }
+    
+		    if !instance_exists(__contacts_call_choices) { __contacts_call_choices = instance_create(255+20,30+58,obj_text_writer) }
+    
+		    __contacts_call_choices.dialogue.dialogueFont = loc_get_font("fnt_main")
+		    __contacts_call_choices._speed = 0.95;
+		    __contacts_call_choices.dialogue.dialogueText=_contactchoices
+		    __contacts_call_choices.dialoguePosition="none"
+		    __contacts_call_choices.typist.skip();
+    
+		    // draw options
+		    draw_ftext(loc_get_font(fnt_main_small),c_white ,98,200,2,2,0,loc_gettext("ui.item"))
+		    draw_ftext(loc_get_font(fnt_main_small),c_white,98,232,2,2,0,loc_gettext("ui.stat"))
+		    if (inven_get_item_by_name("CELL_PHONE") != noone){
+		        draw_ftext(loc_get_font(fnt_main_small), _menu_selection == 2 ? c_black : c_white,98,264,2,2,0,loc_gettext("ui.cell"))
+		    }
+		    if (member_get_attribute(party_get_leader(), "RACE") == "Monster") {
+		        draw_ftext(loc_get_font(fnt_main_small), _menu_selection == 3 ? c_black : c_white,98,296,2,2,0,"SPELL")
+		    }
+		break;
 	}
 } else {
 	if(!_activeSel){
-	draw_sprite_ext(spr_heart_sm,0,x+selCursorXPos,y+selCursorYPos+3,2,2,0,c_red,1)	
+	draw_sprite_ext(spr_cmenu_icons,0,67,203,1.5,1.5,0,c_white,1)
+	draw_sprite_ext(spr_cmenu_icons,3,64,233,1.5,1.5,0,c_white,1)
+	if (inven_get_item_by_name("CELL_PHONE") != -1){
+		draw_sprite_ext(spr_cmenu_icons,2,64,266,1.5,1.5,0,c_white,1)
+	}		
+	if (member_get_attribute(party_get_leader(), "RACE") == "Monster") {
+	draw_sprite_ext(spr_cmenu_icons,1,64,303,1.5,1.5,0,c_white,_menu_selection == 3 ? 0 : 1)
 	}
-			var _invSize = ds_list_size(global.player_inventory);
-	
-			for (var i = 0; i < _invSize; i++){
-				var _item = global.player_inventory[| i].longName;	
+	draw_sprite_ext(spr_heart_sm,0,x+selCursorXPos,y+208+_menu_selection*32,2,2,0,c_red,1)	
 		
-				var _y = 30 * i;
-				draw_ftext_transformed(fnt_main_small,c_white,235+30, _y+85,string(_item),0,240,2,2,0,1)
-				if _menu_item_selection == 0 {
-					draw_ftext_transformed(fnt_main_small,c_yellow,235+30, 30+55,string(_item),0,240,2,2,0,1)
-				}
-				if _menu_item_selection == 1 {
-					draw_ftext_transformed(fnt_main_small,c_yellow,235+30, 30+85,string(_item),0,240,2,2,0,1)
-				}
-				if _menu_item_selection == 2 {
-					draw_ftext_transformed(fnt_main_small,c_yellow,235+30, 30+115,string(_item),0,240,2,2,0,1)
-				}
-				if _menu_item_selection == 3 {
-					draw_ftext_transformed(fnt_main_small,c_yellow,235+30, 30+145,string(_item),0,240,2,2,0,1)
-				}
-				if _menu_item_selection == 4 {
-					draw_ftext_transformed(fnt_main_small,c_yellow,235+30, 30+175,string(_item),0,240,2,2,0,1)
-				}
-				if _menu_item_selection == 5 {
-					draw_ftext_transformed(fnt_main_small,c_yellow,235+30, 30+205,string(_item),0,240,2,2,0,1)
-				}
-				if _menu_item_selection == 6 {
-					draw_ftext_transformed(fnt_main_small,c_yellow,235+30, 30+235,string(_item),0,240,2,2,0,1)
-				}
-				if _menu_item_selection == 7 {
-					draw_ftext_transformed(fnt_main_small,c_yellow,235+30, 30+265,string(_item),0,240,2,2,0,1)
-				}
+	draw_ftext(loc_get_font(fnt_main_small),_menu_selection == 0 ? c_yellow : c_white ,98,200,2,2,0,loc_gettext("ui.item"))
+	draw_ftext(loc_get_font(fnt_main_small),_menu_selection == 1 ? c_yellow : c_white,98,232,2,2,0,loc_gettext("ui.stat"))
+	if (inven_get_item_by_name("CELL_PHONE") != noone){
+				draw_ftext(loc_get_font(fnt_main_small), _menu_selection == 2 ? c_black : c_white,98,264,2,2,0,loc_gettext("ui.cell"))
 			}
-	// draw text
-	draw_ftext(fnt_main_small,_menu_selection == 0 ? c_yellow : c_white ,98,200,2,2,0,loc_gettext("ui.item"))
-	draw_ftext(fnt_main_small,_menu_selection == 1 ? c_yellow : c_white,98,232,2,2,0,loc_gettext("ui.stat"))
-	draw_ftext(fnt_main_small, _menu_selection == 2 ? c_yellow : c_white,98,264,2,2,0,loc_gettext("ui.cell"))
+	if (member_get_attribute(party_get_leader(), "RACE") == "Monster") {
+		draw_ftext(loc_get_font(fnt_main_small), _menu_selection == 3 ? c_black : c_white,98,296,2,2,0,"SPELL")
+		}
+	}
 }
 
 #endregion
-
-//draw_sprite_ext(spr_px,0,x+30,y+15,150,12,-90,c_white,1)
-//draw_sprite_ext(spr_px,0,x+30,y+153,210,12,0,c_white,1)

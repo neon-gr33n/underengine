@@ -1,2 +1,3 @@
 ///@desc Re-center
-x = room_width/4.1;
+x = BOARD.x
+y = BOARD.y

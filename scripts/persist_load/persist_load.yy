@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"persist_load",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"persist_load",
+  "parent":{
+    "name":"loading",
+    "path":"folders/Scripts/savedata/loading.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

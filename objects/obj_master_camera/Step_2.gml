@@ -22,15 +22,11 @@ switch(camera_state)
 		//positions camera controller
 		if instance_exists(following) 
 		{
-			
 			//Follows player
-			if point_distance(x,y,following.x,following.y) > follow_dist 
-			{
-	
-			x = lerp(x,following.x, follow_lerp_speed);
-			y = lerp(y,following.y, follow_lerp_speed);
 
-			}
+			x = (global.camera_lerp ? lerp(x,following.x, follow_lerp_speed) : following.x);
+			y = (global.camera_lerp ? lerp(y,following.y, follow_lerp_speed) : following.y);
+
 			
 		}
 		
@@ -58,8 +54,19 @@ switch(camera_state)
 	
 }
 
-//Manages Zoom
-//if(mouse_wheel_up()||mouse_wheel_down()) {camera_set_zoom();}
+if global.debug {
+	if keyboard_check_pressed(vk_f12) {
+		debugInfoShow = !debugInfoShow
+	}
+	if keyboard_check(vk_tab){
+		camera_lerp_zoom(4,1)	
+	}
+	
+	if keyboard_check(vk_bslash){
+		camera_reset_zoom(2)
+	}
+}
 
-//Toggles full screen
-//if keyboard_check_pressed(vk_f4)&&(object_index == obj_master_camera) {fullscreen_toggle(true);}
+execute_tween(id,"border_alpha",1, "linear", 0.3)
+
+//show_debug_message("border index is: "+string(global._border_type_index))

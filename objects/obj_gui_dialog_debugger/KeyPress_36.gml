@@ -1,0 +1,1 @@
+currentSpeaker = availableSpeakers[0];

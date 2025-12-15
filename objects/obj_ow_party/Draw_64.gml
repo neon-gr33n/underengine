@@ -1,0 +1,1 @@
+//draw_text(50,10,(sprite_index==spriteIdle ? floor(remdir[0]/4) : remdir[0]))

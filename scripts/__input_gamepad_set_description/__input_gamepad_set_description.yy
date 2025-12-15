@@ -1,12 +1,12 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"__input_gamepad_set_description",
   "isCompatibility":false,
   "isDnD":false,
   "name":"__input_gamepad_set_description",
   "parent":{
     "name":"Gamepads and Steam",
-    "path":"folders/Libraries/Input/(System)/Gamepads and Steam.yy",
+    "path":"folders/Libraries/Juju Adams Libararies/Input/(System)/Gamepads and Steam.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

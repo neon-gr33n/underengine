@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"display_set_vsync_safe",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"display_set_vsync_safe",
+  "parent":{
+    "name":"utility",
+    "path":"folders/Scripts/utility.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -2,14 +2,15 @@
   "$GMObject":"",
   "%Name":"obj_shaker",
   "eventList":[
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"obj_shaker",
   "overriddenProperties":[],
   "parent":{
-    "name":"common",
-    "path":"folders/Objects/Technical/common.yy",
+    "name":"effects",
+    "path":"folders/Objects/Technical/common/effects.yy",
   },
   "parentObjectId":null,
   "persistent":false,

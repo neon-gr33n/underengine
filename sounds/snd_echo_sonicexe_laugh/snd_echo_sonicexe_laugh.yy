@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"snd_echo_sonicexe_laugh",
+  "audioGroupId":{
+    "name":"sfx",
+    "path":"audiogroups/sfx",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":1,
+  "compressionQuality":0,
+  "conversionMode":0,
+  "duration":2.136248,
+  "exportDir":"",
+  "name":"snd_echo_sonicexe_laugh",
+  "parent":{
+    "name":"other_voice",
+    "path":"folders/Sounds/sfx/voice/other_voice.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":5512,
+  "soundFile":"snd_echo_sonicexe_laugh.mp3",
+  "volume":1.0,
+}

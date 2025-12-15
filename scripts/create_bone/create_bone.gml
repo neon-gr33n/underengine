@@ -26,14 +26,14 @@ _yyscale = 0, _bmode = 0, _sin = 0, _sin_offset = 0, _sin_multiplier = 0, _bcirc
 	_sin_offset = argument9
 	_sin_multiplier = argument10
 	_bcircular = argument11
-	if _bcircular == true {
+	if _bcircular {
 		var theta  = 0;
 			repeat(16){
 			var boner = instance_create_depth(lengthdir_x(120,theta),lengthdir_y(120,theta),0,obj_bullet_bone)
 			with(boner) {
 				x = _xx + lengthdir_x(64,theta)
 				y = _yy + lengthdir_y(64,theta)
-				_bone_angle  =  point_direction(obj_battle_soul.x/4,obj_battle_soul.y/4,x,y)
+				_bone_angle  =  point_direction(HEART.x/4,HEART.y/4,x,y)
 				_bone_hspd  = _hspd
 				_bone_vspd  = _vspd
 				_bone_xscale  = _xxscale

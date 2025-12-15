@@ -6,8 +6,8 @@
   "name":"obj_transition",
   "overriddenProperties":[],
   "parent":{
-    "name":"common",
-    "path":"folders/Objects/Technical/common.yy",
+    "name":"effects",
+    "path":"folders/Objects/Technical/common/effects.yy",
   },
   "parentObjectId":null,
   "persistent":false,

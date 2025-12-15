@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"TGM_Tags",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"TGM_Tags",
+  "parent":{
+    "name":"Code",
+    "path":"folders/Libraries/KazanGames/TurboGML/Code.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

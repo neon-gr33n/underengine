@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"fuwa_clean_autodestroy",
   "isCompatibility":false,
   "isDnD":false,

@@ -1,12 +1,12 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"input_binding_scan_params_set",
   "isCompatibility":false,
   "isDnD":false,
   "name":"input_binding_scan_params_set",
   "parent":{
     "name":"07  Binding Scanner",
-    "path":"folders/Libraries/Input/07  Binding Scanner.yy",
+    "path":"folders/Libraries/Juju Adams Libararies/Input/07  Binding Scanner.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

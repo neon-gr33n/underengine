@@ -1,4 +1,13 @@
-
+/**
+ * Replaces one instance with another during a cutscene.
+ * 
+ * @example
+ * // Replace obj_npc with obj_npc_happy at same position
+ * cutscene_replace_instance(obj_npc, obj_npc_happy);
+ * 
+ * @param {instance} target_instance - Instance to be replaced/destroyed
+ * @param {instance} replacer_instance - Instance to take its position
+ */
 function cutscene_replace_instance(){
 ///@description cutscene_replace_instance
 ///@arg target_instance

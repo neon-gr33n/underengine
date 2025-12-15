@@ -162,7 +162,7 @@ function __FAST_config__() {
 		static toString	= function( _features ) {
 			static __B__	= string_repeat( "~", 40 );
 			
-			if ( _features == true ) {
+			if ( _features ) {
 				var _string	= __B__ + "\n" + toString() + "\n" + __B__ + "\n"
 				var _list	= variable_struct_get_names( features );
 				

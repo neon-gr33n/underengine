@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"create_cutscene",
   "isCompatibility":false,
   "isDnD":false,

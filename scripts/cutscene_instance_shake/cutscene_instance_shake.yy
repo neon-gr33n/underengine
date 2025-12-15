@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"cutscene_instance_shake",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"cutscene_instance_shake",
+  "parent":{
+    "name":"instance funcs",
+    "path":"folders/Scripts/Cutscene System/instance funcs.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

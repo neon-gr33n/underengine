@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"fuwa_get_clockframes",
   "isCompatibility":false,
   "isDnD":false,

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"layer_sh_start",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"layer_sh_start",
+  "parent":{
+    "name":"shaders",
+    "path":"folders/Scripts/utility/shaders.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

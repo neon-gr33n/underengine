@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"fuwa_ds_tree_build_node_value",
   "isCompatibility":false,
   "isDnD":false,

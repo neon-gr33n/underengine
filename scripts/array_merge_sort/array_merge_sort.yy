@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"array_merge_sort",
   "isCompatibility":false,
   "isDnD":false,

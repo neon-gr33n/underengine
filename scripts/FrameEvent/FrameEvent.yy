@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"FrameEvent",
   "isCompatibility":false,
   "isDnD":false,

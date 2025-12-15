@@ -5,10 +5,10 @@ function cutscene_replace_player(){
 
 var obj = argument0
 
-obj.x = obj_ow_player.x
-obj.y = obj_ow_player.y;
+obj.x = obj_ow_party.x
+obj.y = obj_ow_party.y;
 
-with obj_ow_player {x = -2000; y = -2000;}
+with obj_ow_party {x = -2000; y = -2000;}
 cutscene_end_action();
 
 }

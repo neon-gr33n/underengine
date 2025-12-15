@@ -1,12 +1,12 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"scribble_font_duplicate",
   "isCompatibility":false,
   "isDnD":false,
   "name":"scribble_font_duplicate",
   "parent":{
     "name":"Fonts",
-    "path":"folders/Libraries/Scribble/Fonts.yy",
+    "path":"folders/Libraries/Juju Adams Libararies/Scribble/Fonts.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

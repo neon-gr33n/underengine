@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"touch_layout_funcs",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"touch_layout_funcs",
+  "parent":{
+    "name":"savedata",
+    "path":"folders/Scripts/savedata.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

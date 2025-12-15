@@ -1,12 +1,12 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"game_cleanup",
   "isCompatibility":false,
   "isDnD":false,
   "name":"game_cleanup",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "name":"maingame",
+    "path":"folders/Scripts/maingame.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

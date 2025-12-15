@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"array_binary_search",
   "isCompatibility":false,
   "isDnD":false,

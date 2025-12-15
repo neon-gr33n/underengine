@@ -1,0 +1,1 @@
+HEART.soul_type=TYPES.YELLOW

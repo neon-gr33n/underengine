@@ -1,15 +1,17 @@
 {
-  "$GMSound":"",
+  "$GMSound":"v2",
   "%Name":"snd_writer_v",
   "audioGroupId":{
     "name":"sfx",
     "path":"audiogroups/sfx",
   },
   "bitDepth":0,
-  "bitRate":56,
+  "channelFormat":0,
   "compression":0,
+  "compressionQuality":1,
   "conversionMode":0,
-  "duration":0.162585,
+  "duration":0.11537415,
+  "exportDir":"",
   "name":"snd_writer_v",
   "parent":{
     "name":"voice",
@@ -20,6 +22,5 @@
   "resourceVersion":"2.0",
   "sampleRate":22050,
   "soundFile":"snd_writer_v.wav",
-  "type":0,
   "volume":1.0,
 }

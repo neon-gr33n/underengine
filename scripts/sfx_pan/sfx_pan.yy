@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"sfx_pan",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"sfx_pan",
+  "parent":{
+    "name":"sfx",
+    "path":"folders/Scripts/sound/sfx.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"fuwa_mround_min",
   "isCompatibility":false,
   "isDnD":false,

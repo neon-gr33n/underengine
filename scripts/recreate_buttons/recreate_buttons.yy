@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"recreate_buttons",
   "isCompatibility":false,
   "isDnD":false,

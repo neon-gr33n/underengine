@@ -1,30 +1,30 @@
-/// @description sets up camera
-/// @function camera_setup()
-/// @param viewport
-/// @param full_screen
-/// @param pixel_perfect
-function camera_setup(view_port = 0, _full_screen = false, _pix_perf = true)
+/**
+ * Sets up the camera view and display settings.
+ * @example
+ * // Basic setup with defaults
+ * camera_setup();
+ * 
+ * @example
+ * // Setup for viewport 1 with custom scale
+ * camera_setup(1, false, true, 0.75);
+ */
+function camera_setup(view_port = 0, _full_screen = noone, _pix_perf = true, view_scale = 0.5)
 {
 	//makes sure camera is persistent
 	if(!persistent) {persistent = true;}
 	
 	//sets screen
-	window_set_fullscreen(_full_screen);
+	if _full_screen!=noone window_set_fullscreen(_full_screen);
 	
 	//Finds proper scale
-	view_scale = floor(display_get_height() / GAME_RES_HEIGHT);
-	view_w = GAME_RES_WIDTH * view_scale;
-	view_h = GAME_RES_HEIGHT * view_scale;
-	view_full_scale = (display_get_height() / GAME_RES_HEIGHT);
-	view_full_w = GAME_RES_WIDTH * view_full_scale;
-	view_full_h = GAME_RES_HEIGHT * view_full_scale;
+	set_scales()
 	
 	//finds pixel perfect zoom
 	var pix_perf_zoom = 1.0 + ((view_full_scale - floor(view_full_scale))/2)*_pix_perf;
 	
 	//finds pixel perfect dimensions
-	var pix_perf_w = window_get_fullscreen() ? GAME_RES_WIDTH*pix_perf_zoom : GAME_RES_WIDTH;
-	var pix_perf_h = window_get_fullscreen() ? GAME_RES_HEIGHT*pix_perf_zoom : GAME_RES_HEIGHT;
+	var pix_perf_w = window_get_fullscreen() ? floor((display_get_height()/1.25)/9*16) : global._display_width;
+	var pix_perf_h = window_get_fullscreen() ? floor(display_get_height()/1.25) : global._display_height;
 	
 	//finds draw size
 	var appsurf_draw_size_w = window_get_fullscreen() ? view_full_w : view_w;
@@ -35,19 +35,24 @@ function camera_setup(view_port = 0, _full_screen = false, _pix_perf = true)
 	view_set_camera(view_port,view);
 	
 	//resizes dimensions
-	camera_set_view_size(view,pix_perf_w*view_zoom,pix_perf_h*view_zoom);
-	display_set_gui_size(pix_perf_w, pix_perf_h);
-	surface_resize(application_surface, appsurf_draw_size_w, appsurf_draw_size_h);
-	window_set_size(appsurf_draw_size_w, appsurf_draw_size_h);
+	camera_set_view_size(view,GAME_RES.w * view_scale,GAME_RES.h * view_scale);
+	display_set_gui_size(GAME_RES.w,GAME_RES.h);
+	surface_resize(application_surface,GAME_RES.w,GAME_RES.h);
+	window_set_size(global._windowed_width,global._windowed_height);
 	
 	//recenters window when getting out of fullscreen mode
 	if (!window_get_fullscreen()) {alarm[0] = 10;}
 
 }
 
-/// @description toggles full screen mode
-/// @function fullscreen_toggle()
-/// @param pixel_perfect
+/**
+ * Toggles between fullscreen and windowed mode.
+ * @example
+ * // Toggle fullscreen
+ * fullscreen_toggle();
+ * 
+ * @returns {boolean} Current fullscreen state after toggle
+ */
 function fullscreen_toggle(_pix_perf = true)
 {
 	//toggles full screen
@@ -57,20 +62,20 @@ function fullscreen_toggle(_pix_perf = true)
 	var pix_perf_zoom = 1.0 + ((view_full_scale - floor(view_full_scale))/2)*_pix_perf;
 	
 	//finds pixel perfect dimensions
-	var pix_perf_w = window_get_fullscreen() ? GAME_RES_WIDTH*pix_perf_zoom : GAME_RES_WIDTH;
-	var pix_perf_h = window_get_fullscreen() ? GAME_RES_HEIGHT*pix_perf_zoom : GAME_RES_HEIGHT;
+	var pix_perf_w = window_get_fullscreen() ? GAME_RES.h*pix_perf_zoom : GAME_RES.w;
+	var pix_perf_h = window_get_fullscreen() ? GAME_RES.h*pix_perf_zoom : GAME_RES.w;
 	
 	//sets draw size
-	var appsurf_draw_size_w = window_get_fullscreen() ? view_full_w : view_w;
-	var appsurf_draw_size_h = window_get_fullscreen() ? view_full_h : view_h;
+	var appsurf_draw_size_w = window_get_fullscreen() ? view_full_w : global._windowed_width;
+	var appsurf_draw_size_h = window_get_fullscreen() ? view_full_h : global._windowed_height;
 	
 	//resizes dimensions
-	camera_set_view_size(view,pix_perf_w*view_zoom,pix_perf_h*view_zoom);
-	display_set_gui_size(pix_perf_w, pix_perf_h);
-	surface_resize(application_surface, appsurf_draw_size_w, appsurf_draw_size_h);
-	window_set_size(appsurf_draw_size_w, appsurf_draw_size_h);
+	camera_set_view_size(view,GAME_RES.w/2,GAME_RES.h/2);
+	display_set_gui_size(GAME_RES.w,GAME_RES.h);
+	surface_resize(application_surface,GAME_RES.w,GAME_RES.h);
+	window_set_size(global._windowed_width,global._windowed_height);
 	
-	//recenters window when getting out of fullscreen mode
+ 	//recenters window when getting out of fullscreen mode
 	if (!window_get_fullscreen()) {alarm[0] = 10;}
 	
 	//returns full screen state
@@ -78,8 +83,12 @@ function fullscreen_toggle(_pix_perf = true)
 
 }
 
-/// @descruption manages camera zoom
-/// @function camera_set_zoom()
+/**
+ * Adjusts camera zoom based on mouse wheel input.
+ * @example
+ * // Call each step to handle zoom
+ * camera_set_zoom();
+ */
 function camera_set_zoom()
 {
 	//gets zoom inputs
@@ -90,22 +99,53 @@ function camera_set_zoom()
 	var pix_perf_zoom = 1.0 + ((view_full_scale - floor(view_full_scale))/2);
 	
 	//finds pixel perfect dimensions
-	var pix_perf_w = window_get_fullscreen() ? GAME_RES_WIDTH*pix_perf_zoom : GAME_RES_WIDTH;
-	var pix_perf_h = window_get_fullscreen() ? GAME_RES_HEIGHT*pix_perf_zoom : GAME_RES_HEIGHT;
+	var pix_perf_w = window_get_fullscreen() ? GAME_RES.w*pix_perf_zoom : GAME_RES.w;
+	var pix_perf_h = window_get_fullscreen() ? GAME_RES.h*pix_perf_zoom : GAME_RES.h;
 	
 	//sets view
 	camera_set_view_size(view,pix_perf_w*view_zoom,pix_perf_h*view_zoom);
 	camera_set_view_pos(view, x - camera_get_view_width(view)/2, y - camera_get_view_height(view)/2);
 }
 
-/// @description manages camera position
-/// @function camera_set_position()
+/**
+ * Smoothly transitions camera zoom to a target scale.
+ * @example
+ * // Zoom to 2x scale
+ * camera_lerp_zoom(2);
+ * 
+ * @example
+ * // Zoom with custom speed
+ * camera_lerp_zoom(1.5, 0.05);
+ */
+function camera_lerp_zoom(scale,zoom_spd = 0.025)
+{
+	view_scale = lerp(view_scale,scale,0.025);
+	exit;
+}
+
+/**
+ * Smoothly resets camera zoom to default.
+ * @example
+ * // Reset zoom
+ * camera_reset_zoom();
+ */
+function camera_reset_zoom(zoom_spd = 0.025)
+{
+	view_scale = lerp(view_scale,global._display_height / GAME_RES.h, 0.025);	
+}
+
+/**
+ * Updates camera position and handles screen shake.
+ * @example
+ * // Call each step to follow player
+ * camera_set_position();
+ */
 function camera_set_position()
 {
 	
 	//Positions Camera on the Controller
-	var view_x = x - camera_get_view_width(view)/4 //clamp(x - camera_get_view_width(view)/4, 0, room_width - camera_get_view_width(view));
-	var view_y = y - camera_get_view_height(view)/4 //clamp(y - camera_get_view_height(view)/4, 0, room_height - camera_get_view_height(view));
+	var view_x = clamp(x - camera_get_view_width(view)/2, 0, room_width - camera_get_view_width(view));
+	var view_y = clamp(y - camera_get_view_height(view)/2, 0, room_height - camera_get_view_height(view));
 
 	//Calculates screen shake
 	var shake_x = 0;
@@ -127,7 +167,7 @@ function camera_set_position()
 			shake_magnitude -= shake_decay;
 			
 			//turns off shake effect
-			if(shake_magnitude <= 0) {shake = NO;}
+			if(shake_magnitude <= 0) {shake = false;}
 			
 		}
 			
@@ -138,9 +178,12 @@ function camera_set_position()
 	
 }
 
-/// @description links player and camera (call from player's create event)
-/// @function player_link_to_camera()
-/// @param player_id
+/**
+ * Links a player to a dedicated camera object.
+ * @example
+ * // In player's create event
+ * player_link_to_camera();
+ */
 function player_link_to_camera(_p_id = id)
 {
 	//disables master camera
@@ -164,4 +207,60 @@ function player_link_to_camera(_p_id = id)
 	
 	//sets up view
 	with(cam_id) {camera_setup(player_number);}
+}
+
+/**
+ * Handles window resizing and fullscreen toggling.
+ * @example
+ * // Switch to fullscreen
+ * camera_window_resize(true);
+ * 
+ * @example
+ * // Set windowed mode with custom size
+ * camera_window_resize(false, 1600, 900);
+ */
+function camera_window_resize(_p_full,_p_width=1280,_p_height=-1)
+{
+	if _p_full {
+		if !window_get_fullscreen() {fullscreen_toggle()}
+	} else {
+		global._windowed_width=_p_width;
+		global._windowed_height=(_p_height<0 ? floor(_p_width/4*3) : _p_height);
+	
+		/*//finds pixel perfect dimensions
+		var pix_perf_w = GAME_RES.w;
+		var pix_perf_h = GAME_RES.w;
+	
+		//sets draw size
+		var appsurf_draw_size_w = global._windowed_width;
+		var appsurf_draw_size_h = global._windowed_height;
+	
+		//resizes dimensions
+		camera_set_view_size(view,pix_perf_w*view_zoom,pix_perf_h*view_zoom);
+		display_set_gui_size(pix_perf_w, pix_perf_h);
+		surface_resize(application_surface, appsurf_draw_size_w, appsurf_draw_size_h);
+		window_set_size(appsurf_draw_size_w, appsurf_draw_size_h);
+	
+		//recenters window when getting out of fullscreen mode
+		alarm[0] = 10;
+	
+		//returns full screen state*/
+		camera_setup(global.master_view);
+	}
+		
+}
+
+/**
+ * Calculates and sets view scaling values.
+ * @example
+ * // Update scaling values
+ * set_scales();
+ */
+function set_scales() {
+	view_scale = global._display_height / GAME_RES.h;
+	view_w = GAME_RES.w * view_scale;
+	view_h = GAME_RES.h * view_scale;
+	view_full_scale = ((display_get_width()/1.5) / GAME_RES.w);
+	view_full_w = GAME_RES.w * view_full_scale;
+	view_full_h = GAME_RES.h * view_full_scale;
 }

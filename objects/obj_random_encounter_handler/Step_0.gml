@@ -1,0 +1,1 @@
+show_debug_message("Steps taken: " + string(encounter_steps_current) + "\nSteps needed until next encounter: " + string(steps_until_encounter))

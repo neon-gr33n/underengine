@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"ArrayList",
   "isCompatibility":false,
   "isDnD":false,

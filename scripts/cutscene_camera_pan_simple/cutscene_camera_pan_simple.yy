@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"cutscene_camera_pan_simple",
   "isCompatibility":false,
   "isDnD":false,

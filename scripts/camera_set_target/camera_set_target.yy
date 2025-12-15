@@ -1,12 +1,12 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"camera_set_target",
   "isCompatibility":false,
   "isDnD":false,
   "name":"camera_set_target",
   "parent":{
-    "name":"utility",
-    "path":"folders/Scripts/utility.yy",
+    "name":"Math",
+    "path":"folders/Scripts/utility/Math.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

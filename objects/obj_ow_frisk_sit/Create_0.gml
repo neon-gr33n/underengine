@@ -1,0 +1,11 @@
+sfx_play(snd_sit);
+init_yscale = image_yscale;
+depth = -9999;
+amp = 0.3;
+siner = 0;
+flip = 0;
+laydown = 0;
+benched = 0;
+sat = 0;
+buffer = 0;
+interacted = 0;

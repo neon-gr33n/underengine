@@ -1,12 +1,12 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"scribble_kerning_pair_set",
   "isCompatibility":false,
   "isDnD":false,
   "name":"scribble_kerning_pair_set",
   "parent":{
-    "name":"Fonts",
-    "path":"folders/Libraries/Scribble/Fonts.yy",
+    "name":"Font Modification",
+    "path":"folders/Libraries/Juju Adams Libararies/Scribble/Font Modification.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

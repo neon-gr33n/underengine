@@ -1,0 +1,2 @@
+This documentation is here largely for internal use for now, but at least a week after SWAPPED MYTH's first demo (V1.0.0) launches
+This documentation will go PUBLIC, as part of the public use "underengine" project, and Tome will be used in that project file to create a documentation website with docsify

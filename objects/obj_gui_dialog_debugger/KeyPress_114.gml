@@ -1,0 +1,1 @@
+global.rounded_box = !global.rounded_box

@@ -1,12 +1,12 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"__input_get_time",
   "isCompatibility":false,
   "isDnD":false,
   "name":"__input_get_time",
   "parent":{
     "name":"(System)",
-    "path":"folders/Libraries/Input/(System).yy",
+    "path":"folders/Libraries/Juju Adams Libararies/Input/(System).yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

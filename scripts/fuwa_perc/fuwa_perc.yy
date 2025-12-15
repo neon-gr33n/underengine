@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"fuwa_perc",
   "isCompatibility":false,
   "isDnD":false,

@@ -1,12 +1,12 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"__input_player_tick_sources",
   "isCompatibility":false,
   "isDnD":false,
   "name":"__input_player_tick_sources",
   "parent":{
     "name":"Ticks",
-    "path":"folders/Libraries/Input/(System)/Ticks.yy",
+    "path":"folders/Libraries/Juju Adams Libararies/Input/(System)/Ticks.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"loc_default_font",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"loc_default_font",
+  "parent":{
+    "name":"localization",
+    "path":"folders/Scripts/maingame/localization.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

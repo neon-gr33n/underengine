@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"mus_resume",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"mus_resume",
+  "parent":{
+    "name":"mus",
+    "path":"folders/Scripts/sound/mus.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

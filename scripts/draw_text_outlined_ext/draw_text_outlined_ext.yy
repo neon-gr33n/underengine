@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"draw_text_outlined_ext",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"draw_text_outlined_ext",
+  "parent":{
+    "name":"drawing",
+    "path":"folders/Scripts/utility/drawing.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

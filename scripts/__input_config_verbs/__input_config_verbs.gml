@@ -18,9 +18,11 @@ return {
         left:  [input_binding_key(vk_left),  input_binding_key("A")],
         right: [input_binding_key(vk_right), input_binding_key("D")],
         
-		action:  [input_binding_key(vk_enter), input_binding_key("Z")],
-        cancel:  [input_binding_key(vk_shift), input_binding_key("X")],
-        menu: [input_binding_key(vk_control), input_binding_key("C")]
+		action:  [input_binding_key("Z"), input_binding_key(vk_enter)  ],
+        cancel:  [input_binding_key("X"), input_binding_key(vk_shift)  ],
+        menu:    [input_binding_key("C"), input_binding_key(vk_control)],
+		
+		pause: [input_binding_key(vk_escape), input_binding_key("P")],
     },
     
     gamepad:
@@ -30,10 +32,11 @@ return {
         left:  [input_binding_gamepad_axis(gp_axislh, true),  input_binding_gamepad_button(gp_padl)],
         right: [input_binding_gamepad_axis(gp_axislh, false), input_binding_gamepad_button(gp_padr)],
         
-        action:  input_binding_gamepad_button(gp_face2),
-        cancel:  input_binding_gamepad_button(gp_face3),
-        menu: input_binding_gamepad_button(gp_face4)
-                
+        action:  [input_binding_gamepad_button(gp_face1), input_binding_gamepad_button(gp_shoulderrb)],
+        cancel:  [input_binding_gamepad_button(gp_face2), input_binding_gamepad_button(gp_shoulderlb)],
+        menu:	 [input_binding_gamepad_button(gp_face4), input_binding_gamepad_button(gp_shoulderr)],
+		
+		pause: [input_binding_gamepad_button(gp_start), input_binding_gamepad_button(gp_select)],  
     },
     
     touch:
@@ -45,7 +48,68 @@ return {
         
         action: input_binding_virtual_button(),
         cancel:  input_binding_virtual_button(),
-        menu: input_binding_virtual_button()
-    }
+        menu: input_binding_virtual_button(),
+		
+		pause: input_binding_virtual_button()
+    },
+	
+	onehand_keyboard:
+	{
+		up:    [input_binding_key("W")],
+        down:  [input_binding_key("S")],
+        left:  [input_binding_key("A")],
+        right: [input_binding_key("D")],
+        
+		action:  [input_binding_key("Z")],
+        cancel:  [input_binding_key("X"),input_binding_key(vk_shift)],
+        menu:    [input_binding_key("C"), input_binding_key(vk_control)],
+		
+		pause: [input_binding_key(vk_escape)],
+	},
+	
+	onehand_gamepad: 
+	{
+	    up:    [
+	        input_binding_gamepad_axis(gp_axislv, true),   // Left stick
+	        input_binding_gamepad_axis(gp_axisrv, true)    // Right stick
+	    ],
+	    down:  [
+	        input_binding_gamepad_axis(gp_axislv, false),
+	        input_binding_gamepad_axis(gp_axisrv, false)
+	    ],
+	    left:  [
+	        input_binding_gamepad_axis(gp_axislh, true),
+	        input_binding_gamepad_axis(gp_axisrh, true)
+	    ],
+	    right: [
+	        input_binding_gamepad_axis(gp_axislh, false),
+	        input_binding_gamepad_axis(gp_axisrh, false)
+	    ],
     
+	    // ACTIONS: All face buttons + stick clicks
+	    // Grouped by function, not location
+	    action:  [
+	        // Primary action buttons
+	        input_binding_gamepad_button(gp_face1),  // A/X
+	        input_binding_gamepad_button(gp_stickr), // Right stick click
+	    ],
+    
+	    cancel:  [
+	        // Secondary/cancel buttons
+	        input_binding_gamepad_button(gp_face2),  // B/○
+	        input_binding_gamepad_button(gp_select)  // Back/View
+	    ],
+    
+	    menu: [
+	        // Menu/navigation buttons
+	        input_binding_gamepad_button(gp_face3),  // Y/△
+	        input_binding_gamepad_button(gp_start)   // Start/Options
+	    ],
+    
+	    // PAUSE: Every button can pause (critical for accessibility)
+	    pause: [
+	        input_binding_gamepad_button(gp_start),
+	        input_binding_gamepad_button(gp_select),
+		],
+	}
 };

@@ -119,8 +119,8 @@
   "maintainGms1Font":false,
   "name":"fnt_crypt",
   "parent":{
-    "name":"Fonts",
-    "path":"folders/Fonts.yy",
+    "name":"general",
+    "path":"folders/Fonts/general.yy",
   },
   "pointRounding":0,
   "ranges":[

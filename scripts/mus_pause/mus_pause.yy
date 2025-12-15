@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"mus_pause",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"mus_pause",
+  "parent":{
+    "name":"mus",
+    "path":"folders/Scripts/sound/mus.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

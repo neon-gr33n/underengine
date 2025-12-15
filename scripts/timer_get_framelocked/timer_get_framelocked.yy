@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"timer_get_framelocked",
   "isCompatibility":false,
   "isDnD":false,

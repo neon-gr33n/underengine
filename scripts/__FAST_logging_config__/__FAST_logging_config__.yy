@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"__FAST_logging_config__",
   "isCompatibility":false,
   "isDnD":false,

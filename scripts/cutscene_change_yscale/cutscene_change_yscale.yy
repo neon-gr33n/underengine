@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"cutscene_change_yscale",
   "isCompatibility":false,
   "isDnD":false,

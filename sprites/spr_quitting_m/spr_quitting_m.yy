@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_quitting_m",
   "bboxMode":0,
   "bbox_bottom":9,
@@ -12,11 +12,11 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"7143b43a-cd4e-4a40-b929-67bced7784e5","name":"7143b43a-cd4e-4a40-b929-67bced7784e5","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"8409b068-0453-4261-911f-5be879a9f05b","name":"8409b068-0453-4261-911f-5be879a9f05b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"fd9719fe-e4ac-4733-a446-b850308aced3","name":"fd9719fe-e4ac-4733-a446-b850308aced3","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"bdf20d78-fc5c-4c01-b39d-bd4423b35c24","name":"bdf20d78-fc5c-4c01-b39d-bd4423b35c24","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"e9355923-27a6-42fd-9ec6-480edf5607f8","name":"e9355923-27a6-42fd-9ec6-480edf5607f8","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"7143b43a-cd4e-4a40-b929-67bced7784e5","name":"7143b43a-cd4e-4a40-b929-67bced7784e5","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"8409b068-0453-4261-911f-5be879a9f05b","name":"8409b068-0453-4261-911f-5be879a9f05b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"fd9719fe-e4ac-4733-a446-b850308aced3","name":"fd9719fe-e4ac-4733-a446-b850308aced3","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"bdf20d78-fc5c-4c01-b39d-bd4423b35c24","name":"bdf20d78-fc5c-4c01-b39d-bd4423b35c24","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"e9355923-27a6-42fd-9ec6-480edf5607f8","name":"e9355923-27a6-42fd-9ec6-480edf5607f8","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
@@ -36,7 +36,7 @@
   "resourceType":"GMSprite",
   "resourceVersion":"2.0",
   "sequence":{
-    "$GMSequence":"",
+    "$GMSequence":"v1",
     "%Name":"spr_quitting_m",
     "autoRecord":true,
     "backdropHeight":768,

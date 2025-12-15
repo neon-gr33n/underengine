@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"ease_out_cubic",
   "isCompatibility":false,
   "isDnD":false,

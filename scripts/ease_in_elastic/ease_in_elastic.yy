@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"ease_in_elastic",
   "isCompatibility":false,
   "isDnD":false,

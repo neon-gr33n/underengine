@@ -1,12 +1,12 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"scribble_is_text_element",
   "isCompatibility":false,
   "isDnD":false,
   "name":"scribble_is_text_element",
   "parent":{
     "name":"Miscellaneous",
-    "path":"folders/Libraries/Scribble/Miscellaneous.yy",
+    "path":"folders/Libraries/Juju Adams Libararies/Scribble/Miscellaneous.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

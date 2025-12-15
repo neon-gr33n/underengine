@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"draw_ftext_transformed",
   "isCompatibility":false,
   "isDnD":false,

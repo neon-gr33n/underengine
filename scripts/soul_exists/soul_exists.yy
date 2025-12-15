@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"soul_exists",
   "isCompatibility":false,
   "isDnD":false,

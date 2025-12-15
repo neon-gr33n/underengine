@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"party_update_max_size",
   "isCompatibility":false,
   "isDnD":false,

@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"XorRandomizer",
   "isCompatibility":false,
   "isDnD":false,

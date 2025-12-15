@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"sfx_get_pitch",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"sfx_get_pitch",
+  "parent":{
+    "name":"sfx",
+    "path":"folders/Scripts/sound/sfx.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

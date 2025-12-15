@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"room_funcs",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"room_funcs",
+  "parent":{
+    "name":"maingame",
+    "path":"folders/Scripts/maingame.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"cutscene_set_npc_dir",
   "isCompatibility":false,
   "isDnD":false,

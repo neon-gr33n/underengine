@@ -1,12 +1,12 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"wav_load",
   "isCompatibility":false,
   "isDnD":false,
   "name":"wav_load",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "name":"wav",
+    "path":"folders/Scripts/utility/wav.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

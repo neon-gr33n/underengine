@@ -1,0 +1,27 @@
+{
+  "$GMSound":"v2",
+  "%Name":"snd_paps_v",
+  "audioGroupId":{
+    "name":"sfx",
+    "path":"audiogroups/sfx",
+  },
+  "bitDepth":1,
+  "channelFormat":1,
+  "compression":2,
+  "compressionQuality":10,
+  "ConfigValues":{},
+  "conversionMode":0,
+  "duration":0.09820861,
+  "exportDir":"",
+  "name":"snd_paps_v",
+  "parent":{
+    "name":"voice",
+    "path":"folders/Sounds/sfx/voice.yy",
+  },
+  "preload":true,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"snd_paps_v.wav",
+  "volume":1.0,
+}

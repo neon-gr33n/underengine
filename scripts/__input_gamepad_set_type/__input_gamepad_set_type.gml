@@ -79,7 +79,7 @@ function __input_gamepad_set_type()
         default:
             var _irregular_guid = (vendor + product == "");
             
-            if (xinput == true)
+            if (xinput)
             {
                 raw_type = "CommunityLikeXBox";
                 guessed_type = true;

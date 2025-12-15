@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"reset_funcs",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"reset_funcs",
+  "parent":{
+    "name":"resetting",
+    "path":"folders/Scripts/savedata/resetting.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

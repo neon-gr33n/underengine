@@ -115,12 +115,12 @@
   "italic":false,
   "kerningPairs":[],
   "last":0,
-  "lineHeight":16,
+  "lineHeight":0,
   "maintainGms1Font":false,
   "name":"fnt_dotumche",
   "parent":{
-    "name":"Fonts",
-    "path":"folders/Fonts.yy",
+    "name":"english",
+    "path":"folders/Fonts/english.yy",
   },
   "pointRounding":0,
   "ranges":[

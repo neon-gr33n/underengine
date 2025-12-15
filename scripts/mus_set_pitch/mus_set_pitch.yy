@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"mus_set_pitch",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"mus_set_pitch",
+  "parent":{
+    "name":"mus",
+    "path":"folders/Scripts/sound/mus.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

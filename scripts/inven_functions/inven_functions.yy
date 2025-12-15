@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"inven_functions",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"inven_functions",
+  "parent":{
+    "name":"inv",
+    "path":"folders/Scripts/inv.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

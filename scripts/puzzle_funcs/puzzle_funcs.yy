@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"puzzle_funcs",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"puzzle_funcs",
+  "parent":{
+    "name":"maingame",
+    "path":"folders/Scripts/maingame.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

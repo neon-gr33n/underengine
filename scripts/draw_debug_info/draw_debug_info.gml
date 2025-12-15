@@ -15,7 +15,7 @@ function draw_grid(gridcell_size,c_grid=c_orange,grid_alpha=0.25)
 	{
 
 		//draws lines
-		var x_offset = i * gridcell_size;
+		var x_offset = i * gridcell_size - 1;
 		draw_line_color(x_offset,0,x_offset,room_height,c_grid,c_grid);
 		
 	}
@@ -23,9 +23,8 @@ function draw_grid(gridcell_size,c_grid=c_orange,grid_alpha=0.25)
 	//draws horizontal line
 	for(var i = 1; i < room_height/gridcell_size; i++)
 	{
-		
 		//draws lines
-		var y_offset = i * gridcell_size;
+		var y_offset = i * gridcell_size - 1;
 		draw_line_color(0,y_offset,room_width,y_offset,c_grid,c_grid);
 		
 	}

@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"timer_get_sequence_duration_atpos",
   "isCompatibility":false,
   "isDnD":false,

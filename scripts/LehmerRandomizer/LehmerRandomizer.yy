@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"LehmerRandomizer",
   "isCompatibility":false,
   "isDnD":false,

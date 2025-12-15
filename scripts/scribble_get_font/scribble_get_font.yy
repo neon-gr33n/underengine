@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scribble_get_font",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scribble_get_font",
+  "parent":{
+    "name":"scribble_compat",
+    "path":"folders/Scripts/maingame/localization/scribble_compat.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

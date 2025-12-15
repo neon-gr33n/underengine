@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"cutscene_sprite_create_transformed",
   "isCompatibility":false,
   "isDnD":false,

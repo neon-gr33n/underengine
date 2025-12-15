@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"fuwa_get_timer_clock",
   "isCompatibility":false,
   "isDnD":false,

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"transition_utlities",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"transition_utlities",
+  "parent":{
+    "name":"drawing",
+    "path":"folders/Scripts/utility/drawing.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
