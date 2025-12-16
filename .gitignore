@@ -14,3 +14,6 @@ scripts/tome*/*.gml
 datafiles/Tome*/*.gml
 objects/__tome*/*.gml
 Tome/
+
+# Will not pull docs/ folder
+docs/
