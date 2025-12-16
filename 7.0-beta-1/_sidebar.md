@@ -2,8 +2,7 @@
 
 ---
 
-**FAQ
-**
+**FAQ**
 
 -    [Frequently Asked Questions
 ](Frequently-Asked-Questions
@@ -11,8 +10,7 @@
 
 ---
 
-**Configuration
-**
+**Configuration**
 
 -    [Global variables
 ](Global-variables
@@ -20,8 +18,7 @@
 
 ---
 
-**Getting Started
-**
+**Getting Started**
 
 -    [Naming Conventions
 ](Naming-Conventions
