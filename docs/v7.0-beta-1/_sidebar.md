@@ -2,23 +2,11 @@
 
 ---
 
-**Engine Information
+**FAQ
 **
 
--    [FAQ
-](FAQ
-)
-
----
-
-**Getting Started
-**
-
--    [Naming Conventions
-](Naming-Conventions
-)
--    [Overworld
-](Overworld
+-    [Frequently Asked Questions
+](Frequently-Asked-Questions
 )
 
 ---
@@ -32,10 +20,25 @@
 
 ---
 
-**Dependencies**
+**Getting Started
+**
+
+-    [Naming Conventions
+](Naming-Conventions
+)
+-    [Overworld
+](Overworld
+)
+-    [Battles
+](Battles
+)
+
+---
+
+**Libraries we use**
 
 -    [Scribble](https://www.jujuadams.com/Scribble/)
--    [Input](https://offalynne.github.io/Input/#/6.2/)
+-    [Input](https://offalynne.github.io/Input/#/8.1/)
 
 ---
 

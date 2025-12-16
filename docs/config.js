@@ -1,8 +1,8 @@
 const config = {
-    description:"Documentation for underengine",
-  name:"underengine",
-  favicon:"assets/docsIcon.png",
+    favicon:"assets/docsIcon.png",
   themeColor:"#FF0000",
+  description:"A modern UNDERTALE fangame engine",
   latestVersion:"v7.0-beta-1",
-  otherVersions:[],
+  otherVersions:null,
+  name:"underengine",
 };
