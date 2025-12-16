@@ -18,3 +18,4 @@ UNDERENGINE is a collaborative effort between me, and multiple other programmers
 Credits (Third Party Libraries)
 - [@jujuadams](https://github.com/jujuadams) - Creating ["Scribble"](https://github.com/JujuAdams/scribble) (among his various other intruiging libraries) as a versatile text engine used for text drawing and setup within UNDERENGINE
 - [@FriendlyCosmonaut](https://www.youtube.com/@FriendlyCosmonaut/) - Hosts resources which I used in making the cutscene system, as well as introduction to [GameMaker's Sequencer](https://manual.yoyogames.com/The_Asset_Editors/Sequences.htm)
+
