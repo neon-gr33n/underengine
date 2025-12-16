@@ -15,11 +15,8 @@ function room_data_init() {
 			"rm_gameover" : "GAMEOVER",
 
 			"rm_fallen" : "FALLEN",
-			"rm_echo_cut_0" : "ECHO0",
-			
 			"rm_dialog_tester" : "DIALOG_TEST",		
 			"rm_sandbox" : "SANDBOX",
-			"rm_soul_tester" : "SOUL_TEST",
 			
 			"rm_gj_login" : "GJ_LOGIN",
 			"rm_gj_menu"  : "GJ_MENU"
@@ -38,13 +35,9 @@ function room_data_init() {
 			__GAMEJOLT_API__: {
 				NAME : "Gamejolt API"
 			},
-			
-			LUCENT_CAVERNS : {
-				NAME : loc_gettext("game.location.ruins"),
-			},
-			RADIANT_GARDEN : {
-				NAME : loc_gettext("game.location.ruins_city"),
-			},
+			RUINS: {
+				NAME: "Ruins"	
+			}
 		},
 		ROOMS : {
 			INIT : {
@@ -113,23 +106,13 @@ function room_data_init() {
 				THEME : noone,
 			},
 			FALLEN : {
-				NAME : "Dumpster",
-				AREA : "LUCENT_CAVERNS",
-				THEME : "fallen",
-			},
-			ECHO0 : {
-				NAME : "Field of Echoes",
-				AREA : "LUCENT_CAVERNS",
+				NAME : "Starter Room",
+				AREA : "RUINS",
 				THEME : noone,
 			},
 			
 			DIALOG_TEST : {
 				NAME : "Dialogue Tester",
-				AREA : "__DEBUG__",
-				THEME : noone,
-			},
-			SANDBOX : {
-				NAME : "Sandbox",
 				AREA : "__DEBUG__",
 				THEME : noone,
 			},
@@ -151,4 +134,5 @@ function room_data_init() {
 			}
 		}
 	}
+	show_debug_message("Room data init was called successfully!")
 }

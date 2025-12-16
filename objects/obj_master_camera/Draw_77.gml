@@ -8,24 +8,14 @@ if surface_exists(application_surface) {
 	var _inputSurf = application_surface; // or view_get_surface(0);
     
 //    gpu_set_blendenable(false);
-						
-	if (instance_exists(LIGHT)) {
-		_inputSurf = LIGHT.renderer.GetRenderSurface();
-	} else {
-		    draw_surface_centered_ext(_inputSurf,
+					
+	draw_surface_centered_ext(_inputSurf,
                                     (window_get_fullscreen() ? display_get_width()/2 : global._windowed_width/2),
                                     (window_get_fullscreen() ? display_get_height()/2 : global._windowed_height/2),
                                     window_get_fullscreen() ? view_full_scale : view_scale,
                                     window_get_fullscreen() ? view_full_scale : view_scale,
                                     0, c_white, 1);
-	}
-	// STEP 2: Apply PPFX on top
-    if (instance_exists(PPFX) && PPFX.renderer != undefined && PPFX.visible) {
-        with (PPFX) {
-            renderer.DrawInFullscreen(_inputSurf);
-			_inputSurf = PPFX.renderer.GetRenderSurface();
-        }
-    }
+
 	
 	border_draw(global._border_id)
 ////    gpu_set_blendenable(true);

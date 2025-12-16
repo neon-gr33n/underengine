@@ -9,7 +9,7 @@ global.PARTY_INFO = {
 			DEATHS : 0,
 			SPARES : 0
 		},
-		INVENTORY : ["BLUNT_AXE","CELL_PHONE"],
+		INVENTORY : ["STICK","TEST_DOG1","TEST_DOG1","CELL_PHONE"],
 		MAXINVSIZE : 8,
 		MAXSTORAGESIZE : 21,
 		STORAGE : []
@@ -18,7 +18,6 @@ global.PARTY_INFO = {
 		
 	FRISK : {
 		NAME : "Frisk",
-		RACE:	"Human",
 		SPRITES : {
 			IDLE : spr_frisk_idle,
 			MOVE : spr_frisk_move,
@@ -41,7 +40,6 @@ global.PARTY_INFO = {
 		
 	PLACEHOLDER : {
 		NAME : "PLACEHOLDER",
-		RACE : "Monster",
 		SPRITES : {
 			IDLE : spr_PLACEHOLDER_idle,
 			MOVE : spr_PLACEHOLDER_move,

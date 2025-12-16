@@ -22,7 +22,12 @@ if !global.rounded_box
 		dialogueYPosition = 340;	
 		dialogueXPosition = 190;
 	} else {
-		dialogueYPosition = 350;	
+		if (dialoguePosition == "battle_generic"){
+			dialogueYPosition = 255;	
+		} else {
+			dialogueYPosition = 350;	
+		}
+
 	} 
 }
 #endregion

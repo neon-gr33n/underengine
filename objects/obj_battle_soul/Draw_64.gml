@@ -20,7 +20,6 @@ if !instance_exists(obj_battle_handler) && room != rm_soul_tester {
 	}
 	depth=-9999
 	draw_sprite_ext(sprite_index,image_index,_spritex,_spritey,image_xscale,image_yscale,image_angle,soul_type,image_alpha)
-	draw_sprite_ext(spr_battle_soul_core,0,_spritex,_spritey,image_xscale,image_yscale,image_angle,global.EMOTION[$ global.soul_emotion][$ "COLOUR"],image_alpha)
 	if (_grazing) {
     // Flash effect
     draw_sprite_ext(sprite_index, image_index, x, y, image_xscale * 1.2, image_yscale * 1.2, image_angle, c_white, 0.3);

@@ -37,7 +37,7 @@ function check_encounter_step() {
     if (obj_random_encounter_handler.encounter_steps_current >= obj_random_encounter_handler.steps_until_encounter) {
 		if ( flag_get(global.flags,"section_kills") >= area_kills_needed[flag_get(global.flags,"section")]){
             if(!instance_exists(obj_text_box)){
-                // do geno specific behavior here
+                // do geno specific behavior 
             }
 		
 		} else {

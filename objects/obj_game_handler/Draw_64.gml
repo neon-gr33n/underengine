@@ -19,10 +19,10 @@ draw_set_alpha(1)
 //    draw_text(32, 32 + (i * 32), "No Gamepad Connected");
 //    }
 //}
-if global.debug draw_text(10,10,$"Game Handler is active!\nDisplay Size:{global._display_width}x{global._display_height} ({GAME_RES.w}x{GAME_RES.h})\nGUI size: {display_get_gui_width()}x{display_get_gui_height()}")
-if instance_exists(obj_naming_screen) with(obj_naming_screen){
-if global.debug draw_text(10,25, "Letter selected: " + string(letterSelection))
-}
+//if global.debug draw_text(10,10,$"Game Handler is active!\nDisplay Size:{global._display_width}x{global._display_height} ({GAME_RES.w}x{GAME_RES.h})\nGUI size: {display_get_gui_width()}x{display_get_gui_height()}")
+//if instance_exists(obj_naming_screen) with(obj_naming_screen){
+//if global.debug draw_text(10,25, "Letter selected: " + string(letterSelection))
+//}
 if instance_exists(obj_menu_handler) with(obj_menu_handler){
 if global.debug draw_text(10,25, "Menu selection: " + string(_menuSelection))
 }

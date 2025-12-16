@@ -10,28 +10,6 @@ if currentState == "playerMoveGen" {
 	var _deceleration_rate = 0.2/2; // Adjust this to control how fast speed decreases
 	var inst = noone;
 
-	if (_is_running && (xAxis != 0 || yAxis != 0)) {
-	    // Gradually increase run_speed when running and moving
-	    run_speed = min(run_speed + _acceleration_rate, _max_run_speed);
-		if (run_speed == 4){
-			inst =instance_create_depth(x, y, depth + 1, obj_afterimage, 
-			{
-				sprite_index: sprite_index,
-				image_alpha: 0.25,
-				fadeSpeed: 0.02,
-				hspeed: 2 * 0.5,
-				image_index: image_index,
-				image_speed: 0	
-			});	
-		}
-		} else {
-	    // Gradually decrease run_speed when not running or not moving
-	    run_speed = max(walk_speed, run_speed - _deceleration_rate);
-		if instance_exists(inst){
-			instance_destroy(inst)	
-		}
-	}
-
 	var mvspeed = walk_speed + _is_running * (run_speed - walk_speed);
 	//todo: make smooth camera move a bit faster when running
 	image_speed = 1;

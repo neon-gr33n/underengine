@@ -73,7 +73,7 @@ if (is_string(dialogue.dialogueText)) {
 _dialogue_text = replaceInputIcons(_dialogue_text);
 
 var scribble_object = scribble(_dialogue_text)
-        .starting_format(dialogue.dialogueFont, c_white)
+        .starting_format(dialogue.dialogueFont, c_black)
         .wrap(640 - dialogueXPosition + dialogueYPosition)
         .line_spacing(global.lang_ls);
 	
@@ -81,7 +81,9 @@ if visible
 scribble_object.draw(dialogueXPosition,dialogueYPosition,typist);
  
 //typist.sound([dialogue.dialogueVoice],45,1,1,global.voice_volume);
-typist.sound_per_char([dialogue.dialogueVoice],1,1,"  #!.,/\()",global.voice_volume);
+
+// FIXED: Removed comma from the character triggers
+typist.sound_per_char([dialogue.dialogueVoice],1,1,"  #!,./\()",global.voice_volume);
 
 //if keyboard_check_pressed(ord("I")) show_message(typist.get_state())
 

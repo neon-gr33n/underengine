@@ -8,5 +8,3 @@ with (obj_landmark) {
 for (i=0;i<=75;i++) {
 	PLAYER1.remdir[i]=dir;
 }
-
-instance_destroy(id)

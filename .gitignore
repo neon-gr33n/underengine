@@ -1,1 +1,16 @@
 datafiles/GMLive/
+# Auto detect text files and perform LF normalization
+* text=auto
+# Will not pull GMLive assets for people who has GMLive
+scripts/GMLive*
+extensions/GMLive/
+datafiles/GMLive
+objects/obj_gmlive*
+
+# This prevents pushing of internal Tome assets
+github_token.txt
+scripts/__tome*/*.gml
+scripts/tome*/*.gml
+datafiles/Tome*/*.gml
+objects/__tome*/*.gml
+Tome/

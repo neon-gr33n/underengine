@@ -61,7 +61,7 @@ function loc_default_sprites() {
     show_debug_message("=== Loading sprites for: " + language_info.display_name + " ===");
     
     // Load new sprites
-    global.loc_sprites.battle_bt = loc_load_sprite("battle_buttons", 10, 55, 21);
+    global.loc_sprites.battle_bt = loc_load_sprite("battle_buttons", 8, 55, 21);
     global.loc_sprites.battle_miss = loc_load_sprite("battle_miss", 1, 55, 21);
 
     

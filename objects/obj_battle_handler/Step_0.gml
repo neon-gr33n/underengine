@@ -1,10 +1,3 @@
-if (defended) {
-    WRITER.dialogue.dialogueText =  "* I defended!"
-    if (WRITER.typist.get_state() == 1 && input.action_pressed) {
-        battle_set_menu_state("enemyTurn");
-    }
-}
-
 if (player_is_dead() && encounter_exists()) {
     encounter_end();
 }
@@ -19,10 +12,10 @@ switch (currentState) {
 		}
 		spare_sound_played = false;
         if (input.left_pressed) {
-            battleMenuSelection = (battleMenuSelection + 4) % 5;
+            battleMenuSelection = (battleMenuSelection - 1) % 3;
             tweened = (tweened + 72) % 360;
         } else if (input.right_pressed) {
-            battleMenuSelection = (battleMenuSelection + 1) % 5;
+            battleMenuSelection = (battleMenuSelection + 1) % 4;
             tweened = -((-(tweened - 72)) % 360);
         } else if (input.action_pressed) {
             switch (battleMenuSelection) {
@@ -39,9 +32,6 @@ switch (currentState) {
                     }
                     break;
                 case 3:
-                    // todo: add magic/spells
-                    break;
-                case 4:
                     battle_set_menu_state("menuMercySelect");
                     break;
             }
@@ -590,11 +580,7 @@ case "menuActCall":
         break;
     #endregion
     #endregion
-
-    #region MAGIC STATES
-    // nothing in here (for now)
-    #endregion
-
+	
   #region MERCY STATES
     #region Select Option
     case "menuMercySelect":
@@ -613,14 +599,6 @@ case "menuActCall":
                     battle_set_menu_state("menuMercySpareSelect");
                     break;
                 case 1:
-                    if (global.PARTY_INFO[$ global.PARTY_INFO[$ "__PARTY__"][$ "MEMBERS"][0]][$ "STATS"][$ "MP"] == global.PARTY_INFO[$ global.PARTY_INFO[$ "__PARTY__"][$ "MEMBERS"][0]][$ "STATS"][$ "MAX_MP"]) {
-                        sfx_play(snd_error);
-                        battle_set_menu_state("menuMercySelect");
-                    } else {
-                        battle_set_menu_state("menuMercyDefend");
-                    }
-                    break;
-                case 2:
                 // FLEE logic
                 var fleeChance = random(100) + (10 * currentTurn);
                 if (currentTurn >= 1) {
@@ -694,7 +672,6 @@ case "menuActCall":
                 var enemy_name = enemy_info[$ "NAME"];
                 var enemy_obj = global.enc_slot[i];
                 
-                var is_tired = instance_exists(enemy_obj) && enemy_obj._tired;
                 var is_spareable = instance_exists(enemy_obj) && enemy_obj.SPAREABLE;
                 
                 // Add bullet point for existing enemy
@@ -702,8 +679,6 @@ case "menuActCall":
                 
                 if (is_spareable) {
                     dialogue.dialogueText += "[c_yellow]" + enemy_name + "[/c]";
-                } else if (is_tired) {
-                    dialogue.dialogueText += "[c_aqua]" + enemy_name + "[/c]" + "\t\t[spr_tired_marker]"+" [c_gray](Tired)[/c]" ;
                 } else {
                     dialogue.dialogueText += enemy_name;
                 }
@@ -897,50 +872,6 @@ case "menuActCall":
             battle_set_menu_state("menuBegin");
         }
         break;
-    #endregion
-
-    #region Defend
-case "menuMercyDefend":
-    if (!defended) {
-        var current_mp = global.PARTY_INFO[$ global.PARTY_INFO[$ "__PARTY__"][$ "MEMBERS"][0]][$ "STATS"][$ "MP"];
-        var max_mp = global.PARTY_INFO[$ global.PARTY_INFO[$ "__PARTY__"][$ "MEMBERS"][0]][$ "STATS"][$ "MAX_MP"];
-        
-        if (current_mp < max_mp) {
-            // Restore MP
-            global.PARTY_INFO[$ global.PARTY_INFO[$ "__PARTY__"][$ "MEMBERS"][0]][$ "STATS"][$ "MP"] += 3;
-            defended = true;
-            
-            // Calculate MP percentage
-            var mp_percentage = (current_mp / max_mp) * 100;
-            
-            // Scale defense boost based on MP (more MP = smaller boost)
-            // When MP is 100%: 20% boost (minimum)
-            // When MP is 0%: 50% boost (maximum)
-            var min_boost = 20;
-            var max_boost = 50;
-            
-            // Inverse scaling: lower MP = higher boost
-            var defense_boost_percent = max_boost - (mp_percentage * (max_boost - min_boost) / 100);
-            
-            // Clamp to range
-            defense_boost_percent = clamp(defense_boost_percent, min_boost, max_boost);
-            
-            var base_defense = global.PARTY_INFO[$ global.PARTY_INFO[$ "__PARTY__"][$ "MEMBERS"][0]][$ "STATS"][$ "DEF"];
-            var defense_boost = round(base_defense * (defense_boost_percent / 100));
-            
-            // Store original defense and apply boost
-            global.temp_defense_boost = {
-                original_defense: base_defense,
-                boost_amount: defense_boost,
-                turns_remaining: 1
-            };
-            
-            // Apply the boost
-            global.PARTY_INFO[$ global.PARTY_INFO[$ "__PARTY__"][$ "MEMBERS"][0]][$ "STATS"][$ "DEF"] += defense_boost;
-            
-        }
-    }
-    break;
     #endregion
     #endregion
 }

@@ -1,1 +1,0 @@
-PLAYER1.canMove=true;

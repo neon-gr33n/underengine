@@ -1,10 +1,10 @@
-_death=noone
-serious=true
-_death_speed = 2;
+_death=noone // Instance of a dead enemy
+serious=true // "SERIOUS" Mode (shortens item names and removes puns)
+_death_speed = 2; // Determines the speed of the "dusting" effect
 _procs=0
 battleMenuSelection = 1  // Set to 1 by default inside of 0 so that ACT is the default option
 battleButtonTweenable = false;  // Automatically updated via global.__ute_tween_battle_button
-spare_sound_played = false;
+spare_sound_played = false; // Has the spare sound played?
 
 with (obj_text_writer){
 	dialogue.dialogueFont = scribble_get_font("fnt_main_bt")
@@ -15,22 +15,21 @@ tweened=0
 selected_enemy_id = noone;
 selected_enemy_acts = [];
 current_act = "";
-act_response_index = 0;
-completed_acts = [];
-enemy_mercy_state = {};
-act_choice = 0;
-encounterMenuText = ""
+act_response_index = 0;  // The index to use for the current ACTs response
+completed_acts = []; // keeps track of what ACTs you have completed
+enemy_mercy_state = {}; 
+act_choice = 0; // The currently selected act index
+encounterMenuText = "" // The text to display during your turn
 fightAlpha = 0;
-enemyChoice = 0;
-defended = 0;
-itemChoice = 0;
-mercyChoice=0;
+enemyChoice = 0; // The currently selected enemy index
+itemChoice = 0; // The currently selected item index (CONSUMABLES ONLY)
+mercyChoice=0; 
 currentTurn = 0;
-ranAway = false;
-MERCY_OPTIONS=[loc_gettext("bt.mercy.0"),loc_gettext("bt.mercy.1"),loc_gettext("bt.mercy.2")]
-showEnemyList = false;
-totalGainEXP = 0;
-totalGainGOLD = 0;
+ranAway = false; // Is the player trying to run away?
+MERCY_OPTIONS=[loc_gettext("bt.mercy.0"),loc_gettext("bt.mercy.1")] // The list of options that'll dis
+showEnemyList = false;  // Determines whether or not to display the enemy list
+totalGainEXP = 0;	// Total EXP gained during a fight
+totalGainGOLD = 0;	// Total GOLD gained during a fight
 _death_particles = []
 
 _inven=global.PARTY_INFO[$ "__PARTY__"][$ "INVENTORY"]
@@ -193,14 +192,11 @@ stateMenuFight = function ()
 		        var enemy_name = enemy_info[$ "NAME"];
 		        var enemy_obj = global.enc_slot[i];
         
-		        var is_tired = instance_exists(enemy_obj) && enemy_obj._tired;
 		         var is_spareable = instance_exists(enemy_obj) && enemy_obj.SPAREABLE;
         
 				
 		        if (is_spareable) {
 		            dialogue.dialogueText += "[c_yellow]" + enemy_name + "[/c]";
-		        } else if (is_tired) {
-		           dialogue.dialogueText += "[c_aqua]" + enemy_name + "[/c]" + "\t\t[spr_tired_marker]"+" [c_gray](Tired)[/c]" ;
 		        } else {
 		            dialogue.dialogueText += enemy_name;
 		        }
@@ -271,13 +267,10 @@ stateMenuAct = function ()
 		        var enemy_name = enemy_info[$ "NAME"];
 		        var enemy_obj = global.enc_slot[i];
         
-		        var is_tired = instance_exists(enemy_obj) && enemy_obj._tired;
 		         var is_spareable = instance_exists(enemy_obj) && enemy_obj.SPAREABLE;
         
 		        if (is_spareable) {
 		            dialogue.dialogueText += "[c_yellow]" + enemy_name + "[/c]";
-		        } else if (is_tired) {
-		            dialogue.dialogueText += "[c_aqua]" + enemy_name + "[/c]" + "\t\t[spr_tired_marker]"+" [c_gray](Tired)[/c]" ;
 		        } else {
 		            dialogue.dialogueText += enemy_name;
 		        }
@@ -301,7 +294,7 @@ stateMenuItem = function()
 #region DEFINE MERCY STATE
 stateMenuMercy = function()
 {
-	for (i=0;i<3;i++) {
+	for (i=0;i<2;i++) {
 		if MERCY_OPTIONS[i]!=noone {
 			mercyChoice=i
 			break;
@@ -310,7 +303,7 @@ stateMenuMercy = function()
 	with WRITER {
 		dialogue.dialogueText=""
 		var a_noone_c=0
-		for (i=0;i<3;i++) {
+		for (i=0;i<2;i++) {
 			var option_text = obj_battle_handler.MERCY_OPTIONS[i]==noone ? "" : obj_battle_handler.MERCY_OPTIONS[i]
 			
 			// Check if any enemy is spareable for the Spare option (index 0)

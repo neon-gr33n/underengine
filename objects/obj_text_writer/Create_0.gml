@@ -77,24 +77,3 @@ function replaceInputIcons(text) {
     
     return processed_text;
 }
-
-function get_plain_text_for_typist(_text_with_gradients) {
-    var _plain_text = _text_with_gradients;
-    
-    // Remove all gradient tags for typist
-    while (string_pos("[gradient:", _plain_text) > 0) {
-        var _grad_start = string_pos("[gradient:", _plain_text);
-        var _grad_end = string_pos("]", _plain_text);
-        var _close_tag = string_pos("[/gradient]", _plain_text);
-        
-        if (_grad_end <= _grad_start || _close_tag <= _grad_end) break;
-        
-        var _params_str = string_copy(_plain_text, _grad_start + 10, _grad_end - _grad_start - 10);
-        var _grad_text = string_copy(_plain_text, _grad_end + 1, _close_tag - _grad_end - 1);
-        
-        // Replace gradient tag with just the text content
-        _plain_text = string_replace(_plain_text, "[gradient:" + _params_str + "]" + _grad_text + "[/gradient]", _grad_text);
-    }
-    
-    return _plain_text;
-}

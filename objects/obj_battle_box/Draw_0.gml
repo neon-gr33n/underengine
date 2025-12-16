@@ -2,7 +2,7 @@ image_xscale = width/12;
 image_yscale = height/12;
 image_angle = angle;
 
-draw_sprite_ext(spr_battle_board_rounded, 0, x, y, image_xscale, image_yscale, image_angle, c_white, 1);
+draw_sprite_ext(global.rounded_box == true ? spr_battle_board_rounded : spr_battle_board, 0, x, y, image_xscale, image_yscale, image_angle, c_white, 1);
 
 rotate(x - width / 2 - 4, y - height / 2, left);
 left.image_yscale = width / 20;

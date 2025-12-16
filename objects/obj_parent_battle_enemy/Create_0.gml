@@ -11,6 +11,9 @@ spared = false;
 _is_being_spared = false;
 SPAREABLE = false;
 
+_freeze=0
+_burn=0
+_tired=0
 _boss=0
 
 depth = obj_battle_box.depth + 1;

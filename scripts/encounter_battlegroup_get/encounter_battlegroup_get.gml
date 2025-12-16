@@ -44,31 +44,9 @@ function encounter_battlegroup_get(_group_id) {
     // Switch statement maps battlegroup IDs to enemy configurations
     switch (_group_id) {
         case "test":
-            // Test configuration: Toaddit (left), empty (center), Whimsun (right)
-            encounter_setup("TOADDIT", noone, "WHIMSUN");
+            // Test configuration: Example / Test (Center)
+            encounter_setup(noone, "TEST", noone);
             break;
-            
-        case "toaddit_s":
-            // Single Toaddit in center position
-            encounter_setup(noone, "TOADDIT", noone);
-            break;
-            
-        case "toadsun":
-            // Toaddit (left), empty (center), Whimsun (right)
-            // Same as "test" but semantically named for this specific pair
-            encounter_setup("TOADDIT", noone, "WHIMSUN");
-            break;
-            
-        case "whimsun_s":
-            // Single Whimsun in center position
-            encounter_setup(noone, "WHIMSUN", noone);
-            break;
-            
-        case "loox_s":
-            // Single Loox in center position
-            encounter_setup(noone, "LOOX", noone);
-            break;
-            
         case "geno":
             // Single Geno in center position (likely a boss or special enemy)
             encounter_setup(noone, "GENO", noone);

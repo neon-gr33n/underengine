@@ -1,5 +1,5 @@
 image_alpha=0
-execute_tween(id,"image_alpha",0.8,easetype.linear,1)
+execute_tween(id,"image_alpha",0.8,"linear",1)
 
 _menued=0;
 _menudesc=["",""]

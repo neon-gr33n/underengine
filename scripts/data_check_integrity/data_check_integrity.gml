@@ -5,7 +5,7 @@ function data_check_integrity(){
             return 0;
     }
     global.integrity_fail = ""
-    var musicList = ["menu0","menu1","fallen","battle","determination","stars","gotosleep","asgore","shop"]
+    var musicList = ["battle"] // Populate with you own music files
     var l = array_length(musicList)
     for (var i = 0; i < l; i++)
     {

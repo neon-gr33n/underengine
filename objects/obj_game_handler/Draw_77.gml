@@ -31,8 +31,6 @@ if input.pause_pressed && player_exists() {
 			instance_activate_object(obj_mobile_ui)
 		}
         instance_activate_object(HEART)
-		instance_activate_object(PPFX)
-		instance_activate_object(LIGHT)
 		instance_activate_object(PLAYER1)
         instance_activate_object(obj_master_camera)
         instance_activate_object(obj_gmlive);

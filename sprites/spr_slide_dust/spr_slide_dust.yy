@@ -29,8 +29,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"CHARA",
-    "path":"folders/Sprites/Overworld/Characters/PLAYER/CHARA.yy",
+    "name":"FRISK",
+    "path":"folders/Sprites/Overworld/Characters/PLAYER/FRISK.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

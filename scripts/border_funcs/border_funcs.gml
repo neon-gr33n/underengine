@@ -92,12 +92,10 @@ function border_draw(border = "FANCY") {
             case "SEPIA":
                 // Force normal blend mode for proper alpha
                 gpu_set_blendmode(bm_normal);
-                pal_swap_set(pal_sepia, 1, false);
                 draw_sprite_stretched_ext(spr_border_sepia, 0, 0, 0,
                     (640 * 1.5) * (window_get_fullscreen() ? display_get_width() / 1.5 : global._display_width) / GAME_RES.w,
                     (640 * 1.5) * 9 / 16 * (window_get_fullscreen() ? display_get_width() * 3 / 1.5 / 4 : global._display_height) / GAME_RES.h,
                     c_white, border_overlay_alpha);
-                pal_swap_reset();
                 break;
     
             default:

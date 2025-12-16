@@ -13,6 +13,9 @@ function scr_debugger()
 		if keyboard_check_pressed(ord("L")){
 			loadgame(0)	
 		}
+		if keyboard_check_pressed(vk_alt){
+			room_goto(rm_shop)	
+		}
 	}
 	
 	if keyboard_check_pressed(ord("M")){

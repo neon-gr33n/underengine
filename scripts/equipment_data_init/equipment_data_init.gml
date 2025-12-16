@@ -18,7 +18,6 @@ function equipment_data_init() {
 			STICK : "WEAPON",
 			
 			NO_ARMOUR : "ARMOUR",
-			BROKEN_LOCKET : "ARMOUR",
 			FADED_RIBBON : "ARMOUR",
 			
 			CELL_PHONE : "KEY",
@@ -76,7 +75,7 @@ function equipment_data_init() {
 				SELL_VALUE: 22,
 				CRIT_MULT : 2.2,
 				CHARAS_ALLOWED : ["FRISK"],
-				DESCRIPTION : "* A blunt axe...[delay,800]#    basically a stick.",
+				DESCRIPTION : "* It's bark is worse#than its bite.",
 				BARS : {
 					INFO : [
 						{
@@ -85,69 +84,6 @@ function equipment_data_init() {
 							CRIT_SOUND : snd_hurtcritical,
 							SPEED : 6,
 							DELAY : 0,
-						},
-					],
-				},
-				ABILITIES : [],
-			},
-			
-			SHARP_AXE : {
-				NAME : "Sharp Axe",
-				SHORT_NAME : "Shaxe",
-				SERIOUS_NAME : "S.Axe",
-				ATK : 1,
-				SELL_VALUE: 15,
-				CRIT_MULT : 5,
-				CHARAS_ALLOWED : ["CHARA"],
-				DESCRIPTION : "* A blunt axe...[delay,800]#    But Sharpened.",
-				BARS : {
-					INFO : [
-						{
-							SIDE : "RAND",
-							SOUND : snd_axe,
-							CRIT_SOUND : snd_axe_strong,
-							SPEED : 15,
-							DELAY : 50,
-						},
-					],
-				},
-				ABILITIES : [],
-			},
-			
-			BATTLE_STAFF : {
-				NAME : "Battle Staff",
-				SHORT_NAME : "BattStaff",
-				SERIOUS_NAME : "B.Staff",
-				ATK : 3,
-				SELL_VALUE: 25,
-				CRIT_MULT : 2.2,
-				CHARAS_ALLOWED : ["CHARA"],
-				DESCRIPTION : "* A blunt axe...#    Without the axe.",
-				BARS : {
-					INFO : [
-						{
-							SIDE : "LEFT",
-							SOUND : snd_punch_weak,
-							CRIT_SOUND : noone,
-							SPEED : 6,
-							DELAY : 0,
-							WEIGHT : 0.3
-						},
-						{
-							SIDE : "RIGHT",
-							SOUND : snd_punch_weak,
-							CRIT_SOUND : noone,
-							SPEED : 6,
-							DELAY : 10,
-							WEIGHT : 0.2
-						},
-						{
-							SIDE : "LEFT",
-							SOUND : snd_punch_strong,
-							CRIT_SOUND : noone,
-							SPEED : 10,
-							DELAY : 45,
-							WEIGHT : 0.5
 						},
 					],
 				},
@@ -165,23 +101,13 @@ function equipment_data_init() {
 				DESCRIPTION : " ",
 				ABILITIES : [],
 			},
-			BROKEN_LOCKET : {
-				NAME : "Broken Locket",
-				SHORT_NAME : "Loc ket",
-				SERIOUS_NAME : "B.Locket",
-				DEF : 2,
-				SELL_VALUE: 25,
-				CHARAS_ALLOWED : ["CHARA"],
-				DESCRIPTION : "* Your Locket...[delay,800]#    Must've broken#    from the fall.",
-				ABILITIES : [],
-			},
 			FADED_RIBBON : {
 				NAME : "Faded Ribbon",
 				SHORT_NAME : "Ribbon",
 				SERIOUS_NAME : "F.Ribbon",
 				DEF : 3,
 				SELL_VALUE: 15,
-				CHARAS_ALLOWED : ["CHARA"],
+				CHARAS_ALLOWED : ["FRISK"],
 				DESCRIPTION : "* If you're cuter#\tmonsters won't hit you#\tas hard.",
 				ABILITIES : [],
 			}

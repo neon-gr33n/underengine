@@ -30,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_battle_bg_ruins_test",
-    "path":"sprites/spr_battle_bg_ruins_test/spr_battle_bg_ruins_test.yy",
+    "name":"spr_battle_bg_placeholder",
+    "path":"sprites/spr_battle_bg_placeholder/spr_battle_bg_placeholder.yy",
   },
   "spriteMaskId":null,
   "visible":true,

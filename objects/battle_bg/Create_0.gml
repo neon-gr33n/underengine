@@ -1,1 +1,1 @@
-image_blend = #5093DC;
+image_blend = c_lime;

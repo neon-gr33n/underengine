@@ -41,7 +41,7 @@ function game_init()
     
     game_set_speed(60, gamespeed_fps);
     
-    global.rounded_box = true;
+    global.rounded_box = false;
     
     // initialize networking and gamejolt apis
     network_init();
@@ -147,7 +147,6 @@ function game_init()
     contact_data_init();
     room_data_init();
     difficulty_data_init();
-    pal_swap_init_system(shd_pal_swapper, shd_pal_html_sprite, shd_pal_html_surface);
     border_init();
     
     global.__difficulty_id = "NORMAL"
@@ -240,7 +239,7 @@ function game_init()
     } else {
         global.boxout = spr_textborder_outer;
         global.boxin = spr_textborder_inner;
-    } global.rounded_box = true;
+    } 
     
     set_display_sizes()
     
