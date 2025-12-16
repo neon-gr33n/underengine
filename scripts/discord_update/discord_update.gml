@@ -25,9 +25,6 @@ function discord_update(){
 					discord_set_location("init");
 			}
 			var rm=room;
-			if(asset_has_tags(rm, ["lucent_caverns"], asset_room)) {
-				discord_set_location("ruins");	
-			}
 		}
 	} else {
 		// User is on android, do not execute this script

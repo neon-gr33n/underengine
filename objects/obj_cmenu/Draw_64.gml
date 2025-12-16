@@ -3,11 +3,6 @@ if(live_call()) return live_result;
 // TOP SECTION  draws the Player Name, current LV, HP, and total G
 // BOTTOM SECTION draws the options, with an optional flair ala, "Don't Forget" (RickyG)
 
-if(live_call()) return live_result;
-
-// TOP SECTION  draws the Player Name, current LV, HP, and total G
-// BOTTOM SECTION draws the options, with an optional flair ala, "Don't Forget" (RickyG)
-
 #region TOP SECTION
 // draw boxes
 
@@ -108,7 +103,7 @@ if UTE_ENABLE_DF_CMENU_CURSOR {
 			
 			if _invcount>0 {
 				draw_sprite_ext(spr_cmenu_sel,0,x+198,y+88+_menu_item_selection*29,global.rounded_box ? 3.8:3.5,2,0,c_yellow,1)	
-				draw_sprite_ext(spr_heart_sm,0,x+220,y+93+_menu_item_selection*29,2,2,0,c_black,1)
+				draw_sprite_ext(spr_heart_sm,0,x+220,y+93+_menu_item_selection*29,2,2,0,c_black,1) // KEEP: Only draws for active item
 			}
 			
 			if (!instance_exists(__invmain)) {
@@ -217,7 +212,7 @@ if UTE_ENABLE_DF_CMENU_CURSOR {
 		    draw_sprite_ext(spr_cmenu_sel_longer,0,x+25,y+205+_menu_selection*32,2,1.5,0,c_lime,1)
 		    draw_sprite_ext(spr_cmenu_sel_longer,0,x+495,y+28+_menu_contact_selection*32+64,-3.5,1.8,0,c_lime,1)
     
-		    draw_sprite_ext(spr_heart_sm,0,x+selCursorXPos+150,y+33+_menu_contact_selection*32+64,2,2,0,c_black,1)
+		    draw_sprite_ext(spr_heart_sm,0,x+selCursorXPos+150,y+33+_menu_contact_selection*32+64,2,2,0,c_black,1) // KEEP: Only draws for active contact
 		    _contactslist = ""
     
 		    for (var i=0;i<10;i++) {
@@ -250,7 +245,7 @@ if UTE_ENABLE_DF_CMENU_CURSOR {
 		    draw_sprite_ext(spr_cmenu_sel_longer,0,x+25,y+205+_menu_selection*32,2,1.5,0,c_lime,1)
 		    draw_sprite_ext(spr_cmenu_sel_longer,0,x+495,y+28+_menu_contact_choice_selection*29+64,-3.5,1.8,0,c_lime,1)
     
-		    draw_sprite_ext(spr_heart_sm,0,x+selCursorXPos+150,y+33+_menu_contact_choice_selection*29+64,2,2,0,c_black,1)
+		    draw_sprite_ext(spr_heart_sm,0,x+selCursorXPos+150,y+33+_menu_contact_choice_selection*29+64,2,2,0,c_black,1) // KEEP: Only draws for active contact choice
     
 		    _contactchoices = ""
     
@@ -309,7 +304,7 @@ if UTE_ENABLE_DF_CMENU_CURSOR {
 					_invmain += "[c_grey]------------[/c]#"
 
 			if _invcount>0 {
-				draw_sprite_ext(spr_heart_sm,0,x+220,y+93+_menu_item_selection*29,2,2,0,c_red,1)
+				draw_sprite_ext(spr_heart_sm,0,x+220,y+93+_menu_item_selection*29,2,2,0,c_red,1) // KEEP: Only draws for active item
 			}
 			
 			if (!instance_exists(__invmain)) {
@@ -347,7 +342,7 @@ if UTE_ENABLE_DF_CMENU_CURSOR {
 				instance_destroy(__info)
 			
 			// draw options
-			draw_sprite_ext(spr_heart_sm,0,x+selCursorXPos,y+208+_menu_selection*32,2,2,0,c_red,1)
+			// REMOVED: draw_sprite_ext(spr_heart_sm,0,x+selCursorXPos,y+208+_menu_selection*32,2,2,0,c_red,1)
 			draw_ftext(loc_get_font(fnt_main_small),c_white ,98,200,2,2,0,loc_gettext("ui.item"))
 			draw_ftext(loc_get_font(fnt_main_small),_menu_selection == 1 ? c_yellow : c_white,98,232,2,2,0,loc_gettext("ui.stat"))
 			if (inven_get_item_by_name("CELL_PHONE") != noone){
@@ -356,7 +351,7 @@ if UTE_ENABLE_DF_CMENU_CURSOR {
 			break;
 			
 		case 2:
-			draw_sprite_ext(spr_heart_sm,0,x+selCursorXPos,y+208+_menu_selection*32,2,2,0,c_red,1)
+			// REMOVED: draw_sprite_ext(spr_heart_sm,0,x+selCursorXPos,y+208+_menu_selection*32,2,2,0,c_red,1)
 			draw_ftext(loc_get_font(fnt_main_small),c_white ,98,200,2,2,0,loc_gettext("ui.item"))
 			draw_ftext(loc_get_font(fnt_main_small),c_yellow,98,232,2,2,0,loc_gettext("ui.stat"))
 			if (inven_get_item_by_name("CELL_PHONE") != noone){
@@ -410,8 +405,8 @@ if UTE_ENABLE_DF_CMENU_CURSOR {
 		break;
 		
 		case 3:
-			draw_sprite_ext(spr_heart_sm,0,x+selCursorXPos+150,y+33+_menu_contact_selection*32+64,2,2,0,c_red,1)
-			draw_sprite_ext(spr_heart_sm,0,x+selCursorXPos,y+208+_menu_selection*32,2,2,0,c_red,1)
+			draw_sprite_ext(spr_heart_sm,0,x+selCursorXPos+150,y+33+_menu_contact_selection*32+64,2,2,0,c_red,1) // KEEP: Only draws for active contact
+			// REMOVED: draw_sprite_ext(spr_heart_sm,0,x+selCursorXPos,y+208+_menu_selection*32,2,2,0,c_red,1)
 			_contactslist = ""
     
 		    for (var i=0;i<10;i++) {
@@ -442,8 +437,8 @@ if UTE_ENABLE_DF_CMENU_CURSOR {
 		break;
 		
 		case 4:
-			draw_sprite_ext(spr_heart_sm,0,x+selCursorXPos+150,y+33+_menu_contact_choice_selection*29+64,2,2,0,c_red,1)
-			draw_sprite_ext(spr_heart_sm,0,x+selCursorXPos,y+208+_menu_selection*32,2,2,0,c_red,1)
+			draw_sprite_ext(spr_heart_sm,0,x+selCursorXPos+150,y+33+_menu_contact_choice_selection*29+64,2,2,0,c_red,1) // KEEP: Only draws for active contact choice
+			// REMOVED: draw_sprite_ext(spr_heart_sm,0,x+selCursorXPos,y+208+_menu_selection*32,2,2,0,c_red,1)
 			
 			_contactchoices = ""
 			

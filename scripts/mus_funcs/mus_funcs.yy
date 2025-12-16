@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"mus_load",
+  "%Name":"mus_funcs",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"mus_load",
+  "name":"mus_funcs",
   "parent":{
     "name":"mus",
     "path":"folders/Scripts/sound/mus.yy",
