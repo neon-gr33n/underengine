@@ -1266,7 +1266,6 @@
     {"id":{"name":"string_length_scribble","path":"scripts/string_length_scribble/string_length_scribble.yy",},},
     {"id":{"name":"string_pad","path":"scripts/string_pad/string_pad.yy",},},
     {"id":{"name":"string_to_real","path":"scripts/string_to_real/string_to_real.yy",},},
-    {"id":{"name":"string_trim","path":"scripts/string_trim/string_trim.yy",},},
     {"id":{"name":"string_width_scribble_ext","path":"scripts/string_width_scribble_ext/string_width_scribble_ext.yy",},},
     {"id":{"name":"string_width_scribble","path":"scripts/string_width_scribble/string_width_scribble.yy",},},
     {"id":{"name":"String","path":"scripts/String/String.yy",},},
