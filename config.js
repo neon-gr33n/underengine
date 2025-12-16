@@ -3,6 +3,6 @@ const config = {
   name:"underengine",
   favicon:"assets/docsIcon.png",
   themeColor:"#FF0000",
-  latestVersion:"v7.0-beta-1",
+  latestVersion:"7.0-beta-1",
   otherVersions:[],
 };
