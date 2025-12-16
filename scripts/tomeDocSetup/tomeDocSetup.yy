@@ -6,7 +6,7 @@
   "name":"tomeDocSetup",
   "parent":{
     "name":"Tome",
-    "path":"folders/Libraries/Tome.yy",
+    "path":"folders/Tome.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

@@ -38,8 +38,6 @@
     {"name":"Code","order":1,"path":"folders/Libraries/KazanGames/TurboGML/Code.yy",},
     {"name":"Others","order":2,"path":"folders/Libraries/KazanGames/TurboGML/Others.yy",},
     {"name":"Outline System","order":5,"path":"folders/Libraries/Outline System.yy",},
-    {"name":"Tome","order":7,"path":"folders/Libraries/Tome.yy",},
-    {"name":"_system","order":1,"path":"folders/Libraries/Tome/_system.yy",},
     {"name":"TweenGMX","order":1,"path":"folders/Libraries/TweenGMX.yy",},
     {"name":"Docs","order":1,"path":"folders/Libraries/TweenGMX/Docs.yy",},
     {"name":"User","order":2,"path":"folders/Libraries/TweenGMX/User.yy",},
@@ -174,6 +172,8 @@
     {"name":"Title Screen","order":5,"path":"folders/Sprites/User Interface/Title Screen.yy",},
     {"name":"Tile Sets","order":60,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":58,"path":"folders/Timelines.yy",},
+    {"name":"Tome","order":65,"path":"folders/Tome.yy",},
+    {"name":"_system","order":1,"path":"folders/Tome/_system.yy",},
   ],
   "ResourceOrderSettings":[
     {"name":"ext_frostjolt","order":2,"path":"extensions/ext_frostjolt/ext_frostjolt.yy",},

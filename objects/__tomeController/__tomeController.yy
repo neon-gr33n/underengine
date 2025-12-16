@@ -11,7 +11,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"_system",
-    "path":"folders/Libraries/Tome/_system.yy",
+    "path":"folders/Tome/_system.yy",
   },
   "parentObjectId":null,
   "persistent":false,

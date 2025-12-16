@@ -6,7 +6,7 @@
   "name":"__tomeFuncQueue",
   "parent":{
     "name":"_system",
-    "path":"folders/Libraries/Tome/_system.yy",
+    "path":"folders/Tome/_system.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
