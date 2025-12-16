@@ -4,5 +4,5 @@ const config = {
   favicon:"assets/docsIcon.png",
   themeColor:"#FF0000",
   latestVersion:"v7.0-beta-1",
-  otherVersions:[],
+  otherVersions:null,
 };
