@@ -32,27 +32,6 @@
 -    [BGM Functions
 ](BGM-Functions
 )
--    [BGM Functions
-](BGM-Functions
-)
--    [BGM Functions
-](BGM-Functions
-)
--    [BGM Functions
-](BGM-Functions
-)
--    [BGM Functions
-](BGM-Functions
-)
--    [BGM Functions
-](BGM-Functions
-)
--    [BGM Functions
-](BGM-Functions
-)
--    [BGM Functions
-](BGM-Functions
-)
 
 ---
 
