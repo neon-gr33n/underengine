@@ -1,5 +1,5 @@
 const config = {
-    description:"Documentation for Your Project",
+    description:"Documentation for underengine",
   name:"underengine",
   favicon:"assets/docsIcon.png",
   themeColor:"#FF0000",
