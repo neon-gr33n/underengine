@@ -1,5 +1,4 @@
-# FAQ
-
+# Frequently Asked Questions
 
 ### What platforms does this engine support?
 

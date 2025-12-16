@@ -1,6 +1,5 @@
 # Overworld
 
-
 ## Room setup
 
 First, create a room, and name it, don't worry about enabling viewports, <b>**obj_master_camera**</b> will handle that for you.

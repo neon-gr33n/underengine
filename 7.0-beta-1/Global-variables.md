@@ -1,6 +1,5 @@
 # Global variables
 
-
 Within this engine, you'll find several global variables, which exist for you to further modify the behavior of your game
 Below is a table, defining each global variables name, type and purpose.
 

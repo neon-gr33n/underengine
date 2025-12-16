@@ -1,6 +1,5 @@
 # Battles
 
-
 ## Setting up enemy encounter 
 To create an enemy that you can encounter/battle, there's several steps you'll need to follow, let's go through them in order
 

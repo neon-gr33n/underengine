@@ -2,45 +2,29 @@
 
 ---
 
-**Configuration
-**
+**Configuration**
 
--    [Global variables
-](Global-variables
-)
+-    [Global variables](Global-variables)
 
 ---
 
-**Getting Started
-**
+**Getting Started**
 
--    [Naming Conventions
-](Naming-Conventions
-)
--    [Overworld
-](Overworld
-)
--    [Battles
-](Battles
-)
+-    [Naming Conventions](Naming-Conventions)
+-    [Overworld](Overworld)
+-    [Battles](Battles)
 
 ---
 
-**Sound
-**
+**Sound**
 
--    [BGM Functions
-](BGM-Functions
-)
+-    [BGM Functions](BGM-Functions)
 
 ---
 
-**Localization
-**
+**Localization**
 
--    [Localization Functions
-](Localization-Functions
-)
+-    [Localization Functions](Localization-Functions)
 
 ---
 
