@@ -1,10 +1,8 @@
 ![Logo](https://raw.githubusercontent.com/neon-gr33n/neon-gr33n/refs/heads/main/underengine_logo_text.png)
 
-A versatile UNDERTALE fangame engine designed to make creating your dream fangame easier than ever before.
-
-Features
 UNDERENGINE is a versatile fangame engine with an emphasis on **cutsomization,** accounting for as many of the users needs as possible, as such, it's packed with **plenty of features**, check out the list below!
 
+Features
 - **16:9 Aspect Ratio support**, allowing your game to display seamlessly.
 - Flexible Dialog System, with text writer/typewriter, portraits, voices, dynamic positioning.
 - Simple and extendable cutscene system
