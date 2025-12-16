@@ -12,9 +12,80 @@ Initializes the global LANGUAGE_CONFIG object with default languages and utility
 
  // LANGUAGE_CONFIG is now available globally
 ```
+
+## `add_language()` → `undefined`
+
+| Parameter | Datatype  | Purpose |
+|-----------|-----------|---------|
+|`id` |Number |Unique identifier for the new language |
+|`name` |String |Uppercase name (e.g., "SPANISH") |
+|`code` |String |Language code (e.g., "ESP_ES") |
+|`display_name` |String |Human-readable display name |
+|`file_suffix` |String |File suffix for language-specific resources |
+|`[needs_special_font=false]` |Bool |Whether language requires special fonts |
 ```gml
          global.LANGUAGE_CONFIG.add_language(4, "SPANISH", "ESP_ES", "Español", "ES", false);
 ```
+
+## `get_by_id()` → *Object*
+Retrieves language configuration by ID
+
+| Parameter | Datatype  | Purpose |
+|-----------|-----------|---------|
+|`id` |Number |Language ID to search for |
+
+**Returns:** Language configuration object, or English fallback if not found
+
+## `get_by_name()` → *Object*
+Retrieves language configuration by name
+
+| Parameter | Datatype  | Purpose |
+|-----------|-----------|---------|
+|`name` |String |Language name to search for (e.g., "ENGLISH") |
+
+**Returns:** Language configuration object, or English fallback if not found
+
+## `get_next()` → *Object*
+Gets the next language in sequence (circular navigation)
+
+| Parameter | Datatype  | Purpose |
+|-----------|-----------|---------|
+|`current_id` |Number |Current language ID |
+
+**Returns:** Next language configuration object
+
+## `get_prev()` → *Object*
+Gets the previous language in sequence (circular navigation)
+
+| Parameter | Datatype  | Purpose |
+|-----------|-----------|---------|
+|`current_id` |Number |Current language ID |
+
+**Returns:** Previous language configuration object
+
+## `get_index_by_id()` → *Number*
+Gets the array index of a language by ID
+
+| Parameter | Datatype  | Purpose |
+|-----------|-----------|---------|
+|`id` |Number |Language ID to find |
+
+**Returns:** Array index, or 0 if not found
+
+## `get_current_info()` → *Object*
+Gets current language information based on global.lang
+
+**Returns:** Current language configuration object
+
+## `get_all_names()` → *Array*
+Gets array of all language names (for compatibility with old system)
+
+**Returns:** Array of language names
+
+## `get_languages()` → *Array*
+Gets the languages array directly (for compatibility)
+
+**Returns:** The languages array
 
 ## `loc_update(new_lang, [dir])` → *Object*
 Updates the current language with navigation support

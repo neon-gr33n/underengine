@@ -36,10 +36,10 @@ Uses spatial audio features for positioned sound playback
 **Returns:** Audio instance ID of the playing sound
 ```gml
  // Play music on the global music emitter with fade-in
- var music_id = mus_playx_on("snd_dungeon", true, 0.7, 1.0, 2.0, 0);
+ var music_id = mus_playx_on(mus_load("dungeon", true, 0.7, 1.0, 2.0, 0);
  
  // Play instant battle music
- var battle_music = mus_playx_on("snd_battle_intense", false, 1.0, 1.2, 0, 1);
+ var battle_music = mus_playx_on(mus_load("battle", false, 1.0, 1.2, 0, 1);
 ```
 
 ## `mus_load(fname)` → *Number <span style="color: red;"> *or* </span> Real*
