@@ -37,10 +37,10 @@ function mus_playx(fname, loopable, volume=global.mus_volume, offset=0, pitch=1,
 /// @return {Number} Audio instance ID of the playing sound
 /// @example
 /// // Play music on the global music emitter with fade-in
-/// var music_id = mus_playx_on("snd_dungeon", true, 0.7, 1.0, 2.0, 0);
+/// var music_id = mus_playx_on(mus_load("dungeon", true, 0.7, 1.0, 2.0, 0);
 /// 
 /// // Play instant battle music
-/// var battle_music = mus_playx_on("snd_battle_intense", false, 1.0, 1.2, 0, 1);
+/// var battle_music = mus_playx_on(mus_load("battle", false, 1.0, 1.2, 0, 1);
 function mus_playx_on(fname, loopable, volume=1, pitch=1, time=0, index = 0){
     // Store the audio instance in the appropriate index
     global.currentmus[index] = audio_play_sound_on(global.musEmitter, fname, loopable, global.muspriority);

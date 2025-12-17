@@ -41,6 +41,7 @@ function init_language_config() {
         ],
         
         /// @desc Adds a new language to the configuration
+		/// @func add_language()
         /// @param {Number} id Unique identifier for the new language
         /// @param {String} name Uppercase name (e.g., "SPANISH")
         /// @param {String} code Language code (e.g., "ESP_ES")
@@ -61,6 +62,7 @@ function init_language_config() {
             });
         },
         
+		/// @func get_by_id()
         /// @desc Retrieves language configuration by ID
         /// @param {Number} id Language ID to search for
         /// @return {Object} Language configuration object, or English fallback if not found
@@ -77,6 +79,7 @@ function init_language_config() {
             return languages[0];
         },
         
+		/// @func get_by_name()
         /// @desc Retrieves language configuration by name
         /// @param {String} name Language name to search for (e.g., "ENGLISH")
         /// @return {Object} Language configuration object, or English fallback if not found
@@ -92,7 +95,8 @@ function init_language_config() {
             }
             return languages[0];
         },
-        
+
+		/// @func get_next()		
         /// @desc Gets the next language in sequence (circular navigation)
         /// @param {Number} current_id Current language ID
         /// @return {Object} Next language configuration object
@@ -108,6 +112,7 @@ function init_language_config() {
             return languages[next_index];
         },
         
+		/// @func get_prev()
         /// @desc Gets the previous language in sequence (circular navigation)
         /// @param {Number} current_id Current language ID
         /// @return {Object} Previous language configuration object
@@ -123,7 +128,8 @@ function init_language_config() {
             if (prev_index < 0) prev_index = array_length(languages) - 1;
             return languages[prev_index];
         },
-        
+ 
+ 		/// @func get_index_by_id()
         /// @desc Gets the array index of a language by ID
         /// @param {Number} id Language ID to find
         /// @return {Number} Array index, or 0 if not found
@@ -140,6 +146,7 @@ function init_language_config() {
             return 0;
         },
         
+		/// @func get_current_info()
         /// @desc Gets current language information based on global.lang
         /// @return {Object} Current language configuration object
         get_current_info: function() {
@@ -149,6 +156,7 @@ function init_language_config() {
             return global.LANGUAGE_CONFIG.get_by_id(global.lang);
         },
         
+		/// @func get_all_names()
         /// @desc Gets array of all language names (for compatibility with old system)
         /// @return {Array} Array of language names
         get_all_names: function() {
@@ -165,6 +173,7 @@ function init_language_config() {
             return names;
         },
         
+		 /// @func get_languages()
         /// @desc Gets the languages array directly (for compatibility)
         /// @return {Array} The languages array
         get_languages: function() {

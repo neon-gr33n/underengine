@@ -27,7 +27,7 @@ _speed = 0;
 _stay = false;
 siner2 = 0;
 cursor_xyscale = 0;
-showCursor = true;
+showCursor = false;
 _scene = instance_exists(obj_cutscene_handler) ? obj_cutscene_handler.scene : noone;
 
 d_height = window_get_fullscreen() ? window_get_height() : global._windowed_height
