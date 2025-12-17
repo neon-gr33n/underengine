@@ -14,12 +14,17 @@ Handles character-specific fonts, voices, and dialogue box positioning
 |`[_boxPos="dynamic"]` |String |Position: "bottom", "top", or "dynamic" |
 |`[_showCursor=true]` |Bool |Show continue cursor at end of text |
 ```gml
- // Basic cutscene dialogue
- cutscene_dialogue("sans", spr_port_sans_gen, "hey kid. long time no see.");
- 
- // Fast dialogue without cursor
- cutscene_dialogue("paps", spr_port_paps_normal, "NYEH HEH HEH!", 1.0, true, "top", false);
- 
+ scene_info = [
+     [cutscene_dialogue, "sans", spr_port_sans_gen, "hey kid, long time, no see."],
+	 [cutscene_wait_for_dialogue],
+     [cutscene_wait, 60], // Wait 1 second (60 frames)
+	 [cutscene_dialogue,"paps", spr_port_paps_normal, "NYEH HEH HEH!", 1.0, true, "top", false],
+	 [cutscene_wait_for_dialogue],
+     [cutscene_flag_set, global.flags, "met_brothers", true],
+	 [cutscene_end]
+ ];
+ create_cutscene(scene_info);
+
 ```gml
  // Cutscene flow notes:
  // - Scene continues automatically unless cutscene_wait() is used

@@ -9,17 +9,18 @@
 
 ---
 
-**Configuration**
-
--    [Global variables](Global-variables)
-
----
-
 **Getting Started**
 
+-    [Installation](Installation)
 -    [Naming Conventions](Naming-Conventions)
 -    [Overworld](Overworld)
 -    [Battles](Battles)
+
+---
+
+**Configuration**
+
+-    [Global variables](Global-variables)
 
 ---
 
@@ -49,6 +50,7 @@
 
 -    [Scribble](https://www.jujuadams.com/Scribble/)
 -    [Input](https://offalynne.github.io/Input/#/8.1/)
+-    [FrostJolt](https://github.com/WinterBlox/FrostJolt/wiki)
 
 ---
 
