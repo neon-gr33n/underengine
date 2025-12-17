@@ -28,13 +28,13 @@
 
 ---
 
-**Overworld**
+**Cutscenes**
 
--    [Internal](Internal)
--    [Internal](Internal)
--    [Internal](Internal)
--    [Cutscenes](Cutscenes)
--    [Cutscenes](Cutscenes)
+-    [Internal Functions](Internal-Functions)
+-    [Dialogue Functions](Dialogue-Functions)
+-    [Instance Functions](Instance-Functions)
+-    [Variable/Flag Functions](Variable/Flag-Functions)
+-    [Other Functions](Other-Functions)
 
 ---
 
