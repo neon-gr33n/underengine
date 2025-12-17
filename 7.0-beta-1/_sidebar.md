@@ -2,6 +2,13 @@
 
 ---
 
+**Engine Information**
+
+-    [Frequently Asked Questions](Frequently-Asked-Questions)
+-    [Terms of Use](Terms-of-Use)
+
+---
+
 **Configuration**
 
 -    [Global variables](Global-variables)
