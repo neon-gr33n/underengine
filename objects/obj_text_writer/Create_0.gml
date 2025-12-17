@@ -36,36 +36,26 @@ function replaceInputIcons(text) {
             var full_marker = string_copy(processed_text, pos, marker_length);
             var verb_name = string_copy(processed_text, pos + 7, end_pos - (pos + 7));
             
-            var replacement_text = verb_name; // Default fallback
+            var replacement_text = verb_name;
             
-            show_debug_message("Processing: " + verb_name + ", Device: " + global.input_device);
-            
+            // Hardcoded keyboard mappings for common actions
             if (global.input_device == "gamepad") {
-                // Try different binding sets for gamepad
-                var binding_set = 0; // 0 - Main, 1 - Alternate
-                var binding = input_binding_get(verb_name, 0, binding_set);
-                show_debug_message("Gamepad binding for " + verb_name + ": " + string(binding));
-                
+                // Gamepad logic (same as before)
+                var binding = input_binding_get(verb_name, 0, 0);
                 if (binding != -1) {
                     var input_icon = input_binding_get_icon(binding);
-                    show_debug_message("Input icon: " + string(input_icon));
-                    
                     if (input_icon != -1 && input_icon != noone) {
-                        var sprite_name = sprite_get_name(input_icon);
-                        replacement_text = "[" + sprite_name + "]";
-                        show_debug_message("Sprite name: " + sprite_name);
+                        replacement_text = "[" + sprite_get_name(input_icon) + "]";
                     } else {
-                        show_debug_message("Invalid icon, falling back to text");
-                        replacement_text = string(input_binding_get(verb_name, 0, binding_set));
+                        replacement_text = string(binding);
                     }
                 } else {
-                    show_debug_message("No gamepad binding found, trying keyboard fallback");
-                    // Fallback to keyboard binding
-                    replacement_text = string(input_binding_get(verb_name, 0, 0));
+                    // Fallback to hardcoded keyboard keys
+                    replacement_text = getHardcodedKey(verb_name);
                 }
             } else {
-                // Keyboard
-                replacement_text = string(input_binding_get(verb_name, 0, 0));
+                // For touch/keyboard: use hardcoded keyboard keys
+                replacement_text = getHardcodedKey(verb_name);
             }
             
             processed_text = string_replace(processed_text, full_marker, replacement_text);
@@ -76,4 +66,18 @@ function replaceInputIcons(text) {
     }
     
     return processed_text;
+}
+
+function getHardcodedKey(verb_name) {
+    // Map common verb names to keyboard keys
+    switch (verb_name) {
+        case "action":
+            return "Z";
+        case "cancel":
+            return "X";
+        case "menu":
+            return "C";
+        default:
+            return "Key";
+    }
 }
