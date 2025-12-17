@@ -43,7 +43,7 @@ switch currentState {
 			_menu_item_option_selection = 0;
 			instance_destroy(__invmain);
 			state = stateMenuHub();
-		} else if(input.menu_pressed){
+		} else if(input.menu_pressed) && global.menu_qol_enabled == true {  
 			use_text = "";
 			_menu_item_section = (_menu_item_section + 1) % 5;
 			switch(_menu_item_section){
@@ -54,10 +54,10 @@ switch currentState {
 					activeSection = "CONSUMABLES";
 				break;
 				case 2:
-					activeSection = "ARMOUR";
+					activeSection = "WEAPONS";
 				break;
 				case 3:
-					activeSection = "WEAPONS";
+					activeSection = "ARMOUR";
 				break;
 				case 4:
 					activeSection = "KEY";
@@ -74,15 +74,38 @@ switch currentState {
 	
 	case "itemAction":
 		if (input.right_pressed || input.left_pressed) {
+			if global.menu_qol_enabled == true {
 			_action_selction = !_action_selction;
+			} else {
+			_action_selction=(_action_selction + input.left_pressed - input.right_pressed + 3) % 3;
+			}
 		} else if (input.cancel_pressed) {
 			currentState = "itemOpened";
-		} else if input.action_pressed {
-			if _action_selction {
-				inven_remove_item(_item_index);
+		} else if input.action_pressed  {
+			if global.menu_qol_enabled {
+				if _action_selction {
+					inven_remove_item(_item_index);
+				} else {
+					use_text = item_get_use_text(inven_get_item(_item_index))
+					inven_use_item(_item_index, 0);
+				}
 			} else {
-				use_text = item_get_use_text(inven_get_item(_item_index))
-				inven_use_item(_item_index, 0);
+				switch(_action_selction){
+					case 0:
+						use_text = item_get_use_text(inven_get_item(_item_index))
+						inven_use_item(_item_index, 0);
+					break;
+					case 1:
+						inven_remove_item(_item_index);
+					break; 
+					case 2:
+						var scene_info = [
+							[cutscene_dialogue, "gen", spr_blank, item_get_attribute(inven_get_item(_item_index), "DESCRIPTION")],
+							[cutscene_wait_for_dialogue]
+						]
+						create_cutscene(scene_info)
+					break;
+				}
 			}
 			currentState = "itemOpened";
 			if (_menu_item_selection == _invcount - 1) {

@@ -1,3 +1,4 @@
+/// @category Engine Information
 /// @title Terms of Use
 
 While **UNDERENGINE** itself is under the open-source **MIT License** as we follow the open-source initiative, we have some limitations of our own that we ask kindly for you to respect, for your safety and ours

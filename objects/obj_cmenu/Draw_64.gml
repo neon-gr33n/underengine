@@ -2,6 +2,7 @@ if(live_call()) return live_result;
 
 // TOP SECTION  draws the Player Name, current LV, HP, and total G
 // BOTTOM SECTION draws the options, with an optional flair ala, "Don't Forget" (RickyG)
+draw_text(10,90,_action_selction)
 
 #region TOP SECTION
 // draw boxes
@@ -11,22 +12,33 @@ draw_sprite_ext(global.boxin,0,x+115,y+125,2.95,2,0,c_white,__DRAW_BOX_OPACITY)
 
  switch _menu_active {
 	case 1:
-		draw_sprite_ext(global.boxout,0,x+330,y+67,6,0.67,0,c_white,1)
-		draw_sprite_ext(global.boxin,0,x+330,y+67,6,0.67,0,c_white,1)
+		if global.menu_qol_enabled == true {
+			draw_sprite_ext(global.boxout,0,x+330,y+67,6,0.67,0,c_white,1)
+			draw_sprite_ext(global.boxin,0,x+330,y+67,6,0.67,0,c_white,1)
+		}
 		draw_sprite_ext(global.boxout,0,x+330,y+229,6,6.5,0,c_white,1)
 		draw_sprite_ext(global.boxin,0,x+330,y+229,6,6.5,0,c_white,__DRAW_BOX_OPACITY)
 		if currentState=="itemAction" || (currentState == "itemOpened" && use_text != "") {
+			if global.menu_qol_enabled {
 			draw_sprite_ext(global.boxout,0,x+330,y+426,6,2,0,c_white,1)
 			draw_sprite_ext(global.boxin,0,x+330,y+426,6,2,0,c_white,__DRAW_BOX_OPACITY)
+			}
 		}
-		draw_set_halign(fa_center);
-		draw_ftext(fnt_mars,c_white,330,60,1,1,0,activeSection+"   [press c]")
-		draw_set_halign(fa_left)
+		
+		if global.menu_qol_enabled == true {
+			draw_set_halign(fa_center);
+			draw_ftext(fnt_mars,c_white,330,60,1,1,0,activeSection+"   [press c]")
+			draw_set_halign(fa_left)
+		}
 
-		draw_ftext(loc_get_font(fnt_main_small),currentState=="itemAction"&&!_action_selction ? c_yellow : c_white,global.rounded_box ? 250:215,330,2,2,0,loc_gettext("ui.item.use"))
-		// todo: add "info/inspect" option and functionality
-		//draw_ftext(global.fnt_main_sm,c_white,global.rounded_box ? 300:287,330,2,2,0,loc_gettext("ui.item.inspect"))
-		draw_ftext(loc_get_font(fnt_main_small),currentState=="itemAction"&&_action_selction ? c_yellow : c_white,global.rounded_box ? 350:287,330,2,2,0,loc_gettext("ui.item.drop"))
+		if !global.menu_qol_enabled {
+			draw_ftext(loc_get_font(fnt_main_small),currentState=="itemAction"&&_action_selction==0 ? c_yellow : c_white,global.rounded_box ? 250:215,330,2,2,0,loc_gettext("ui.item.use"))
+			draw_ftext(loc_get_font(fnt_main_small),currentState=="itemAction"&&_action_selction==1 ? c_yellow : c_white,global.rounded_box ? 350:287,330,2,2,0,loc_gettext("ui.item.drop"))
+			draw_ftext(loc_get_font(fnt_main_small),currentState=="itemAction"&&_action_selction==2 ? c_yellow : c_white,global.rounded_box ? 340:380,330,2,2,0,loc_gettext("ui.item.inspect"))
+		} else {
+			draw_ftext(loc_get_font(fnt_main_small),currentState=="itemAction"&&!_action_selction ? c_yellow : c_white,global.rounded_box ? 250:215,330,2,2,0,loc_gettext("ui.item.use"))
+			draw_ftext(loc_get_font(fnt_main_small),currentState=="itemAction"&&_action_selction ? c_yellow : c_white,global.rounded_box ? 350:287,330,2,2,0,loc_gettext("ui.item.drop"))
+		}
 	break;
 	
 	case 2:
@@ -87,6 +99,7 @@ if UTE_ENABLE_DF_CMENU_CURSOR {
 			_invcount = 0;
 			_item_index = 0;
 			
+			
 			array_foreach(party_get_attribute("INVENTORY"), function(_element, _index) {
 				if (!_menu_item_section || item_get_category(_element) == index_to_category(_menu_item_section - 1)) {
 					_invmain += (_invcount == _menu_item_selection ? (currentState == "itemAction" ? "[c_dkgray]" : "[c_black]") : "[c_white]") + item_get_attribute(_element, "NAME") + "[/c]#";
@@ -115,32 +128,37 @@ if UTE_ENABLE_DF_CMENU_CURSOR {
 			__invmain.dialogue.dialogueText=_invmain
 			__invmain.dialoguePosition="none"
 			__invmain.typist.skip();
-			if (currentState == "itemOpened" && use_text != "") {
-				if !instance_exists(__info) { __info = instance_create(210,385,obj_text_writer) }
-				
-				__info.dialogue.dialogueFont = loc_get_font("fnt_main_small");
-				__info._speed = 0.95;
-				__info.dialogue.dialogueText= "[scale, 1.5]" + use_text;
-				__info.dialoguePosition="none";
-			} else if currentState == "itemAction" {
-				if !instance_exists(__info) { __info = instance_create(210,385,obj_text_writer) }
-				
-				__info.dialogue.dialogueFont = loc_get_font("fnt_main_small");
-				__info._speed = 0.95;
-				__info.dialogue.dialogueText="[scale, 1.5]" + item_get_attribute(inven_get_item(_item_index), "DESCRIPTION");
-				__info.dialoguePosition="none";
-				__info.typist.skip();
-			} else if currentState=="itemUsing" {
-				if !instance_exists(__info) { __info = instance_create(210,385,obj_text_writer) }
-				
-				__info.dialogue.dialogueFont =loc_get_font("fnt_main_small");
-				__info._speed = 0.95;
-				__info.dialogue.dialogueText= "[scale, 1.5]" + use_text;
-				__info.dialoguePosition="none";
-				//__info.typist.skip();
-			} else if instance_exists(__info)
-				instance_destroy(__info)
-			
+			if _menu_qol_enabled == true {
+			    if (currentState == "itemOpened" && use_text != "") {
+			        if !instance_exists(__info) { __info = instance_create(210,385,obj_text_writer) }
+        
+			        __info.dialogue.dialogueFont = loc_get_font("fnt_main_small");
+			        __info._speed = 0.95;
+			        __info.dialogue.dialogueText = "[scale, 1.5]" + use_text;
+			        __info.dialoguePosition = "none";
+			    } else if currentState == "itemAction" {
+			        if !instance_exists(__info) { __info = instance_create(210,385,obj_text_writer) }
+        
+			        __info.dialogue.dialogueFont = loc_get_font("fnt_main_small");
+			        __info._speed = 0.95;
+			        __info.dialogue.dialogueText = "[scale, 1.5]" + item_get_attribute(inven_get_item(_item_index), "DESCRIPTION");
+			        __info.dialoguePosition = "none";
+			        __info.typist.skip();
+			    } else if currentState == "itemUsing" {
+			        if !instance_exists(__info) { __info = instance_create(210,385,obj_text_writer) }
+        
+			        __info.dialogue.dialogueFont = loc_get_font("fnt_main_small");
+			        __info._speed = 0.95;
+			        __info.dialogue.dialogueText = "[scale, 1.5]" + use_text;
+			        __info.dialoguePosition = "none";
+			        //__info.typist.skip();
+			    } else if instance_exists(__info) {
+			        instance_destroy(__info)
+			    }
+			} else if instance_exists(__info) {
+			    // Clean up __info if QOL feature is disabled
+			    instance_destroy(__info)
+			}
 			// draw options
 			draw_ftext(loc_get_font(fnt_main_small),c_black ,98,200,2,2,0,loc_gettext("ui.item"))
 			draw_ftext(loc_get_font(fnt_main_small),c_white,98,232,2,2,0,loc_gettext("ui.stat"))
@@ -316,30 +334,37 @@ if UTE_ENABLE_DF_CMENU_CURSOR {
 			__invmain.dialogue.dialogueText=_invmain
 			__invmain.dialoguePosition="none"
 			__invmain.typist.skip();
-			if (currentState == "itemOpened" && use_text != "") {
-				if !instance_exists(__info) { __info = instance_create(210,385,obj_text_writer) }
-				
-				__info.dialogue.dialogueFont = loc_get_font("fnt_main_small");
-				__info._speed = 0.95;
-				__info.dialogue.dialogueText= "[scale, 1.5]" + use_text;
-				__info.dialoguePosition="none";
-			} else if currentState == "itemAction" {
-				if !instance_exists(__info) { __info = instance_create(210,385,obj_text_writer) }
-				
-				__info.dialogue.dialogueFont = loc_get_font("fnt_main_small");
-				__info._speed = 0.95;
-				__info.dialogue.dialogueText="[scale, 1.5]" + item_get_attribute(inven_get_item(_item_index), "DESCRIPTION");
-				__info.dialoguePosition="none";
-				__info.typist.skip();
-			} else if currentState=="itemUsing" {
-				if !instance_exists(__info) { __info = instance_create(210,385,obj_text_writer) }
-				
-				__info.dialogue.dialogueFont =loc_get_font("fnt_main_small");
-				__info._speed = 0.95;
-				__info.dialogue.dialogueText= "[scale, 1.5]" + use_text;
-				__info.dialoguePosition="none";
-			} else if instance_exists(__info)
-				instance_destroy(__info)
+			if global.menu_qol_enabled == true {
+			    if (currentState == "itemOpened" && use_text != "") {
+			        if !instance_exists(__info) { __info = instance_create(210,385,obj_text_writer) }
+        
+			        __info.dialogue.dialogueFont = loc_get_font("fnt_main_small");
+			        __info._speed = 0.95;
+			        __info.dialogue.dialogueText = "[scale, 1.5]" + use_text;
+			        __info.dialoguePosition = "none";
+			    } else if currentState == "itemAction" {
+			        if !instance_exists(__info) { __info = instance_create(210,385,obj_text_writer) } 
+        
+			        __info.dialogue.dialogueFont = loc_get_font("fnt_main_small");
+			        __info._speed = 0.95;
+			        __info.dialogue.dialogueText = "[scale, 1.5]" + item_get_attribute(inven_get_item(_item_index), "DESCRIPTION");
+			        __info.dialoguePosition = "none";
+			        __info.typist.skip();
+			    } else if currentState == "itemUsing" {
+			        if !instance_exists(__info) { __info = instance_create(210,385,obj_text_writer) }
+        
+			        __info.dialogue.dialogueFont = loc_get_font("fnt_main_small");
+			        __info._speed = 0.95;
+			        __info.dialogue.dialogueText = "[scale, 1.5]" + use_text;
+			        __info.dialoguePosition = "none";
+			        //__info.typist.skip();
+			    } else if instance_exists(__info) {
+			        instance_destroy(__info)
+			    }
+			} else if instance_exists(__info) {
+			    // Clean up __info if QOL feature is disabled
+			    instance_destroy(__info)
+			}
 			
 			// draw options
 			// REMOVED: draw_sprite_ext(spr_heart_sm,0,x+selCursorXPos,y+208+_menu_selection*32,2,2,0,c_red,1)

@@ -12,12 +12,17 @@
 /// @param {String} [_boxPos="dynamic"] Position: "bottom", "top", or "dynamic"
 /// @param {Bool} [_showCursor=true] Show continue cursor at end of text
 /// @example
-/// // Basic cutscene dialogue
-/// cutscene_dialogue("sans", spr_port_sans_gen, "hey kid. long time no see.");
-/// 
-/// // Fast dialogue without cursor
-/// cutscene_dialogue("paps", spr_port_paps_normal, "NYEH HEH HEH!", 1.0, true, "top", false);
-/// 
+/// scene_info = [
+///     [cutscene_dialogue, "sans", spr_port_sans_gen, "hey kid, long time, no see."],
+///	 [cutscene_wait_for_dialogue],
+///     [cutscene_wait, 60], // Wait 1 second (60 frames)
+///	 [cutscene_dialogue,"paps", spr_port_paps_normal, "NYEH HEH HEH!", 1.0, true, "top", false],
+///	 [cutscene_wait_for_dialogue],
+///     [cutscene_flag_set, global.flags, "met_brothers", true],
+///	 [cutscene_end]
+/// ];
+/// create_cutscene(scene_info);
+///
 /// @example
 /// // Cutscene flow notes:
 /// // - Scene continues automatically unless cutscene_wait() is used

@@ -75,7 +75,7 @@ function equipment_data_init() {
 				SELL_VALUE: 22,
 				CRIT_MULT : 2.2,
 				CHARAS_ALLOWED : ["FRISK"],
-				DESCRIPTION : "* It's bark is worse#than its bite.",
+				DESCRIPTION : global.menu_qol_enabled == true ? "* It's bark is worse#than its bite." : "* It's bark is worse than its bite.",
 				BARS : {
 					INFO : [
 						{
@@ -108,7 +108,7 @@ function equipment_data_init() {
 				DEF : 3,
 				SELL_VALUE: 15,
 				CHARAS_ALLOWED : ["FRISK"],
-				DESCRIPTION : "* If you're cuter#\tmonsters won't hit you#\tas hard.",
+				DESCRIPTION :global.menu_qol_enabled == true ? "*If you're cuter#\tmonsters won't hit you#\tas hard." : "* If you're cuter, monsters won't#\thit you as hard.",
 				ABILITIES : [],
 			}
 		},

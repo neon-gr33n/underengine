@@ -1,7 +1,7 @@
 /// @category Cutscenes
 /// @title Internal Functions
 
-/// @func create_cutscene(scene_info)
+/// @func create_cutscene()
 /// @desc Creates and starts a cutscene using the provided scene information array
 /// @desc Instantiates obj_cutscene_handler and initializes it with scene data
 /// @param {Array} scene_info Array containing cutscene sequence data and actions
@@ -26,8 +26,6 @@
 /// ];
 /// create_cutscene(scene_info);
 function create_cutscene(){
-    /// @arg scene_info
-    
     var inst = instance_create_layer(0, 0, "Instances", obj_cutscene_handler);
     
     with(inst) {
@@ -35,6 +33,13 @@ function create_cutscene(){
         // PLAYER.cutscene_paused = true; // Commented out in original
         event_perform(ev_other, ev_user0);
     }
+	
+	if instance_exists(obj_cmenu){
+		if instance_exists(WRITER) {
+			instance_destroy()
+		}
+		instance_destroy()	
+	}
     
     return inst;
 }

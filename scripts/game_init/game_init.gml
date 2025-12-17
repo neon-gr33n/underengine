@@ -42,7 +42,8 @@ function game_init()
     game_set_speed(60, gamespeed_fps);
     
     global.rounded_box = false;
-    
+    global.menu_qol_enabled = false;
+	
     // initialize networking and gamejolt apis
     network_init();
     gj_init();
@@ -128,7 +129,7 @@ function game_init()
     
     global.presence                        = true; // Enables/Disables discord rich presence
     
-    global.running_enabled                    = true;
+    global.running_enabled                    = false;
     global.pausing_enabled                    = true;
     
     global.one_handed                = false; 

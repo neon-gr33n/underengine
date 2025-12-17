@@ -86,7 +86,23 @@ function storage_remove_index(index) {
 }
 
 function inven_remove_item(item) {
-	inven_remove_index(inven_get_item_index(item));
+		// Check if the item exists in inventory
+	    var item_index = inven_get_item_index(item);
+	    if (item_index == -1) return false; // Item not found
+    
+	    // Get the actual item name/ID
+	    var item_id = inven_get_item(item_index);
+    
+	    // Check if this is a KEY item
+	    if (item_get_category(item_id) == "KEY") {
+	        // Don't remove key items
+	        show_debug_message("Cannot remove key item: " + item_get_attribute(item_id, "NAME"));
+	        return false; // Return false to indicate removal was blocked
+	    }
+    
+	    // If not a key item, proceed with removal
+	    inven_remove_index(item_index);
+	    return true; // Return true to indicate successful removal
 }
 
 function storage_remove_item(item) {
