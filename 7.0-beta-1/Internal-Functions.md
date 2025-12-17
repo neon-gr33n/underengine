@@ -1,6 +1,6 @@
 # Internal Functions
 
-## `create_cutscene(scene_info)` → *Instance*
+## `create_cutscene()` → *Instance*
 Creates and starts a cutscene using the provided scene information array
 Instantiates obj_cutscene_handler and initializes it with scene data
 
