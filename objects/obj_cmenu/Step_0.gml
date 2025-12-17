@@ -77,7 +77,7 @@ switch currentState {
 			if global.menu_qol_enabled == true {
 			_action_selction = !_action_selction;
 			} else {
-			_action_selction=(_action_selction + input.left_pressed - input.right_pressed + 3) % 3;
+			_action_selction=(_action_selction + input.right_pressed - input.left_pressed + 3) % 3;
 			}
 		} else if (input.cancel_pressed) {
 			currentState = "itemOpened";

@@ -19,7 +19,7 @@ drawTextBox = function(){
 		draw_sprite_ext(global.rounded_box ? spr_textborder_inner_rounded : spr_textborder_inner,0,320,398,12,3,0,c_white, __DRAW_BOX_OPACITY)
 		draw_sprite_ext(global.rounded_box ? spr_textborder_outer_rounded : spr_textborder_outer,0,320,398,12,3,0,c_white,1)
 	
-		if (WRITER.typewriter_state == 1 && !instance_exists(obj_choice_text) && showCursor){
+		if (WRITER.typewriter_state == 1 && !instance_exists(obj_choice_text) && showCursor && global.menu_qol_enabled ){
 			// Draw cursor
 			draw_sprite_ext(spr_soulcursor,0,570,440,cursor_xyscale,cursor_xyscale,0,c_white,1)
 		}
