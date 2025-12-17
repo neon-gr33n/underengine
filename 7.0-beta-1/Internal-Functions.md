@@ -43,3 +43,6 @@ Instantiates obj_cutscene_handler_passive for non-blocking cutscene sequences
 ## `cutscene_end()` → `undefined`
 Ends all active cutscenes and restores normal gameplay state
 Cleans up cutscene handlers, unfreezes player, and resets interaction state
+
+## `cutscene_end_action()` → `undefined`
+Ends the current action
