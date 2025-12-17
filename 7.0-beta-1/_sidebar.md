@@ -30,12 +30,6 @@
 
 ---
 
-**Localization**
-
--    [Localization Functions](Localization-Functions)
-
----
-
 **Cutscenes**
 
 -    [Internal Functions](Internal-Functions)
@@ -43,6 +37,12 @@
 -    [Instance Functions](Instance-Functions)
 -    [Variable/Flag Functions](Variable/Flag-Functions)
 -    [Other Functions](Other-Functions)
+
+---
+
+**Localization**
+
+-    [Localization Functions](Localization-Functions)
 
 ---
 
