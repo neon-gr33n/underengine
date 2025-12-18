@@ -38,6 +38,12 @@ function game_init()
     global.lang_ls = "90%";
     global.dialogue_map = noone;
     #endregion
+	
+		// Pre-load party times
+	global.party_times = array_create(3, "--:--");
+
+	// Pre-load party rooms
+	global.party_rooms = array_create(3, "------------");
     
     game_set_speed(60, gamespeed_fps);
     

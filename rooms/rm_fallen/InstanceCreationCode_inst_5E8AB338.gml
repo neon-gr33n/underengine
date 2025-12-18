@@ -1,3 +1,3 @@
 target=rm_fallen;
 landmark=0;
-dir=DIR.DOWN
+dir=DIR.UP

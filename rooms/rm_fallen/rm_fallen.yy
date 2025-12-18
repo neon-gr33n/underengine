@@ -54,8 +54,8 @@
   ],
   "name":"rm_fallen",
   "parent":{
-    "name":"Game Content (DO NOT REMOVE)",
-    "path":"folders/Rooms/Game Content (DO NOT REMOVE).yy",
+    "name":"Examples (feel free to remove!)",
+    "path":"folders/Rooms/Examples (feel free to remove!).yy",
   },
   "parentRoom":null,
   "physicsSettings":{

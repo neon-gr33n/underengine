@@ -3,7 +3,6 @@ serious=true // "SERIOUS" Mode (shortens item names and removes puns)
 _death_speed = 2; // Determines the speed of the "dusting" effect
 _procs=0
 battleMenuSelection = 1  // Set to 1 by default inside of 0 so that ACT is the default option
-battleButtonTweenable = false;  // Automatically updated via global.__ute_tween_battle_button
 spare_sound_played = false; // Has the spare sound played?
 
 with (obj_text_writer){
@@ -45,14 +44,6 @@ use_text = "";
 _menu1 = noone;
 _menu2 = noone;
 //display_set_gui_size(640,480)
-checkTweenable = function()
-{
-	if(UTE_TWEEN_BATTLE_BUTTON){
-		battleButtonTweenable = true;
-	} else {
-		battleButtonTweenable = false;
-	}
-}
 
 function awardBattleRewards(canGainXP = false, spared = false) {
     // Debug: check what's in totalGainEXP and totalGainGOLD
@@ -155,7 +146,6 @@ stateMenuBegin = function ()
 {
 	HEART.stateMenuSoul();
 	currentState = "menuBegin";
-	checkTweenable();
 	HEART.image_alpha = 1;
 	HEART.visible = true;
 }
