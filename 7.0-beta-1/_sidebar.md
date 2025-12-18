@@ -41,9 +41,9 @@
 
 ---
 
-**Inventory Functions**
+**Overworld**
 
--    []()
+-    [Inventory Functions](Inventory-Functions)
 
 ---
 
