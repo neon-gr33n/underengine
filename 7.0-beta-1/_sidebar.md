@@ -6,6 +6,7 @@
 
 -    [Frequently Asked Questions](Frequently-Asked-Questions)
 -    [Terms of Use](Terms-of-Use)
+-    [Feature Roadmap](Feature-Roadmap)
 
 ---
 
