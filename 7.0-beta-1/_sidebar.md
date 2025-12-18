@@ -38,6 +38,10 @@
 **Battle**
 
 -    [Party LV](Party-LV)
+-    [Encounter Initialization](Encounter-Initialization)
+-    [Battlegroup Fetching](Battlegroup-Fetching)
+-    [Encounter Creation](Encounter-Creation)
+-    [Encounter Start](Encounter-Start)
 
 ---
 
