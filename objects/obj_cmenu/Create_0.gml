@@ -8,6 +8,7 @@ _menu_contact_selection = 0;
 _menu_contact_choice_selection = 0;
 _menu_active = 0;  // 0 - HUB 1 - ITEM 2 - STAT 3 - CELL 4 - DIALOG
 _menu_option_available = 3;
+
 activeSection = "ALL";
 _activeSel = false;
 currentState = "hub";

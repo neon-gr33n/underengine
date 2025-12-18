@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"sfx_gain",
+  "%Name":"sfx_funcs",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"sfx_gain",
+  "name":"sfx_funcs",
   "parent":{
     "name":"sfx",
     "path":"folders/Scripts/sound/sfx.yy",

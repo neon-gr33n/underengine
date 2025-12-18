@@ -6,7 +6,6 @@ if (!variable_instance_exists(id, "_base_damage")) {
 if (!variable_instance_exists(id, "_damage")) {
     _damage = 2; // Default value
 }
-_last_graze = 0;
 has_hit = false;
 
 // Call this to update damage based on difficulty

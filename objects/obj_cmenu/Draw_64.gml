@@ -1,9 +1,5 @@
 if(live_call()) return live_result;
 
-// TOP SECTION  draws the Player Name, current LV, HP, and total G
-// BOTTOM SECTION draws the options, with an optional flair ala, "Don't Forget" (RickyG)
-draw_text(10,90,_action_selction)
-
 #region TOP SECTION
 // draw boxes
 

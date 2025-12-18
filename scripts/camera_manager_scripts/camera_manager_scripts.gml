@@ -1,13 +1,12 @@
-/**
- * Sets up the camera view and display settings.
- * @example
- * // Basic setup with defaults
- * camera_setup();
- * 
- * @example
- * // Setup for viewport 1 with custom scale
- * camera_setup(1, false, true, 0.75);
- */
+/// @category Camera
+/// @title Camera Management
+
+/// @function camera_setup([view_port], [_full_screen], [_pix_perf], [view_scale])
+/// @description Sets up the camera view and display settings
+/// @param {number} [view_port=0] Viewport index to configure
+/// @param {boolean} [_full_screen=noone] Fullscreen state (noone = keep current)
+/// @param {boolean} [_pix_perf=true] Enable pixel perfect rendering
+/// @param {number} [view_scale=0.5] Camera zoom scale factor
 function camera_setup(view_port = 0, _full_screen = noone, _pix_perf = true, view_scale = 0.5)
 {
 	//makes sure camera is persistent
@@ -45,14 +44,10 @@ function camera_setup(view_port = 0, _full_screen = noone, _pix_perf = true, vie
 
 }
 
-/**
- * Toggles between fullscreen and windowed mode.
- * @example
- * // Toggle fullscreen
- * fullscreen_toggle();
- * 
- * @returns {boolean} Current fullscreen state after toggle
- */
+/// @function fullscreen_toggle([_pix_perf])
+/// @description Toggles between fullscreen and windowed mode
+/// @param {boolean} [_pix_perf=true] Maintain pixel perfect rendering
+/// @returns {boolean} Current fullscreen state after toggle
 function fullscreen_toggle(_pix_perf = true)
 {
 	//toggles full screen
@@ -83,12 +78,8 @@ function fullscreen_toggle(_pix_perf = true)
 
 }
 
-/**
- * Adjusts camera zoom based on mouse wheel input.
- * @example
- * // Call each step to handle zoom
- * camera_set_zoom();
- */
+/// @function camera_set_zoom()
+/// @description Adjusts camera zoom based on mouse wheel input
 function camera_set_zoom()
 {
 	//gets zoom inputs
@@ -107,39 +98,26 @@ function camera_set_zoom()
 	camera_set_view_pos(view, x - camera_get_view_width(view)/2, y - camera_get_view_height(view)/2);
 }
 
-/**
- * Smoothly transitions camera zoom to a target scale.
- * @example
- * // Zoom to 2x scale
- * camera_lerp_zoom(2);
- * 
- * @example
- * // Zoom with custom speed
- * camera_lerp_zoom(1.5, 0.05);
- */
+/// @function camera_lerp_zoom(scale, [zoom_spd])
+/// @description Smoothly transitions camera zoom to a target scale
+/// @param {number} scale Target zoom scale
+/// @param {number} [zoom_spd=0.025] Lerp speed (0-1)
 function camera_lerp_zoom(scale,zoom_spd = 0.025)
 {
 	view_scale = lerp(view_scale,scale,0.025);
 	exit;
 }
 
-/**
- * Smoothly resets camera zoom to default.
- * @example
- * // Reset zoom
- * camera_reset_zoom();
- */
+/// @function camera_reset_zoom([zoom_spd])
+/// @description Smoothly resets camera zoom to default
+/// @param {number} [zoom_spd=0.025] Lerp speed (0-1)
 function camera_reset_zoom(zoom_spd = 0.025)
 {
 	view_scale = lerp(view_scale,global._display_height / GAME_RES.h, 0.025);	
 }
 
-/**
- * Updates camera position and handles screen shake.
- * @example
- * // Call each step to follow player
- * camera_set_position();
- */
+/// @function camera_set_position()
+/// @description Updates camera position and handles screen shake
 function camera_set_position()
 {
 	
@@ -178,12 +156,9 @@ function camera_set_position()
 	
 }
 
-/**
- * Links a player to a dedicated camera object.
- * @example
- * // In player's create event
- * player_link_to_camera();
- */
+/// @function player_link_to_camera([_p_id])
+/// @description Links a player to a dedicated camera object
+/// @param {instance} [_p_id=id] Player instance to link
 function player_link_to_camera(_p_id = id)
 {
 	//disables master camera
@@ -209,16 +184,11 @@ function player_link_to_camera(_p_id = id)
 	with(cam_id) {camera_setup(player_number);}
 }
 
-/**
- * Handles window resizing and fullscreen toggling.
- * @example
- * // Switch to fullscreen
- * camera_window_resize(true);
- * 
- * @example
- * // Set windowed mode with custom size
- * camera_window_resize(false, 1600, 900);
- */
+/// @function camera_window_resize(_p_full, [_p_width], [_p_height])
+/// @description Handles window resizing and fullscreen toggling
+/// @param {boolean} _p_full Enable fullscreen mode
+/// @param {number} [_p_width=1280] Window width when not fullscreen
+/// @param {number} [_p_height=-1] Window height (-1 = auto-calc as 3:4 ratio)
 function camera_window_resize(_p_full,_p_width=1280,_p_height=-1)
 {
 	if _p_full {
@@ -250,12 +220,8 @@ function camera_window_resize(_p_full,_p_width=1280,_p_height=-1)
 		
 }
 
-/**
- * Calculates and sets view scaling values.
- * @example
- * // Update scaling values
- * set_scales();
- */
+/// @function set_scales()
+/// @description Calculates and sets view scaling values
 function set_scales() {
 	view_scale = global._display_height / GAME_RES.h;
 	view_w = GAME_RES.w * view_scale;
