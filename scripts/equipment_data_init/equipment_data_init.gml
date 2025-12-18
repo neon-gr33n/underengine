@@ -75,7 +75,7 @@ function equipment_data_init() {
 				SELL_VALUE: 22,
 				CRIT_MULT : 2.2,
 				CHARAS_ALLOWED : ["FRISK"],
-				DESCRIPTION : global.menu_qol_enabled == true ? "* It's bark is worse#than its bite." : "* It's bark is worse than its bite.",
+				DESCRIPTION : global.menu_qol_enabled == true ? "* Its bark is worse#than its bite." : "* Its bark is worse than its bite.",
 				BARS : {
 					INFO : [
 						{

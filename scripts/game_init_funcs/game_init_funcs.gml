@@ -26,6 +26,14 @@ function game_init()
     
     // Load configuration and final setup
     finalize_setup();
+	
+	// Initialize based on build type
+	if (DEVELOPERBUILD == 1) {
+	    global.debug = true;
+	    show_debug_message("Developer build - debug enabled");
+	} else {
+	    global.debug = false; // Disabled in release builds
+	}
     
     // Start the game
     room_goto(START_ROOM);

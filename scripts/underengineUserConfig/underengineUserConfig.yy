@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"speaker_type",
+  "%Name":"underengineUserConfig",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"speaker_type",
+  "name":"underengineUserConfig",
   "parent":{
-    "name":"dialogue",
-    "path":"folders/Scripts/dialogue.yy",
+    "name":"(System)",
+    "path":"folders/Scripts/(System).yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"ENUMS",
+  "%Name":"underengineUserEnums",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"ENUMS",
+  "name":"underengineUserEnums",
   "parent":{
     "name":"(System)",
     "path":"folders/Scripts/(System).yy",

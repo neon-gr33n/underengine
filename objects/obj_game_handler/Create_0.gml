@@ -58,6 +58,10 @@ function checkShaderSupport(){
 	
 }
 
+if __UNDERENGINE_LOGGING {
+	show_debug_message("[UNDERENGINE] Initializing... " + "underengine " + __UNDERENGINE_VERSION)	
+}
+
 // Execute any necessary functions - initialize data
 game_init();
 

@@ -104,7 +104,7 @@ if UTE_ENABLE_DF_CMENU_CURSOR {
 				if (_invcount <= _menu_item_selection)
 					_item_index++;
 			});
-			if (!_menu_item_section)
+			if (!_menu_item_section) 
 				repeat (inven_get_space_left())
 					_invmain += "[c_grey]------------[/c]#"
 
