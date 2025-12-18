@@ -1,9 +1,8 @@
-/**
- * Initializes the global difficulty settings data structure.
- * @example
- * // Call once at game start
- * difficulty_data_init();
- */
+/// @category Game
+/// @title Difficulty
+
+/// @function difficulty_data_init()
+/// @description Initializes the global difficulty settings data structure
 function difficulty_data_init(){
 	global.GAME_DIFFICULTY = {
 		__DIFFICULTY__: {
@@ -33,19 +32,10 @@ function difficulty_data_init(){
 	}
 }
 
-/**
- * Sets the game difficulty and applies appropriate stat multipliers.
- * @example
- * // Set to Easy difficulty
- * game_set_difficulty("EASY");
- * 
- * @example
- * // Set to Hard difficulty
- * game_set_difficulty("HARD");
- * 
- * @param {string} difficulty_name - Name of difficulty (EASY, NORMAL, HARD, LUNATIC)
- * @returns {boolean} Success or failure of setting difficulty
- */
+/// @function game_set_difficulty(difficulty_name)
+/// @description Sets the game difficulty and applies appropriate stat multipliers
+/// @param {string} difficulty_name Name of difficulty (EASY, NORMAL, HARD, LUNATIC)
+/// @returns {boolean} Success or failure of setting difficulty
 function game_set_difficulty(difficulty_name) {
     // Validate difficulty exists
     if (variable_struct_exists(global.GAME_DIFFICULTY.__DIFFICULTY__, difficulty_name)) {
@@ -122,19 +112,10 @@ function game_set_difficulty(difficulty_name) {
     }
 }
 
-/**
- * Applies difficulty modifiers to damage values.
- * @example
- * // Calculate damage after difficulty adjustments
- * var damage = game_get_difficulty_damage(100);
- * 
- * @example
- * // Use with attack calculations
- * var finalDamage = game_get_difficulty_damage(baseDamage + strength * 2);
- * 
- * @param {number} base_damage - The base damage value before difficulty adjustments
- * @returns {number} Modified damage based on current difficulty settings
- */
+/// @function game_get_difficulty_damage(base_damage)
+/// @description Applies difficulty modifiers to damage values
+/// @param {number} base_damage The base damage value before difficulty adjustments
+/// @returns {number} Modified damage based on current difficulty settings
 function game_get_difficulty_damage(base_damage) {
     var _diff = global.GAME_DIFFICULTY.__DIFFICULTY__;
     var _current_diff = "NORMAL"; // Default, you'll need to track current difficulty
@@ -160,26 +141,17 @@ function game_get_difficulty_damage(base_damage) {
     return round(_final_damage);
 }
 	
-/**
- * Gets the current difficulty settings.
- * @example
- * var diffInfo = game_get_difficulty_info();
- * var damageMultiplier = diffInfo.DMG_MULTIPLIER;
- * 
- * @returns {object} Current difficulty settings object
- */
+/// @function game_get_difficulty_info()
+/// @description Gets the current difficulty settings
+/// @returns {struct} Current difficulty settings object
 function game_get_difficulty_info() {
     var _current = global.__difficulty_id;
     return global.GAME_DIFFICULTY.__DIFFICULTY__[$ _current];
 }
 
-/**
- * Gets the display label for the current difficulty.
- * @example
- * show_message("Current difficulty: " + game_get_difficulty_label());
- * 
- * @returns {string} Current difficulty label
- */
+/// @function game_get_difficulty_label()
+/// @description Gets the display label for the current difficulty
+/// @returns {string} Current difficulty label
 function game_get_difficulty_label() {
     var _info = game_get_difficulty_info();
     return _info.LABEL;

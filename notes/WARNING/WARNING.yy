@@ -1,0 +1,11 @@
+{
+  "$GMNotes":"v1",
+  "%Name":"WARNING",
+  "name":"WARNING",
+  "parent":{
+    "name":"Documentation",
+    "path":"folders/Notes/Documentation.yy",
+  },
+  "resourceType":"GMNotes",
+  "resourceVersion":"2.0",
+}

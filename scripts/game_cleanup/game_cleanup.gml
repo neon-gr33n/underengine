@@ -1,3 +1,6 @@
+/// @category Game
+/// @title Cleanup
+
 // Cleans up any data that no longer needs to be used before closing the game
 function game_cleanup(){
 	if (global.musEmitter != -4)

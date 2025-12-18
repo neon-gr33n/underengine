@@ -1,5 +1,10 @@
-///@desc Fetches the exp needed to level up
-///@arg index
+/// @category Battle
+/// @title Party LV
+
+/// @function LV_get_exp_needed(LV)
+/// @description Fetches the exp needed to level up
+/// @param {number} LV Current level
+/// @returns {number} EXP needed for next level, -1 for invalid level
 function LV_get_exp_needed(LV) {
 	switch(LV) {
 		case 2:
@@ -45,8 +50,9 @@ function LV_get_exp_needed(LV) {
 	}
 }
 
-///@desc Updates stats depending on level
-///@arg index
+/// @function member_update_stats(member)
+/// @description Updates stats depending on level
+/// @param {object} member Member object to update
 function member_update_stats(member)
 {
     var currentLV = member_get_stat(member, "LV");
@@ -61,17 +67,16 @@ function member_update_stats(member)
         #region update mana and HP depending on LV
         if (currentLV < 20) {
             member_set_stat(member, "MAX_HP", 20 + 6 * (currentLV - 1));
-            member_set_stat(member, "MAX_MP", 20 + 2 * (currentLV - 1));
         } else {
             member_set_stat(member, "MAX_HP", 150);
-            member_set_stat(member, "MAX_MP", 100);
         }
         member_recover_HP(member);
-        member_recover_MP(member);
         #endregion
     }
 }
 
+/// @function party_update_stats()
+/// @description Updates stats for all party members
 function party_update_stats() {
 	array_foreach(party_get_attribute("members"), member_update_stats);
 }

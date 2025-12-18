@@ -1,3 +1,6 @@
+/// @category Overworld
+/// @title Inventory Functions
+
 function inven_get_item(index) {
 	var inven = party_get_attribute("INVENTORY");
 	

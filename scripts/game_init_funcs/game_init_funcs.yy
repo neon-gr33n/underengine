@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"create_floating_text",
+  "%Name":"game_init_funcs",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"create_floating_text",
+  "name":"game_init_funcs",
   "parent":{
-    "name":"dialogue",
-    "path":"folders/Scripts/dialogue.yy",
+    "name":"maingame",
+    "path":"folders/Scripts/maingame.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

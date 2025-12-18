@@ -4,12 +4,12 @@ switch(currentState){
 	#region Draw Shop Hub
 	case "hub":
 			// Draw left side
-		draw_sprite_ext(!global.rounded_box ? spr_textborder_inner_rounded : spr_textborder_inner,0,162,359,7.3,5.2,0,c_white, __DRAW_BOX_OPACITY)
-		draw_sprite_ext(!global.rounded_box ? spr_textborder_outer_rounded : spr_textborder_outer,0,162,359,7.3,5.2,0,c_white,1)
+		draw_sprite_ext(global.rounded_box ? spr_textborder_inner_rounded : spr_textborder_inner,0,162,359,7.3,5.2,0,c_white, __DRAW_BOX_OPACITY)
+		draw_sprite_ext(global.rounded_box ? spr_textborder_outer_rounded : spr_textborder_outer,0,162,359,7.3,5.2,0,c_white,1)
 
 		// Draw right side
-		draw_sprite_ext(!global.rounded_box ? spr_textborder_inner_rounded : spr_textborder_inner,0,486,359,6.6,5.2,0,c_white, __DRAW_BOX_OPACITY)
-		draw_sprite_ext(!global.rounded_box ? spr_textborder_outer_rounded : spr_textborder_outer,0,486,359,6.6,5.2,0,c_white,1)
+		draw_sprite_ext(global.rounded_box ? spr_textborder_inner_rounded : spr_textborder_inner,0,486,359,6.6,5.2,0,c_white, __DRAW_BOX_OPACITY)
+		draw_sprite_ext(global.rounded_box ? spr_textborder_outer_rounded : spr_textborder_outer,0,486,359,6.6,5.2,0,c_white,1)
 
 		draw_ftext_transformed(loc_get_font(fnt_main_small), _menuSelection == 0 ? c_yellow : c_white, 
 			400, 320 - 60, "Buy", 25, 180, 2,2, 0, 1)
@@ -53,18 +53,18 @@ switch(currentState){
 	#region Draw Shop Items
 	case "shopItem":
 				// Draw left side
-			draw_sprite_ext(!global.rounded_box ? spr_textborder_inner_rounded : spr_textborder_inner,0,162,359,7.3,5.2,0,c_white, __DRAW_BOX_OPACITY)
-			draw_sprite_ext(!global.rounded_box ? spr_textborder_outer_rounded : spr_textborder_outer,0,162,359,7.3,5.2,0,c_white,1)
+			draw_sprite_ext(global.rounded_box ? spr_textborder_inner_rounded : spr_textborder_inner,0,162,359,7.3,5.2,0,c_white, __DRAW_BOX_OPACITY)
+			draw_sprite_ext(global.rounded_box ? spr_textborder_outer_rounded : spr_textborder_outer,0,162,359,7.3,5.2,0,c_white,1)
 
 			// Draw right side
-			draw_sprite_ext(!global.rounded_box ? spr_textborder_inner_rounded : spr_textborder_inner,0,486,359,6.6,5.2,0,c_white, __DRAW_BOX_OPACITY)
-			draw_sprite_ext(!global.rounded_box ? spr_textborder_outer_rounded : spr_textborder_outer,0,486,359,6.6,5.2,0,c_white,1)
+			draw_sprite_ext(global.rounded_box ? spr_textborder_inner_rounded : spr_textborder_inner,0,486,359,6.6,5.2,0,c_white, __DRAW_BOX_OPACITY)
+			draw_sprite_ext(global.rounded_box ? spr_textborder_outer_rounded : spr_textborder_outer,0,486,359,6.6,5.2,0,c_white,1)
 			
 			// Draw item info (Deltarune QOL port)
 			if (showItemInfo){
 				if (_menuItemSelection < 4) {
-				draw_sprite_ext(!global.rounded_box ? spr_textborder_inner_rounded : spr_textborder_inner,0,486,125,6.6,5,0,c_white, __DRAW_BOX_OPACITY)
-				draw_sprite_ext(!global.rounded_box ? spr_textborder_outer_rounded : spr_textborder_outer,0,486,125,6.6,5,0,c_white,1)
+				draw_sprite_ext(global.rounded_box ? spr_textborder_inner_rounded : spr_textborder_inner,0,486,125,6.6,5,0,c_white, __DRAW_BOX_OPACITY)
+				draw_sprite_ext(global.rounded_box ? spr_textborder_outer_rounded : spr_textborder_outer,0,486,125,6.6,5,0,c_white,1)
 				}
 				
 				outline_set_text();
@@ -122,8 +122,8 @@ switch(currentState){
 	#region Draw Shop Sell Screen
 	case "shopSell":
 				// Draw left side
-			draw_sprite_ext(!global.rounded_box ? spr_textborder_inner_rounded : spr_textborder_inner,0,311,359,13.8,5.2,0,c_white, __DRAW_BOX_OPACITY)
-			draw_sprite_ext(!global.rounded_box ? spr_textborder_outer_rounded : spr_textborder_outer,0,311,359,13.8,5.2,0,c_white,1)
+			draw_sprite_ext(global.rounded_box ? spr_textborder_inner_rounded : spr_textborder_inner,0,311,359,13.8,5.2,0,c_white, __DRAW_BOX_OPACITY)
+			draw_sprite_ext(global.rounded_box ? spr_textborder_outer_rounded : spr_textborder_outer,0,311,359,13.8,5.2,0,c_white,1)
 		
 			// Draw item and prices list
 			for (var i=0; i < array_length(party_get_attribute("INVENTORY")); i++;){
@@ -150,12 +150,12 @@ switch(currentState){
 	#region Draw Shop Talk Screen
 	case "shopTalk":
 			// Draw left side
-		draw_sprite_ext(!global.rounded_box ? spr_textborder_inner_rounded : spr_textborder_inner,0,162,359,7.3,5.2,0,c_white, __DRAW_BOX_OPACITY)
-		draw_sprite_ext(!global.rounded_box ? spr_textborder_outer_rounded : spr_textborder_outer,0,162,359,7.3,5.2,0,c_white,1)
+		draw_sprite_ext(global.rounded_box ? spr_textborder_inner_rounded : spr_textborder_inner,0,162,359,7.3,5.2,0,c_white, __DRAW_BOX_OPACITY)
+		draw_sprite_ext(global.rounded_box ? spr_textborder_outer_rounded : spr_textborder_outer,0,162,359,7.3,5.2,0,c_white,1)
 
 		// Draw right side
-		draw_sprite_ext(!global.rounded_box ? spr_textborder_inner_rounded : spr_textborder_inner,0,486,359,6.6,5.2,0,c_white, __DRAW_BOX_OPACITY)
-		draw_sprite_ext(!global.rounded_box ? spr_textborder_outer_rounded : spr_textborder_outer,0,486,359,6.6,5.2,0,c_white,1)
+		draw_sprite_ext(global.rounded_box ? spr_textborder_inner_rounded : spr_textborder_inner,0,486,359,6.6,5.2,0,c_white, __DRAW_BOX_OPACITY)
+		draw_sprite_ext(global.rounded_box ? spr_textborder_outer_rounded : spr_textborder_outer,0,486,359,6.6,5.2,0,c_white,1)
 
 		draw_ftext_transformed(loc_get_font(fnt_main_small), _menuTalkSelection == 0 ? c_yellow : c_white, 
 			400, 320 - 60, talk_options[0], 25, 180, 2,2, 0, 1)
@@ -179,12 +179,12 @@ switch(currentState){
 	break;
 	case "shopTalkLock":
 			// Draw left side
-		draw_sprite_ext(!global.rounded_box ? spr_textborder_inner_rounded : spr_textborder_inner,0,162,359,7.3,5.2,0,c_white, __DRAW_BOX_OPACITY)
-		draw_sprite_ext(!global.rounded_box ? spr_textborder_outer_rounded : spr_textborder_outer,0,162,359,7.3,5.2,0,c_white,1)
+		draw_sprite_ext(global.rounded_box ? spr_textborder_inner_rounded : spr_textborder_inner,0,162,359,7.3,5.2,0,c_white, __DRAW_BOX_OPACITY)
+		draw_sprite_ext(global.rounded_box ? spr_textborder_outer_rounded : spr_textborder_outer,0,162,359,7.3,5.2,0,c_white,1)
 
 		// Draw right side
-		draw_sprite_ext(!global.rounded_box ? spr_textborder_inner_rounded : spr_textborder_inner,0,486,359,6.6,5.2,0,c_white, __DRAW_BOX_OPACITY)
-		draw_sprite_ext(!global.rounded_box ? spr_textborder_outer_rounded : spr_textborder_outer,0,486,359,6.6,5.2,0,c_white,1)
+		draw_sprite_ext(global.rounded_box ? spr_textborder_inner_rounded : spr_textborder_inner,0,486,359,6.6,5.2,0,c_white, __DRAW_BOX_OPACITY)
+		draw_sprite_ext(global.rounded_box ? spr_textborder_outer_rounded : spr_textborder_outer,0,486,359,6.6,5.2,0,c_white,1)
 		
 		// In draw event
 		var dialogueKey = "";
