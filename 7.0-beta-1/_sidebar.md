@@ -24,12 +24,7 @@
 -    [Global variables](Global-variables)
 -    [System Configuration Macros](System-Configuration-Macros)
 -    [Engine User Config Macros](Engine-User-Config-Macros)
--    [Game Constants and Macros](Game-Constants-and-Macros)
-
----
-
-**Enumerations**
-
+-    [Game Macros](Game-Macros)
 -    [Game Enums](Game-Enums)
 
 ---
