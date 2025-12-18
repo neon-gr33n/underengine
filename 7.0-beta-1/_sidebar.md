@@ -25,6 +25,28 @@
 
 ---
 
+**Game**
+
+-    [Initialization](Initialization)
+-    [Cleanup](Cleanup)
+-    [Flags](Flags)
+-    [Difficulty](Difficulty)
+-    [Party Member Function](Party-Member-Function)
+
+---
+
+**Battle**
+
+-    [Party LV](Party-LV)
+
+---
+
+**Inventory Functions**
+
+-    []()
+
+---
+
 **Camera**
 
 -    [Camera Effects](Camera-Effects)
