@@ -25,9 +25,17 @@
 
 ---
 
+**Camera**
+
+-    [Camera Effects](Camera-Effects)
+-    [Camera Management](Camera-Management)
+
+---
+
 **Sound**
 
 -    [BGM Functions](BGM-Functions)
+-    [SFX Functions](SFX-Functions)
 
 ---
 
