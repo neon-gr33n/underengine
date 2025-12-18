@@ -89,23 +89,7 @@ function storage_remove_index(index) {
 }
 
 function inven_remove_item(item) {
-		// Check if the item exists in inventory
-	    var item_index = inven_get_item_index(item);
-	    if (item_index == -1) return false; // Item not found
-    
-	    // Get the actual item name/ID
-	    var item_id = inven_get_item(item_index);
-    
-	    // Check if this is a KEY item
-	    if (item_get_category(item_id) == "KEY") {
-	        // Don't remove key items
-	        show_debug_message("Cannot remove key item: " + item_get_attribute(item_id, "NAME"));
-	        return false; // Return false to indicate removal was blocked
-	    }
-    
-	    // If not a key item, proceed with removal
-	    inven_remove_index(item_index);
-	    return true; // Return true to indicate successful removal
+	    inven_remove_index(item);
 }
 
 function storage_remove_item(item) {
@@ -156,9 +140,12 @@ function inven_use_item(inv_index, party_index){
 		case "ARMOUR":
 			var temp = member_get_stat(_targ_member, category);
 			member_set_stat(_targ_member, category, item);
-			if (temp == "NONE") {
+			
+			if (temp == "NO_ARMOUR" || temp == "NO_WEAPON") {
+				// If currently equipped item is "NONE", just remove the new item from inventory
 				inven_remove_index(inv_index);
 			} else {
+				// Otherwise, swap items (put old equipped item into inventory)
 				inven_replace_index(inv_index, temp);
 			}
 			break;
