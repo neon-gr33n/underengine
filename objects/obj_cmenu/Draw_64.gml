@@ -305,17 +305,39 @@ if UTE_ENABLE_DF_CMENU_CURSOR {
 			_invcount = 0;
 			_item_index = 0;
 			
-			array_foreach(party_get_attribute("INVENTORY"), function(_element, _index) {
-				if (!_menu_item_section || item_get_category(_element) == index_to_category(_menu_item_section - 1)) {
-					_invmain += (_invcount == _menu_item_selection ? (currentState == "itemAction" ? "[c_dkgray]" : "[c_yellow]") : "[c_white]") + item_get_attribute(_element, "NAME") + "[/c]#";
-					_invcount++;
-				}
-				if (_invcount <= _menu_item_selection)
-					_item_index++;
-			});
-			if (!_menu_item_section)
+			if global.menu_qol_enabled == true {
+				array_foreach(party_get_attribute("INVENTORY"), function(_element, _index) {
+					if (!_menu_item_section || item_get_category(_element) == index_to_category(_menu_item_section - 1)) {
+						_invmain += (_invcount == _menu_item_selection ? (currentState == "itemAction" ? "[c_dkgray]" : "[c_yellow]") : "[c_white]") + item_get_attribute(_element, "NAME") + "[/c]#";
+						_invcount++;
+					}
+					if (_invcount <= _menu_item_selection)
+						_item_index++;
+				});
+				
+				if (!_menu_item_section) 
 				repeat (inven_get_space_left())
 					_invmain += "[c_grey]------------[/c]#"
+			} else {
+				array_foreach(party_get_attribute("INVENTORY"), function(_element, _index) {
+    // Skip KEY items entirely
+				    if (item_get_category(_element) == "KEY") {
+				        return; // Skip to next item
+				    }
+    
+				    if (!_menu_item_section || item_get_category(_element) == index_to_category(_menu_item_section - 1)) {
+				        _invmain += (_invcount == _menu_item_selection ? (currentState == "itemAction" ? "[c_dkgray]" : "[c_yellow]") : "[c_white]") + item_get_attribute(_element, "NAME") + "[/c]#";
+				        _invcount++;
+				    }
+				    if (_invcount <= _menu_item_selection)
+				        _item_index++;
+				});	
+				
+				if (!_menu_item_section) 
+				repeat (inven_get_space_left())
+					_invmain += "#"
+			}
+	
 
 			if _invcount>0 {
 				draw_sprite_ext(spr_heart_sm,0,x+220,y+93+_menu_item_selection*29,2,2,0,c_red,1) // KEEP: Only draws for active item

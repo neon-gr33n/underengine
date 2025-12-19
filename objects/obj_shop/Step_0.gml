@@ -151,37 +151,96 @@ switch(currentState){
 	#endregion
 	#region Shop Sell
 	case "shopSell":
-			var inventory = global.PARTY_INFO[$ "__PARTY__"][$ "INVENTORY"];
-			
-			if (array_length(inventory) == 1){
-					__text = __sellNoItemsText;
-					currentState = "hub";
-					sfx_play(snd_error,1,0.7)
-			} else {
-				if input.up_pressed || input.down_pressed {
-						var array_size = array_length(inventory)-1;
-							_menuSellSelection=(_menuSellSelection+array_size+input.down_pressed-input.up_pressed)%array_size
-							sfx_play(snd_menu_switch,1,0.7)
-				} else if input.left_pressed || input.right_pressed {
-			        // Horizontal navigation - move between columns
-			        var current_col = _menuSellSelection div 4; // 0 for left column, 1 for right column
-			        var current_row = _menuSellSelection mod 4; // Row position (0-3)
-					var array_size = array_length(inventory)-1;
+	     var inventory = global.PARTY_INFO[$ "__PARTY__"][$ "INVENTORY"];
+	    var valid_items_count = 0;
+    
+	    // Count non-KEY items
+	    for (var i = 0; i < array_length(inventory); i++) {
+	        var item = inventory[@ i];
+	        if (item != noone) {
+	            if (item_get_category(item) != "KEY") {
+	                valid_items_count++;
+	            }
+	        }
+	    }
+    
+	    // Check if there are any valid items to sell (excluding KEY items)
+	    if (valid_items_count == 0) {
+	        __text = __sellNoItemsText;
+	        currentState = "hub";
+	        sfx_play(snd_error, 1, 0.7);
+	    } else {
+	        // Get the count of all items (including KEY)
+	        var total_items = array_length(inventory);
         
-			        if input.left_pressed {
-			            current_col = 0; // Move to left column
-			        } else {
-			            current_col = 1; // Move to right column
-			        }
-        
-			        var new_selection = current_col * 4 + current_row;
-        
-			        // Make sure new selection is within array bounds
-			        if (new_selection < array_size) {
-			            _menuSellSelection = new_selection;
-			            sfx_play(snd_menu_switch, 1, 0.7);
-			        }
-			}
+	        if (input.up_pressed || input.down_pressed) {
+	            // Find the next/previous valid item
+	            var dir = input.down_pressed - input.up_pressed;
+	            var attempts = 0;
+	            var original_selection = _menuSellSelection;
+	            var found = false;
+            
+	            while (attempts < total_items && !found) {
+	                _menuSellSelection = (_menuSellSelection + dir + total_items) % total_items;
+	                var item = inventory[@ _menuSellSelection];
+                
+	                if (item != noone) {
+	                    if (item_get_category(item) != "KEY") {
+	                        found = true;
+	                        sfx_play(snd_menu_switch, 1, 0.7);
+	                    }
+	                }
+	                attempts++;
+	            }
+            
+	            // If no valid item found, revert to original
+	            if (!found) {
+	                _menuSellSelection = original_selection;
+	            }
+            
+	        } else if (input.left_pressed || input.right_pressed) {
+	            // Horizontal navigation with KEY item skipping
+	            var current_index = _menuSellSelection;
+	            var current_row = current_index mod 4; // Row position (0-3)
+	            var target_col = input.right_pressed ? 1 : 0; // 0 for left, 1 for right
+	            var target_index = target_col * 4 + current_row;
+            
+	            // Make sure target index is within bounds
+	            if (target_index < total_items) {
+	                var item = inventory[@ target_index];
+	                if (item != noone) {
+	                    if (item_get_category(item) != "KEY") {
+	                        _menuSellSelection = target_index;
+	                        sfx_play(snd_menu_switch, 1, 0.7);
+	                    } else {
+	                        // If target is a KEY item, try to find nearest valid item in that column
+	                        var found = false;
+	                        for (var offset = 0; offset < 4 && !found; offset++) {
+	                            // Try above and below in the target column
+	                            var try_indices = [
+	                                (target_index - offset + total_items) % total_items,
+	                                (target_index + offset) % total_items
+	                            ];
+                            
+	                            for (var t = 0; t < array_length(try_indices) && !found; t++) {
+	                                var try_index = try_indices[t];
+	                                // Make sure we're staying in the same column (0-3 or 4-7)
+	                                if ((try_index div 4) == target_col) {
+	                                    var try_item = inventory[@ try_index];
+	                                    if (try_item != noone) {
+	                                        if (item_get_category(try_item) != "KEY") {
+	                                            _menuSellSelection = try_index;
+	                                            found = true;
+	                                            sfx_play(snd_menu_switch, 1, 0.7);
+	                                        }
+	                                    }
+	                                }
+	                            }
+	                        }
+	                    }
+	                }
+	            }
+	        }
 			if input.action_pressed {				
 			var inventory = global.PARTY_INFO[$ "__PARTY__"][$ "INVENTORY"];
 			switch(_menuSellSelection){

@@ -300,6 +300,7 @@
     {"name":"obj_yellow_btrail","order":5,"path":"objects/obj_yellow_btrail/obj_yellow_btrail.yy",},
     {"name":"obj_yellow_shot","order":4,"path":"objects/obj_yellow_shot/obj_yellow_shot.yy",},
     {"name":"rm_battle","order":3,"path":"rooms/rm_battle/rm_battle.yy",},
+    {"name":"rm_credits","order":13,"path":"rooms/rm_credits/rm_credits.yy",},
     {"name":"rm_dialog_tester","order":1,"path":"rooms/rm_dialog_tester/rm_dialog_tester.yy",},
     {"name":"rm_gamebroke","order":2,"path":"rooms/rm_gamebroke/rm_gamebroke.yy",},
     {"name":"rm_gj_login","order":1,"path":"rooms/rm_gj_login/rm_gj_login.yy",},

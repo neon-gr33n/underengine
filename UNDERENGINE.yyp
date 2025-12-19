@@ -510,6 +510,7 @@
     {"id":{"name":"obj_yellow_btrail","path":"objects/obj_yellow_btrail/obj_yellow_btrail.yy",},},
     {"id":{"name":"obj_yellow_shot","path":"objects/obj_yellow_shot/obj_yellow_shot.yy",},},
     {"id":{"name":"rm_battle","path":"rooms/rm_battle/rm_battle.yy",},},
+    {"id":{"name":"rm_credits","path":"rooms/rm_credits/rm_credits.yy",},},
     {"id":{"name":"rm_dialog_tester","path":"rooms/rm_dialog_tester/rm_dialog_tester.yy",},},
     {"id":{"name":"rm_fallen","path":"rooms/rm_fallen/rm_fallen.yy",},},
     {"id":{"name":"rm_gamebroke","path":"rooms/rm_gamebroke/rm_gamebroke.yy",},},
@@ -1553,6 +1554,7 @@
     {"roomId":{"name":"rm_shop","path":"rooms/rm_shop/rm_shop.yy",},},
     {"roomId":{"name":"rm_loadgame","path":"rooms/rm_loadgame/rm_loadgame.yy",},},
     {"roomId":{"name":"rm_fallen","path":"rooms/rm_fallen/rm_fallen.yy",},},
+    {"roomId":{"name":"rm_credits","path":"rooms/rm_credits/rm_credits.yy",},},
   ],
   "templateType":null,
   "TextureGroups":[

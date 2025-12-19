@@ -89,7 +89,25 @@ function storage_remove_index(index) {
 }
 
 function inven_remove_item(item) {
-	    inven_remove_index(item);
+    // Get the index of the item
+    var item_index = inven_get_item_by_name(item);
+    
+    // If item was found
+    if (item_index != noone) {
+        // Get the actual item name from inventory
+        var inven = party_get_attribute("INVENTORY");
+        var item_name = inven[@ item_index];
+        
+        // Check if it's a KEY item
+        if (item_get_category(item_name) != "KEY") {
+            inven_remove_index(item_index);
+        } else {
+            sfx_play(snd_error, 1);
+        }
+    } else {
+        // Item not found in inventory
+        sfx_play(snd_error, 1);
+    }
 }
 
 function storage_remove_item(item) {

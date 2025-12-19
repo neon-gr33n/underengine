@@ -46,7 +46,7 @@
 
 /// @macro DEVELOPERBUILD
 /// @description Developer build flag (1 = enabled, 0 = disabled)
-#macro DEVELOPERBUILD 0
+#macro DEVELOPERBUILD 1
 
 /// @macro GRID_CELL_SIZE
 /// @description Size of grid cells for positioning and alignment

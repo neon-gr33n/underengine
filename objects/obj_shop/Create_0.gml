@@ -6,8 +6,8 @@ _menuItemSelection = 0;
 _menuSellSelection = 0;
 _menuTalkSelection = 0;
 currentState = "hub"
-canSellItems = false; // If false, the player will NOT be allowed to sell items
-showItemInfo = true;
+canSellItems = true; // If false, the player will NOT be allowed to sell items
+showItemInfo = false;
 
 __color = "c_white"
 __outline_color = c_black;
