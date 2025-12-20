@@ -1,7 +1,4 @@
 if(live_call()) return live_result;
-//if(displayOnTop == undefined && instance_exists(CAM.following))	
-//	displayAlignWriterY = CAM.y > CAM.following.y ? 310 : 305
-//else displayAlignWriterY = displayOnTop ? 305 : 310;
 
 displayAlignWriterY = displayOnTop ? 110 : 105;
 
@@ -29,13 +26,13 @@ drawTextBox = function(){
 		if (displayFace != spr_blank)
 			with(obj_text_writer){hasDialoguePortrait = true } 
 			if __DRAW_9SLICE_BOX_WITH_OPACITY {
+				var __bottom = WRITER.actual_position == "bottom" 
 				switch(dialogueSpeaker){
 					case "sans":
-	                case "gen3":    
-	                    draw_sprite_ext(displayFace, floor(talk_frame), 64, 250 + displayAlignWriterY, 3, 3, 0, c_white, 1);	
+	                    draw_sprite_ext(displayFace, floor(talk_frame), 80, 250 + (__bottom ? displayAlignWriterY : 20 - 235), 3, 3, 0, c_white, 1);	
 	                break;    
 	                case "paps":    
-						draw_sprite_ext(displayFace, floor(talk_frame), 80, 240 + displayAlignWriterY, 2.5, 2.5, 0, c_white, 1);	
+						draw_sprite_ext(displayFace, floor(talk_frame), 80, 240 + (__bottom ? displayAlignWriterY : 20 - 235), 2.5, 2.5, 0, c_white, 1);	
 					break;
 				}
 			}
