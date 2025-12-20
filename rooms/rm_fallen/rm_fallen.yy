@@ -54,8 +54,8 @@
   ],
   "name":"rm_fallen",
   "parent":{
-    "name":"Examples (feel free to remove!)",
-    "path":"folders/Rooms/Examples (feel free to remove!).yy",
+    "name":"Ruins Example",
+    "path":"folders/Rooms/Examples (feel free to remove!)/Ruins Example.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

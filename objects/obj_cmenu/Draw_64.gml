@@ -1,10 +1,12 @@
 if(live_call()) return live_result;
 
+var _is_top = (__top ? 245 : 0),
+
 #region TOP SECTION
 // draw boxes
 
-draw_sprite_ext(global.boxout,0,x+115,y+125,2.95,2,0,c_white,1)
-draw_sprite_ext(global.boxin,0,x+115,y+125,2.95,2,0,c_white,__DRAW_BOX_OPACITY)
+draw_sprite_ext(global.boxout,0,x+115,y+125 + _is_top,2.95,2,0,c_white,1)
+draw_sprite_ext(global.boxin,0,x+115,y+125 + _is_top,2.95,2,0,c_white,__DRAW_BOX_OPACITY)
 
  switch _menu_active {
 	case 1:
@@ -62,11 +64,11 @@ draw_sprite_ext(global.boxin,0,x+115,y+125,2.95,2,0,c_white,__DRAW_BOX_OPACITY)
 }
 
 // draw text
-draw_ftext(loc_get_font(fnt_main_small),c_white,63-x,83,2,2,0,string(member_get_attribute(party_get_leader(), "NAME")))
-draw_ftext(fnt_crypt,c_white,62,113,1,1,0,"LV" + "  " + string(member_get_stat(party_get_leader(), "LV")))
-draw_ftext(fnt_crypt,c_white,62,129,1,1,0,"HP" + "  " + string(member_get_stat(party_get_leader(), "HP")) 
+draw_ftext(loc_get_font(fnt_main_small),c_white,63-x,83+ _is_top,2,2,0,string(member_get_attribute(party_get_leader(), "NAME")))
+draw_ftext(fnt_crypt,c_white,62,113+ _is_top,1,1,0,"LV" + "  " + string(member_get_stat(party_get_leader(), "LV")))
+draw_ftext(fnt_crypt,c_white,62,129+ _is_top,1,1,0,"HP" + "  " + string(member_get_stat(party_get_leader(), "HP")) 
 + "/" + string(member_get_stat(party_get_leader(), "MAX_HP")))
-draw_ftext(fnt_crypt,c_white,62,146,1,1,0,"G" + "   " + string(party_get_stat("GOLD")))
+draw_ftext(fnt_crypt,c_white,62,146+ _is_top,1,1,0,"G" + "   " + string(party_get_stat("GOLD")))
 #endregion
 
 #region BOTTOM SECTION
@@ -407,9 +409,9 @@ if UTE_ENABLE_DF_CMENU_CURSOR {
 			__stat.dialogue.dialogueFont =loc_get_font("fnt_main")
 			__stat.dialogue.dialogueText = chr(34) + string(member_get_attribute(party_get_leader(), "NAME")) + chr(34)
 																	+ "#"
+																	+ "#"
 																	+"LV" + " " + string(member_get_stat(party_get_leader(), "LV"))
 																	+ "#"
-																	+"#"
 																	+ "HP:" + " " + string(member_get_stat(party_get_leader(), "HP"))
 																	+ "/" + string(member_get_stat(party_get_leader(), "MAX_HP"))
 																	+"#"

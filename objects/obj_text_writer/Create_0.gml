@@ -20,7 +20,7 @@ t_c=0;
 
 selectedChoice  = 0;
 typist = scribble_typist();
-typist.in(dialogue.dialogueSpeed,0);
+typist.in(dialogue.dialogueSpeed * global.__delta_stepFactor,0);
 
 function replaceInputIcons(text) {
     var processed_text = text;

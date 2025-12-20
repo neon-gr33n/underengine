@@ -26,8 +26,6 @@ switch(camera_state)
 
 			x = (global.camera_lerp ? lerp(x,following.x, follow_lerp_speed) : following.x);
 			y = (global.camera_lerp ? lerp(y,following.y, follow_lerp_speed) : following.y);
-
-			
 		}
 		
 		//positions view

@@ -52,3 +52,9 @@
 /// @description Size of grid cells for positioning and alignment
 #macro GRID_CELL_SIZE 20 
 #endregion
+
+#region Useful Macros
+#macro kill for(;;{instance_destroy(a); break}) var a =
+#macro elif else if
+#macro this self
+#endregion

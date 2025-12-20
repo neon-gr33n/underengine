@@ -18,6 +18,19 @@ __invarm = noone;
 __invkey = noone;
 __info = noone;
 
+__top = false;
+if (instance_exists(PLAYER1))
+{
+    // Get the current view's position and size
+    var cam = view_camera[0]; // Assuming view 0
+    var view_y = camera_get_view_y(cam);
+    var view_height = camera_get_view_height(cam);
+    
+    // Check if player is in top part of screen (e.g., top third)
+    var screen_relative_y = PLAYER1.y - view_y;
+    __top = (screen_relative_y < view_height * 0.33); // Top third of screen
+}
+
 _invmax = 12;
 _item_index=0;
 _action_selction=0;

@@ -45,8 +45,8 @@ basicSoulMovement = function()
 			}
 		}
 	} else {
-		x += dx * spd
-		y += dy * spd
+		x += dx * spd * global.__delta_stepFactor
+		y += dy * spd * global.__delta_stepFactor
 	}
 }
 

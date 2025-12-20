@@ -5,13 +5,15 @@ show_exclamation = true;
 fast = false;
 boss = false;
 
-cutoutSprite = spr_battle_soul
-cutoutDur = 30;
-show_black  = false;
-show_player = false;
-show_soul	= false;
-flash = 0;
+__soul_x = 48;
+__soul_y = 454;
 
+__draw_soul = false;
+__draw_soul_x = 0;
+__draw_soul_y = 0;
+__draw_player = false;
+__draw_black = false;
+__flash = 0;
 
 if (player_exists()) {
 	with(PLAYER1){ state = stateCutsceneStasis(); };

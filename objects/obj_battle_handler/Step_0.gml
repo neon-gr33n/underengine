@@ -156,9 +156,6 @@ switch (currentState) {
         } else if (fight_done && fight_anim_i >= 6) {
             var inst = instance_create_depth(global.enc_slot[enemyChoice].x, global.enc_slot[enemyChoice].y - 100, -99999, battle_damage);
             var _hped = global.enc_slot[enemyChoice]._hp;
-			with(global.enc_slot[enemyChoice]){
-			event_user(5);
-			}
             inst.damage = dmg;
             inst.bar_hp_max = global.enc_slot[enemyChoice]._hp_max;
             inst.bar_hp_original = _hped;
@@ -176,6 +173,9 @@ switch (currentState) {
                 sfx_play(global.enc_slot[enemyChoice].hurtSound,_death != noone ? 0.8 : 1,global.sfx_volume);
 				sfx_play(snd_hurt,1,global.sfx_volume);
                 shaker_create(global.enc_slot[enemyChoice], "x", 15, 4, 3);
+				with(global.enc_slot[enemyChoice]){
+				event_user(5);
+				}
             }
         } else {
             fight_anim_i += 0.5;

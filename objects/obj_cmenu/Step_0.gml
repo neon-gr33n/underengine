@@ -1,3 +1,5 @@
+show_debug_message("__top: " + string(__top) + ", Player Y: " + string(PLAYER1.y) + ", CAM Y: " + string(CAM.y) + ", Threshold: " + string(130 + PLAYER1.sprite_height));
+
 switch currentState {
 	case"hub":
 			if input.up_pressed || input.down_pressed {
@@ -5,7 +7,7 @@ switch currentState {
 				_menu_selection=(_menu_selection + num_buttons + input.down_pressed - input.up_pressed) % num_buttons;
 				sfx_play(snd_menu_switch,1,global.sfx_volume);
 			} else if(input.cancel_pressed){
-				instance_destroy();
+				kill(this);
 			} else if(input.action_pressed){
 				switch _menu_selection {
 					case 0:

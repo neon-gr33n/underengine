@@ -12,9 +12,9 @@ light = noone;
 
 image_speed = 0;
 canMove = true;
-moveSpeed = 1.3;
-walk_speed = 1.3;
-run_speed = 2.5;
+moveSpeed = 1.3 * global.__delta_stepFactor;
+walk_speed = 1.3 * global.__delta_stepFactor;
+run_speed = 2.5 * global.__delta_stepFactor;
 party_moving = false;
 encounterStarted = false;
 

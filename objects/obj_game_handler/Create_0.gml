@@ -3,6 +3,13 @@ global.asp_ratio	= 0	// 0 - 4:3 (Default)  1 - 16:9 (Ideal for recording or wide
  global.ploaded = 0
  global.was_reset = false;
  global.just_reset = false;
+ 
+ if DEVELOPERBUILD == 1 {
+ window_set_caption("underengine " + "(" + __UNDERENGINE_VERSION + ")" + " @" + string(game_get_speed(gamespeed_fps)) + " FPS")
+ } else {
+window_set_caption(GAME_NAME)	 
+}
+ 
 #region Variables
 
 sprite_index=noone;
@@ -39,14 +46,6 @@ audio_group_load(mus)
 audio_group_load(sfx)
 
 instance_create(0,0,obj_mobile_ui);
-
-//function defaultDrawScreen()
-//{
-//	if surface_exists(application_surface) {
-//		draw_surface_ext(application_surface,screenXOffset,screenYOffset,screenXScale,screenYScale,0,c_white,1)	
-//	}
-//	return;
-//}
 
 function checkShaderSupport(){
 	if(shaders_are_supported()){
