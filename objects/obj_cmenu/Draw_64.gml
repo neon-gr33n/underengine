@@ -1,6 +1,6 @@
 if(live_call()) return live_result;
 
-var _is_top = (__top ? 245 : 0),
+var _is_top = (__top ? 247.5: 0)
 
 #region TOP SECTION
 // draw boxes

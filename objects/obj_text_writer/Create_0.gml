@@ -8,7 +8,10 @@ dialogue = {
 	dialoguePortrait: undefined
 }
 
+__top = false;
+
 dialoguePosition = "dynamic";
+actual_position = undefined;
 dialogueOutline = false;
 dialogueXOffset = 0;
 dialogueXPosition = x//190;

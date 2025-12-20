@@ -4,7 +4,7 @@ talkSprite = undefined;
 
 local_frame = 0;
 talk_frame = 0;     // Current frame of the talking animation
-talk_speed = 0.2/2; // Adjust for animation speed
+talk_speed = 0.1; // Adjust for animation speed
 npc_moving = false; // Is the NPC moving?
 npc_talking = false; // Is the NPC talking?
 npc_turnable = false; // Can NPC turn?

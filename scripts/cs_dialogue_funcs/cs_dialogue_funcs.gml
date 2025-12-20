@@ -41,6 +41,7 @@ function cutscene_dialogue(_speaker = "generic" , _portrait = undefined, _text =
         if(instance_exists(WRITER)){
             with(WRITER){
                 dialogue.dialogueText = "[speed,"+string(_speed)+"]"+ _text;	
+				 dialoguePosition = _boxPos;
                 switch _speaker {
                     case "gen":
                         dialogue.dialogueFont = loc_get_font("fnt_main");
@@ -393,4 +394,12 @@ function dialogue_setup(_speaker = "gen", _portrait = spr_blank, _text, _speed =
             _stay = _wait;
         }
     }
+}
+
+// same as cutscene_wait_for_dialogue, do not fucking document this
+function cutscene_wait_for_dialogue_complete(){
+	///@description cutscene_wait_for_dialogue
+
+	timer++;
+	if instance_exists(obj_text_writer)&&obj_text_writer.typist.get_state()==1 {timer = 0;  cutscene_end_action() ;}
 }

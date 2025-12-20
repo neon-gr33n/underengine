@@ -1,5 +1,3 @@
-show_debug_message("__top: " + string(__top) + ", Player Y: " + string(PLAYER1.y) + ", CAM Y: " + string(CAM.y) + ", Threshold: " + string(130 + PLAYER1.sprite_height));
-
 switch currentState {
 	case"hub":
 			if input.up_pressed || input.down_pressed {

@@ -108,6 +108,24 @@ function camera_lerp_zoom(scale,zoom_spd = 0.025)
 	exit;
 }
 
+/// @function camera_zoom_to_object(obj, scale, duration = 0.5)
+/// @description Zooms in on a specific object by making camera follow it temporarily
+/// @param {instance} obj Object instance to zoom to
+/// @param {number} scale Zoom scale (e.g., 4 for dramatic zoom)
+/// @param {number} [zoom_speed=0.5] Zoom speed in seconds
+function camera_zoom_to_object(obj, scale, zoom_spd = 0.025)
+{
+    if (!instance_exists(obj)) return;
+    
+    // Just make the camera follow the object
+    following = obj;
+    
+    // Start the zoom
+	with (CAM){
+		camera_lerp_zoom(scale,zoom_spd);
+	}
+}
+
 /// @function camera_reset_zoom([zoom_spd])
 /// @description Smoothly resets camera zoom to default
 /// @param {number} [zoom_spd=0.025] Lerp speed (0-1)

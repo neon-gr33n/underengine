@@ -23,7 +23,7 @@
 		TEST: {
 		    NAME: "Example",
 		    OBJECT: obj_battle_enemy_example,
-		    XP_GAIN: 50000,
+		    XP_GAIN: 3,
 		    GOLD_GAIN: 40,
 		    STATS: {
 		        HP: 40,
