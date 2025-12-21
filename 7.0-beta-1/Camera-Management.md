@@ -73,6 +73,28 @@ Smoothly transitions camera zoom to a target scale
 
 
 
+## `camera_zoom_to_object(obj, scale, duration = 0.5)` → `undefined`
+Zooms in on a specific object by making camera follow it temporarily
+
+| Parameter | Datatype  | Purpose |
+|-----------|-----------|---------|
+|`obj` |instance |Object instance to zoom to |
+|`scale` |number |Zoom scale (e.g., 4 for dramatic zoom) |
+|`[zoom_speed=0.5]` |number |Zoom speed in seconds |
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## `camera_reset_zoom([zoom_spd])` → `undefined`
 Smoothly resets camera zoom to default
 
