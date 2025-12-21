@@ -34,7 +34,7 @@
   "name":"rm_menu",
   "parent":{
     "name":"Menus",
-    "path":"folders/Rooms/Game Content (DO NOT REMOVE)/Menus.yy",
+    "path":"folders/Engine/Internal/(System)/Rooms/Menus.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

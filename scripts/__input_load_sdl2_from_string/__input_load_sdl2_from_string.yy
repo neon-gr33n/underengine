@@ -6,7 +6,7 @@
   "name":"__input_load_sdl2_from_string",
   "parent":{
     "name":"Initialization",
-    "path":"folders/Libraries/Juju Adams Libararies/Input/(System)/Initialization.yy",
+    "path":"folders/Engine/Internal/(System)/Libraries/Juju Adams Libararies/Input/(System)/Initialization.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

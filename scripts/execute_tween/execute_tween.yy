@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"execute_tween",
   "parent":{
-    "name":"utility",
-    "path":"folders/Scripts/utility.yy",
+    "name":"Utility",
+    "path":"folders/Engine/External/Scripts/Utility.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

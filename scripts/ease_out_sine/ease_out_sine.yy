@@ -6,7 +6,7 @@
   "name":"ease_out_sine",
   "parent":{
     "name":"Sine",
-    "path":"folders/Libraries/FAST/Numbers/Functions/ease/Sine.yy",
+    "path":"folders/Engine/Internal/(System)/Libraries/FAST/Numbers/Functions/ease/Sine.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

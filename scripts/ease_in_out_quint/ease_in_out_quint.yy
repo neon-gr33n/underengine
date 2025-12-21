@@ -6,7 +6,7 @@
   "name":"ease_in_out_quint",
   "parent":{
     "name":"Quint",
-    "path":"folders/Libraries/FAST/Numbers/Functions/ease/Quint.yy",
+    "path":"folders/Engine/Internal/(System)/Libraries/FAST/Numbers/Functions/ease/Quint.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

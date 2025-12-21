@@ -6,7 +6,7 @@
   "name":"input_gamepad_get_map",
   "parent":{
     "name":"25  Gamepads (Direct)",
-    "path":"folders/Libraries/Juju Adams Libararies/Input/25  Gamepads (Direct).yy",
+    "path":"folders/Engine/Internal/(System)/Libraries/Juju Adams Libararies/Input/25  Gamepads (Direct).yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

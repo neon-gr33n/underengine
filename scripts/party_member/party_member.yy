@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"party_member",
   "parent":{
-    "name":"party",
-    "path":"folders/Scripts/party.yy",
+    "name":"Party System",
+    "path":"folders/Engine/External/Scripts/Party System.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

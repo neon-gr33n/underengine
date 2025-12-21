@@ -10,10 +10,14 @@ if(_state==-1){
 		sfx_play(snd_menu_switch);
 	}
 	if(input.left_pressed || input.right_pressed) {
+		if (_choice != 0.5){
 		_choice=(_choice+1)%2;
+		} else {
+			_choice=(_choice+1)%1;
+		}
 		sfx_play(snd_menu_switch);
 	} else if(input.up_pressed || input.down_pressed) {
-		_choice+=((_choice+0.5)%1)*2-0.5;
+		_choice = (_choice == 0 || _choice == 1) ? 0.5 : _choice + ((_choice + 0.5) % 1) * 2 - 0.5;
 		sfx_play(snd_menu_switch);
 	}else if(input.action_pressed){
 		switch _choice {
@@ -29,16 +33,6 @@ if(_state==-1){
 				event_user(0);
 				break;
 			case 0.5:
-				//party
-				sfx_play(snd_menu_select);
-				_state=2
-				_indexed=0
-				break;
-			case 1:
-				//cancel
-				instance_destroy();
-				break;
-			case 1.5:
 				//storage menu
 				if array_length(global.PARTY_INFO[$ "__PARTY__"][$ "INVENTORY"])+array_length(global.PARTY_INFO[$ "__PARTY__"][$ "STORAGE"])>0 {
 					sfx_play(snd_menu_select)
@@ -48,6 +42,10 @@ if(_state==-1){
 				} else
 					sfx_play(snd_error)
 				break;
+			case 1:
+				//cancel
+				instance_destroy();
+				break;				
 		}
 	} else if(input.cancel_pressed){
 		instance_destroy();

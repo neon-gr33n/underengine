@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"refresh_save_slot_data",
   "parent":{
-    "name":"savedata",
-    "path":"folders/Scripts/savedata.yy",
+    "name":"(Save Data)",
+    "path":"folders/Engine/External/Scripts/(Save Data).yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

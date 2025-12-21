@@ -4,7 +4,7 @@
   "name":"underengine Installation",
   "parent":{
     "name":"underengine Installation",
-    "path":"folders/Notes/Documentation/underengine Installation.yy",
+    "path":"folders/Engine/Internal/(Notes)/Documentation/underengine Installation.yy",
   },
   "resourceType":"GMNotes",
   "resourceVersion":"2.0",

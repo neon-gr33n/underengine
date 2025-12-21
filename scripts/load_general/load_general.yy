@@ -6,7 +6,7 @@
   "name":"load_general",
   "parent":{
     "name":"loading",
-    "path":"folders/Scripts/savedata/loading.yy",
+    "path":"folders/Engine/External/Scripts/(Save Data)/loading.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

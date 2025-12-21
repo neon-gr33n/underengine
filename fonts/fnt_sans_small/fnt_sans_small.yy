@@ -120,7 +120,7 @@
   "name":"fnt_sans_small",
   "parent":{
     "name":"english",
-    "path":"folders/Fonts/english.yy",
+    "path":"folders/Engine/External/Fonts/english.yy",
   },
   "pointRounding":0,
   "ranges":[

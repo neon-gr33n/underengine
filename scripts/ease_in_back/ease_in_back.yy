@@ -6,7 +6,7 @@
   "name":"ease_in_back",
   "parent":{
     "name":"Back",
-    "path":"folders/Libraries/FAST/Numbers/Functions/ease/Back.yy",
+    "path":"folders/Engine/Internal/(System)/Libraries/FAST/Numbers/Functions/ease/Back.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

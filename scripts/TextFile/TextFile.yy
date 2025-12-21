@@ -6,7 +6,7 @@
   "name":"TextFile",
   "parent":{
     "name":"Files",
-    "path":"folders/Libraries/FAST/Core/Constructors/Files.yy",
+    "path":"folders/Engine/Internal/(System)/Libraries/FAST/Core/Constructors/Files.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

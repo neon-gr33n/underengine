@@ -26,7 +26,7 @@
   "origin":4,
   "parent":{
     "name":"PLACEHOLDER",
-    "path":"folders/Sprites/Overworld/Characters/PLAYER/PLACEHOLDER.yy",
+    "path":"folders/Engine/External/Sprites/Overworld/Characters/PLAYER/PLACEHOLDER.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

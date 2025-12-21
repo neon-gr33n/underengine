@@ -6,7 +6,7 @@
   "name":"log_debug",
   "parent":{
     "name":"Functions",
-    "path":"folders/Libraries/FAST/Logging/Functions.yy",
+    "path":"folders/Engine/Internal/(System)/Libraries/FAST/Logging/Functions.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

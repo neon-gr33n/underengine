@@ -156,7 +156,7 @@
   "name":"anc_easings",
   "parent":{
     "name":"Animation Curves",
-    "path":"folders/Animation Curves.yy",
+    "path":"folders/Engine/Internal/Animation Curves.yy",
   },
   "resourceType":"GMAnimCurve",
   "resourceVersion":"2.0",

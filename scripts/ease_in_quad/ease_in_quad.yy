@@ -6,7 +6,7 @@
   "name":"ease_in_quad",
   "parent":{
     "name":"Quad",
-    "path":"folders/Libraries/FAST/Numbers/Functions/ease/Quad.yy",
+    "path":"folders/Engine/Internal/(System)/Libraries/FAST/Numbers/Functions/ease/Quad.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

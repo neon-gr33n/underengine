@@ -4,7 +4,7 @@
   "name":"underengine Battle Documentation",
   "parent":{
     "name":"underengine Battle Documentation",
-    "path":"folders/Notes/Documentation/underengine Battle Documentation.yy",
+    "path":"folders/Engine/Internal/(Notes)/Documentation/underengine Battle Documentation.yy",
   },
   "resourceType":"GMNotes",
   "resourceVersion":"2.0",

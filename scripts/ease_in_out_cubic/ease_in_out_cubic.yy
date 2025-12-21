@@ -6,7 +6,7 @@
   "name":"ease_in_out_cubic",
   "parent":{
     "name":"Cubic",
-    "path":"folders/Libraries/FAST/Numbers/Functions/ease/Cubic.yy",
+    "path":"folders/Engine/Internal/(System)/Libraries/FAST/Numbers/Functions/ease/Cubic.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

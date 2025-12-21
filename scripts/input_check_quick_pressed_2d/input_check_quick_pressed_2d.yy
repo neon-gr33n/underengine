@@ -6,7 +6,7 @@
   "name":"input_check_quick_pressed_2d",
   "parent":{
     "name":"03  Advanced Checkers",
-    "path":"folders/Libraries/Juju Adams Libararies/Input/03  Advanced Checkers.yy",
+    "path":"folders/Engine/Internal/(System)/Libraries/Juju Adams Libararies/Input/03  Advanced Checkers.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

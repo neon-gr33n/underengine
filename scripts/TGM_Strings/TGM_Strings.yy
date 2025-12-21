@@ -6,7 +6,7 @@
   "name":"TGM_Strings",
   "parent":{
     "name":"Code",
-    "path":"folders/Libraries/KazanGames/TurboGML/Code.yy",
+    "path":"folders/Engine/Internal/(System)/Libraries/KazanGames/TurboGML/Code.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

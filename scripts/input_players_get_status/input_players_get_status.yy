@@ -6,7 +6,7 @@
   "name":"input_players_get_status",
   "parent":{
     "name":"15  Players",
-    "path":"folders/Libraries/Juju Adams Libararies/Input/15  Players.yy",
+    "path":"folders/Engine/Internal/(System)/Libraries/Juju Adams Libararies/Input/15  Players.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

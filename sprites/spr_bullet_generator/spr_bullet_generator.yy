@@ -29,8 +29,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"internal",
-    "path":"folders/Sprites/internal.yy",
+    "name":"Sprites",
+    "path":"folders/Engine/Internal/(System)/Sprites.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -69,21 +69,7 @@ ds_list_add(randomizedName, "Ness")
 ds_list_add(randomizedName, "Lucas")
 ds_list_add(randomizedName, "Poo")
 ds_list_add(randomizedName, "Porky")
-ds_list_add(randomizedName, "Ethan")
-ds_list_add(randomizedName, "Sonic")
-ds_list_add(randomizedName, "Tails")
-ds_list_add(randomizedName, "Soupy")
-ds_list_add(randomizedName, "Boopy")
-ds_list_add(randomizedName, "Mango")
-ds_list_add(randomizedName, "Skylar")
-ds_list_add(randomizedName, "Fisk")
-ds_list_add(randomizedName, "Opus")
-ds_list_add(randomizedName, "Nova")
 ds_list_add(randomizedName, "Beatle")
-ds_list_add(randomizedName, "Maxine")
-ds_list_add(randomizedName, "Max")
-ds_list_add(randomizedName, "Soba")
-ds_list_add(randomizedName, "Noodles")
 randomize();
 r = irandom(ds_list_size(randomizedName) - 1);
 
@@ -265,19 +251,6 @@ function check_current_entry(name) {
         case "aaaaaa":
             _currentNameDescript = loc_gettext("ui.naming.description.notcreative");
             break;
-        case "asgore":
-            _currentNameDescript = loc_gettext("ui.naming.description.asg");
-            _validName = false;
-            break;
-        case "chara":
-            _currentNameDescript = loc_gettext("ui.naming.description.chara");
-            break;
-        case "frisk":
-		case "kid":
-		case "mk":
-            _currentNameDescript = "...";
-            _validName = false;
-            break;
         case "kris":
         case "noelle":
         case "susie":
@@ -296,31 +269,11 @@ function check_current_entry(name) {
         case "tenna":
             _currentNameDescript = "AN... INTERESTING COINCIDENCE.";
             break;
-        case "echo": 
-            _currentNameDescript = "That name is taken... little human.";
-            _validName = false;
-            break;
-		case "flowey":
-		     _currentNameDescript = "Howdy! That name's already taken!#How about you pick a different one?";
-            _validName = false;
-			break;
-        case "opus":
-            _currentNameDescript = "Bored (forever).";
-            break;
         case "ness":
         case "lucas":
         case "porky":
         case "poo":
             _currentNameDescript = "I feel a strange almost#otherworldly connection.";
-            break;
-        case "toriel":
-            _currentNameDescript = "...";
-            _validName = false;
-            break;
-        case "soup":
-        case "soupy":
-            inven_add_item("MYSTERY_SOUP", 1, false);
-            _currentNameDescript = "the soupiest soup!";
             break;
     }
 	

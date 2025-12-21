@@ -15,7 +15,7 @@
   "name":"mus_whispers",
   "parent":{
     "name":"mus",
-    "path":"folders/Sounds/mus.yy",
+    "path":"folders/Engine/External/Sounds/mus.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

@@ -6,7 +6,7 @@
   "name":"__Randomizer__",
   "parent":{
     "name":"Abstract",
-    "path":"folders/Libraries/FAST/Numbers/Abstract.yy",
+    "path":"folders/Engine/Internal/(System)/Libraries/FAST/Numbers/Abstract.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

@@ -120,7 +120,7 @@
   "name":"fnt_mars",
   "parent":{
     "name":"general",
-    "path":"folders/Fonts/general.yy",
+    "path":"folders/Engine/External/Fonts/general.yy",
   },
   "pointRounding":0,
   "ranges":[

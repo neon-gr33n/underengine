@@ -3,8 +3,8 @@
   "%Name":"shd_rectclip",
   "name":"shd_rectclip",
   "parent":{
-    "name":"Shaders",
-    "path":"folders/Shaders.yy",
+    "name":"Extra Effects",
+    "path":"folders/Engine/Internal/Shaders/Extra Effects.yy",
   },
   "resourceType":"GMShader",
   "resourceVersion":"2.0",

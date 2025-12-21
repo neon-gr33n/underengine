@@ -12,7 +12,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"common",
-    "path":"folders/Objects/Technical/common.yy",
+    "path":"folders/Engine/External/Objects/Technical/common.yy",
   },
   "parentObjectId":null,
   "persistent":false,

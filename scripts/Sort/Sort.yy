@@ -6,7 +6,7 @@
   "name":"Sort",
   "parent":{
     "name":"Sort",
-    "path":"folders/Libraries/FAST/Core/Constructors/Sort.yy",
+    "path":"folders/Engine/Internal/(System)/Libraries/FAST/Core/Constructors/Sort.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

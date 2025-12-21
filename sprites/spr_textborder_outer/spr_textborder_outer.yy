@@ -45,7 +45,7 @@
   "origin":4,
   "parent":{
     "name":"special",
-    "path":"folders/Sprites/User Interface/common/textbox/special.yy",
+    "path":"folders/Engine/External/Sprites/User Interface/common/textbox/special.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

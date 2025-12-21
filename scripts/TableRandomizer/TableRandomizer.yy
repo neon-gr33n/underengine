@@ -6,7 +6,7 @@
   "name":"TableRandomizer",
   "parent":{
     "name":"Constructors",
-    "path":"folders/Libraries/FAST/Numbers/Constructors.yy",
+    "path":"folders/Engine/Internal/(System)/Libraries/FAST/Numbers/Constructors.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

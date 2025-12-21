@@ -4,7 +4,7 @@
   "name":"__shd_scribble_bake_effect_8dir",
   "parent":{
     "name":"Shaders",
-    "path":"folders/Libraries/Juju Adams Libararies/Scribble/(System - don't call these functions)/Shaders.yy",
+    "path":"folders/Engine/Internal/(System)/Libraries/Juju Adams Libararies/Scribble/(System - don't call these functions)/Shaders.yy",
   },
   "resourceType":"GMShader",
   "resourceVersion":"2.0",

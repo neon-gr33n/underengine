@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"gj_funcs",
   "parent":{
-    "name":"gamejolt",
-    "path":"folders/Scripts/maingame/gamejolt.yy",
+    "name":"Scripts",
+    "path":"folders/Engine/Internal/(System)/Scripts.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

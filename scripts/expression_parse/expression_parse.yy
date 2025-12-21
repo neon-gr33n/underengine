@@ -6,7 +6,7 @@
   "name":"expression_parse",
   "parent":{
     "name":"expression",
-    "path":"folders/Libraries/FAST/Core/Functions/expression.yy",
+    "path":"folders/Engine/Internal/(System)/Libraries/FAST/Core/Functions/expression.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

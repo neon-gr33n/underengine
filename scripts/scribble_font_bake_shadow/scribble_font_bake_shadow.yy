@@ -6,7 +6,7 @@
   "name":"scribble_font_bake_shadow",
   "parent":{
     "name":"Legacy",
-    "path":"folders/Libraries/Juju Adams Libararies/Scribble/Legacy.yy",
+    "path":"folders/Engine/Internal/(System)/Libraries/Juju Adams Libararies/Scribble/Legacy.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

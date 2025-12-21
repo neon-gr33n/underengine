@@ -12,7 +12,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"npcs",
-    "path":"folders/Objects/Common/Overworld/common/npcs.yy",
+    "path":"folders/Engine/External/Objects/Overworld/common/npcs.yy",
   },
   "parentObjectId":{
     "name":"obj_ow_npc",

@@ -6,7 +6,7 @@
   "name":"input_accessibility_verb_cooldown_set",
   "parent":{
     "name":"12  Accessibility",
-    "path":"folders/Libraries/Juju Adams Libararies/Input/12  Accessibility.yy",
+    "path":"folders/Engine/Internal/(System)/Libraries/Juju Adams Libararies/Input/12  Accessibility.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

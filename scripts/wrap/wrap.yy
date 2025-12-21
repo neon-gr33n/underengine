@@ -6,7 +6,7 @@
   "name":"wrap",
   "parent":{
     "name":"Math",
-    "path":"folders/Scripts/utility/Math.yy",
+    "path":"folders/Engine/External/Scripts/Utility/Math.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

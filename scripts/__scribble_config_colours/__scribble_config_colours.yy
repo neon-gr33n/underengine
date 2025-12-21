@@ -6,7 +6,7 @@
   "name":"__scribble_config_colours",
   "parent":{
     "name":"Configuration - Please edit these!",
-    "path":"folders/Libraries/Juju Adams Libararies/Scribble/Configuration - Please edit these!.yy",
+    "path":"folders/Engine/Internal/(System)/Libraries/Juju Adams Libararies/Scribble/Configuration - Please edit these!.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

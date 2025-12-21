@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"draw_item_safe",
   "parent":{
-    "name":"inv",
-    "path":"folders/Scripts/inv.yy",
+    "name":"Inventory",
+    "path":"folders/Engine/Internal/(System)/Scripts/Inventory.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

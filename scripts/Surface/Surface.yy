@@ -6,7 +6,7 @@
   "name":"Surface",
   "parent":{
     "name":"Drawing",
-    "path":"folders/Libraries/FAST/Core/Constructors/Drawing.yy",
+    "path":"folders/Engine/Internal/(System)/Libraries/FAST/Core/Constructors/Drawing.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

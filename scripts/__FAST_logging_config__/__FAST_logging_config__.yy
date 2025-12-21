@@ -6,7 +6,7 @@
   "name":"__FAST_logging_config__",
   "parent":{
     "name":"Logging",
-    "path":"folders/Libraries/FAST/Logging.yy",
+    "path":"folders/Engine/Internal/(System)/Libraries/FAST/Logging.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

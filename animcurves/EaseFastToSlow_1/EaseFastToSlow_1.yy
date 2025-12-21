@@ -12,7 +12,7 @@
   "name":"EaseFastToSlow_1",
   "parent":{
     "name":"Curves",
-    "path":"folders/Libraries/TweenGMX/User/Curves.yy",
+    "path":"folders/Engine/Internal/(System)/Libraries/TweenGMX/User/Curves.yy",
   },
   "resourceType":"GMAnimCurve",
   "resourceVersion":"2.0",

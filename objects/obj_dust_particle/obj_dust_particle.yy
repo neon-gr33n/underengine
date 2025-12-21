@@ -11,7 +11,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"effects",
-    "path":"folders/Objects/Technical/common/effects.yy",
+    "path":"folders/Engine/External/Objects/Technical/common/effects.yy",
   },
   "parentObjectId":null,
   "persistent":false,

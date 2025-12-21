@@ -6,7 +6,7 @@
   "name":"StringFormatter",
   "parent":{
     "name":"Strings",
-    "path":"folders/Libraries/FAST/Core/Constructors/Strings.yy",
+    "path":"folders/Engine/Internal/(System)/Libraries/FAST/Core/Constructors/Strings.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

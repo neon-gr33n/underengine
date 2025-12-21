@@ -6,7 +6,7 @@
   "name":"wav_load_buffer",
   "parent":{
     "name":"wav",
-    "path":"folders/Scripts/utility/wav.yy",
+    "path":"folders/Engine/Internal/(System)/Scripts/Utility/wav.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

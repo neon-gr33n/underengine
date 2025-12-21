@@ -12,7 +12,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"cutscene",
-    "path":"folders/Objects/Common/Overworld/cutscene.yy",
+    "path":"folders/Engine/External/Objects/Overworld/cutscene.yy",
   },
   "parentObjectId":null,
   "persistent":false,

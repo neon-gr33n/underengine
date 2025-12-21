@@ -6,7 +6,7 @@
   "name":"__FAST_render_config__",
   "parent":{
     "name":"Render",
-    "path":"folders/Libraries/FAST/Render.yy",
+    "path":"folders/Engine/Internal/(System)/Libraries/FAST/Render.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

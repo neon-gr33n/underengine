@@ -11,7 +11,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"puzzles",
-    "path":"folders/Objects/Common/Overworld/common/puzzles.yy",
+    "path":"folders/Engine/External/Objects/Overworld/common/puzzles.yy",
   },
   "parentObjectId":{
     "name":"obj_puzzle_key",

@@ -22,7 +22,7 @@
   "name":"rm_dialog_tester",
   "parent":{
     "name":"internal (DO NOT REMOVE)",
-    "path":"folders/Rooms/internal (DO NOT REMOVE).yy",
+    "path":"folders/Engine/Internal/(System)/Rooms/internal (DO NOT REMOVE).yy",
   },
   "parentRoom":null,
   "physicsSettings":{

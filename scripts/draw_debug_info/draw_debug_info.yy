@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"draw_debug_info",
   "parent":{
-    "name":"drawing",
-    "path":"folders/Scripts/utility/drawing.yy",
+    "name":"Drawing",
+    "path":"folders/Engine/External/Scripts/Utility/Drawing.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

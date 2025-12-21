@@ -6,7 +6,7 @@
   "name":"scr_construct",
   "parent":{
     "name":"Constructed Object",
-    "path":"folders/Libraries/FrostJolt Library/Constructed Object.yy",
+    "path":"folders/Engine/Internal/(System)/Libraries/FrostJolt Library/Constructed Object.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

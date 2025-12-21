@@ -33,13 +33,19 @@
     "resourceType":"GMNineSliceData",
     "resourceVersion":"2.0",
     "right":15,
-    "tileMode":[0,0,0,0,0,],
+    "tileMode":[
+      0,
+      0,
+      0,
+      0,
+      0,
+    ],
     "top":15,
   },
   "origin":0,
   "parent":{
     "name":"popups",
-    "path":"folders/Sprites/User Interface/common/GameJolt/popups.yy",
+    "path":"folders/Engine/External/Sprites/User Interface/common/GameJolt/popups.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
@@ -81,7 +87,9 @@
     "timeUnits":1,
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"ecb88487-570a-4481-bdf7-53156f857239","path":"sprites/spr_fj_corner_popup_border/spr_fj_corner_popup_border.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"ad054af3-c477-4393-aa25-f9964ad41bd6","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"ecb88487-570a-4481-bdf7-53156f857239","path":"sprites/spr_fj_corner_popup_border/spr_fj_corner_popup_border.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"ad054af3-c477-4393-aa25-f9964ad41bd6","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

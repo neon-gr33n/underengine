@@ -6,7 +6,7 @@
   "name":"input_keyboard_virtual_show",
   "parent":{
     "name":"23  Other",
-    "path":"folders/Libraries/Juju Adams Libararies/Input/23  Other.yy",
+    "path":"folders/Engine/Internal/(System)/Libraries/Juju Adams Libararies/Input/23  Other.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

@@ -7166,7 +7166,7 @@
   "name":"fnt_main_bt_jp",
   "parent":{
     "name":"japanese",
-    "path":"folders/Fonts/japanese.yy",
+    "path":"folders/Engine/External/Fonts/japanese.yy",
   },
   "pointRounding":0,
   "ranges":[

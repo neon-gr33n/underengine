@@ -16,7 +16,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Turns",
-    "path":"folders/Objects/Common/battle/Turns.yy",
+    "path":"folders/Engine/External/Objects/battle/Turns.yy",
   },
   "parentObjectId":{
     "name":"obj_bt",

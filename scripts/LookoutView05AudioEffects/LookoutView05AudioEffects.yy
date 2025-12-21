@@ -6,7 +6,7 @@
   "name":"LookoutView05AudioEffects",
   "parent":{
     "name":"02. Public",
-    "path":"folders/Libraries/(Debugging)/Lookout/02. Public.yy",
+    "path":"folders/Engine/Internal/(System)/Libraries/(Debugging)/Lookout/02. Public.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

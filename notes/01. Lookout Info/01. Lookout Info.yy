@@ -4,7 +4,7 @@
   "name":"01. Lookout Info",
   "parent":{
     "name":"Lookout",
-    "path":"folders/Libraries/(Debugging)/Lookout.yy",
+    "path":"folders/Engine/Internal/(System)/Libraries/(Debugging)/Lookout.yy",
   },
   "resourceType":"GMNotes",
   "resourceVersion":"2.0",

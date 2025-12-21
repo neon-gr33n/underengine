@@ -6,7 +6,7 @@
   "name":"Camera",
   "parent":{
     "name":"Constructors",
-    "path":"folders/Libraries/FAST/Render/Constructors.yy",
+    "path":"folders/Engine/Internal/(System)/Libraries/FAST/Render/Constructors.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

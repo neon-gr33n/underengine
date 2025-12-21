@@ -26,7 +26,7 @@
   "origin":0,
   "parent":{
     "name":"Small",
-    "path":"folders/Sprites/User Interface/Gamepad/Xbox/Small.yy",
+    "path":"folders/Engine/External/Sprites/User Interface/Gamepad/Xbox/Small.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

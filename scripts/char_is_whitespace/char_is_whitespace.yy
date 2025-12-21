@@ -6,7 +6,7 @@
   "name":"char_is_whitespace",
   "parent":{
     "name":"char",
-    "path":"folders/Libraries/FAST/Core/Functions/char.yy",
+    "path":"folders/Engine/Internal/(System)/Libraries/FAST/Core/Functions/char.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

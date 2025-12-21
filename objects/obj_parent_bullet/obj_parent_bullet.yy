@@ -13,7 +13,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Bullets",
-    "path":"folders/Objects/Common/battle/Bullets.yy",
+    "path":"folders/Engine/External/Objects/battle/Bullets.yy",
   },
   "parentObjectId":null,
   "persistent":false,

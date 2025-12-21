@@ -6,7 +6,7 @@
   "name":"ease_out_expo",
   "parent":{
     "name":"Expo",
-    "path":"folders/Libraries/FAST/Numbers/Functions/ease/Expo.yy",
+    "path":"folders/Engine/Internal/(System)/Libraries/FAST/Numbers/Functions/ease/Expo.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

@@ -6,7 +6,7 @@
   "name":"__input_gamepad_find_in_sdl2_database",
   "parent":{
     "name":"Gamepads and Steam",
-    "path":"folders/Libraries/Juju Adams Libararies/Input/(System)/Gamepads and Steam.yy",
+    "path":"folders/Engine/Internal/(System)/Libraries/Juju Adams Libararies/Input/(System)/Gamepads and Steam.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

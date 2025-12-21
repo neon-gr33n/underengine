@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"underengineSystemMacros",
   "parent":{
-    "name":"Engine Config",
-    "path":"folders/Scripts/(System)/Engine Config.yy",
+    "name":"(Config)",
+    "path":"folders/Engine/Internal/(System)/Scripts/(Config).yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

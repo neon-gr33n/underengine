@@ -6,7 +6,7 @@
   "name":"include",
   "parent":{
     "name":"include",
-    "path":"folders/Libraries/FAST/Core/Functions/include.yy",
+    "path":"folders/Engine/Internal/(System)/Libraries/FAST/Core/Functions/include.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

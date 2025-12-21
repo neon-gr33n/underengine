@@ -10,7 +10,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"common",
-    "path":"folders/Objects/Common/Overworld/common.yy",
+    "path":"folders/Engine/External/Objects/Overworld/common.yy",
   },
   "parentObjectId":null,
   "persistent":false,

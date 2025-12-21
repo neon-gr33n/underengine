@@ -20,7 +20,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"handlers",
-    "path":"folders/Objects/Technical/handlers.yy",
+    "path":"folders/Engine/External/Objects/Technical/handlers.yy",
   },
   "parentObjectId":null,
   "persistent":true,

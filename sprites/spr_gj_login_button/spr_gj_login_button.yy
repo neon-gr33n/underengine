@@ -26,7 +26,7 @@
   "origin":0,
   "parent":{
     "name":"GameJolt",
-    "path":"folders/Sprites/User Interface/common/GameJolt.yy",
+    "path":"folders/Engine/External/Sprites/User Interface/common/GameJolt.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

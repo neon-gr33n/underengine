@@ -14,7 +14,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"debugging",
-    "path":"folders/Objects/Technical/utility/debugging.yy",
+    "path":"folders/Engine/External/Objects/Technical/utility/debugging.yy",
   },
   "parentObjectId":null,
   "persistent":false,

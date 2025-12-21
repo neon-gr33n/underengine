@@ -6,7 +6,7 @@
   "name":"error_type",
   "parent":{
     "name":"type",
-    "path":"folders/Libraries/FAST/Core/Functions/type.yy",
+    "path":"folders/Engine/Internal/(System)/Libraries/FAST/Core/Functions/type.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

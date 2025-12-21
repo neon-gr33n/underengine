@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"discord_update",
   "parent":{
-    "name":"discord_rpc",
-    "path":"folders/Scripts/maingame/discord_rpc.yy",
+    "name":"Scripts",
+    "path":"folders/Engine/Internal/(System)/Scripts.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

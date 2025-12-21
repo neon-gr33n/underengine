@@ -26,7 +26,7 @@
   "origin":0,
   "parent":{
     "name":"battle",
-    "path":"folders/Backgrounds/battle.yy",
+    "path":"folders/Engine/External/Backgrounds/battle.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

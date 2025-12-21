@@ -6,7 +6,7 @@
   "name":"string_evaluate",
   "parent":{
     "name":"string",
-    "path":"folders/Libraries/FAST/Core/Functions/string.yy",
+    "path":"folders/Engine/Internal/(System)/Libraries/FAST/Core/Functions/string.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

@@ -6,7 +6,7 @@
   "name":"ease_out_circ",
   "parent":{
     "name":"Circ",
-    "path":"folders/Libraries/FAST/Numbers/Functions/ease/Circ.yy",
+    "path":"folders/Engine/Internal/(System)/Libraries/FAST/Numbers/Functions/ease/Circ.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

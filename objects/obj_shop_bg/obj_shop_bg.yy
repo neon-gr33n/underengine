@@ -7,7 +7,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"SHOP",
-    "path":"folders/Objects/Common/User Interface/common/SHOP.yy",
+    "path":"folders/Engine/External/Objects/User Interface/common/SHOP.yy",
   },
   "parentObjectId":null,
   "persistent":false,

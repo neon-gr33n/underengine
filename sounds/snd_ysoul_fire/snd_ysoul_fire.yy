@@ -16,7 +16,7 @@
   "name":"snd_ysoul_fire",
   "parent":{
     "name":"soul",
-    "path":"folders/Sounds/sfx/battle/soul.yy",
+    "path":"folders/Engine/External/Sounds/sfx/battle/soul.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

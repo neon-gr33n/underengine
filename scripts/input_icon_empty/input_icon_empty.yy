@@ -6,7 +6,7 @@
   "name":"input_icon_empty",
   "parent":{
     "name":"Icons",
-    "path":"folders/Libraries/Juju Adams Libararies/Input/(System)/Icons.yy",
+    "path":"folders/Engine/Internal/(System)/Libraries/Juju Adams Libararies/Input/(System)/Icons.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

@@ -6,7 +6,7 @@
   "name":"object_get_depth",
   "parent":{
     "name":"object",
-    "path":"folders/Scripts/utility/compatibility/object.yy",
+    "path":"folders/Engine/Internal/(System)/Scripts/Utility/compatibility/object.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

@@ -6,7 +6,7 @@
   "name":"input_icons",
   "parent":{
     "name":"Deprecated",
-    "path":"folders/Libraries/Juju Adams Libararies/Input/(System)/Deprecated.yy",
+    "path":"folders/Engine/Internal/(System)/Libraries/Juju Adams Libararies/Input/(System)/Deprecated.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

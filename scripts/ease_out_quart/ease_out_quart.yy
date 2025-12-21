@@ -6,7 +6,7 @@
   "name":"ease_out_quart",
   "parent":{
     "name":"Quart",
-    "path":"folders/Libraries/FAST/Numbers/Functions/ease/Quart.yy",
+    "path":"folders/Engine/Internal/(System)/Libraries/FAST/Numbers/Functions/ease/Quart.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

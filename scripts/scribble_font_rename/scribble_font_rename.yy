@@ -6,7 +6,7 @@
   "name":"scribble_font_rename",
   "parent":{
     "name":"Fonts",
-    "path":"folders/Libraries/Juju Adams Libararies/Scribble/Fonts.yy",
+    "path":"folders/Engine/Internal/(System)/Libraries/Juju Adams Libararies/Scribble/Fonts.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

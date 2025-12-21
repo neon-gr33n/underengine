@@ -26,7 +26,7 @@
   "origin":0,
   "parent":{
     "name":"SPEECH BUBBLES",
-    "path":"folders/Sprites/User Interface/Battle/SPEECH BUBBLES.yy",
+    "path":"folders/Engine/External/Sprites/User Interface/Battle/SPEECH BUBBLES.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

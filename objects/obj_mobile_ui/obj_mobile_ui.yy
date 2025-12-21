@@ -11,8 +11,8 @@
   "name":"obj_mobile_ui",
   "overriddenProperties":[],
   "parent":{
-    "name":"Common",
-    "path":"folders/Objects/Common.yy",
+    "name":"Objects",
+    "path":"folders/Engine/Internal/(System)/Objects.yy",
   },
   "parentObjectId":null,
   "persistent":true,

@@ -6,7 +6,7 @@
   "name":"input_binding_virtual_button",
   "parent":{
     "name":"05  Binding Creators",
-    "path":"folders/Libraries/Juju Adams Libararies/Input/05  Binding Creators.yy",
+    "path":"folders/Engine/Internal/(System)/Libraries/Juju Adams Libararies/Input/05  Binding Creators.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

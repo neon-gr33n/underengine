@@ -10,7 +10,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Debug Tools",
-    "path":"folders/Objects/Common/User Interface/common/TEXT ENGINE/Debug Tools.yy",
+    "path":"folders/Engine/External/Objects/User Interface/common/TEXT ENGINE/Debug Tools.yy",
   },
   "parentObjectId":null,
   "persistent":false,

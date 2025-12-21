@@ -10,7 +10,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"utility",
-    "path":"folders/Objects/Technical/utility.yy",
+    "path":"folders/Engine/External/Objects/Technical/utility.yy",
   },
   "parentObjectId":{
     "name":"obj_parent_timer",

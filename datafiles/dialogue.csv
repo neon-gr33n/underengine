@@ -95,7 +95,7 @@ ui.naming.randomize,Randomize,Aléatoire,ランダム,
 ui.naming.clear,Clear,Effacer,さくじょ,
 ui.naming.description.gen,Is this name correct?,Ce nom est-il correct ?,この名前は正しいですか？,
 ui.naming.description.short,"That short, huh?","Si court, vraiment ?",そんなに短いの？,
-ui.naming.description.notcreative,あんまり…創造的じゃない？,Pas très... créatif ?,あんまり…創造的じゃない？,
+ui.naming.description.notcreative,Not very... creative?,Pas très... créatif ?,あんまり…創造的じゃない？,
 item.use.equip,* I equipped the ,* J'ai équipé le/la ,* を装備した
 item.use.eat,* I used the ,* J'ai utilisé le/la ,* を使った
 ,

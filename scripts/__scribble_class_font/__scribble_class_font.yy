@@ -6,7 +6,7 @@
   "name":"__scribble_class_font",
   "parent":{
     "name":"Classes",
-    "path":"folders/Libraries/Juju Adams Libararies/Scribble/(System - don't call these functions)/Classes.yy",
+    "path":"folders/Engine/Internal/(System)/Libraries/Juju Adams Libararies/Scribble/(System - don't call these functions)/Classes.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

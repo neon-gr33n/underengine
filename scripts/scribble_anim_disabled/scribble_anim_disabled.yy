@@ -6,7 +6,7 @@
   "name":"scribble_anim_disabled",
   "parent":{
     "name":"Animation",
-    "path":"folders/Libraries/Juju Adams Libararies/Scribble/Animation.yy",
+    "path":"folders/Engine/Internal/(System)/Libraries/Juju Adams Libararies/Scribble/Animation.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

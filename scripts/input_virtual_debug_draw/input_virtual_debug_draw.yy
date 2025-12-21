@@ -6,7 +6,7 @@
   "name":"input_virtual_debug_draw",
   "parent":{
     "name":"14  Virtual Buttons",
-    "path":"folders/Libraries/Juju Adams Libararies/Input/14  Virtual Buttons.yy",
+    "path":"folders/Engine/Internal/(System)/Libraries/Juju Adams Libararies/Input/14  Virtual Buttons.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

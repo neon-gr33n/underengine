@@ -6,7 +6,7 @@
   "name":"input_vibrate_curve",
   "parent":{
     "name":"19  Vibration",
-    "path":"folders/Libraries/Juju Adams Libararies/Input/19  Vibration.yy",
+    "path":"folders/Engine/Internal/(System)/Libraries/Juju Adams Libararies/Input/19  Vibration.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

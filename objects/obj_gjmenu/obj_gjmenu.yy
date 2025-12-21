@@ -13,7 +13,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"GAMEJOLT",
-    "path":"folders/Objects/Common/User Interface/common/GAMEJOLT.yy",
+    "path":"folders/Engine/External/Objects/User Interface/common/GAMEJOLT.yy",
   },
   "parentObjectId":null,
   "persistent":false,

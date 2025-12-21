@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"display_set_vsync_safe",
   "parent":{
-    "name":"utility",
-    "path":"folders/Scripts/utility.yy",
+    "name":"Utility",
+    "path":"folders/Engine/Internal/(System)/Scripts/Utility.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

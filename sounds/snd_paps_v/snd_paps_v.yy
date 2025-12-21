@@ -16,7 +16,7 @@
   "name":"snd_paps_v",
   "parent":{
     "name":"voice",
-    "path":"folders/Sounds/sfx/voice.yy",
+    "path":"folders/Engine/External/Sounds/sfx/voice.yy",
   },
   "preload":true,
   "resourceType":"GMSound",

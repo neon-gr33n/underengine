@@ -15,7 +15,7 @@
   "name":"snd_hurtcritical",
   "parent":{
     "name":"battle",
-    "path":"folders/Sounds/sfx/battle.yy",
+    "path":"folders/Engine/External/Sounds/sfx/battle.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

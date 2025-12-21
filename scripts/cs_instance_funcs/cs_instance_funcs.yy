@@ -6,7 +6,7 @@
   "name":"cs_instance_funcs",
   "parent":{
     "name":"Cutscene System",
-    "path":"folders/Scripts/Cutscene System.yy",
+    "path":"folders/Engine/External/Scripts/Cutscene System.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

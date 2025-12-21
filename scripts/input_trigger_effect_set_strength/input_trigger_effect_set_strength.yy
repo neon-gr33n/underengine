@@ -6,7 +6,7 @@
   "name":"input_trigger_effect_set_strength",
   "parent":{
     "name":"22  Trigger Effects",
-    "path":"folders/Libraries/Juju Adams Libararies/Input/22  Trigger Effects.yy",
+    "path":"folders/Engine/Internal/(System)/Libraries/Juju Adams Libararies/Input/22  Trigger Effects.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

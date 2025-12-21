@@ -26,7 +26,7 @@
   "origin":0,
   "parent":{
     "name":"references",
-    "path":"folders/Sprites/internal/references.yy",
+    "path":"folders/Engine/Internal/(System)/Sprites/references.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

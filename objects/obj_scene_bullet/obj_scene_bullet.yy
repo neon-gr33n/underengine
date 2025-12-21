@@ -10,7 +10,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"bullet",
-    "path":"folders/Objects/Common/Overworld/common/bullet.yy",
+    "path":"folders/Engine/External/Objects/Overworld/common/bullet.yy",
   },
   "parentObjectId":null,
   "persistent":false,

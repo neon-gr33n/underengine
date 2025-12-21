@@ -4,7 +4,7 @@
   "name":"underengine Global Variables",
   "parent":{
     "name":"underengine Global Variables",
-    "path":"folders/Notes/Documentation/underengine Global Variables.yy",
+    "path":"folders/Engine/Internal/(Notes)/Documentation/underengine Global Variables.yy",
   },
   "resourceType":"GMNotes",
   "resourceVersion":"2.0",

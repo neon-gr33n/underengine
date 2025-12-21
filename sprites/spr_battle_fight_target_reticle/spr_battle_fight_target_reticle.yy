@@ -27,7 +27,7 @@
   "origin":4,
   "parent":{
     "name":"TARGET",
-    "path":"folders/Sprites/User Interface/Battle/TARGET.yy",
+    "path":"folders/Engine/External/Sprites/User Interface/Battle/TARGET.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
@@ -69,8 +69,12 @@
     "timeUnits":1,
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"5f3c3ef4-9ab5-4b8e-a3dd-43ebafd13497","path":"sprites/spr_battle_fight_target_reticle/spr_battle_fight_target_reticle.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"5f8851ab-a0c5-41f5-a6fc-6b5e67cc3d9a","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"842dcaa9-c02f-4339-a3d4-a6ebdcb9cd13","path":"sprites/spr_battle_fight_target_reticle/spr_battle_fight_target_reticle.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"be236202-d16e-4f63-8c70-cb6d93575c00","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"5f3c3ef4-9ab5-4b8e-a3dd-43ebafd13497","path":"sprites/spr_battle_fight_target_reticle/spr_battle_fight_target_reticle.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"5f8851ab-a0c5-41f5-a6fc-6b5e67cc3d9a","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"842dcaa9-c02f-4339-a3d4-a6ebdcb9cd13","path":"sprites/spr_battle_fight_target_reticle/spr_battle_fight_target_reticle.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"be236202-d16e-4f63-8c70-cb6d93575c00","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

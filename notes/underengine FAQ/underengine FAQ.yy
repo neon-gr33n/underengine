@@ -4,7 +4,7 @@
   "name":"underengine FAQ",
   "parent":{
     "name":"underengine FAQ",
-    "path":"folders/Notes/Documentation/underengine FAQ.yy",
+    "path":"folders/Engine/Internal/(Notes)/Documentation/underengine FAQ.yy",
   },
   "resourceType":"GMNotes",
   "resourceVersion":"2.0",

@@ -14,7 +14,6 @@ Want to see your idea on this list? [File an issue on Github Issues](https://git
 - Dynamic achievement display in trophies hub of **obj_gjmenu**
 - Modified "C" Menu with support for easily adding new menu options (up to 5!)
 
-
 #### Revisions
 
  - Improve upon the existing ACTing system by allowing users to mix and match different ACTs for different results (think like the Dogamy and Dogaressa fight in UNDERTALE, as an example!)
@@ -22,6 +21,7 @@ Want to see your idea on this list? [File an issue on Github Issues](https://git
  - Improve upon **cutscene_choice** and **obj_choice_text** to make it easier to add new options 
 	 - (up to 4 like in Deltarune!)
 - Improve the battlegroup RNG system in **obj_random_encounter_handler** to allow encounters to have a lower or higher chance of occurring, or even not be able to appear until a certain room is reached!
+- Improved usability for the shop system (Helper functions, easy configuration, so on)
 
 #### Fixes
 

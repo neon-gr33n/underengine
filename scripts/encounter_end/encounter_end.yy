@@ -6,7 +6,7 @@
   "name":"encounter_end",
   "parent":{
     "name":"encounter",
-    "path":"folders/Scripts/Battle System/encounter.yy",
+    "path":"folders/Engine/External/Scripts/Battle System/encounter.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

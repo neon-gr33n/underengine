@@ -27,7 +27,7 @@
   "origin":4,
   "parent":{
     "name":"Mobile UI",
-    "path":"folders/Sprites/User Interface/Mobile UI.yy",
+    "path":"folders/Engine/External/Sprites/User Interface/Mobile UI.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

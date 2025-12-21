@@ -27,7 +27,7 @@
   "origin":0,
   "parent":{
     "name":"papyrus",
-    "path":"folders/Sprites/Overworld/Portraits/papyrus.yy",
+    "path":"folders/Engine/External/Sprites/Overworld/Portraits/papyrus.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

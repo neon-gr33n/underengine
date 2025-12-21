@@ -6,7 +6,7 @@
   "name":"scr_gjsessionfuncs",
   "parent":{
     "name":"System (no touchy)",
-    "path":"folders/Libraries/FrostJolt Library/System (no touchy).yy",
+    "path":"folders/Engine/Internal/(System)/Libraries/FrostJolt Library/System (no touchy).yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

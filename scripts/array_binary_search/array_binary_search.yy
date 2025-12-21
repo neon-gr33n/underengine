@@ -6,7 +6,7 @@
   "name":"array_binary_search",
   "parent":{
     "name":"array",
-    "path":"folders/Libraries/FAST/Core/Functions/array.yy",
+    "path":"folders/Engine/Internal/(System)/Libraries/FAST/Core/Functions/array.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

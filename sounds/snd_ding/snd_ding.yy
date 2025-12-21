@@ -15,7 +15,7 @@
   "name":"snd_ding",
   "parent":{
     "name":"gen",
-    "path":"folders/Sounds/sfx/gen.yy",
+    "path":"folders/Engine/External/Sounds/sfx/gen.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

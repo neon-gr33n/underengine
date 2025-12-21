@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"delta",
   "parent":{
-    "name":"delta",
-    "path":"folders/Scripts/delta.yy",
+    "name":"Scripts",
+    "path":"folders/Engine/Internal/(System)/Scripts.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

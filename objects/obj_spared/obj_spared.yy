@@ -9,7 +9,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"battle",
-    "path":"folders/Objects/Common/battle.yy",
+    "path":"folders/Engine/External/Objects/battle.yy",
   },
   "parentObjectId":null,
   "persistent":false,

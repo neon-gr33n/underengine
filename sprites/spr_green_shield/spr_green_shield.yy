@@ -28,7 +28,7 @@
   "origin":3,
   "parent":{
     "name":"SOULS",
-    "path":"folders/Sprites/User Interface/Battle/SOULS.yy",
+    "path":"folders/Engine/External/Sprites/User Interface/Battle/SOULS.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

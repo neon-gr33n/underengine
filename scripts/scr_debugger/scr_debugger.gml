@@ -4,7 +4,7 @@ function scr_debugger()
 	if keyboard_check_pressed(vk_f3){room_restart()}
 	if keyboard_check_pressed(vk_f5){screen_capture()}
 	if keyboard_check_pressed(vk_f11){with(GAME){performanceInfo= !performanceInfo; }}
-	if keyboard_check_pressed(vk_alt){room_goto(rm_shop);}
+	if keyboard_check_pressed(vk_alt){member_set_stat("FRISK","HP",0)}
 	if (keyboard_check_pressed(vk_f7)) game_set_speed((game_get_speed(gamespeed_fps) == 60) ? 30 : 60, gamespeed_fps);
 	if keyboard_check(vk_backtick){
 		if keyboard_check_pressed(ord("F")){

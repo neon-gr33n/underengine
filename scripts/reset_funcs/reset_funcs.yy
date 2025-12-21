@@ -6,7 +6,7 @@
   "name":"reset_funcs",
   "parent":{
     "name":"resetting",
-    "path":"folders/Scripts/savedata/resetting.yy",
+    "path":"folders/Engine/External/Scripts/(Save Data)/resetting.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

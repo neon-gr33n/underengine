@@ -6,7 +6,7 @@
   "name":"puzzle_funcs",
   "parent":{
     "name":"maingame",
-    "path":"folders/Scripts/maingame.yy",
+    "path":"folders/Engine/External/Scripts/maingame.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

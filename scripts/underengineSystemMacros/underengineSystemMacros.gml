@@ -38,7 +38,7 @@
 #region Engine
 /// @macro __UNDERENGINE_VERSION
 /// @description Current version of the UnderEngine framework
-#macro __UNDERENGINE_VERSION "v0.7.0-beta-1"
+#macro __UNDERENGINE_VERSION "v0.7.3-beta-1"
 
 /// @macro __UNDERENGINE_LOGGING
 /// @description Enable or disable engine logging system
@@ -46,7 +46,7 @@
 
 /// @macro DEVELOPERBUILD
 /// @description Developer build flag (1 = enabled, 0 = disabled)
-#macro DEVELOPERBUILD 0
+#macro DEVELOPERBUILD 1
 
 /// @macro GRID_CELL_SIZE
 /// @description Size of grid cells for positioning and alignment
@@ -57,4 +57,5 @@
 #macro kill for(;;{instance_destroy(a); break}) var a =
 #macro elif else if
 #macro this self
+#macro forceinline gml_pragma("forceinline")
 #endregion

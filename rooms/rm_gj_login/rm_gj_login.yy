@@ -18,7 +18,7 @@
   "name":"rm_gj_login",
   "parent":{
     "name":"Gamejolt API",
-    "path":"folders/Rooms/internal (DO NOT REMOVE)/Gamejolt API.yy",
+    "path":"folders/Engine/Internal/(System)/Rooms/internal (DO NOT REMOVE)/Gamejolt API.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

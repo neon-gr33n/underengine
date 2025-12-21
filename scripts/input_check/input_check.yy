@@ -6,7 +6,7 @@
   "name":"input_check",
   "parent":{
     "name":"01  Checking Verbs",
-    "path":"folders/Libraries/Juju Adams Libararies/Input/01  Checking Verbs.yy",
+    "path":"folders/Engine/Internal/(System)/Libraries/Juju Adams Libararies/Input/01  Checking Verbs.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

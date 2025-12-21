@@ -6,7 +6,7 @@
   "name":"__tomeSystemFunctions",
   "parent":{
     "name":"_system",
-    "path":"folders/Tome/_system.yy",
+    "path":"folders/Engine/Internal/Tome/_system.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

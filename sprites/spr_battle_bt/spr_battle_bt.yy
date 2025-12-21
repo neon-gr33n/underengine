@@ -35,7 +35,7 @@
   "origin":4,
   "parent":{
     "name":"BUTTONS",
-    "path":"folders/Sprites/User Interface/Battle/BUTTONS.yy",
+    "path":"folders/Engine/External/Sprites/User Interface/Battle/BUTTONS.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

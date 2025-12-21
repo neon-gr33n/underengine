@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"game_cleanup",
   "parent":{
-    "name":"maingame",
-    "path":"folders/Scripts/maingame.yy",
+    "name":"Scripts",
+    "path":"folders/Engine/Internal/(System)/Scripts.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

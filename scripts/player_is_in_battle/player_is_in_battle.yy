@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"player_is_in_battle",
   "parent":{
-    "name":"player",
-    "path":"folders/Scripts/player.yy",
+    "name":"Player",
+    "path":"folders/Engine/Internal/(System)/Scripts/Player.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

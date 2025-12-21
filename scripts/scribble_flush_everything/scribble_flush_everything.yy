@@ -6,7 +6,7 @@
   "name":"scribble_flush_everything",
   "parent":{
     "name":"Miscellaneous",
-    "path":"folders/Libraries/Juju Adams Libararies/Scribble/Miscellaneous.yy",
+    "path":"folders/Engine/Internal/(System)/Libraries/Juju Adams Libararies/Scribble/Miscellaneous.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

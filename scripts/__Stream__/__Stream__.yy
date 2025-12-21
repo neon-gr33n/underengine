@@ -6,7 +6,7 @@
   "name":"__Stream__",
   "parent":{
     "name":"Abstract",
-    "path":"folders/Libraries/FAST/Core/Abstract.yy",
+    "path":"folders/Engine/Internal/(System)/Libraries/FAST/Core/Abstract.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"net_funcs",
   "parent":{
-    "name":"networking",
-    "path":"folders/Scripts/utility/networking.yy",
+    "name":"Networking",
+    "path":"folders/Engine/External/Scripts/Utility/Networking.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

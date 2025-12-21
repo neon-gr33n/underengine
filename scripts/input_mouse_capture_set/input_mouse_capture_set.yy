@@ -6,7 +6,7 @@
   "name":"input_mouse_capture_set",
   "parent":{
     "name":"11  Mouse Capture",
-    "path":"folders/Libraries/Juju Adams Libararies/Input/11  Mouse Capture.yy",
+    "path":"folders/Engine/Internal/(System)/Libraries/Juju Adams Libararies/Input/11  Mouse Capture.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

@@ -16,7 +16,7 @@
   "name":"snd_spellcast",
   "parent":{
     "name":"world",
-    "path":"folders/Sounds/sfx/world.yy",
+    "path":"folders/Engine/External/Sounds/sfx/world.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

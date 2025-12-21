@@ -1,5 +1,4 @@
 if(live_call()) return live_result;
-draw_sprite_ext(spr_frisk_gameover_die,0,205,0,2,2,0,c_white,_alpha);
 draw_sprite_ext(spr_game_over,0,320,_up,1,1,0,c_white,_alpha);
 draw_sprite_ext(spr_game_over,1,320,_down,1,1,0,c_white,_alpha);
 

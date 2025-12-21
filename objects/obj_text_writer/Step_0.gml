@@ -18,9 +18,9 @@ if (instance_exists(PLAYER1))
 
 _scene=instance_exists(obj_cutscene_handler) ? obj_cutscene_handler.scene : noone;
 
-if is_string(actual_position){
-	show_debug_message("Writer is in pos: " + actual_position)
-}
+//if is_string(actual_position){
+//	show_debug_message("Writer is in pos: " + actual_position)
+//}
 //if is_array(dialogue.dialogueText) && dialogue.dialogueText[t_c][1]=="" && t_c<array_length(dialogue.dialogueText)-1 {
 //	t_c++;
 //}

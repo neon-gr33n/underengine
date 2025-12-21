@@ -6,7 +6,7 @@
   "name":"input_binding_scan_params_set",
   "parent":{
     "name":"07  Binding Scanner",
-    "path":"folders/Libraries/Juju Adams Libararies/Input/07  Binding Scanner.yy",
+    "path":"folders/Engine/Internal/(System)/Libraries/Juju Adams Libararies/Input/07  Binding Scanner.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

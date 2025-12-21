@@ -6,7 +6,7 @@
   "name":"string_height_scribble_ext",
   "parent":{
     "name":"Quick Functions",
-    "path":"folders/Libraries/Juju Adams Libararies/Scribble/Quick Functions.yy",
+    "path":"folders/Engine/Internal/(System)/Libraries/Juju Adams Libararies/Scribble/Quick Functions.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

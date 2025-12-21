@@ -6,7 +6,7 @@
   "name":"tomeConfig",
   "parent":{
     "name":"Tome",
-    "path":"folders/Tome.yy",
+    "path":"folders/Engine/Internal/Tome.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

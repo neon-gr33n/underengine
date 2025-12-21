@@ -6,7 +6,7 @@
   "name":"erase_general",
   "parent":{
     "name":"erasing",
-    "path":"folders/Scripts/savedata/erasing.yy",
+    "path":"folders/Engine/External/Scripts/(Save Data)/erasing.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

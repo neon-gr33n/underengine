@@ -6,7 +6,7 @@
   "name":"input_motion_data_get",
   "parent":{
     "name":"21  Gyro & Motion",
-    "path":"folders/Libraries/Juju Adams Libararies/Input/21  Gyro & Motion.yy",
+    "path":"folders/Engine/Internal/(System)/Libraries/Juju Adams Libararies/Input/21  Gyro & Motion.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

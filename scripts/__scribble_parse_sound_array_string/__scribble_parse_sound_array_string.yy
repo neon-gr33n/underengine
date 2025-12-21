@@ -6,7 +6,7 @@
   "name":"__scribble_parse_sound_array_string",
   "parent":{
     "name":"(System - don't call these functions)",
-    "path":"folders/Libraries/Juju Adams Libararies/Scribble/(System - don't call these functions).yy",
+    "path":"folders/Engine/Internal/(System)/Libraries/Juju Adams Libararies/Scribble/(System - don't call these functions).yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

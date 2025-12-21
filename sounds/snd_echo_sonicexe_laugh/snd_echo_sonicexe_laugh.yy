@@ -15,7 +15,7 @@
   "name":"snd_echo_sonicexe_laugh",
   "parent":{
     "name":"other_voice",
-    "path":"folders/Sounds/sfx/voice/other_voice.yy",
+    "path":"folders/Engine/External/Sounds/sfx/voice/other_voice.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

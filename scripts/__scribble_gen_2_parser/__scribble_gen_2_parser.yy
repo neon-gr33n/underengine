@@ -6,7 +6,7 @@
   "name":"__scribble_gen_2_parser",
   "parent":{
     "name":"Generator",
-    "path":"folders/Libraries/Juju Adams Libararies/Scribble/(System - don't call these functions)/Generator.yy",
+    "path":"folders/Engine/Internal/(System)/Libraries/Juju Adams Libararies/Scribble/(System - don't call these functions)/Generator.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

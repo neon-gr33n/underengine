@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"border_funcs",
   "parent":{
-    "name":"Borders",
-    "path":"folders/Scripts/Borders.yy",
+    "name":"(Borders)",
+    "path":"folders/Engine/External/Scripts/(Borders).yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

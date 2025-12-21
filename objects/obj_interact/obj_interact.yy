@@ -10,7 +10,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"common",
-    "path":"folders/Objects/Technical/common.yy",
+    "path":"folders/Engine/External/Objects/Technical/common.yy",
   },
   "parentObjectId":{
     "name":"obj_debug_parent",

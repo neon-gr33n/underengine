@@ -125,7 +125,7 @@
   "name":"font_sys_debug",
   "parent":{
     "name":"Fonts",
-    "path":"folders/Libraries/FAST/Core/System/Fonts.yy",
+    "path":"folders/Engine/Internal/(System)/Libraries/FAST/Core/System/Fonts.yy",
   },
   "pointRounding":0,
   "ranges":[

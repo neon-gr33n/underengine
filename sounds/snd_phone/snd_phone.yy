@@ -16,7 +16,7 @@
   "name":"snd_phone",
   "parent":{
     "name":"ui",
-    "path":"folders/Sounds/sfx/ui.yy",
+    "path":"folders/Engine/External/Sounds/sfx/ui.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

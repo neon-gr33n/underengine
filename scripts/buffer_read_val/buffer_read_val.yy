@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"buffer_read_val",
   "parent":{
-    "name":"buffers",
-    "path":"folders/Scripts/utility/buffers.yy",
+    "name":"Utility",
+    "path":"folders/Engine/Internal/(System)/Scripts/Utility.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

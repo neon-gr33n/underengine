@@ -6,7 +6,7 @@
   "name":"instance_create",
   "parent":{
     "name":"instance",
-    "path":"folders/Scripts/utility/compatibility/instance.yy",
+    "path":"folders/Engine/Internal/(System)/Scripts/Utility/compatibility/instance.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

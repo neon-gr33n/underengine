@@ -15,7 +15,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Admin",
-    "path":"folders/Libraries/TweenGMX/Admin.yy",
+    "path":"folders/Engine/Internal/(System)/Libraries/TweenGMX/Admin.yy",
   },
   "parentObjectId":null,
   "persistent":true,

@@ -120,7 +120,7 @@
   "name":"fnt_dotumche",
   "parent":{
     "name":"english",
-    "path":"folders/Fonts/english.yy",
+    "path":"folders/Engine/External/Fonts/english.yy",
   },
   "pointRounding":0,
   "ranges":[

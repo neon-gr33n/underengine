@@ -4,7 +4,7 @@
   "name":"underengine Terms of Use",
   "parent":{
     "name":"underengine TOS",
-    "path":"folders/Notes/Documentation/underengine TOS.yy",
+    "path":"folders/Engine/Internal/(Notes)/Documentation/underengine TOS.yy",
   },
   "resourceType":"GMNotes",
   "resourceVersion":"2.0",

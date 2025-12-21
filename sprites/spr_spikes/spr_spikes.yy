@@ -27,7 +27,7 @@
   "origin":0,
   "parent":{
     "name":"Puzzles",
-    "path":"folders/Sprites/Overworld/Puzzles.yy",
+    "path":"folders/Engine/External/Sprites/Overworld/Puzzles.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

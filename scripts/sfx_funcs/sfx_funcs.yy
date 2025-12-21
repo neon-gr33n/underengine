@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"sfx_funcs",
   "parent":{
-    "name":"sfx",
-    "path":"folders/Scripts/sound/sfx.yy",
+    "name":"Utility",
+    "path":"folders/Engine/External/Scripts/Utility.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

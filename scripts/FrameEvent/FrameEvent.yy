@@ -6,7 +6,7 @@
   "name":"FrameEvent",
   "parent":{
     "name":"Timing",
-    "path":"folders/Libraries/FAST/Core/Constructors/Timing.yy",
+    "path":"folders/Engine/Internal/(System)/Libraries/FAST/Core/Constructors/Timing.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

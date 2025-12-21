@@ -6,7 +6,7 @@
   "name":"scribble_color_set",
   "parent":{
     "name":"Colours",
-    "path":"folders/Libraries/Juju Adams Libararies/Scribble/Colours.yy",
+    "path":"folders/Engine/Internal/(System)/Libraries/Juju Adams Libararies/Scribble/Colours.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

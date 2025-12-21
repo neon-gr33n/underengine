@@ -13,7 +13,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"transitions",
-    "path":"folders/Objects/Technical/utility/transitions.yy",
+    "path":"folders/Engine/External/Objects/Technical/utility/transitions.yy",
   },
   "parentObjectId":null,
   "persistent":false,

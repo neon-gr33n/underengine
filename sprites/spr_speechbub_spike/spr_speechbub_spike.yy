@@ -26,7 +26,7 @@
   "origin":0,
   "parent":{
     "name":"Battle",
-    "path":"folders/Sprites/User Interface/Battle.yy",
+    "path":"folders/Engine/External/Sprites/User Interface/Battle.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"layer_sh_start",
   "parent":{
-    "name":"shaders",
-    "path":"folders/Scripts/utility/shaders.yy",
+    "name":"Shaders",
+    "path":"folders/Engine/External/Scripts/Utility/Shaders.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

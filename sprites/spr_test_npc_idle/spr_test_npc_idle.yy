@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":7,
   "parent":{
-    "name":"Characters",
-    "path":"folders/Sprites/Overworld/Characters.yy",
+    "name":"Test NPC",
+    "path":"folders/Engine/External/Sprites/Overworld/Characters/Test NPC.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

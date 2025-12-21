@@ -11,7 +11,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"(System)",
-    "path":"folders/Libraries/Juju Adams Libararies/Input/(System).yy",
+    "path":"folders/Engine/Internal/(System)/Libraries/Juju Adams Libararies/Input/(System).yy",
   },
   "parentObjectId":null,
   "persistent":true,

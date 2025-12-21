@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"mus_funcs",
   "parent":{
-    "name":"mus",
-    "path":"folders/Scripts/sound/mus.yy",
+    "name":"Utility",
+    "path":"folders/Engine/External/Scripts/Utility.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

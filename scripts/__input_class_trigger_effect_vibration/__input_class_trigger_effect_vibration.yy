@@ -6,7 +6,7 @@
   "name":"__input_class_trigger_effect_vibration",
   "parent":{
     "name":"Classes",
-    "path":"folders/Libraries/Juju Adams Libararies/Input/(System)/Classes.yy",
+    "path":"folders/Engine/Internal/(System)/Libraries/Juju Adams Libararies/Input/(System)/Classes.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

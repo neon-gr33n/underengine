@@ -6,7 +6,7 @@
   "name":"input_cursor_mouse_enabled_set",
   "parent":{
     "name":"09  Cursor",
-    "path":"folders/Libraries/Juju Adams Libararies/Input/09  Cursor.yy",
+    "path":"folders/Engine/Internal/(System)/Libraries/Juju Adams Libararies/Input/09  Cursor.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

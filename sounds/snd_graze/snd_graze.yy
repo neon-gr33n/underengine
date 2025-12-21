@@ -15,7 +15,7 @@
   "name":"snd_graze",
   "parent":{
     "name":"Sounds",
-    "path":"folders/Sounds.yy",
+    "path":"folders/Engine/External/Sounds.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

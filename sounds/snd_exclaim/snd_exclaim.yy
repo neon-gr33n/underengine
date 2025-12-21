@@ -15,7 +15,7 @@
   "name":"snd_exclaim",
   "parent":{
     "name":"gen",
-    "path":"folders/Sounds/sfx/gen.yy",
+    "path":"folders/Engine/External/Sounds/sfx/gen.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

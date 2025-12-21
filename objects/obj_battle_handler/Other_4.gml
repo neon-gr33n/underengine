@@ -6,7 +6,7 @@ with(CAM){
 	view_zoom = 1;
 	camera_set_zoom()
 }
-with(CAM) camera_setup(0, noone, true, 1)
+with(CAM) camera_setup(0, window_get_fullscreen(), true, 1)
 
 mus_playx(mus_load(global.battlemus),true,0.5,0,global.battlemus_pitch,2)
 encounter_create()

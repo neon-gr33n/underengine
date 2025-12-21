@@ -6,7 +6,7 @@
   "name":"scribble_super_glyph_copy",
   "parent":{
     "name":"Superfonts",
-    "path":"folders/Libraries/Juju Adams Libararies/Scribble/Superfonts.yy",
+    "path":"folders/Engine/Internal/(System)/Libraries/Juju Adams Libararies/Scribble/Superfonts.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

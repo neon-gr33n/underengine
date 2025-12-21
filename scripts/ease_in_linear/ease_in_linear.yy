@@ -6,7 +6,7 @@
   "name":"ease_in_linear",
   "parent":{
     "name":"Linear",
-    "path":"folders/Libraries/FAST/Numbers/Functions/ease/Linear.yy",
+    "path":"folders/Engine/Internal/(System)/Libraries/FAST/Numbers/Functions/ease/Linear.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

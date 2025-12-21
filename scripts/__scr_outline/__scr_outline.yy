@@ -6,7 +6,7 @@
   "name":"__scr_outline",
   "parent":{
     "name":"Outline System",
-    "path":"folders/Libraries/Outline System.yy",
+    "path":"folders/Engine/Internal/(System)/Libraries/Outline System.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

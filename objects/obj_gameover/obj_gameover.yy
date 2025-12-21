@@ -19,7 +19,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"common",
-    "path":"folders/Objects/Common/User Interface/common.yy",
+    "path":"folders/Engine/External/Objects/User Interface/common.yy",
   },
   "parentObjectId":null,
   "persistent":false,

@@ -4,7 +4,7 @@
   "name":"underengine Feature Roadmap",
   "parent":{
     "name":"underengine Feature Roadmap",
-    "path":"folders/Notes/Documentation/underengine Feature Roadmap.yy",
+    "path":"folders/Engine/Internal/(Notes)/Documentation/underengine Feature Roadmap.yy",
   },
   "resourceType":"GMNotes",
   "resourceVersion":"2.0",

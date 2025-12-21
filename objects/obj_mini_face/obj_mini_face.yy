@@ -12,7 +12,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"TEXT ENGINE",
-    "path":"folders/Objects/Common/User Interface/common/TEXT ENGINE.yy",
+    "path":"folders/Engine/External/Objects/User Interface/common/TEXT ENGINE.yy",
   },
   "parentObjectId":null,
   "persistent":false,

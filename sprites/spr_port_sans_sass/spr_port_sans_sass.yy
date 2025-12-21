@@ -26,7 +26,7 @@
   "origin":0,
   "parent":{
     "name":"sans",
-    "path":"folders/Sprites/Overworld/Portraits/sans.yy",
+    "path":"folders/Engine/External/Sprites/Overworld/Portraits/sans.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

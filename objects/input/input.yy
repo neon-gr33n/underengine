@@ -9,8 +9,8 @@
   "name":"input",
   "overriddenProperties":[],
   "parent":{
-    "name":"Common",
-    "path":"folders/Objects/Common.yy",
+    "name":"Objects",
+    "path":"folders/Engine/External/Objects.yy",
   },
   "parentObjectId":null,
   "persistent":true,

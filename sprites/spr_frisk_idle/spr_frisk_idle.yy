@@ -29,7 +29,7 @@
   "origin":9,
   "parent":{
     "name":"FRISK",
-    "path":"folders/Sprites/Overworld/Characters/PLAYER/FRISK.yy",
+    "path":"folders/Engine/External/Sprites/Overworld/Characters/PLAYER/FRISK.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

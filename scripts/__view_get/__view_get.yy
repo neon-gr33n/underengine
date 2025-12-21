@@ -6,7 +6,7 @@
   "name":"__view_get",
   "parent":{
     "name":"compatibility",
-    "path":"folders/Scripts/utility/compatibility.yy",
+    "path":"folders/Engine/Internal/(System)/Scripts/Utility/compatibility.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

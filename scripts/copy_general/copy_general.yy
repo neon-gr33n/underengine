@@ -6,7 +6,7 @@
   "name":"copy_general",
   "parent":{
     "name":"copying",
-    "path":"folders/Scripts/savedata/copying.yy",
+    "path":"folders/Engine/External/Scripts/(Save Data)/copying.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

@@ -120,7 +120,7 @@
   "name":"scribble_fallback_font",
   "parent":{
     "name":"(System - don't call these functions)",
-    "path":"folders/Libraries/Juju Adams Libararies/Scribble/(System - don't call these functions).yy",
+    "path":"folders/Engine/Internal/(System)/Libraries/Juju Adams Libararies/Scribble/(System - don't call these functions).yy",
   },
   "pointRounding":0,
   "ranges":[

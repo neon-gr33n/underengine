@@ -6,7 +6,7 @@
   "name":"input_keyboard_check_pressed",
   "parent":{
     "name":"26  Keyboard (Direct)",
-    "path":"folders/Libraries/Juju Adams Libararies/Input/26  Keyboard (Direct).yy",
+    "path":"folders/Engine/Internal/(System)/Libraries/Juju Adams Libararies/Input/26  Keyboard (Direct).yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

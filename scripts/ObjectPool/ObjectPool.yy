@@ -6,7 +6,7 @@
   "name":"ObjectPool",
   "parent":{
     "name":"Data Types",
-    "path":"folders/Libraries/FAST/Core/Constructors/Data Types.yy",
+    "path":"folders/Engine/Internal/(System)/Libraries/FAST/Core/Constructors/Data Types.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

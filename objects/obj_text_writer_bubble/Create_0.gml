@@ -20,6 +20,13 @@ t_c=0;
 
 selectedChoice  = 0;
 
+scribble_typists_add_event("clear",function(){
+	dialogue.dialogueText = "";
+	with(obj_cutscene_handler){
+		cutscene_end_action();
+	}
+})
+
 typist = scribble_typist();
 typist.in(dialogue.dialogueSpeed * global.__delta_stepFactor,0);
 typewriter_state = 0;

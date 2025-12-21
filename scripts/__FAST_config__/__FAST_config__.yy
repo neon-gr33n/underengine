@@ -6,7 +6,7 @@
   "name":"__FAST_config__",
   "parent":{
     "name":"System",
-    "path":"folders/Libraries/FAST/Core/System.yy",
+    "path":"folders/Engine/Internal/(System)/Libraries/FAST/Core/System.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

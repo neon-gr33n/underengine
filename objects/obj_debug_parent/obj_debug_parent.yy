@@ -10,7 +10,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Technical",
-    "path":"folders/Objects/Technical.yy",
+    "path":"folders/Engine/External/Objects/Technical.yy",
   },
   "parentObjectId":null,
   "persistent":false,

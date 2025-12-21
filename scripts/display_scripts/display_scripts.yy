@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"display_scripts",
   "parent":{
-    "name":"config",
-    "path":"folders/Scripts/maingame/config.yy",
+    "name":"(Config)",
+    "path":"folders/Engine/Internal/(System)/Scripts/(Config).yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

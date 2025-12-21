@@ -26,7 +26,7 @@
   "origin":0,
   "parent":{
     "name":"rooms",
-    "path":"folders/Backgrounds/rooms.yy",
+    "path":"folders/Engine/External/Backgrounds/rooms.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

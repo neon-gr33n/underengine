@@ -6,7 +6,7 @@
   "name":"int_overflow",
   "parent":{
     "name":"int",
-    "path":"folders/Libraries/FAST/Numbers/Functions/int.yy",
+    "path":"folders/Engine/Internal/(System)/Libraries/FAST/Numbers/Functions/int.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

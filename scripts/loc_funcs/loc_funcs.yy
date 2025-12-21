@@ -6,7 +6,7 @@
   "name":"loc_funcs",
   "parent":{
     "name":"localization",
-    "path":"folders/Scripts/maingame/localization.yy",
+    "path":"folders/Engine/External/Backgrounds/Scripts/localization.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

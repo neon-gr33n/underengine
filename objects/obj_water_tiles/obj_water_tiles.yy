@@ -11,7 +11,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"rendering",
-    "path":"folders/Objects/Technical/utility/rendering.yy",
+    "path":"folders/Engine/External/Objects/Technical/utility/rendering.yy",
   },
   "parentObjectId":null,
   "persistent":false,

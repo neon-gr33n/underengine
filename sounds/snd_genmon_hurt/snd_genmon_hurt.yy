@@ -15,7 +15,7 @@
   "name":"snd_genmon_hurt",
   "parent":{
     "name":"hurt",
-    "path":"folders/Sounds/sfx/battle/hurt.yy",
+    "path":"folders/Engine/External/Sounds/sfx/battle/hurt.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

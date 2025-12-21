@@ -6,7 +6,7 @@
   "name":"Logger",
   "parent":{
     "name":"Constructors",
-    "path":"folders/Libraries/FAST/Logging/Constructors.yy",
+    "path":"folders/Engine/Internal/(System)/Libraries/FAST/Logging/Constructors.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

@@ -6,7 +6,7 @@
   "name":"__input_macros",
   "parent":{
     "name":"(System)",
-    "path":"folders/Libraries/Juju Adams Libararies/Input/(System).yy",
+    "path":"folders/Engine/Internal/(System)/Libraries/Juju Adams Libararies/Input/(System).yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

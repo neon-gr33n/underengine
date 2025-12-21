@@ -6,7 +6,7 @@
   "name":"save_general",
   "parent":{
     "name":"saving",
-    "path":"folders/Scripts/savedata/saving.yy",
+    "path":"folders/Engine/External/Scripts/(Save Data)/saving.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

@@ -5,7 +5,7 @@
   "openedOnFirstLoad":true,
   "parent":{
     "name":"Documentation",
-    "path":"folders/Notes/Documentation.yy",
+    "path":"folders/Engine/Internal/(Notes)/Documentation.yy",
   },
   "resourceType":"GMNotes",
   "resourceVersion":"2.0",

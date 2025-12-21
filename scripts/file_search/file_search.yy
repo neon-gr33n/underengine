@@ -6,7 +6,7 @@
   "name":"file_search",
   "parent":{
     "name":"file",
-    "path":"folders/Libraries/FAST/Core/Functions/file.yy",
+    "path":"folders/Engine/Internal/(System)/Libraries/FAST/Core/Functions/file.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

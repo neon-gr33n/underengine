@@ -26,7 +26,7 @@
   "origin":4,
   "parent":{
     "name":"Generic",
-    "path":"folders/Sprites/User Interface/Gamepad/Generic.yy",
+    "path":"folders/Engine/External/Sprites/User Interface/Gamepad/Generic.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
@@ -68,7 +68,9 @@
     "timeUnits":1,
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"78bbfd7e-0d2f-4e25-9b1d-99946051ae01","path":"sprites/spr_gamepad_all_small_dpad_right/spr_gamepad_all_small_dpad_right.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"a87d7f5a-b0d4-4d4f-bf1e-d6341ecb0f98","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"78bbfd7e-0d2f-4e25-9b1d-99946051ae01","path":"sprites/spr_gamepad_all_small_dpad_right/spr_gamepad_all_small_dpad_right.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"a87d7f5a-b0d4-4d4f-bf1e-d6341ecb0f98","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":{
