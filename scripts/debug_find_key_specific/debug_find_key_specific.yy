@@ -6,7 +6,7 @@
   "name":"debug_find_key_specific",
   "parent":{
     "name":"debug",
-    "path":"folders/Engine/External/Backgrounds/Scripts/localization/debug.yy",
+    "path":"folders/Engine/External/Scripts/Localization/debug.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

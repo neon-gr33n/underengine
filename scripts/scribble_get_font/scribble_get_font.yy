@@ -6,7 +6,7 @@
   "name":"scribble_get_font",
   "parent":{
     "name":"scribble_compat",
-    "path":"folders/Engine/External/Backgrounds/Scripts/localization/scribble_compat.yy",
+    "path":"folders/Engine/External/Scripts/Localization/scribble_compat.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

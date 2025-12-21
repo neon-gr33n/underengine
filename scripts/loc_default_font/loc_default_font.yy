@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"loc_default_font",
   "parent":{
-    "name":"localization",
-    "path":"folders/Engine/External/Backgrounds/Scripts/localization.yy",
+    "name":"Localization",
+    "path":"folders/Engine/External/Scripts/Localization.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
