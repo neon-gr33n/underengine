@@ -12,7 +12,7 @@
 //}
 
 
-if collision_line(PLAYER1.x,PLAYER1.y-10,PLAYER1.x+lengthdir_x(preferredDistance,PLAYER1.direction),PLAYER1.y-10+lengthdir_y(preferredDistance,PLAYER1.direction),id,true,false) && input.action_pressed && canInteract && !inInteraction && PLAYER1.canMove && !instance_exists(obj_cutscene_handler)
+if collision_line(PLAYER1.x,PLAYER1.y-10,PLAYER1.x+lengthdir_x(preferredDistance,PLAYER1.direction),PLAYER1.y-10+lengthdir_y(preferredDistance,PLAYER1.direction),id,true,false) && input.action_pressed && canInteract && !inInteraction && PLAYER1.canMove && !instance_exists(obj_cutscene_handler) && !instance_exists(obj_cmenu) && !instance_exists(obj_savemenu)
 {
 	switch flag_func {
 		case "exists":
