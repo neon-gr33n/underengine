@@ -8,7 +8,7 @@ if (instance_exists(obj_shop)) {
     var is_talking = shopkeeper_should_talk();
     
     // Handle animation
-    if (is_talking) {
+    if (is_talking == true) {
         // Animate talking frames (1-2)
         talk_frame += talk_speed;
         
@@ -34,22 +34,49 @@ function shopkeeper_should_talk() {
     if (!instance_exists(obj_shop)) return false;
     
     var state = obj_shop.currentState;
+    var result = false;
     
-    // Never talk in these states
+    // Debug
+    if (keyboard_check_pressed(ord("D"))) {
+        show_debug_message("=== SHOPKEEPER DEBUG ===");
+        show_debug_message("State: " + state);
+        if (obj_shop.typist != undefined) {
+            show_debug_message("Typist state: " + string(obj_shop.typist.get_state()));
+        }
+        if (obj_shop.typist2 != undefined) {
+            show_debug_message("Typist2 state: " + string(obj_shop.typist2.get_state()));
+        }
+    }
+    
+    // Never talk in sell state
     if (state == "shopSell") {
+        if (keyboard_check_pressed(ord("D"))) show_debug_message("Result: false (shopSell)");
         return false;
     }
     
-    // Always talk during dialogue
-    if (state == "shopTalkLock") {
-        return true;
+    // Check hub and shopTalk states
+    if (state == "hub" || state == "shopTalk" || state == "shopTalkLock") {
+        if (obj_shop.typist != undefined) {
+            result = obj_shop.typist.get_state() != 1; // Talk when NOT typing
+            if (keyboard_check_pressed(ord("D"))) show_debug_message("Result: " + string(result) + " (hub/shopTalk, typist != 1)");
+            return result;
+        }
+        if (keyboard_check_pressed(ord("D"))) show_debug_message("Result: false (no typist)");
+        return false;
     }
     
-    // Talk in hub/talk states when text is typing
-    if (state == "hub" || state == "shopTalk" || state == "shopItem" && obj_shop.typist.get_state() != 1) {
-        return true // 1 = typing
+    // Check shopItem state
+    if (state == "shopItem") {
+        if (obj_shop.typist2 != undefined) {
+            result = obj_shop.typist2.get_state() != 1; // Talk when NOT typing
+            if (keyboard_check_pressed(ord("D"))) show_debug_message("Result: " + string(result) + " (shopItem, typist2 != 1)");
+            return result;
+        }
+        if (keyboard_check_pressed(ord("D"))) show_debug_message("Result: false (no typist2)");
+        return false;
     }
     
+    if (keyboard_check_pressed(ord("D"))) show_debug_message("Result: false (default)");
     return false;
 }
 

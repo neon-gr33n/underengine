@@ -36,31 +36,29 @@ global.SHOP_INFO = {
         
         TALK_DIALOGUE: {
             OPT_A: [
-                "* Hiya! Welcome#  to Snowdin!#* I can't remember the#  last time I saw a fresh#  face around here.",
-				"* Where did you come#  from?#* The capital?",
-				"* You don't look# like a tourist.#* Are you here by yourself?"
+                "* Hiya! Welcome to Snowdin!#* I can't remember the last time I saw a fresh#  face around here.",
+				"* Where did you come from?#* The capital?",
+				"* You don't look like a tourist.#* Are you here by yourself?"
             ],
             OPT_B: [
-               "* You want to know what#  to do here in Snowdin?",
-				"* Grillby's has food,#  and the library#\thas information...",
-				"* If you're tired, you #can take a nap at the#inn next door -my#sister runs it.",
-				"* And if you're bored, #\twatch  those wacky#skeletons outside#do their thing.",
+               "* You want to know what to do here in Snowdin?",
+				"* Grillby's has food, and the library has information...",
+				"* If you're tired, you #can take a nap at the inn# next door - my sister runs it.",
+				"* And if you're bored, watch those#wacky skeletons outside#do their thing.",
 				"* There's two of 'em...#* Brothers, I think.",
-				"* They just showed up one#  day and...#* ... asserted themselves.",
-				"* The town has gotten a #lot  more interesting# since then."
+				"* They just showed up one day and...#* ... asserted themselves.",
+				"* The town has gotten a lot more#interesting since then."
             ],
             OPT_C: [
-               "* Think back to your#  history class...",
-				"* A long time ago, monsters#  lived in the RUINS back#  there in the forest.",
+               "* Think back to your history class...",
+				"* A long time ago, monsters lived in the RUINS#  back there in the forest.",
 				"* Long story short, we all#  decided to leave the ruins#  and head for the end of#  the caverns.",
 				"* Along the way, some fuzzy#  folk decided they liked#  the cold and set up camp#  in Snowdin.",
-				"* Oh, and don't think about#  trying to explore the#  RUINS...#* The door's been locked for#  ages. So unless you're a#  ghost or can burrow under#  the door, forget about it."
+				"* Oh, and don't think about#  trying to explore the RUINS...#* The door's been locked for#  ages. So unless you're a#  ghost or can burrow under the door, forget about it."
             ],
             OPT_D: [
-               "* Life is the same as usual.",
-				"* A little claustrophobic...#  But... we all know deep down#  that freedom is coming,",
-				"* Don't we? As long as we got#  that hope, we can grit our#  teeth and face the same",
-			    "* Struggles, day after day...#  That's life, ain't it?"
+               "* Life is the same as usual...#* A little claustrophobic...#  But... we all know deep down#  that freedom is coming, Don't we? ",
+				"* As long as we got#  that hope, we can grit our#  teeth and face the same# struggles, day after day...#  That's life, ain't it?",
             ]
         },
         

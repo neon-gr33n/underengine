@@ -222,8 +222,7 @@ switch (currentState) {
         // Draw left side
         draw_sprite_ext(global.rounded_box ? spr_textborder_inner_rounded : spr_textborder_inner, 0, 162, 359, 7.3, 5.2, 0, c_white, __DRAW_BOX_OPACITY);
         draw_sprite_ext(global.rounded_box ? spr_textborder_outer_rounded : spr_textborder_outer, 0, 162, 359, 7.3, 5.2, 0, c_white, 1);
-        
-        // Draw right side
+       
         draw_sprite_ext(global.rounded_box ? spr_textborder_inner_rounded : spr_textborder_inner, 0, 486, 359, 6.6, 5.2, 0, c_white, __DRAW_BOX_OPACITY);
         draw_sprite_ext(global.rounded_box ? spr_textborder_outer_rounded : spr_textborder_outer, 0, 486, 359, 6.6, 5.2, 0, c_white, 1);
         
@@ -259,11 +258,7 @@ switch (currentState) {
     case "shopTalkLock":
         // Draw left side
         draw_sprite_ext(global.rounded_box ? spr_textborder_inner_rounded : spr_textborder_inner, 0, 162, 359, 7.3, 5.2, 0, c_white, __DRAW_BOX_OPACITY);
-        draw_sprite_ext(global.rounded_box ? spr_textborder_outer_rounded : spr_textborder_outer, 0, 162, 359, 7.3, 5.2, 0, c_white, 1);
-        
-        // Draw right side
-        draw_sprite_ext(global.rounded_box ? spr_textborder_inner_rounded : spr_textborder_inner, 0, 486, 359, 6.6, 5.2, 0, c_white, __DRAW_BOX_OPACITY);
-        draw_sprite_ext(global.rounded_box ? spr_textborder_outer_rounded : spr_textborder_outer, 0, 486, 359, 6.6, 5.2, 0, c_white, 1);
+        draw_sprite_ext(global.rounded_box ? spr_textborder_outer_rounded : spr_textborder_outer, 0, 312, 359, 13.8, 5.2, 0, c_white, 1);
         
         // Get current dialogue
         var dialogueKey = "";
