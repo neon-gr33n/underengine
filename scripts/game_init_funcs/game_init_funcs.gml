@@ -108,7 +108,7 @@ function setup_game_constants()
     global.party_rooms = array_create(3, "------------");
     
     global.rounded_box = false;
-    global.menu_qol_enabled = false;
+    global.menu_qol_enabled = true;
     global.osflavor = os_type == os_android ? 1 : 0;
     global.window_mode = 0;
     

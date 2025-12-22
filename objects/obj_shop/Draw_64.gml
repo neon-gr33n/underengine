@@ -93,7 +93,7 @@ switch (currentState) {
 	            // Draw item description (centered)
 	            draw_set_halign(fa_center);
 	            draw_ftext_transformed(loc_get_font(fnt_main_small), c_white,
-	                490, 130 - 60, selected_item.description, 25, 220, 2, 2, 0, 1);
+	                490, 130 - 60, shop_find_category_subtitle(selected_item.category), 25, 220, 2, 2, 0, 1);
 	            draw_set_halign(fa_left);
             
 	            // Draw bonuses if they exist
@@ -131,11 +131,6 @@ switch (currentState) {
 	                displayText = "-- SOLD OUT --";
 	            } else {
 	                displayText = string(item.price) + "G " + item.name;
-                
-	                // Optional: Show stock remaining for limited items
-	                if (item.can_sell_out && item.max_stock != -1 && global.menu_qol_enabled == true) {
-	                    displayText += " (" + string(item.current_stock) + "/" + string(item.max_stock) + ")";
-	                }
 	            }
 	        }
         

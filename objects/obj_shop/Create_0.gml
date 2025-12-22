@@ -71,3 +71,17 @@ function shop_find_first_valid_item(available_items, start_index = 0) {
     // Should never reach here, but fallback
     return total_items; // Exit option
 }
+	
+function shop_find_category_subtitle(category){
+	switch(category){
+		case "CONSUMABLE":
+			return "Healing item"
+		break;
+		case "WEAPON":
+			return "Physical weapon"
+		break;
+		case "ARMOUR":
+			return "Defensive charm"
+		break;
+	}
+}
