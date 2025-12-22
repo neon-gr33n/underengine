@@ -33,8 +33,6 @@ function equipment_data_init() {
 				EFFECTS : {
 					HP : 10,
 					MAX_HP : 0,
-					MP : 2,
-					MAX_MP : 0,
 					EMOTION : noone,
 					TEMP_ATK : 0,
 					TEMP_DEF : 0,
@@ -44,8 +42,6 @@ function equipment_data_init() {
 				TEAM_EFFECTS : {
 					HP : 0,
 					MAX_HP : 0,
-					MP : 0,
-					MAX_MP : 0,
 					EMOTION : noone,
 					TEMP_ATK : 0,
 					TEMP_DEF : 0,

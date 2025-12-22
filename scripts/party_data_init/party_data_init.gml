@@ -5,7 +5,7 @@ global.PARTY_INFO = {
 		MAXPARTYSIZE : 4,
 		STATS : {
 			KILLS : 0,
-			GOLD : 0,
+			GOLD : 9999,
 			DEATHS : 0,
 			SPARES : 0
 		},

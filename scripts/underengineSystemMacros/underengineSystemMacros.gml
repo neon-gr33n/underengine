@@ -38,7 +38,7 @@
 #region Engine
 /// @macro __UNDERENGINE_VERSION
 /// @description Current version of the UnderEngine framework
-#macro __UNDERENGINE_VERSION "v0.7.3-beta-1"
+#macro __UNDERENGINE_VERSION "v0.7.4-beta-1"
 
 /// @macro __UNDERENGINE_LOGGING
 /// @description Enable or disable engine logging system

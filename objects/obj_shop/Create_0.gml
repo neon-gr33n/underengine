@@ -1,132 +1,73 @@
-/// @description Init
+// obj_shop Create Event
+/// @description Shop Initialization
 _itemSelection = 0;
-_choiceSelection = 0;
 _menuSelection = 0;
 _menuItemSelection = 0;
 _menuSellSelection = 0;
 _menuTalkSelection = 0;
-currentState = "hub"
-canSellItems = true; // If false, the player will NOT be allowed to sell items
-showItemInfo = false;
+currentState = "initializing"; // Start in initialization state
 
-__color = "c_white"
+// Shop state variables
+showItemInfo = true; // Show item info panel by default
+_shop_initialized = false;
+
+// Text variables (will be populated from shop struct)
+__color = "c_white";
 __outline_color = c_black;
-__text="* Hello, traveler!#* How may I help you?"
-__shopkeeperText="* Hello, traveler!#* How may I help you?"
-__talkText="* What do you wish#\tto discuss?"
-__exitText="* Come back anytime!"
-dialogueKey = "";
-dialogueIndex = 0;
+__text = "";
+__shopkeeperText = "";
+__talkText = "";
+__exitText = "";
+__buyText = "";
+__buyFailText = "";
+__buyNoSpaceText = "";
+__sellNoItemsText = "";
+__sellFailText = ""; // New: for when selling is not allowed
+__text2 = "What would#you like#to buy?";
 
-talk_options = [
-	"Say hello",
-	"What to do here",
-	"Town history",
-	"Your life",
-	"Exit"
-]
-
-talkDialogue = {
-	OPT_A: [
-		"* Hiya! Welcome#  to Snowdin!#* I can't remember#  the last time#  I saw a fresh#  face around here.",
-		"* Where did you#  come from?#* The capital?"
-	],
-	OPT_B: [
-		"* get out."
-	],
-	OPT_C: [
-		"too lazy to add#more dialogue#sorry."
-	],
-	OPT_D: [
-		"too lazy to add#more dialogue#sorry."
-	]
-}
-
-talkPortraits = [
-	["neutral", "neutral"],
-	["evil"],
-	["neutral"],
-	["neutral"]
-]
-
-character = "shopkeep_1";
-
-__buyText="* Thank you for#  your purchase!"
-__buyFailText="* You don't#  have enough money#  for that!#* Come back later!"
-__buyNoSpaceText="* You don't#  have enough space#  for that!#"
-__sellNoItemsText="* You don't#  have any items#  to sell!"
-__text2="What would#you like#to buy?"
+// Character/sound variables
+character = "";
+_voiceSound = undefined;
+__font = fnt_main;
 _speed = 1.5;
 _alpha = 1;
-_voiceSound = global.characters[$ character].voice;
-__font = global.characters[$ character].font;
 
+// Typists for text animation
 typist = scribble_typist();
-typist.in(_speed,0.1);
+typist.in(_speed, 0.1);
 typewriter_state = 0;
 
 typist2 = scribble_typist();
-typist2.in(_speed,0.1);
+typist2.in(_speed, 0.1);
 
-
+// Cursor positions
 selCursorYPos = 205;
 selCursorXPos = 72;
 
-buy_options = [
-	"- Half Quiche",
-	"- Quiche",
-	"- Bad Apple",
-	"- Faded Ribbon"
-]
+// Talk system variables
+dialogueKey = "";
+dialogueIndex = 0;
+talk_options = [];
+talkDialogue = {};
+talkPortraits = [];
 
-buy_type = [
-	"CONSUMABLE",
-	"CONSUMABLE",
-	"CONSUMABLE",
-	"ARMOR",
-	""
-]
-
-buy_desc = [
-	"Healing item",
-	"Healing item",
-	"Healing item",
-	"Defensive charm",
-	""
-]
-
-buy_bonus_a = [
-	"+35 HP",
-	"+40 HP",
-	"+20 HP",
-	"+3 DF",
-	""
-]
-
-buy_bonus_b = [
-	"+1 MP",
-	"+3 MP",
-	"+30 MP",
-	""
-]
-add_options = [
-	"HALF_QUICHE",
-	"FULL_QUICHE",
-	"BAD_APPLE",
-	"FADED_RIBBON",
-]
-
-gold_options = [
-	"25G",
-	"35G",
-	"45G",
-	"15G",
-	"Exit"
-]
-
-gold_cost = [
-	25,
-	35,
-	45,
-	15
-]
+/// @function shop_find_first_valid_item(available_items, start_index = 0)
+/// @desc Finds first non-sold-out item starting from start_index
+function shop_find_first_valid_item(available_items, start_index = 0) {
+    var total_items = array_length(available_items);
+    
+    for (var i = start_index; i < total_items + 1; i++) {
+        if (i == total_items) {
+            // Exit option (always valid)
+            return i;
+        } else {
+            var item = available_items[i];
+            if (!(item.can_sell_out && item.current_stock == 0)) {
+                return i;
+            }
+        }
+    }
+    
+    // Should never reach here, but fallback
+    return total_items; // Exit option
+}

@@ -184,6 +184,7 @@ function initialize_data_systems()
     flags_init(true);
     contact_data_init();
     room_data_init();
+	shop_data_init()
     difficulty_data_init();
     border_init();
     

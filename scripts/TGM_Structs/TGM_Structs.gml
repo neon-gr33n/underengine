@@ -4,28 +4,41 @@
 /// @desc Recursively copy a struct.
 /// @param {Struct} struct The struct id.
 /// @returns {Struct}
+/// @desc Recursively copy a struct, preserving methods.
+/// @param {Struct} struct The struct id.
+/// @returns {Struct}
 function struct_copy(struct) {
-	if (is_array(struct)) {
-		var _array = [];
-		var i = 0, isize = array_length(struct);
-		repeat(isize) {
-			_array[i] = struct_copy(struct[i]);
-			++i;
-		}
-		return _array;
-	} else if (is_struct(struct)) {
-		var _struct = {};
-		var _names = variable_struct_get_names(struct);
-		var i = 0, isize = array_length(_names);
-		repeat(isize) {
-			var _name = _names[i];
-			_struct[$ _name] = struct_copy(struct[$ _name]);
-			++i
-		}
-		return _struct;
-	}
-	return struct;
+    if (is_array(struct)) {
+        var _array = [];
+        var i = 0, isize = array_length(struct);
+        repeat(isize) {
+            _array[i] = struct_copy(struct[i]);
+            ++i;
+        }
+        return _array;
+    } else if (is_struct(struct)) {
+        var _struct = {};
+        var _names = variable_struct_get_names(struct);
+        var i = 0, isize = array_length(_names);
+        repeat(isize) {
+            var _name = _names[i];
+            var value = struct[$ _name];
+            
+            // Check if it's a method/function
+            if (is_method(value)) {
+                // Copy methods/functions by reference (they can't be deep copied)
+                _struct[$ _name] = value;
+            } else {
+                // Recursively copy everything else
+                _struct[$ _name] = struct_copy(value);
+            }
+            ++i;
+        }
+        return _struct;
+    }
+    return struct;
 }
+
 
 /// @desc Remove all struct entries, without deleting it.
 /// @param {any} struct Struct index.
