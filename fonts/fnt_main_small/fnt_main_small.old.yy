@@ -214,7 +214,7 @@
   "name":"fnt_main_small",
   "parent":{
     "name":"english",
-    "path":"folders/Fonts/english.yy",
+    "path":"folders/Engine/External/Fonts/english.yy",
   },
   "pointRounding":0,
   "ranges":[
@@ -229,8 +229,8 @@
   "size":11.0,
   "styleName":"Regular",
   "textureGroupId":{
-    "name":"Default",
-    "path":"texturegroups/Default",
+    "name":"FONTS",
+    "path":"texturegroups/FONTS",
   },
   "TTFName":"",
   "usesSDF":false,

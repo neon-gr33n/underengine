@@ -15,10 +15,11 @@ global.SHOP_INFO = {
         TALK_TEXT: "* What do you wish#\tto discuss?",
         EXIT_TEXT: "* Come back anytime!",
         BUY_TEXT: "* Thank you for#  your purchase!",
+		BUY_CANCEL_TEXT: "* Take your time!", 
         BUY_FAIL_TEXT: "* You don't#  have enough money#  for that!#* Come back later!",
         BUY_NO_SPACE_TEXT: "* You don't#  have enough space#  for that!#",
         SELL_NO_ITEMS_TEXT: "* You don't#  have any items#  to sell!",
-        SELL_FAIL_TEXT: "* I'm trying to sell#\tstuff not get#\tmore of it!", // <-- ADDED THIS LINE
+        SELL_FAIL_TEXT: "* I'm trying to sell#\tstuff not get#\tmore of it!", 
         
         // Items array will be populated at runtime
         ITEMS: [],

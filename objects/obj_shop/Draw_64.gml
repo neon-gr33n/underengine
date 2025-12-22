@@ -75,7 +75,7 @@ switch (currentState) {
 	    draw_sprite_ext(global.rounded_box ? spr_textborder_outer_rounded : spr_textborder_outer, 0, 486, 359, 6.6, 5.2, 0, c_white, 1);
     
 	    // Draw item info panel - ONLY if item is NOT sold out
-	    if (showItemInfo && _menuItemSelection < array_length(available_items) && global.menu_qol_enabled == true) {
+	    if (showItemInfo && _menuItemSelection < array_length(available_items)) {
 	        var selected_item = available_items[_menuItemSelection];
 	        var is_sold_out = selected_item.can_sell_out && selected_item.current_stock == 0;
         
@@ -245,6 +245,15 @@ switch (currentState) {
         if (_voiceSound != undefined) {
             typist.sound_per_char([_voiceSound], true, 1, 1);
         }
+		
+		 var scribble_object = scribble(string_concat("[speed,0.2][scale,", global.characters[$ character].font_scale, "][", string(_alpha), "]", __talkText))
+                .starting_format(global.characters[$ character].font, __color)
+                .wrap(640 - x + y);
+            
+            // Draw the dialogue text
+            if (visible) {
+                scribble_object.draw(30, 260, typist);
+            }
         break;
         
     case "shopTalkLock":

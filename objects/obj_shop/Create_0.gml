@@ -8,7 +8,7 @@ _menuTalkSelection = 0;
 currentState = "initializing"; // Start in initialization state
 
 // Shop state variables
-showItemInfo = true; // Show item info panel by default
+showItemInfo = false; // Show item info panel by default
 _shop_initialized = false;
 
 // Text variables (will be populated from shop struct)
