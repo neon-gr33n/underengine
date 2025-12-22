@@ -226,8 +226,11 @@ function dialogue_character_init() {
             char_name: "Shopkeeper",
             type: SPEAKER_TYPE.SHOP,
             portraits: {
-                neutral: spr_shop_host_test,
-                evil: spr_shop_host_evil
+                neutral: spr_shop_host_neutral,
+				concern: spr_shop_host_concern,
+				content: spr_shop_host_content,
+				happy: spr_shop_host_happy,
+				mad: spr_shop_host_mad
             }
         }
     }

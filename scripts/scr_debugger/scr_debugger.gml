@@ -8,6 +8,7 @@ function scr_debugger()
 			  // Setup test shop
 			if (!ShopExists("DEFAULT")){
 			    ShopekeeperInit("DEFAULT");
+				ShopCanSell(false)
 			    ShopitemAdd("FADED_RIBBON", true, 1);
 			    ShopitemAdd("TEST_DOG1");
 			}

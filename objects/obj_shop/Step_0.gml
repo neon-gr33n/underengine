@@ -426,14 +426,12 @@ switch (currentState) {
                             currentState = "shopTalk";
                             // Reset the dialogue index for next time
                             global[$ "dialogueIndex_" + dialogueKey] = 0;
-                            sfx_play(snd_menu_select, 1, 0.7);
                             obj_shopkeeper.sprite_index = global.characters[$ character].portraits.neutral;
                         } else {
                             // Move to next dialogue
                             dialogueIndex = (dialogueIndex + 1) % arrayLength;
                             global[$ "dialogueIndex_" + dialogueKey] = dialogueIndex;
-                            sfx_play(snd_menu_select, 1, 0.7);
-                            
+
                             if (array_length(talkPortraits[_menuTalkSelection]) > dialogueIndex) {
                                 obj_shopkeeper.sprite_index = global.characters[$ character].portraits[$ talkPortraits[_menuTalkSelection][dialogueIndex]];
                             } else {

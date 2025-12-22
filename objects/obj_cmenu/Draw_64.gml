@@ -45,21 +45,29 @@ draw_sprite_ext(global.boxin,0,x+115,y+125 + _is_top,2.95,2,0,c_white,__DRAW_BOX
 	break;
 
 	case 3:
+		if global.menu_qol_enabled == true {
 		draw_sprite_ext(global.boxout,0,x+330,y+67,6,0.67,0,c_white,1)
 		draw_sprite_ext(global.boxin,0,x+330,y+67,6,0.67,0,c_white,1)
+		}
 		draw_sprite_ext(global.boxout,0,x+330,y+229,6,6.5,0,c_white,1)
 		draw_sprite_ext(global.boxin,0,x+330,y+229,6,6.5,0,c_white,__DRAW_BOX_OPACITY)
-	
+			
+		if global.menu_qol_enabled == true {
 		draw_ftext(fnt_mars,c_white,265,60,1,1,0,"CONTACTS")
+		}
 	break;
 	
 	case 4:
+		if global.menu_qol_enabled == true {
 		draw_sprite_ext(global.boxout,0,x+330,y+67,6,0.67,0,c_white,1)
 		draw_sprite_ext(global.boxin,0,x+330,y+67,6,0.67,0,c_white,1)
+		}
 		draw_sprite_ext(global.boxout,0,x+330,y+229,6,6.5,0,c_white,1)
 		draw_sprite_ext(global.boxin,0,x+330,y+229,6,6.5,0,c_white,__DRAW_BOX_OPACITY)
-	
+			
+		if global.menu_qol_enabled == true {
 		draw_ftext(fnt_mars,c_white,265,60,1,1,0,"CONTACTS")
+		}
 	break;
 }
 

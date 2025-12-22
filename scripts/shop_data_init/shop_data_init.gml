@@ -19,7 +19,7 @@ global.SHOP_INFO = {
         BUY_FAIL_TEXT: "* You don't#  have enough money#  for that!#* Come back later!",
         BUY_NO_SPACE_TEXT: "* You don't#  have enough space#  for that!#",
         SELL_NO_ITEMS_TEXT: "* You don't#  have any items#  to sell!",
-        SELL_FAIL_TEXT: "* I'm trying to sell#\tstuff not get#\tmore of it!", 
+        SELL_FAIL_TEXT: "* Huh? Sell somethin'?#  Does this look like#  a pawn shop?", 
         
         // Items array will be populated at runtime
         ITEMS: [],
@@ -36,23 +36,38 @@ global.SHOP_INFO = {
         
         TALK_DIALOGUE: {
             OPT_A: [
-                "* Hiya! Welcome#  to my shop!#* Take your time looking around."
+                "* Hiya! Welcome#  to Snowdin!#* I can't remember the#  last time I saw a fresh#  face around here.",
+				"* Where did you come#  from?#* The capital?",
+				"* You don't look# like a tourist.#* Are you here by yourself?"
             ],
             OPT_B: [
-                "* You can buy items#  by selecting 'Buy',#  and sell items#  with 'Sell'."
+               "* You want to know what#  to do here in Snowdin?",
+				"* Grillby's has food,#  and the library#\thas information...",
+				"* If you're tired, you #can take a nap at the#inn next door -my#sister runs it.",
+				"* And if you're bored, #\twatch  those wacky#skeletons outside#do their thing.",
+				"* There's two of 'em...#* Brothers, I think.",
+				"* They just showed up one#  day and...#* ... asserted themselves.",
+				"* The town has gotten a #lot  more interesting# since then."
             ],
             OPT_C: [
-                "* I've been running#  this shop for years.#* People come and go,#  but I stay here."
+               "* Think back to your#  history class...",
+				"* A long time ago, monsters#  lived in the RUINS back#  there in the forest.",
+				"* Long story short, we all#  decided to leave the ruins#  and head for the end of#  the caverns.",
+				"* Along the way, some fuzzy#  folk decided they liked#  the cold and set up camp#  in Snowdin.",
+				"* Oh, and don't think about#  trying to explore the#  RUINS...#* The door's been locked for#  ages. So unless you're a#  ghost or can burrow under#  the door, forget about it."
             ],
             OPT_D: [
-                "* Life is good.#* Business is steady.#* What more could#  I ask for?"
+               "* Life is the same as usual.",
+				"* A little claustrophobic...#  But... we all know deep down#  that freedom is coming,",
+				"* Don't we? As long as we got#  that hope, we can grit our#  teeth and face the same",
+			    "* Struggles, day after day...#  That's life, ain't it?"
             ]
         },
         
         TALK_PORTRAITS: [
-            ["neutral", "neutral"],
-            ["neutral"],
-            ["neutral"],
+            ["neutral", "neutral", "concern"],
+            ["neutral", "neutral", "content", "content", "concern", "content", "happy"],
+            ["neutral", "neutral", "neutral", "content", "concern"],
             ["neutral"]
         ],
         
