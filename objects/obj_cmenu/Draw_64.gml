@@ -406,7 +406,7 @@ if UTE_ENABLE_DF_CMENU_CURSOR {
 		case 2:
 			// REMOVED: draw_sprite_ext(spr_heart_sm,0,x+selCursorXPos,y+208+_menu_selection*32,2,2,0,c_red,1)
 			draw_ftext(loc_get_font(fnt_main_small),c_white ,98,200,2,2,0,loc_gettext("ui.item"))
-			draw_ftext(loc_get_font(fnt_main_small),c_yellow,98,232,2,2,0,loc_gettext("ui.stat"))
+			draw_ftext(loc_get_font(fnt_main_small),c_white,98,232,2,2,0,loc_gettext("ui.stat"))
 			if (inven_get_item_by_name("CELL_PHONE") != noone){
 				draw_ftext(loc_get_font(fnt_main_small), _menu_selection == 2 ? c_yellow : c_white,98,264,2,2,0,loc_gettext("ui.cell"))
 			}
@@ -485,7 +485,7 @@ if UTE_ENABLE_DF_CMENU_CURSOR {
 		    draw_ftext(loc_get_font(fnt_main_small), c_white, 98, 200, 2, 2, 0, loc_gettext("ui.item"))
 		    draw_ftext(loc_get_font(fnt_main_small), c_white, 98, 232, 2, 2, 0, loc_gettext("ui.stat"))
 		    if (inven_get_item_by_name("CELL_PHONE") != noone){
-		        draw_ftext(loc_get_font(fnt_main_small), _menu_selection == 2 ? c_yellow : c_white, 98, 264, 2, 2, 0, loc_gettext("ui.cell"))
+		        draw_ftext(loc_get_font(fnt_main_small), c_white, 98, 264, 2, 2, 0, loc_gettext("ui.cell"))
 		    }
 		break;
 		
@@ -517,7 +517,7 @@ if UTE_ENABLE_DF_CMENU_CURSOR {
 			draw_ftext(loc_get_font(fnt_main_small),c_white ,98,200,2,2,0,loc_gettext("ui.item"))
 			draw_ftext(loc_get_font(fnt_main_small),c_white,98,232,2,2,0,loc_gettext("ui.stat"))
 			if (inven_get_item_by_name("CELL_PHONE") != noone){
-			    draw_ftext(loc_get_font(fnt_main_small), _menu_selection == 2 ? c_yellow : c_white,98,264,2,2,0,loc_gettext("ui.cell"))
+			    draw_ftext(loc_get_font(fnt_main_small), c_white,98,264,2,2,0,loc_gettext("ui.cell"))
 			}
 		break;
 	}

@@ -6,12 +6,17 @@ function scr_debugger()
 	if keyboard_check_pressed(vk_f11){with(GAME){performanceInfo= !performanceInfo; }}
 	if keyboard_check_pressed(vk_alt){
 			  // Setup test shop
+			  // Save party position for return after leaving the shop
+		    flag_set(global.flags, "partyX", PLAYER1.x);
+		    flag_set(global.flags, "partyY", PLAYER1.y);
+			
 			if (!ShopExists("DEFAULT")){
 			    ShopekeeperInit("DEFAULT");
 				ShopCanSell(false)
 			    ShopitemAdd("FADED_RIBBON", true, 1);
 			    ShopitemAdd("TEST_DOG1");
 			}
+			save_general(global.filechoice)
 			room_goto(rm_shop)	
 	}
 	if (keyboard_check_pressed(vk_f7)) game_set_speed((game_get_speed(gamespeed_fps) == 60) ? 30 : 60, gamespeed_fps);
