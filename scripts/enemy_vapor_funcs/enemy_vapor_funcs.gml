@@ -52,7 +52,7 @@ function create_vaporizer(_source_inst, _filename)
     inst.finished = false;
 
     // Pull visual data from the source object
-    inst.sprite_index  = _source_inst.sprite_index;
+    inst.sprite_index  = _source_inst.hurtSprite;
     inst.image_index   = _source_inst.image_index;
     inst.image_xscale  = _source_inst.image_xscale;
     inst.image_yscale  = _source_inst.image_yscale;
