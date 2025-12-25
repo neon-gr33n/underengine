@@ -60,9 +60,6 @@ if (!finished) {
         else if (ch >= 39 && ch <= 82) {
             var len = max(1, ch - 39);
 
-            // FIXED: Position vapor at the crop line (top of visible sprite)
-            // The sprite is drawn at y - remaining_h * 2, and we cropped 'lines_removed' from top
-            // So vapor should appear at: (sprite top position) + lines_removed
             var vapor_y = (y - remaining_h * 2.1) + lines_removed;
 
             var p = instance_create_depth(

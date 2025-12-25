@@ -17,6 +17,7 @@ function load_vapor_data(filename){
 /// @returns instance id or noone
 function create_vaporizer(_source_inst, _filename)
 {
+	_source_inst.visible = false;
     if (!instance_exists(_source_inst)) {
         show_debug_message("Source instance does not exist");
         return noone;
