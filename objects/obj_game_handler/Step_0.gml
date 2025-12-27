@@ -86,6 +86,12 @@ if global.debug {
 	show_debug_overlay(performanceInfo)
 }
 
+if DEVELOPERBUILD == 1 {
+ window_set_caption("underengine " + "(" + __UNDERENGINE_VERSION + ")" + " @" + string(fps) + " FPS")
+ } else {
+window_set_caption(GAME_NAME)	 
+}
+
 if !DEVELOPERBUILD {
 	global.debug = false;
 } else if keyboard_check_pressed(vk_f6) global.debug=!global.debug

@@ -4,11 +4,7 @@ global.asp_ratio	= 0	// 0 - 4:3 (Default)  1 - 16:9 (Ideal for recording or wide
  global.was_reset = false;
  global.just_reset = false;
  
- if DEVELOPERBUILD == 1 {
- window_set_caption("underengine " + "(" + __UNDERENGINE_VERSION + ")" + " @" + string(game_get_speed(gamespeed_fps)) + " FPS")
- } else {
-window_set_caption(GAME_NAME)	 
-}
+
  
 #region Variables
 
