@@ -79,7 +79,6 @@
     {"name":"Shop Hosts (Shopkeepers)","order":6,"path":"folders/Engine/External/Sprites/Shop/Shop Hosts (Shopkeepers).yy",},
     {"name":"default","order":1,"path":"folders/Engine/External/Sprites/Shop/Shop Hosts (Shopkeepers)/default.yy",},
     {"name":"User Interface","order":4,"path":"folders/Engine/External/Sprites/User Interface.yy",},
-    {"name":"BUTTONS","order":4,"path":"folders/Engine/External/Sprites/User Interface/Battle/BUTTONS.yy",},
     {"name":"INTERFACE","order":9,"path":"folders/Engine/External/Sprites/User Interface/Battle/INTERFACE.yy",},
     {"name":"NUMBERS","order":5,"path":"folders/Engine/External/Sprites/User Interface/Battle/NUMBERS.yy",},
     {"name":"SOULS","order":6,"path":"folders/Engine/External/Sprites/User Interface/Battle/SOULS.yy",},
